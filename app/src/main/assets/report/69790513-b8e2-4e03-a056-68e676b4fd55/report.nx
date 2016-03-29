@@ -1,0 +1,1595 @@
+{
+    "creator": "dongsaiyuan",
+    "defaultStyle": [
+        {
+            "defaultColor": [
+                "#e84d60",
+                "#e88f61",
+                "#fecd6c",
+                "#b3cf61",
+                "#77c298",
+                "#51a9d6",
+                "#718dbf",
+                "#955cbf",
+                "#a4547d",
+                "#c64373"
+            ],
+            "scopeId": [
+                "all"
+            ],
+            "scopeType": "report"
+        }
+    ],
+    "id": "eduEvaluating",
+    "metadataStructures": [
+        {
+            "dataSetId": "abaa7259-9a26-4210-b3d8-ca7f0b7bebe8",
+            "dimensions": [
+                {
+                    "granularities": [
+                        {
+                            "key": "COL_0_0",
+                            "title": "Subject"
+                        }
+                    ],
+                    "key": "Dimension_1",
+                    "title": "Subject"
+                },
+                {
+                    "granularities": [
+                        {
+                            "key": "COL_0_1",
+                            "title": "Year"
+                        },
+                        {
+                            "key": "COL_0_2",
+                            "sort": "NXSortOperationAsc",
+                            "title": "Term"
+                        },
+                        {
+                            "key": "COL_0_3",
+                            "title": "Month"
+                        },
+                        {
+                            "key": "COL_0_4",
+                            "title": "Day"
+                        }
+                    ],
+                    "key": "Dimension_2",
+                    "title": "Time"
+                },
+                {
+                    "granularities": [
+                        {
+                            "key": "COL_0_5",
+                            "title": "Grade"
+                        },
+                        {
+                            "key": "COL_0_6",
+                            "title": "Class"
+                        },
+                        {
+                            "key": "COL_0_7",
+                            "title": "Teacher"
+                        }
+                    ],
+                    "key": "Dimension_3",
+                    "title": "Unit"
+                }
+            ],
+            "encrypt": "ssssssss",
+            "measures": [
+                {
+                    "key": "COL_0_8",
+                    "title": "Teacher's Session Duration"
+                },
+                {
+                    "key": "COL_0_9",
+                    "title": "Teacher's case count"
+                },
+                {
+                    "key": "COL_0_10",
+                    "title": "Student's case count of Done"
+                },
+                {
+                    "key": "COL_0_11",
+                    "title": "Student's case count of Correct"
+                }
+            ]
+        },
+        {
+            "dataSetId": "842e1994-dad5-4914-829b-5a12799db135",
+            "dimensions": [
+                {
+                    "granularities": [
+                        {
+                            "key": "COL_0_0",
+                            "title": "Subject"
+                        }
+                    ],
+                    "key": "Dimension_1",
+                    "title": "Subject"
+                },
+                {
+                    "granularities": [
+                        {
+                            "key": "COL_0_1",
+                            "title": "Year"
+                        },
+                        {
+                            "key": "COL_0_2",
+                            "sort": "NXSortOperationAsc",
+                            "title": "Term"
+                        },
+                        {
+                            "key": "COL_0_3",
+                            "title": "Month"
+                        },
+                        {
+                            "key": "COL_0_4",
+                            "title": "Day"
+                        }
+                    ],
+                    "key": "Dimension_2",
+                    "title": "Time"
+                },
+                {
+                    "granularities": [
+                        {
+                            "key": "COL_0_5",
+                            "title": "Grade"
+                        },
+                        {
+                            "key": "COL_0_6",
+                            "title": "Class"
+                        },
+                        {
+                            "key": "COL_0_7",
+                            "title": "Student"
+                        }
+                    ],
+                    "key": "Dimension_3",
+                    "title": "Unit"
+                }
+            ],
+            "encrypt": "ssssssss",
+            "measures": [
+                {
+                    "key": "COL_0_8",
+                    "title": "Student's Performance"
+                },
+                {
+                    "key": "COL_0_9",
+                    "title": "Student's Total Quantity of Homework"
+                },
+                {
+                    "key": "COL_0_10",
+                    "title": "Student's Doen Quantity of Homework"
+                }
+            ]
+        }
+    ],
+    "pages": [
+        {
+            "cards": [
+                {
+                    "cardTitle": "Total Review",
+                    "dataSetId": "abaa7259-9a26-4210-b3d8-ca7f0b7bebe8",
+                    "size": "row-sm-xs-6 row-xs-sm-12 row-md-3 row-md-sm-6 row-lg-md-3 row-md-md-6 col-xs-sm-12 col-sm-xs-6 col-sm-md-12 col-sm-lg-12 col-md-12  col-md-lg-12 col-md-sm-6 col-lg-6 ",
+                    "structure": {
+                        "dimensions": [
+                            {
+                                "granularities": [
+                                    {
+                                        "key": "COL_0_0",
+                                        "title": "Subject"
+                                    }
+                                ],
+                                "key": "Dimension_1",
+                                "title": "Subject"
+                            },
+                            {
+                                "granularities": [
+                                    {
+                                        "key": "COL_0_1",
+                                        "title": "Year"
+                                    },
+                                    {
+                                        "key": "COL_0_2",
+                                        "title": "Term"
+                                    },
+                                    {
+                                        "key": "COL_0_3",
+                                        "title": "Month"
+                                    },
+                                    {
+                                        "key": "COL_0_4",
+                                        "title": "Day"
+                                    }
+                                ],
+                                "key": "Dimension_2",
+                                "title": "Time"
+                            },
+                            {
+                                "granularities": [
+                                    {
+                                        "key": "COL_0_5",
+                                        "title": "Grade"
+                                    },
+                                    {
+                                        "key": "COL_0_6",
+                                        "title": "Class"
+                                    },
+                                    {
+                                        "key": "COL_0_7",
+                                        "title": "Teacher"
+                                    }
+                                ],
+                                "key": "Dimension_3",
+                                "title": "Unit"
+                            }
+                        ],
+                        "measures": [
+                            {
+                                "aggregator": "count",
+                                "aggregatorSubGranKey": "COL_0_4",
+                                "isCreated": true,
+                                "key": "COL_0_12",
+                                "title": "days counts"
+                            },
+                            {
+                                "aggregator": "count",
+                                "aggregatorGranKey": "COL_0_0",
+                                "isCreated": true,
+                                "key": "COL_0_13",
+                                "title": "subject counts"
+                            },
+                            {
+                                "aggregator": "count",
+                                "aggregatorSubGranKey": "COL_0_7",
+                                "isCreated": true,
+                                "key": "COL_0_14",
+                                "title": "teacher' counts in grade"
+                            },
+                            {
+                                "formula": "COL_0_8/COL_0_14/COL_0_12/COL_0_13/60",
+                                "isCreated": true,
+                                "key": "COL_0_15",
+                                "title": "Teacher's average Session Duration"
+                            },
+                            {
+                                "formula": "COL_0_9/COL_0_14/COL_0_12/COL_0_13",
+                                "isCreated": true,
+                                "key": "COL_0_16",
+                                "title": "Teacher's average case count"
+                            },
+                            {
+                                "formula": "COL_0_10/COL_0_14/COL_0_12/COL_0_13",
+                                "isCreated": true,
+                                "key": "COL_0_17",
+                                "title": "Student's average case count of Done"
+                            },
+                            {
+                                "formula": "COL_0_11/COL_0_14/COL_0_12/COL_0_13",
+                                "isCreated": true,
+                                "key": "COL_0_18",
+                                "title": "Student's average case count of Correct"
+                            }
+                        ]
+                    },
+                    "style": {
+                        "superList": {
+                            "autoPageScroll": true,
+                            "columns": [
+                                {
+                                    "alignment": "NXAlignmentLeft",
+                                    "expandGran": [
+                                        "COL_0_0",
+                                        "COL_0_5",
+                                        "COL_0_6"
+                                    ],
+                                    "isMajorColumn": true
+                                },
+                                {
+                                    "chart": {
+                                        "chartConfig": {
+                                            "canvas": {
+                                                "graphPadding": {
+                                                    "bottom": 5,
+                                                    "left": 0,
+                                                    "right": 0,
+                                                    "top": 5
+                                                }
+                                            },
+                                            "series": [
+                                                {
+                                                    "dataSource": {
+                                                        "yFormatString": ",###",
+                                                        "yValueSource": "COL_0_15"
+                                                    },
+                                                    "fill": {
+                                                        "fillColor": "#e41c2b"
+                                                    },
+                                                    "id": "single",
+                                                    "iteration": {
+                                                        "isLeafLevel": true
+                                                    },
+                                                    "type": "NXSingleSeries"
+                                                }
+                                            ]
+                                        }
+                                    },
+                                    "showChart": true,
+                                    "valueFormat": {
+                                        "yFormatString": "#.##小时"
+                                    }
+                                },
+                                {
+                                    "chart": {
+                                        "chartConfig": {
+                                            "canvas": {
+                                                "graphPadding": {
+                                                    "bottom": 5,
+                                                    "left": 0,
+                                                    "right": 0,
+                                                    "top": 5
+                                                }
+                                            },
+                                            "series": [
+                                                {
+                                                    "dataSource": {
+                                                        "yFormatString": ",###",
+                                                        "yValueSource": "COL_0_16"
+                                                    },
+                                                    "fill": {
+                                                        "fillColor": "#e41c2b"
+                                                    },
+                                                    "id": "single",
+                                                    "iteration": {
+                                                        "isLeafLevel": true
+                                                    },
+                                                    "type": "NXSingleSeries"
+                                                }
+                                            ]
+                                        }
+                                    },
+                                    "showChart": true,
+                                    "valueFormat": {
+                                        "yFormatString": "#道"
+                                    }
+                                },
+                                {
+                                    "chart": {
+                                        "chartConfig": {
+                                            "canvas": {
+                                                "graphPadding": {
+                                                    "bottom": 5,
+                                                    "left": 0,
+                                                    "right": 0,
+                                                    "top": 5
+                                                }
+                                            },
+                                            "series": [
+                                                {
+                                                    "dataSource": {
+                                                        "y2ValueSource": "COL_0_18",
+                                                        "yFormatString": ",###",
+                                                        "yValueSource": "COL_0_17"
+                                                    },
+                                                    "fill": {
+                                                        "fillColor": "#e41c2b"
+                                                    },
+                                                    "id": "single",
+                                                    "iteration": {
+                                                        "isLeafLevel": true
+                                                    },
+                                                    "type": "NXSingleSeries"
+                                                }
+                                            ]
+                                        }
+                                    },
+                                    "showChart": true,
+                                    "valueFormat": {
+                                        "yFormatString": "#道"
+                                    }
+                                }
+                            ],
+                            "expandLevel": 0,
+                            "header": {
+                                "backgroundColor": "#718dbf",
+                                "headerHeight": 30,
+                                "textStyle": {
+                                    "textColor": "#ebecf0",
+                                    "textSize": 14
+                                }
+                            },
+                            "rows": {
+                                "evenColor": "#FEFFFF",
+                                "oddColor": "#F9FAFB",
+                                "rowHeight": 32
+                            }
+                        },
+                        "type": "NXSuperList"
+                    },
+                    "type": "NXCubeCard"
+                },
+                {
+                    "cardTitle": "Teacher's case count",
+                    "dataSetId": "abaa7259-9a26-4210-b3d8-ca7f0b7bebe8",
+                    "size": "row-sm-xs-6 row-xs-sm-12 row-md-3 row-md-sm-3 row-lg-md-3  row-md-md-6 col-xs-sm-12 col-sm-xs-6  col-sm-md-12 col-sm-lg-12 col-md-12  col-md-lg-12 col-md-sm-6 col-lg-6 ",
+                    "structure": {
+                        "dimensions": [
+                            {
+                                "granularities": [
+                                    {
+                                        "key": "COL_0_0",
+                                        "title": "Subject"
+                                    }
+                                ],
+                                "key": "Dimension_1",
+                                "title": "Subject"
+                            },
+                            {
+                                "granularities": [
+                                    {
+                                        "key": "COL_0_5",
+                                        "title": "Grade"
+                                    },
+                                    {
+                                        "key": "COL_0_6",
+                                        "title": "Class"
+                                    },
+                                    {
+                                        "drillTo": true,
+                                        "key": "COL_0_7",
+                                        "title": "Teacher"
+                                    }
+                                ],
+                                "key": "Dimension_3",
+                                "title": "Unit"
+                            },
+                            {
+                                "granularities": [
+                                    {
+                                        "key": "COL_0_1",
+                                        "title": "Year"
+                                    },
+                                    {
+                                        "drillTo": true,
+                                        "key": "COL_0_2",
+                                        "title": "Term"
+                                    },
+                                    {
+                                        "key": "COL_0_3",
+                                        "title": "Month"
+                                    },
+                                    {
+                                        "key": "COL_0_4",
+                                        "title": "Day"
+                                    }
+                                ],
+                                "key": "Dimension_2",
+                                "title": "Time"
+                            }
+                        ],
+                        "measures": [
+                            {
+                                "key": "COL_0_9",
+                                "title": "Teacher's Case Count"
+                            },
+                            {
+                                "aggregator": "max",
+                                "aggregatorGranKey": "COL_0_5",
+                                "aggregatorMeasureKey": "COL_0_9",
+                                "isCreated": true,
+                                "key": "COL_0_12",
+                                "title": "Teacher's Max Session Duration in Grade"
+                            },
+                            {
+                                "aggregator": "avg",
+                                "aggregatorGranKey": "COL_0_5",
+                                "aggregatorMeasureKey": "COL_0_9",
+                                "isCreated": true,
+                                "key": "COL_0_13",
+                                "title": "Teacher's average Session Duration in Grade"
+                            }
+                        ]
+                    },
+                    "style": {
+                        "chart": {
+                            "chartConfig": {
+                                "axis": [
+                                    {
+                                        "axisType": "NXAxisTypeCategory",
+                                        "id": "bottom"
+                                    },
+                                    {
+                                        "axisMaxPaddingForPlot": 0.05,
+                                        "axisMinPaddingForPlot": 0.05,
+                                        "axisType": "NXAxisTypeNumberic",
+                                        "coordinate": "NXCoordinateY",
+                                        "id": "left",
+                                        "majorPoint": {
+                                            "label": {
+                                                "labelFormatter": ",###",
+                                                "labelNumberUnit": false
+                                            }
+                                        }
+                                    }
+                                ],
+                                "series": [
+                                    {
+                                        "dataSource": {
+                                            "yValueSource": "COL_0_9"
+                                        },
+                                        "fill": {
+                                            "fillColor": "#955cbf"
+                                        },
+                                        "id": "bar",
+                                        "iteration": {
+                                            "isLeafLevel": true,
+                                            "measureToGraphicGran": [
+                                                "COL_0_9",
+                                                "COL_0_12",
+                                                "COL_0_13"
+                                            ]
+                                        },
+                                        "orientation": "vertical",
+                                        "type": "NXBarSeries",
+                                        "xAxis": "bottom",
+                                        "yAxis": "left"
+                                    }
+                                ],
+                                "touchTools": [
+                                    {
+                                        "crossAxis": "bottom",
+                                        "enableMultiTouch": false,
+                                        "removeOnRelease": false,
+                                        "showBelowSeries": false,
+                                        "targetSeries": [
+                                            "bar"
+                                        ],
+                                        "toolType": "NXHighLightTool",
+                                        "visible": true
+                                    }
+                                ]
+                            }
+                        },
+                        "selection": {
+                            "selectionSource": "Y",
+                            "selectionType": "NXChartSelectionBiggestValue"
+                        }
+                    },
+                    "type": "NXCubeCard"
+                },
+                {
+                    "cardTitle": "Teacher's sesstion hours",
+                    "dataSetId": "abaa7259-9a26-4210-b3d8-ca7f0b7bebe8",
+                    "size": "row-sm-xs-6 row-xs-sm-12 row-md-3 row-md-sm-3 row-md-md-6 row-lg-md-3 col-xs-sm-12 col-sm-xs-6  col-sm-md-12 col-sm-lg-12 col-md-12  col-md-lg-12 col-md-sm-6 col-lg-6 ",
+                    "structure": {
+                        "dimensions": [
+                            {
+                                "granularities": [
+                                    {
+                                        "key": "COL_0_0",
+                                        "title": "Subject"
+                                    }
+                                ],
+                                "key": "Dimension_1",
+                                "title": "Subject"
+                            },
+                            {
+                                "granularities": [
+                                    {
+                                        "key": "COL_0_5",
+                                        "title": "Grade"
+                                    },
+                                    {
+                                        "key": "COL_0_6",
+                                        "title": "Class"
+                                    },
+                                    {
+                                        "drillTo": true,
+                                        "key": "COL_0_7",
+                                        "title": "Teacher"
+                                    }
+                                ],
+                                "key": "Dimension_3",
+                                "title": "Unit"
+                            },
+                            {
+                                "granularities": [
+                                    {
+                                        "key": "COL_0_1",
+                                        "title": "Year"
+                                    },
+                                    {
+                                        "drillTo": true,
+                                        "key": "COL_0_2",
+                                        "title": "Term"
+                                    },
+                                    {
+                                        "key": "COL_0_3",
+                                        "title": "Month"
+                                    },
+                                    {
+                                        "key": "COL_0_4",
+                                        "title": "Day"
+                                    }
+                                ],
+                                "key": "Dimension_2",
+                                "title": "Time"
+                            }
+                        ],
+                        "measures": [
+                            {
+                                "key": "COL_0_8",
+                                "title": "Teacher's Session Duration"
+                            },
+                            {
+                                "aggregator": "max",
+                                "aggregatorGranKey": "COL_0_5",
+                                "aggregatorMeasureKey": "COL_0_8",
+                                "isCreated": true,
+                                "key": "COL_0_12",
+                                "title": "Teacher's Max Session Duration in Grade"
+                            },
+                            {
+                                "aggregator": "avg",
+                                "aggregatorGranKey": "COL_0_5",
+                                "aggregatorMeasureKey": "COL_0_8",
+                                "isCreated": true,
+                                "key": "COL_0_13",
+                                "title": "Teacher's average Session Duration in Grade"
+                            }
+                        ]
+                    },
+                    "style": {
+                        "chart": {
+                            "chartConfig": {
+                                "axis": [
+                                    {
+                                        "axisType": "NXAxisTypeCategory",
+                                        "id": "bottom"
+                                    },
+                                    {
+                                        "axisMaxPaddingForPlot": 0.05,
+                                        "axisMinPaddingForPlot": 0.05,
+                                        "axisType": "NXAxisTypeNumberic",
+                                        "coordinate": "NXCoordinateY",
+                                        "id": "left",
+                                        "majorPoint": {
+                                            "label": {
+                                                "labelFormatter": ",###",
+                                                "labelNumberUnit": false
+                                            }
+                                        }
+                                    }
+                                ],
+                                "series": [
+                                    {
+                                        "dataSource": {
+                                            "yValueSource": "COL_0_8"
+                                        },
+                                        "fill": {
+                                            "fillColor": "#955cbf"
+                                        },
+                                        "id": "bar",
+                                        "iteration": {
+                                            "isLeafLevel": true,
+                                            "measureToGraphicGran": [
+                                                "COL_0_8",
+                                                "COL_0_12",
+                                                "COL_0_13"
+                                            ]
+                                        },
+                                        "orientation": "vertical",
+                                        "type": "NXBarSeries",
+                                        "xAxis": "bottom",
+                                        "yAxis": "left"
+                                    }
+                                ],
+                                "touchTools": [
+                                    {
+                                        "crossAxis": "bottom",
+                                        "enableMultiTouch": false,
+                                        "removeOnRelease": false,
+                                        "showBelowSeries": false,
+                                        "targetSeries": [
+                                            "bar"
+                                        ],
+                                        "toolType": "NXHighLightTool",
+                                        "visible": true
+                                    }
+                                ]
+                            }
+                        },
+                        "selection": {
+                            "selectionSource": "Y",
+                            "selectionType": "NXChartSelectionBiggestValue"
+                        }
+                    },
+                    "type": "NXCubeCard"
+                },
+                {
+                    "cardTitle": "Student's case count of Done and Correct ",
+                    "dataSetId": "abaa7259-9a26-4210-b3d8-ca7f0b7bebe8",
+                    "size": "row-sm-xs-6 row-xs-sm-12 row-md-3 row-md-sm-3 row-md-md-6 row-lg-md-3 col-xs-sm-12 col-sm-xs-6  col-sm-md-12 col-sm-lg-12 col-md-12  col-md-lg-12 col-md-sm-6 col-lg-6 ",
+                    "structure": {
+                        "dimensions": [
+                            {
+                                "granularities": [
+                                    {
+                                        "key": "COL_0_0",
+                                        "title": "Subject"
+                                    }
+                                ],
+                                "key": "Dimension_1",
+                                "title": "Subject"
+                            },
+                            {
+                                "granularities": [
+                                    {
+                                        "key": "COL_0_5",
+                                        "title": "Grade"
+                                    },
+                                    {
+                                        "key": "COL_0_6",
+                                        "title": "Class"
+                                    },
+                                    {
+                                        "drillTo": true,
+                                        "key": "COL_0_7",
+                                        "title": "Teacher"
+                                    }
+                                ],
+                                "key": "Dimension_3",
+                                "title": "Unit"
+                            },
+                            {
+                                "granularities": [
+                                    {
+                                        "key": "COL_0_1",
+                                        "title": "Year"
+                                    },
+                                    {
+                                        "drillTo": true,
+                                        "key": "COL_0_2",
+                                        "title": "Term"
+                                    },
+                                    {
+                                        "key": "COL_0_3",
+                                        "title": "Month"
+                                    },
+                                    {
+                                        "key": "COL_0_4",
+                                        "title": "Day"
+                                    }
+                                ],
+                                "key": "Dimension_2",
+                                "title": "Time"
+                            }
+                        ],
+                        "measures": [
+                            {
+                                "key": "COL_0_10",
+                                "title": "Student's case count of Done"
+                            },
+                            {
+                                "key": "COL_0_11",
+                                "title": "Student's case count of Correct"
+                            }
+                        ]
+                    },
+                    "style": {
+                        "chart": {
+                            "chartConfig": {
+                                "axis": [
+                                    {
+                                        "axisType": "NXAxisTypeCategory",
+                                        "id": "bottom"
+                                    },
+                                    {
+                                        "axisMaxPaddingForPlot": 0.05,
+                                        "axisMinPaddingForPlot": 0.05,
+                                        "axisType": "NXAxisTypeNumberic",
+                                        "coordinate": "NXCoordinateY",
+                                        "id": "left",
+                                        "majorPoint": {
+                                            "label": {
+                                                "labelFormatter": ",###",
+                                                "labelNumberUnit": false
+                                            }
+                                        }
+                                    }
+                                ],
+                                "series": [
+                                    {
+                                        "dataSource": {
+                                            "yValueSource": "COL_0_10"
+                                        },
+                                        "fill": {
+                                            "fillColor": "#955cbf"
+                                        },
+                                        "id": "bar",
+                                        "iteration": {
+                                            "isLeafLevel": true,
+                                            "measureToGraphicGran": [
+                                                "COL_0_10",
+                                                "COL_0_11"
+                                            ]
+                                        },
+                                        "orientation": "vertical",
+                                        "type": "NXBarSeries",
+                                        "xAxis": "bottom",
+                                        "yAxis": "left"
+                                    }
+                                ],
+                                "touchTools": [
+                                    {
+                                        "crossAxis": "bottom",
+                                        "enableMultiTouch": false,
+                                        "removeOnRelease": false,
+                                        "showBelowSeries": false,
+                                        "targetSeries": [
+                                            "bar"
+                                        ],
+                                        "toolType": "NXHighLightTool",
+                                        "visible": true
+                                    }
+                                ]
+                            }
+                        },
+                        "selection": {
+                            "selectionSource": "Y",
+                            "selectionType": "NXChartSelectionBiggestValue"
+                        }
+                    },
+                    "type": "NXCubeCard"
+                },
+                {
+                    "cardTitle": "Total Review of students",
+                    "dataSetId": "842e1994-dad5-4914-829b-5a12799db135",
+                    "size": "row-sm-xs-6 row-xs-sm-12 row-md-3 row-md-sm-6 row-md-md-6 row-lg-md-3 col-xs-sm-12 col-sm-xs-6 col-sm-md-12 col-sm-lg-12 col-md-12  col-md-lg-12 col-md-sm-6 col-lg-6 ",
+                    "structure": {
+                        "dimensions": [
+                            {
+                                "granularities": [
+                                    {
+                                        "key": "COL_0_0",
+                                        "title": "Subject"
+                                    }
+                                ],
+                                "key": "Dimension_1",
+                                "title": "Subject"
+                            },
+                            {
+                                "granularities": [
+                                    {
+                                        "key": "COL_0_1",
+                                        "title": "Year"
+                                    },
+                                    {
+                                        "key": "COL_0_2",
+                                        "sort": "NXSortOperationAsc",
+                                        "title": "Term"
+                                    },
+                                    {
+                                        "key": "COL_0_3",
+                                        "title": "Month"
+                                    },
+                                    {
+                                        "key": "COL_0_4",
+                                        "title": "Day"
+                                    }
+                                ],
+                                "key": "Dimension_2",
+                                "title": "Time"
+                            },
+                            {
+                                "granularities": [
+                                    {
+                                        "key": "COL_0_5",
+                                        "title": "Grade"
+                                    },
+                                    {
+                                        "key": "COL_0_6",
+                                        "title": "Class"
+                                    },
+                                    {
+                                        "key": "COL_0_7",
+                                        "title": "Student"
+                                    }
+                                ],
+                                "key": "Dimension_3",
+                                "title": "Unit"
+                            }
+                        ],
+                        "measures": [
+                            {
+                                "aggregator": "count",
+                                "aggregatorSubGranKey": "COL_0_4",
+                                "isCreated": true,
+                                "key": "COL_0_11",
+                                "title": "days counts"
+                            },
+                            {
+                                "aggregator": "count",
+                                "aggregatorGranKey": "COL_0_0",
+                                "isCreated": true,
+                                "key": "COL_0_12",
+                                "title": "subject counts"
+                            },
+                            {
+                                "aggregator": "count",
+                                "aggregatorSubGranKey": "COL_0_7",
+                                "isCreated": true,
+                                "key": "COL_0_13",
+                                "title": "students' counts in grade"
+                            },
+                            {
+                                "formula": "COL_0_8/COL_0_11/COL_0_12/COL_0_13",
+                                "isCreated": true,
+                                "key": "COL_0_14",
+                                "title": "Student's average Performance"
+                            },
+                            {
+                                "formula": "COL_0_9/COL_0_11/COL_0_12/COL_0_13",
+                                "isCreated": true,
+                                "key": "COL_0_15",
+                                "title": "Student's average Total"
+                            },
+                            {
+                                "formula": "COL_0_10/COL_0_11/COL_0_12/COL_0_13",
+                                "isCreated": true,
+                                "key": "COL_0_16",
+                                "title": "Student's average Done"
+                            }
+                        ]
+                    },
+                    "style": {
+                        "superList": {
+                            "autoPageScroll": true,
+                            "columns": [
+                                {
+                                    "alignment": "NXAlignmentLeft",
+                                    "expandGran": [
+                                        "COL_0_5",
+                                        "COL_0_6",
+                                        "COL_0_7"
+                                    ],
+                                    "isMajorColumn": true
+                                },
+                                {
+                                    "chart": {
+                                        "chartConfig": {
+                                            "canvas": {
+                                                "graphPadding": {
+                                                    "bottom": 5,
+                                                    "left": 0,
+                                                    "right": 0,
+                                                    "top": 5
+                                                }
+                                            },
+                                            "series": [
+                                                {
+                                                    "dataSource": {
+                                                        "yValueSource": "COL_0_14"
+                                                    },
+                                                    "fill": {
+                                                        "fillColor": "#e41c2b"
+                                                    },
+                                                    "id": "single",
+                                                    "iteration": {
+                                                        "isLeafLevel": true
+                                                    },
+                                                    "type": "NXSingleSeries"
+                                                }
+                                            ]
+                                        }
+                                    },
+                                    "showChart": true,
+                                    "valueFormat": {
+                                        "yFormatString": "#.##分"
+                                    }
+                                },
+                                {
+                                    "chart": {
+                                        "chartConfig": {
+                                            "canvas": {
+                                                "graphPadding": {
+                                                    "bottom": 5,
+                                                    "left": 0,
+                                                    "right": 0,
+                                                    "top": 5
+                                                }
+                                            },
+                                            "series": [
+                                                {
+                                                    "dataSource": {
+                                                        "y2ValueSource": "COL_0_16",
+                                                        "yFormatString": ",###",
+                                                        "yValueSource": "COL_0_15"
+                                                    },
+                                                    "fill": {
+                                                        "fillColor": "#e41c2b"
+                                                    },
+                                                    "id": "single",
+                                                    "iteration": {
+                                                        "isLeafLevel": true
+                                                    },
+                                                    "type": "NXSingleSeries"
+                                                }
+                                            ]
+                                        }
+                                    },
+                                    "name": "HomeWork Average done/Total",
+                                    "showChart": true,
+                                    "valueFormat": {
+                                        "yFormatString": "#道"
+                                    }
+                                }
+                            ],
+                            "expandLevel": 1,
+                            "header": {
+                                "backgroundColor": "#718dbf",
+                                "headerHeight": 30,
+                                "textStyle": {
+                                    "textColor": "#ebecf0",
+                                    "textSize": 14
+                                }
+                            },
+                            "rows": {
+                                "evenColor": "#FEFFFF",
+                                "oddColor": "#F9FAFB",
+                                "rowHeight": 32
+                            }
+                        },
+                        "type": "NXSuperList"
+                    },
+                    "type": "NXCubeCard"
+                },
+                {
+                    "cardTitle": "Students' homework finish rate",
+                    "dataSetId": "842e1994-dad5-4914-829b-5a12799db135",
+                    "size": "row-sm-xs-6 row-xs-sm-12 row-md-3 row-md-sm-3 row-md-md-6 row-lg-md-3 col-xs-sm-12 col-sm-xs-6  col-sm-md-12 col-sm-lg-12 col-md-12  col-md-lg-12 col-md-sm-6 col-lg-6 ",
+                    "structure": {
+                        "dimensions": [
+                            {
+                                "granularities": [
+                                    {
+                                        "key": "COL_0_0",
+                                        "title": "Subject"
+                                    }
+                                ],
+                                "key": "Dimension_1",
+                                "title": "Subject"
+                            },
+                            {
+                                "granularities": [
+                                    {
+                                        "key": "COL_0_5",
+                                        "title": "Grade"
+                                    },
+                                    {
+                                        "key": "COL_0_6",
+                                        "title": "Class"
+                                    },
+                                    {
+                                        "drillTo": true,
+                                        "key": "COL_0_7",
+                                        "title": "Student"
+                                    }
+                                ],
+                                "key": "Dimension_3",
+                                "title": "Unit"
+                            },
+                            {
+                                "granularities": [
+                                    {
+                                        "key": "COL_0_1",
+                                        "title": "Year"
+                                    },
+                                    {
+                                        "drillTo": true,
+                                        "key": "COL_0_2",
+                                        "sort": "NXSortOperationAsc",
+                                        "title": "Term"
+                                    },
+                                    {
+                                        "key": "COL_0_3",
+                                        "title": "Month"
+                                    },
+                                    {
+                                        "key": "COL_0_4",
+                                        "title": "Day"
+                                    }
+                                ],
+                                "key": "Dimension_2",
+                                "title": "Time"
+                            }
+                        ],
+                        "measures": [
+                            {
+                                "formula": "COL_0_10/COL_0_9",
+                                "isCreated": true,
+                                "key": "COL_0_11",
+                                "title": "Student's Homework Finish Rate"
+                            },
+                            {
+                                "aggregator": "max",
+                                "aggregatorGranKey": "COL_0_6",
+                                "aggregatorMeasureKey": "COL_0_10",
+                                "isCreated": true,
+                                "key": "COL_0_12",
+                                "title": "Student's Max Homework Done"
+                            },
+                            {
+                                "aggregator": "max",
+                                "aggregatorGranKey": "COL_0_6",
+                                "aggregatorMeasureKey": "COL_0_9",
+                                "isCreated": true,
+                                "key": "COL_0_13",
+                                "title": "Student's Max Homework in Total"
+                            },
+                            {
+                                "formula": "COL_0_12/COL_0_13",
+                                "isCreated": true,
+                                "key": "COL_0_14",
+                                "title": "Student's Max Homework Finish Rate Quantity In Class"
+                            },
+                            {
+                                "aggregator": "avg",
+                                "aggregatorGranKey": "COL_0_6",
+                                "aggregatorMeasureKey": "COL_0_10",
+                                "isCreated": true,
+                                "key": "COL_0_15",
+                                "title": "Student's Average Homework Done"
+                            },
+                            {
+                                "aggregator": "avg",
+                                "aggregatorGranKey": "COL_0_6",
+                                "aggregatorMeasureKey": "COL_0_9",
+                                "isCreated": true,
+                                "key": "COL_0_16",
+                                "title": "Student's Average Homework in Total"
+                            },
+                            {
+                                "formula": "COL_0_15/COL_0_16",
+                                "isCreated": true,
+                                "key": "COL_0_17",
+                                "title": "Student's Average Homework Finish Rate Quantity In Class"
+                            }
+                        ]
+                    },
+                    "style": {
+                        "chart": {
+                            "chartConfig": {
+                                "axis": [
+                                    {
+                                        "axisType": "NXAxisTypeCategory",
+                                        "id": "bottom"
+                                    },
+                                    {
+                                        "axisMaxPaddingForPlot": 0.05,
+                                        "axisType": "NXAxisTypeNumberic",
+                                        "coordinate": "NXCoordinateY",
+                                        "id": "left",
+                                        "majorPoint": {
+                                            "label": {
+                                                "labelFormatter": "#%",
+                                                "labelNumberUnit": false
+                                            }
+                                        },
+                                        "maxValue": 1,
+                                        "minValue": 0
+                                    }
+                                ],
+                                "series": [
+                                    {
+                                        "dataSource": {
+                                            "valueFormats": [
+                                                {
+                                                    "formatString": "#%",
+                                                    "valueSource": "COL_0_11"
+                                                },
+                                                {
+                                                    "formatString": "#%",
+                                                    "valueSource": "COL_0_14"
+                                                },
+                                                {
+                                                    "formatString": "#%",
+                                                    "valueSource": "COL_0_17"
+                                                }
+                                            ]
+                                        },
+                                        "fill": {
+                                            "fillColor": "#955cbf"
+                                        },
+                                        "id": "bar",
+                                        "iteration": {
+                                            "isLeafLevel": true,
+                                            "measureToGraphicGran": [
+                                                "COL_0_11",
+                                                "COL_0_14",
+                                                "COL_0_17"
+                                            ]
+                                        },
+                                        "orientation": "vertical",
+                                        "type": "NXBarSeries",
+                                        "xAxis": "bottom",
+                                        "yAxis": "left"
+                                    }
+                                ],
+                                "touchTools": [
+                                    {
+                                        "crossAxis": "bottom",
+                                        "enableMultiTouch": false,
+                                        "removeOnRelease": false,
+                                        "showBelowSeries": false,
+                                        "targetSeries": [
+                                            "bar"
+                                        ],
+                                        "toolType": "NXHighLightTool",
+                                        "visible": true
+                                    }
+                                ]
+                            }
+                        },
+                        "selection": {
+                            "selectionSource": "Y",
+                            "selectionType": "NXChartSelectionBiggestValue"
+                        }
+                    },
+                    "type": "NXCubeCard"
+                },
+                {
+                    "cardTitle": "Students' subject's score order",
+                    "dataSetId": "842e1994-dad5-4914-829b-5a12799db135",
+                    "size": "row-sm-xs-6 row-xs-sm-12 row-md-3 row-md-sm-3 row-md-md-6 row-lg-md-3 col-xs-sm-12 col-sm-xs-6  col-sm-md-12 col-sm-lg-12 col-md-12  col-md-lg-12 col-md-sm-6 col-lg-6 ",
+                    "structure": {
+                        "dimensions": [
+                            {
+                                "granularities": [
+                                    {
+                                        "key": "COL_0_5",
+                                        "title": "Grade"
+                                    },
+                                    {
+                                        "key": "COL_0_6",
+                                        "title": "Class"
+                                    },
+                                    {
+                                        "drillTo": true,
+                                        "key": "COL_0_7",
+                                        "title": "Student"
+                                    }
+                                ],
+                                "key": "Dimension_3",
+                                "title": "Unit"
+                            },
+                            {
+                                "granularities": [
+                                    {
+                                        "key": "COL_0_1",
+                                        "title": "Year"
+                                    },
+                                    {
+                                        "drillTo": true,
+                                        "key": "COL_0_2",
+                                        "sort": "NXSortOperationAsc",
+                                        "title": "Term"
+                                    },
+                                    {
+                                        "key": "COL_0_3",
+                                        "title": "Month"
+                                    },
+                                    {
+                                        "key": "COL_0_4",
+                                        "title": "Day"
+                                    }
+                                ],
+                                "key": "Dimension_2",
+                                "title": "Time"
+                            },
+                            {
+                                "granularities": [
+                                    {
+                                        "key": "COL_0_0",
+                                        "title": "Subject"
+                                    }
+                                ],
+                                "key": "Dimension_1",
+                                "title": "Subject"
+                            }
+                        ],
+                        "measures": [
+                            {
+                                "key": "COL_0_8",
+                                "title": "Student's Performance"
+                            },
+                            {
+                                "aggregator": "rank",
+                                "aggregatorGranKey": "COL_0_5",
+                                "aggregatorMeasureKey": "COL_0_8",
+                                "aggregatorSubGranKey": "COL_0_7",
+                                "isCreated": true,
+                                "key": "COL_0_11",
+                                "rankSort": "NXSortOperationDesc",
+                                "sort": "NXSortOperationDesc",
+                                "title": "Student's Performance order in Grade"
+                            },
+                            {
+                                "aggregator": "count",
+                                "aggregatorGranKey": "COL_0_5",
+                                "aggregatorSubGranKey": "COL_0_7",
+                                "isCreated": true,
+                                "key": "COL_0_12",
+                                "title": "Total Student's Count in Grade"
+                            }
+                        ]
+                    },
+                    "style": {
+                        "chart": {
+                            "chartConfig": {
+                                "axis": [
+                                    {
+                                        "axisTitle": {
+                                            "title": "Ranking",
+                                            "titleVisible": true
+                                        },
+                                        "axisType": "NXAxisTypeNumberic",
+                                        "id": "bottom",
+                                        "majorPoint": {
+                                            "gridLine": {
+                                                "gridLineVisible": true
+                                            },
+                                            "label": {
+                                                "labelFormatter": ",###",
+                                                "labelNumberUnit": true
+                                            }
+                                        }
+                                    },
+                                    {
+                                        "axisType": "NXAxisTypeCategory",
+                                        "coordinate": "NXCoordinateY",
+                                        "id": "left",
+                                        "majorPoint": {
+                                            "gridLine": null
+                                        }
+                                    }
+                                ],
+                                "series": [
+                                    {
+                                        "barFill": {
+                                            "fillAlpha": 0.2,
+                                            "fillColor": "#ff0000",
+                                            "highLightFillAlpha": 0
+                                        },
+                                        "dataSource": {
+                                            "yValueSource": "COL_0_12"
+                                        },
+                                        "id": "bar2",
+                                        "orientation": "horizontal",
+                                        "showOverlayAll": false,
+                                        "stackedType": "NXChartSeriesStackedTypeOverlap",
+                                        "type": "NXBarSeries",
+                                        "xAxis": "bottom",
+                                        "yAxis": "left"
+                                    },
+                                    {
+                                        "accumulation": false,
+                                        "barFill": {
+                                            "fillColor": "#51a9d6"
+                                        },
+                                        "dataSource": {
+                                            "yValueSource": "COL_0_11"
+                                        },
+                                        "id": "bar1",
+                                        "orientation": "horizontal",
+                                        "showOverlayAll": false,
+                                        "stackedType": "NXChartSeriesStackedTypeOverlap",
+                                        "type": "NXBarSeries",
+                                        "xAxis": "bottom",
+                                        "yAxis": "left"
+                                    }
+                                ],
+                                "touchTools": [
+                                    {
+                                        "crossAxis": "bottom",
+                                        "enableMultiTouch": false,
+                                        "removeOnRelease": false,
+                                        "showBelowSeries": false,
+                                        "targetSeries": [
+                                            "bar1",
+                                            "bar2"
+                                        ],
+                                        "toolType": "NXHighLightTool",
+                                        "visible": true
+                                    }
+                                ]
+                            }
+                        }
+                    },
+                    "type": "NXCubeCard"
+                },
+                {
+                    "cardTitle": "Comprehensive learning abilities",
+                    "dataSetId": "842e1994-dad5-4914-829b-5a12799db135",
+                    "size": "row-sm-xs-6 row-xs-sm-12 row-md-3 row-md-sm-3 row-md-md-6 row-lg-md-3 col-xs-sm-12 col-sm-xs-6  col-sm-md-12 col-sm-lg-12 col-md-12  col-md-lg-12 col-md-sm-6 col-lg-6 ",
+                    "structure": {
+                        "dimensions": [
+                            {
+                                "granularities": [
+                                    {
+                                        "key": "COL_0_5",
+                                        "title": "Grade"
+                                    },
+                                    {
+                                        "key": "COL_0_6",
+                                        "title": "Class"
+                                    },
+                                    {
+                                        "drillTo": true,
+                                        "key": "COL_0_7",
+                                        "title": "Student"
+                                    }
+                                ],
+                                "key": "Dimension_3",
+                                "title": "Unit"
+                            },
+                            {
+                                "granularities": [
+                                    {
+                                        "key": "COL_0_1",
+                                        "title": "Year"
+                                    },
+                                    {
+                                        "drillTo": true,
+                                        "key": "COL_0_2",
+                                        "sort": "NXSortOperationAsc",
+                                        "title": "Term"
+                                    },
+                                    {
+                                        "key": "COL_0_3",
+                                        "title": "Month"
+                                    },
+                                    {
+                                        "key": "COL_0_4",
+                                        "title": "Day"
+                                    }
+                                ],
+                                "key": "Dimension_2",
+                                "title": "Time"
+                            },
+                            {
+                                "granularities": [
+                                    {
+                                        "key": "COL_0_0",
+                                        "title": "Subject"
+                                    }
+                                ],
+                                "key": "Dimension_1",
+                                "title": "Subject"
+                            }
+                        ],
+                        "measures": [
+                            {
+                                "key": "COL_0_8",
+                                "title": "Student's Performance"
+                            },
+                            {
+                                "aggregator": "rank",
+                                "aggregatorGranKey": "COL_0_6",
+                                "aggregatorMeasureKey": "COL_0_8",
+                                "isCreated": true,
+                                "key": "COL_0_11",
+                                "rankSort": "NXSortOperationDesc",
+                                "title": "Teacher's Max Session Duration in Grade"
+                            }
+                        ]
+                    },
+                    "style": {
+                        "chart": {
+                            "chartConfig": {
+                                "axis": [
+                                    {
+                                        "axisLineStyle": {
+                                            "lineAlpha": 1,
+                                            "lineColor": "#000000",
+                                            "lineWidth": 1
+                                        },
+                                        "axisType": "NXAxisTypeNumberic",
+                                        "coordinate": "NXCoordinateY",
+                                        "divisionPolicy": {
+                                            "equalDivision": {
+                                                "majorPointNumber": 4,
+                                                "minorPointNumber": 0
+                                            },
+                                            "strategy": "NXAxisLabelingPolicyEqualDivisions"
+                                        },
+                                        "id": "left",
+                                        "majorPoint": {
+                                            "gridLine": {
+                                                "gridLineVisible": true
+                                            },
+                                            "label": {
+                                                "labelFormatter": ",###",
+                                                "labelNumberUnit": false
+                                            }
+                                        },
+                                        "scaleType": "NXScaleTypePolar"
+                                    },
+                                    {
+                                        "axisType": "NXAxisTypeCategory",
+                                        "id": "bottom",
+                                        "majorPoint": {
+                                            "gridLine": {
+                                                "gridLineVisible": true
+                                            },
+                                            "label": {
+                                                "labelVisible": true
+                                            }
+                                        },
+                                        "scaleType": "NXScaleTypePolar"
+                                    }
+                                ],
+                                "series": [
+                                    {
+                                        "accumulation": false,
+                                        "dataSource": {
+                                            "limitDataCount": 10,
+                                            "yValueSource": "COL_0_8"
+                                        },
+                                        "fill": {
+                                            "darkenFillAlpha": 0.1,
+                                            "darkenFillColor": "#e84d60",
+                                            "fillColor": "#e84d60",
+                                            "highLightFillAlpha": 0.3,
+                                            "highLightFillColor": "#e84d60"
+                                        },
+                                        "id": "radar",
+                                        "lineStyle": {
+                                            "lineColor": "#e84d60",
+                                            "lineWidth": 1
+                                        },
+                                        "orientation": "vertical",
+                                        "showOverlayAll": false,
+                                        "type": "NXRadarSeries",
+                                        "xAxis": "bottom",
+                                        "yAxis": "left"
+                                    }
+                                ],
+                                "touchTools": [
+                                    {
+                                        "crossAxis": "bottom",
+                                        "enableMultiTouch": false,
+                                        "removeOnRelease": false,
+                                        "showBelowSeries": false,
+                                        "targetSeries": [
+                                            "radar"
+                                        ],
+                                        "toolType": "NXHighLightTool",
+                                        "visible": true
+                                    }
+                                ]
+                            }
+                        },
+                        "detailTopPanel": {
+                            "percentInTotalVisible": true
+                        },
+                        "selection": {
+                            "selectionSource": "Y",
+                            "selectionType": "NXChartSelectionBiggestValue"
+                        }
+                    },
+                    "type": "NXCubeCard"
+                }
+            ],
+            "pageColor": "#718dbf",
+            "pageTitle": "教育-国际学校"
+        }
+    ],
+    "status": "readyForView",
+    "title": "教育-国际学校"
+}

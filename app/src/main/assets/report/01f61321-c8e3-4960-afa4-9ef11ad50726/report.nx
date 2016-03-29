@@ -1,0 +1,1389 @@
+{
+    "creator": "dongsaiyuan",
+    "defaultStyle": [
+        {
+            "chartOptions": {
+                "seriesOptions": {}
+            },
+            "defaultColor": [
+                "#e84d60",
+                "#e88f61",
+                "#fecd6c",
+                "#b3cf61",
+                "#77c298",
+                "#51a9d6",
+                "#718dbf",
+                "#955cbf",
+                "#a4547d",
+                "#c64373"
+            ],
+            "scopeId": [
+                "all"
+            ],
+            "scopeType": "report"
+        }
+    ],
+    "id": "eduEvaluating",
+    "metadataStructures": [
+        {
+            "dataSetId": "5d4290e1-7f04-41b6-828b-e1e4bbe7e960",
+            "dimensions": [
+                {
+                    "granularities": [
+                        {
+                            "key": "COL_0_6",
+                            "title": "科目"
+                        },
+                        {
+                            "key": "COL_0_7",
+                            "title": "知识点"
+                        }
+                    ],
+                    "key": "Dimension_1",
+                    "title": "科目知识"
+                },
+                {
+                    "granularities": [
+                        {
+                            "key": "COL_0_4",
+                            "title": "班级"
+                        },
+                        {
+                            "key": "COL_0_5",
+                            "title": "学生"
+                        }
+                    ],
+                    "key": "Dimension_2",
+                    "title": "班级学生"
+                },
+                {
+                    "granularities": [
+                        {
+                            "key": "COL_0_3",
+                            "title": "题型"
+                        }
+                    ],
+                    "key": "Dimension_3",
+                    "title": "题目类型"
+                },
+                {
+                    "granularities": [
+                        {
+                            "key": "COL_0_0",
+                            "title": "学年"
+                        },
+                        {
+                            "key": "COL_0_1",
+                            "title": "学期"
+                        },
+                        {
+                            "key": "COL_0_2",
+                            "title": "考试"
+                        }
+                    ],
+                    "key": "Dimension_4",
+                    "title": "时间"
+                }
+            ],
+            "measures": [
+                {
+                    "key": "COL_0_8",
+                    "title": "考试得分"
+                },
+                {
+                    "key": "COL_0_9",
+                    "title": "得分率"
+                },
+                {
+                    "key": "COL_0_10",
+                    "title": "班级平均得分"
+                },
+                {
+                    "key": "COL_0_11",
+                    "title": "班级得分率"
+                },
+                {
+                    "key": "COL_0_12",
+                    "title": "班级最高得分"
+                },
+                {
+                    "key": "COL_0_13",
+                    "title": "班级最低得分"
+                },
+                {
+                    "key": "COL_0_14",
+                    "title": "年级平均得分"
+                },
+                {
+                    "key": "COL_0_15",
+                    "title": "年级得分率"
+                },
+                {
+                    "key": "COL_0_16",
+                    "title": "年级最高得分"
+                },
+                {
+                    "key": "COL_0_17",
+                    "title": "年级最低得分"
+                }
+            ]
+        }
+    ],
+    "pages": [
+        {
+            "cards": [
+                {
+                    "cardTitle": "教室位置得分率分布「上方为讲台」",
+                    "dataSetId": "5d4290e1-7f04-41b6-828b-e1e4bbe7e960",
+                    "linkEvent": {
+                        "isEventSource": true
+                    },
+                    "size": "row-sm-xs-6 row-xs-sm-12 row-md-3 row-md-sm-6 row-lg-md-3 col-xs-sm-12 col-sm-xs-6 col-sm-md-12 col-sm-lg-12 col-md-12  col-md-lg-12 col-md-sm-6 col-lg-6 ",
+                    "structure": {
+                        "dimensions": [
+                            {
+                                "granularities": [
+                                    {
+                                        "key": "COL_0_0",
+                                        "title": "学年"
+                                    },
+                                    {
+                                        "key": "COL_0_1",
+                                        "title": "学期"
+                                    },
+                                    {
+                                        "key": "COL_0_2",
+                                        "title": "考试"
+                                    }
+                                ],
+                                "key": "Dimension_4",
+                                "title": "时间"
+                            },
+                            {
+                                "granularities": [
+                                    {
+                                        "key": "COL_0_6",
+                                        "title": "科目"
+                                    },
+                                    {
+                                        "key": "COL_0_7",
+                                        "title": "知识点"
+                                    }
+                                ],
+                                "key": "Dimension_1",
+                                "title": "科目知识"
+                            },
+                            {
+                                "granularities": [
+                                    {
+                                        "key": "COL_0_3",
+                                        "title": "题型"
+                                    }
+                                ],
+                                "key": "Dimension_3",
+                                "title": "题目类型"
+                            },
+                            {
+                                "granularities": [
+                                    {
+                                        "key": "COL_0_4",
+                                        "title": "班级"
+                                    },
+                                    {
+                                        "drillTo": true,
+                                        "key": "COL_0_5",
+                                        "title": "学生"
+                                    }
+                                ],
+                                "key": "Dimension_2",
+                                "title": "班级学生"
+                            }
+                        ],
+                        "measures": [
+                            {
+                                "aggregator": "sum",
+                                "key": "COL_0_8",
+                                "title": "考试得分"
+                            },
+                            {
+                                "aggregator": "avg",
+                                "key": "COL_0_9",
+                                "title": "得分率"
+                            }
+                        ]
+                    },
+                    "style": {
+                        "chart": {
+                            "chartConfig": {
+                                "series": [
+                                    {
+                                        "customMapData": {
+                                            "height": 440,
+                                            "paths": {
+                                                "丁淑丹": {
+                                                    "name": "章佩琳",
+                                                    "path": "M211.842,329.688c-20.329,0-78.303,0-78.303,0c0-16.683,0-45.5,0-45.5 c23.34,0,78.303,0,78.303,0C211.842,300.871,211.842,329.688,211.842,329.688z"
+                                                },
+                                                "刘婕": {
+                                                    "name": "刘婕",
+                                                    "path": "M308.382,249.125c-20.329,0-78.303,0-78.303,0c0-16.683,0-45.5,0-45.5 c23.34,0,78.303,0,78.303,0C308.382,220.308,308.382,249.125,308.382,249.125z"
+                                                },
+                                                "吴凯燕": {
+                                                    "name": "吴凯燕",
+                                                    "path": "M211.842,168.562c-20.329,0-78.303,0-78.303,0c0-16.683,0-45.5,0-45.5 c23.34,0,78.303,0,78.303,0C211.842,139.746,211.842,168.562,211.842,168.562z"
+                                                },
+                                                "周冶青": {
+                                                    "name": "周冶青",
+                                                    "path": "M501.461,168.562c-20.329,0-78.303,0-78.303,0c0-16.683,0-45.5,0-45.5 c23.34,0,78.303,0,78.303,0C501.461,139.746,501.461,168.562,501.461,168.562z"
+                                                },
+                                                "周燕君": {
+                                                    "name": "周燕君",
+                                                    "path": "M404.921,410.25c-20.329,0-78.303,0-78.303,0c0-16.683,0-45.5,0-45.5 c23.34,0,78.303,0,78.303,0C404.921,381.433,404.921,410.25,404.921,410.25z"
+                                                },
+                                                "张云霞": {
+                                                    "name": "张云霞",
+                                                    "path": "M115.303,329.688c-20.329,0-78.303,0-78.303,0c0-16.683,0-45.5,0-45.5 c23.34,0,78.303,0,78.303,0C115.303,300.871,115.303,329.688,115.303,329.688z"
+                                                },
+                                                "张冀": {
+                                                    "name": "张冀",
+                                                    "path": "M404.921,329.688c-20.329,0-78.303,0-78.303,0c0-16.683,0-45.5,0-45.5 c23.34,0,78.303,0,78.303,0C404.921,300.871,404.921,329.688,404.921,329.688z"
+                                                },
+                                                "张洁": {
+                                                    "name": "张洁",
+                                                    "path": "M501.461,249.125c-20.329,0-78.303,0-78.303,0c0-16.683,0-45.5,0-45.5 c23.34,0,78.303,0,78.303,0C501.461,220.308,501.461,249.125,501.461,249.125z"
+                                                },
+                                                "徐灿": {
+                                                    "name": "徐灿",
+                                                    "path": "M115.303,249.125c-20.329,0-78.303,0-78.303,0c0-16.683,0-45.5,0-45.5 c23.34,0,78.303,0,78.303,0C115.303,220.308,115.303,249.125,115.303,249.125z"
+                                                },
+                                                "曹俊": {
+                                                    "name": "曹俊",
+                                                    "path": "M308.382,168.562c-20.329,0-78.303,0-78.303,0c0-16.683,0-45.5,0-45.5 c23.34,0,78.303,0,78.303,0C308.382,139.746,308.382,168.562,308.382,168.562z"
+                                                },
+                                                "李建栋": {
+                                                    "name": "李建栋",
+                                                    "path": "M598,249.125c-20.329,0-78.303,0-78.303,0c0-16.683,0-45.5,0-45.5 c23.34,0,78.303,0,78.303,0C598,220.308,598,249.125,598,249.125z"
+                                                },
+                                                "李芳芳": {
+                                                    "name": "李芳芳",
+                                                    "path": "M404.921,249.125c-20.329,0-78.303,0-78.303,0c0-16.683,0-45.5,0-45.5 c23.34,0,78.303,0,78.303,0C404.921,220.308,404.921,249.125,404.921,249.125z"
+                                                },
+                                                "柳佳煜": {
+                                                    "name": "柳佳煜",
+                                                    "path": "M598,329.688c-20.329,0-78.303,0-78.303,0c0-16.683,0-45.5,0-45.5 c23.34,0,78.303,0,78.303,0C598,300.871,598,329.688,598,329.688z"
+                                                },
+                                                "王奕辉": {
+                                                    "name": "王奕辉",
+                                                    "path": "M308.382,329.688c-20.329,0-78.303,0-78.303,0c0-16.683,0-45.5,0-45.5 c23.34,0,78.303,0,78.303,0C308.382,300.871,308.382,329.688,308.382,329.688z"
+                                                },
+                                                "程梦颖": {
+                                                    "name": "程梦颖",
+                                                    "path": "M598,168.562c-20.329,0-78.303,0-78.303,0c0-16.683,0-45.5,0-45.5 c23.34,0,78.303,0,78.303,0C598,139.746,598,168.562,598,168.562z"
+                                                },
+                                                "程玲": {
+                                                    "name": "程玲",
+                                                    "path": "M501.461,410.25c-20.329,0-78.303,0-78.303,0c0-16.683,0-45.5,0-45.5 c23.34,0,78.303,0,78.303,0C501.461,381.433,501.461,410.25,501.461,410.25z"
+                                                },
+                                                "章佩琳": {
+                                                    "name": "章佩琳",
+                                                    "path": "M211.842,249.125c-20.329,0-78.303,0-78.303,0c0-16.683,0-45.5,0-45.5 c23.34,0,78.303,0,78.303,0C211.842,220.308,211.842,249.125,211.842,249.125z"
+                                                },
+                                                "范立飞": {
+                                                    "name": "范立飞",
+                                                    "path": "M404.921,168.562c-20.329,0-78.303,0-78.303,0c0-16.683,0-45.5,0-45.5 c23.34,0,78.303,0,78.303,0C404.921,139.746,404.921,168.562,404.921,168.562z"
+                                                },
+                                                "蒋婷": {
+                                                    "name": "蒋婷",
+                                                    "path": "M308.382,410.25c-20.329,0-78.303,0-78.303,0c0-16.683,0-45.5,0-45.5 c23.34,0,78.303,0,78.303,0C308.382,381.433,308.382,410.25,308.382,410.25z"
+                                                },
+                                                "讲台": {
+                                                    "name": "讲台",
+                                                    "path": "M439,85c-63.087,0-243,0-243,0c0-18.7,0-51,0-51c72.433,0,243,0,243,0 C439,52.7,439,85,439,85z"
+                                                },
+                                                "贾明月": {
+                                                    "name": "贾明月",
+                                                    "path": "M501.461,329.688c-20.329,0-78.303,0-78.303,0c0-16.683,0-45.5,0-45.5 c23.34,0,78.303,0,78.303,0C501.461,300.871,501.461,329.688,501.461,329.688z"
+                                                },
+                                                "金慧虹": {
+                                                    "name": "金慧虹",
+                                                    "path": "M211.842,410.25c-20.329,0-78.303,0-78.303,0c0-16.683,0-45.5,0-45.5 c23.34,0,78.303,0,78.303,0C211.842,381.433,211.842,410.25,211.842,410.25z"
+                                                },
+                                                "陈丽萍": {
+                                                    "name": "陈丽萍",
+                                                    "path": "M598,410.25c-20.329,0-78.303,0-78.303,0c0-16.683,0-45.5,0-45.5 c23.34,0,78.303,0,78.303,0C598,381.433,598,410.25,598,410.25z"
+                                                },
+                                                "陈倩倩": {
+                                                    "name": "陈倩倩",
+                                                    "path": "M115.303,410.25c-20.329,0-78.303,0-78.303,0c0-16.683,0-45.5,0-45.5 c23.34,0,78.303,0,78.303,0C115.303,381.433,115.303,410.25,115.303,410.25z"
+                                                },
+                                                "龚莹莹": {
+                                                    "name": "龚莹莹",
+                                                    "path": "M115.303,168.562c-20.329,0-78.303,0-78.303,0c0-16.683,0-45.5,0-45.5 c23.34,0,78.303,0,78.303,0C115.303,139.746,115.303,168.562,115.303,168.562z"
+                                                }
+                                            },
+                                            "width": 635
+                                        },
+                                        "dataSource": {
+                                            "bubbleSizeRange": {
+                                                "range": [
+                                                    {
+                                                        "fromValue": 0,
+                                                        "size": 0,
+                                                        "toValue": 0.6
+                                                    },
+                                                    {
+                                                        "fromValue": 0.6,
+                                                        "size": 5,
+                                                        "toValue": 0.8
+                                                    },
+                                                    {
+                                                        "fromValue": 0.8,
+                                                        "size": 5,
+                                                        "toValue": 1
+                                                    }
+                                                ],
+                                                "valueSource": "COL_0_9"
+                                            },
+                                            "colorRange": {
+                                                "sectionRange": [
+                                                    {
+                                                        "color": {
+                                                            "fillColor": "#e41c2b"
+                                                        },
+                                                        "fromValue": 0,
+                                                        "toValue": 0.6
+                                                    },
+                                                    {
+                                                        "color": {
+                                                            "fillColor": "#fecd6c"
+                                                        },
+                                                        "fromValue": 0.6,
+                                                        "toValue": 0.8
+                                                    },
+                                                    {
+                                                        "color": {
+                                                            "fillColor": "#0eb83b"
+                                                        },
+                                                        "fromValue": 0.8,
+                                                        "toValue": 1
+                                                    }
+                                                ],
+                                                "valueSource": "COL_0_9"
+                                            },
+                                            "yFormatString": "#.#%",
+                                            "yValueSource": "COL_0_9"
+                                        },
+                                        "focusZoomOnSelect": false,
+                                        "id": "brandRegionMap",
+                                        "mapType": "custom",
+                                        "type": "NXMapSeries"
+                                    }
+                                ],
+                                "touchTools": [
+                                    {
+                                        "targetSeries": [
+                                            "brandRegionMap"
+                                        ],
+                                        "toolType": "NXZoomTool"
+                                    },
+                                    {
+                                        "crossAxis": "bottom",
+                                        "enableMultiTouch": false,
+                                        "removeOnRelease": false,
+                                        "showBelowSeries": false,
+                                        "targetSeries": [
+                                            "brandRegionMap"
+                                        ],
+                                        "toolType": "NXMapHighLightTool",
+                                        "visible": true
+                                    }
+                                ]
+                            },
+                            "selection": {
+                                "selectionSource": "Y",
+                                "selectionType": "NXChartSelectionBiggestValue"
+                            }
+                        },
+                        "detailRightPanel": {
+                            "visible": true
+                        },
+                        "detailTopPanel": {
+                            "percentInTotalVisible": true,
+                            "type": "NXDetailVertical",
+                            "visible": false
+                        }
+                    },
+                    "type": "NXCubeCard"
+                },
+                {
+                    "cardTitle": "各科成绩对比",
+                    "dataSetId": "5d4290e1-7f04-41b6-828b-e1e4bbe7e960",
+                    "linkEvent": {
+                        "isEventSource": true
+                    },
+                    "size": "row-sm-xs-6 row-xs-sm-12 row-md-3 row-md-sm-6 row-lg-md-3 col-xs-sm-12 col-sm-xs-6  col-sm-md-12 col-sm-lg-12 col-md-12  col-md-lg-12 col-md-sm-6 col-lg-6 ",
+                    "structure": {
+                        "dimensions": [
+                            {
+                                "granularities": [
+                                    {
+                                        "key": "COL_0_3",
+                                        "title": "题型"
+                                    }
+                                ],
+                                "key": "Dimension_3",
+                                "title": "题目类型"
+                            },
+                            {
+                                "granularities": [
+                                    {
+                                        "key": "COL_0_0",
+                                        "title": "学年"
+                                    },
+                                    {
+                                        "key": "COL_0_1",
+                                        "title": "学期"
+                                    },
+                                    {
+                                        "key": "COL_0_2",
+                                        "title": "考试"
+                                    }
+                                ],
+                                "key": "Dimension_4",
+                                "title": "时间"
+                            },
+                            {
+                                "granularities": [
+                                    {
+                                        "key": "COL_0_4",
+                                        "title": "班级"
+                                    },
+                                    {
+                                        "drillTo": true,
+                                        "key": "COL_0_5",
+                                        "title": "学生"
+                                    }
+                                ],
+                                "key": "Dimension_2",
+                                "title": "班级学生"
+                            },
+                            {
+                                "granularities": [
+                                    {
+                                        "key": "COL_0_6",
+                                        "title": "科目"
+                                    },
+                                    {
+                                        "key": "COL_0_7",
+                                        "title": "知识点"
+                                    }
+                                ],
+                                "key": "Dimension_1",
+                                "title": "科目知识"
+                            }
+                        ],
+                        "measures": [
+                            {
+                                "aggregator": "sum",
+                                "key": "COL_0_8",
+                                "title": "考试得分"
+                            },
+                            {
+                                "aggregator": "avg",
+                                "key": "COL_0_9",
+                                "title": "得分率"
+                            }
+                        ]
+                    },
+                    "style": {
+                        "chart": {
+                            "chartConfig": {
+                                "axis": [
+                                    {
+                                        "axisType": "NXAxisTypeCategory",
+                                        "id": "bottom"
+                                    },
+                                    {
+                                        "axisType": "NXAxisTypeNumberic",
+                                        "coordinate": "NXCoordinateY",
+                                        "id": "left",
+                                        "majorPoint": {
+                                            "label": {
+                                                "labelFormatter": ",###",
+                                                "labelNumberUnit": false
+                                            }
+                                        },
+                                        "minValue": 0
+                                    }
+                                ],
+                                "series": [
+                                    {
+                                        "barFill": {
+                                            "fillColor": "#51a9d6"
+                                        },
+                                        "dataSource": {
+                                            "yValueSource": "COL_0_8"
+                                        },
+                                        "id": "barSeries",
+                                        "interSeriesSetPadding": 0.2,
+                                        "orientation": "vertical",
+                                        "showOverlayAll": true,
+                                        "sort": {
+                                            "sortSource": "x",
+                                            "sortType": "NXSortOperationAsc"
+                                        },
+                                        "stackedType": "NXChartSeriesStackedTypeStack",
+                                        "type": "NXBarSeries",
+                                        "xAxis": "bottom",
+                                        "yAxis": "left"
+                                    }
+                                ],
+                                "touchTools": [
+                                    {
+                                        "crossAxis": "bottom",
+                                        "enableMultiTouch": true,
+                                        "removeOnRelease": false,
+                                        "showBelowSeries": false,
+                                        "targetSeries": [
+                                            "barSeries"
+                                        ],
+                                        "toolType": "NXHighLightTool",
+                                        "visible": true
+                                    }
+                                ]
+                            }
+                        },
+                        "selection": {
+                            "selectionSource": "Y",
+                            "selectionType": "NXChartSelectionBiggestValue"
+                        }
+                    },
+                    "type": "NXCubeCard"
+                },
+                {
+                    "cardTitle": "科目知识点得分",
+                    "dataSetId": "5d4290e1-7f04-41b6-828b-e1e4bbe7e960",
+                    "linkEvent": {
+                        "isEventSource": true
+                    },
+                    "size": "row-sm-xs-6 row-xs-sm-12 row-md-3 row-md-sm-6 row-lg-md-3 col-xs-sm-12 col-sm-xs-12  col-sm-md-12 col-sm-lg-12 col-md-12  col-md-lg-12 col-md-sm-6 col-lg-6 ",
+                    "structure": {
+                        "dimensions": [
+                            {
+                                "granularities": [
+                                    {
+                                        "key": "COL_0_3",
+                                        "title": "题型"
+                                    }
+                                ],
+                                "key": "Dimension_3",
+                                "title": "题目类型"
+                            },
+                            {
+                                "granularities": [
+                                    {
+                                        "key": "COL_0_0",
+                                        "title": "学年"
+                                    },
+                                    {
+                                        "key": "COL_0_1",
+                                        "title": "学期"
+                                    },
+                                    {
+                                        "key": "COL_0_2",
+                                        "title": "考试"
+                                    }
+                                ],
+                                "key": "Dimension_4",
+                                "title": "时间"
+                            },
+                            {
+                                "granularities": [
+                                    {
+                                        "key": "COL_0_4",
+                                        "title": "班级"
+                                    },
+                                    {
+                                        "drillTo": true,
+                                        "key": "COL_0_5",
+                                        "title": "学生"
+                                    }
+                                ],
+                                "key": "Dimension_2",
+                                "title": "班级学生"
+                            },
+                            {
+                                "granularities": [
+                                    {
+                                        "key": "COL_0_6",
+                                        "title": "科目"
+                                    },
+                                    {
+                                        "drillTo": true,
+                                        "key": "COL_0_7",
+                                        "title": "知识点"
+                                    }
+                                ],
+                                "key": "Dimension_1",
+                                "title": "科目知识"
+                            }
+                        ],
+                        "measures": [
+                            {
+                                "aggregator": "sum",
+                                "key": "COL_0_8",
+                                "title": "考试得分"
+                            },
+                            {
+                                "key": "COL_0_10",
+                                "title": "班级平均得分"
+                            },
+                            {
+                                "key": "COL_0_14",
+                                "title": "年级平均得分"
+                            }
+                        ]
+                    },
+                    "style": {
+                        "chart": {
+                            "chartConfig": {
+                                "axis": [
+                                    {
+                                        "axisType": "NXAxisTypeCategory",
+                                        "id": "bottom"
+                                    },
+                                    {
+                                        "axisType": "NXAxisTypeNumberic",
+                                        "coordinate": "NXCoordinateY",
+                                        "id": "left",
+                                        "majorPoint": {
+                                            "label": {
+                                                "labelNumberUnit": false
+                                            }
+                                        }
+                                    }
+                                ],
+                                "series": [
+                                    {
+                                        "dataSource": {
+                                            "yValueSource": "COL_0_8"
+                                        },
+                                        "id": "barSeries1",
+                                        "interSeriesPadding": 0,
+                                        "interSeriesSetPadding": 0.2,
+                                        "lineStyle": {
+                                            "lineColor": "#955cbf"
+                                        },
+                                        "orientation": "vertical",
+                                        "stackedType": "NXChartSeriesStackedTypeSide",
+                                        "symbol": {
+                                            "symbolFill": {
+                                                "fillColor": "#955cbf"
+                                            }
+                                        },
+                                        "type": "NXBarSeries",
+                                        "xAxis": "bottom",
+                                        "yAxis": "left"
+                                    },
+                                    {
+                                        "dataSource": {
+                                            "yValueSource": "COL_0_10"
+                                        },
+                                        "id": "barSeries2",
+                                        "interSeriesPadding": 0,
+                                        "interSeriesSetPadding": 0.2,
+                                        "orientation": "vertical",
+                                        "stackedType": "NXChartSeriesStackedTypeSide",
+                                        "type": "NXBarSeries",
+                                        "xAxis": "bottom",
+                                        "yAxis": "left"
+                                    },
+                                    {
+                                        "dataSource": {
+                                            "yValueSource": "COL_0_14"
+                                        },
+                                        "id": "barSeries3",
+                                        "interSeriesPadding": 0,
+                                        "interSeriesSetPadding": 0.2,
+                                        "lineStyle": {
+                                            "lineColor": "#955cbf"
+                                        },
+                                        "orientation": "vertical",
+                                        "stackedType": "NXChartSeriesStackedTypeSide",
+                                        "symbol": {
+                                            "symbolFill": {
+                                                "fillColor": "#955cbf"
+                                            }
+                                        },
+                                        "type": "NXBarSeries",
+                                        "xAxis": "bottom",
+                                        "yAxis": "left"
+                                    }
+                                ],
+                                "touchTools": [
+                                    {
+                                        "crossAxis": "bottom",
+                                        "enableMultiTouch": true,
+                                        "removeOnRelease": false,
+                                        "showBelowSeries": false,
+                                        "targetSeries": [
+                                            "barSeries1",
+                                            "barSeries2",
+                                            "barSeries3"
+                                        ],
+                                        "toolType": "NXHighLightTool",
+                                        "visible": true
+                                    },
+                                    {
+                                        "active": true,
+                                        "crossAxis": "bottom",
+                                        "targetSeries": [
+                                            "barSeries1",
+                                            "barSeries2",
+                                            "barSeries3"
+                                        ],
+                                        "toolType": "NXChangeActiveSeriesTool"
+                                    }
+                                ]
+                            }
+                        },
+                        "detailTopPanel": {
+                            "visible": true
+                        },
+                        "selection": {
+                            "selectionSource": "Y",
+                            "selectionType": "NXChartSelectionBiggestValue"
+                        }
+                    },
+                    "type": "NXCubeCard"
+                },
+                {
+                    "cardTitle": "知识点得分占比",
+                    "dataSetId": "5d4290e1-7f04-41b6-828b-e1e4bbe7e960",
+                    "linkEvent": {
+                        "isEventSource": true
+                    },
+                    "size": "row-sm-xs-6 row-xs-sm-12 row-md-3 row-md-sm-6 row-lg-md-3 col-xs-sm-12 col-sm-xs-12  col-sm-md-12 col-sm-lg-12 col-md-12  col-md-lg-12 col-md-sm-6 col-lg-6 ",
+                    "structure": {
+                        "dimensions": [
+                            {
+                                "granularities": [
+                                    {
+                                        "key": "COL_0_3",
+                                        "title": "题型"
+                                    }
+                                ],
+                                "key": "Dimension_3",
+                                "title": "题目类型"
+                            },
+                            {
+                                "granularities": [
+                                    {
+                                        "key": "COL_0_0",
+                                        "title": "学年"
+                                    },
+                                    {
+                                        "key": "COL_0_1",
+                                        "title": "学期"
+                                    },
+                                    {
+                                        "key": "COL_0_2",
+                                        "title": "考试"
+                                    }
+                                ],
+                                "key": "Dimension_4",
+                                "title": "时间"
+                            },
+                            {
+                                "granularities": [
+                                    {
+                                        "key": "COL_0_4",
+                                        "title": "班级"
+                                    },
+                                    {
+                                        "drillTo": true,
+                                        "key": "COL_0_5",
+                                        "title": "学生"
+                                    }
+                                ],
+                                "key": "Dimension_2",
+                                "title": "班级学生"
+                            },
+                            {
+                                "granularities": [
+                                    {
+                                        "key": "COL_0_6",
+                                        "title": "科目"
+                                    },
+                                    {
+                                        "drillTo": true,
+                                        "key": "COL_0_7",
+                                        "title": "知识点"
+                                    }
+                                ],
+                                "key": "Dimension_1",
+                                "title": "科目知识"
+                            }
+                        ],
+                        "measures": [
+                            {
+                                "key": "COL_0_8",
+                                "title": "得分"
+                            }
+                        ]
+                    },
+                    "style": {
+                        "chart": {
+                            "chartConfig": {
+                                "series": [
+                                    {
+                                        "dataSource": {
+                                            "yValueSource": "COL_0_8"
+                                        },
+                                        "id": "brandPercentPie",
+                                        "type": "NXPieSeries"
+                                    }
+                                ],
+                                "touchTools": [
+                                    {
+                                        "targetSeries": [
+                                            "brandPercentPie"
+                                        ],
+                                        "toolType": "NXPieSpinTool"
+                                    }
+                                ]
+                            },
+                            "selection": {
+                                "selectionSource": "Y",
+                                "selectionType": "NXChartSelectionBiggestValue"
+                            }
+                        },
+                        "detailRightPanel": {
+                            "visible": true
+                        },
+                        "detailTopPanel": {
+                            "percentInTotalVisible": true,
+                            "type": "NXDetailVertical",
+                            "visible": false
+                        },
+                        "detailTotalPanel": {
+                            "isAboveDetailTop": true
+                        }
+                    },
+                    "type": "NXCubeCard"
+                },
+                {
+                    "cardTitle": "期中期末学生目标成绩",
+                    "dataSetId": "5d4290e1-7f04-41b6-828b-e1e4bbe7e960",
+                    "linkEvent": {
+                        "isEventSource": true
+                    },
+                    "size": "row-sm-xs-12 row-md-md-12 row-sm-lg-12 row-xs-sm-12 row-md-sm-6 row-lg-md-6 col-xs-sm-12 col-sm-xs-12 col-sm-md-12 col-sm-lg-12 col-md-12  col-md-lg-12 col-md-sm-6 col-lg-6 ",
+                    "structure": {
+                        "dimensions": [
+                            {
+                                "granularities": [
+                                    {
+                                        "index": 2,
+                                        "key": "COL_0_3",
+                                        "title": "题型"
+                                    }
+                                ],
+                                "key": "Dimension_3",
+                                "title": "题目类型"
+                            },
+                            {
+                                "granularities": [
+                                    {
+                                        "key": "COL_0_6",
+                                        "title": "科目"
+                                    },
+                                    {
+                                        "key": "COL_0_7",
+                                        "title": "知识点"
+                                    }
+                                ],
+                                "key": "Dimension_1",
+                                "title": "科目知识"
+                            },
+                            {
+                                "granularities": [
+                                    {
+                                        "key": "COL_0_0",
+                                        "title": "学年"
+                                    },
+                                    {
+                                        "key": "COL_0_1",
+                                        "title": "学期"
+                                    },
+                                    {
+                                        "drillTo": true,
+                                        "key": "COL_0_2",
+                                        "title": "考试"
+                                    }
+                                ],
+                                "key": "Dimension_4",
+                                "title": "时间"
+                            },
+                            {
+                                "granularities": [
+                                    {
+                                        "key": "COL_0_4",
+                                        "title": "班级"
+                                    },
+                                    {
+                                        "drillTo": true,
+                                        "index": 3,
+                                        "key": "COL_0_5",
+                                        "title": "学生"
+                                    }
+                                ],
+                                "key": "Dimension_2",
+                                "title": "班级学生"
+                            }
+                        ],
+                        "measures": [
+                            {
+                                "aggregator": "sum",
+                                "key": "COL_0_8",
+                                "sort": "NXSortOperationAsc",
+                                "title": "考试得分"
+                            },
+                            {
+                                "key": "COL_0_16",
+                                "title": "自定目标成绩"
+                            }
+                        ]
+                    },
+                    "style": {
+                        "chart": {
+                            "chartConfig": {
+                                "axis": [
+                                    {
+                                        "axisType": "NXAxisTypeNumberic",
+                                        "id": "bottom",
+                                        "majorPoint": {
+                                            "gridLine": {
+                                                "gridLineVisible": true
+                                            },
+                                            "label": {
+                                                "labelFormatter": ",###",
+                                                "labelNumberUnit": true
+                                            }
+                                        }
+                                    },
+                                    {
+                                        "axisType": "NXAxisTypeCategory",
+                                        "coordinate": "NXCoordinateY",
+                                        "id": "left",
+                                        "majorPoint": {}
+                                    }
+                                ],
+                                "canvas": {
+                                    "graphPadding": {
+                                        "bottom": 20,
+                                        "left": 50,
+                                        "right": 0,
+                                        "top": 0
+                                    }
+                                },
+                                "series": [
+                                    {
+                                        "accumulation": false,
+                                        "barFill": {
+                                            "fillColor": "#51a9d6"
+                                        },
+                                        "dataSource": {
+                                            "yValueSource": "COL_0_8"
+                                        },
+                                        "id": "salesCountAsProvinceBar",
+                                        "interSeriesSetPadding": 0.2,
+                                        "orientation": "horizontal",
+                                        "showOverlayAll": false,
+                                        "stackedType": "NXChartSeriesStackedTypeSide",
+                                        "type": "NXBarSeries",
+                                        "xAxis": "bottom",
+                                        "yAxis": "left"
+                                    },
+                                    {
+                                        "accumulation": false,
+                                        "dataSource": {
+                                            "yValueSource": "COL_0_16"
+                                        },
+                                        "id": "salesCountTargetAsProvinceLine",
+                                        "isTargetSeries": true,
+                                        "lineStyle": {
+                                            "lineColor": "#955cbf"
+                                        },
+                                        "orientation": "horizontal",
+                                        "type": "NXStepLineSeries",
+                                        "verticalJoinsVisible": false,
+                                        "xAxis": "bottom",
+                                        "yAxis": "left"
+                                    }
+                                ],
+                                "touchTools": [
+                                    {
+                                        "crossAxis": "bottom",
+                                        "enableMultiTouch": false,
+                                        "removeOnRelease": false,
+                                        "showBelowSeries": false,
+                                        "targetSeries": [
+                                            "salesCountAsProvinceBar",
+                                            "salesCountTargetAsProvinceLine"
+                                        ],
+                                        "toolType": "NXHighLightTool",
+                                        "visible": true
+                                    }
+                                ]
+                            }
+                        },
+                        "detailTopPanel": {
+                            "type": "NXDetailNormalTargetReal",
+                            "visible": true
+                        },
+                        "selection": {
+                            "selectionSource": "Y",
+                            "selectionType": "NXChartSelectionBiggestValue"
+                        }
+                    },
+                    "type": "NXCubeCard"
+                },
+                {
+                    "cardTitle": "期中期末各科对比",
+                    "dataSetId": "5d4290e1-7f04-41b6-828b-e1e4bbe7e960",
+                    "linkEvent": {
+                        "isEventSource": true
+                    },
+                    "size": "row-sm-xs-6  row-md-md-6 row-xs-sm-12 row-md-3 row-md-sm-3 row-lg-md-3 col-xs-sm-12 col-sm-xs-6  col-sm-md-12 col-sm-lg-12 col-md-12  col-md-lg-12 col-md-sm-6 col-lg-6 ",
+                    "structure": {
+                        "dimensions": [
+                            {
+                                "granularities": [
+                                    {
+                                        "key": "COL_0_3",
+                                        "title": "题型"
+                                    }
+                                ],
+                                "key": "Dimension_3",
+                                "title": "题目类型"
+                            },
+                            {
+                                "granularities": [
+                                    {
+                                        "key": "COL_0_4",
+                                        "title": "班级"
+                                    },
+                                    {
+                                        "drillTo": true,
+                                        "key": "COL_0_5",
+                                        "title": "学生"
+                                    }
+                                ],
+                                "key": "Dimension_2",
+                                "title": "班级学生"
+                            },
+                            {
+                                "granularities": [
+                                    {
+                                        "index": 3,
+                                        "key": "COL_0_6",
+                                        "title": "科目"
+                                    },
+                                    {
+                                        "key": "COL_0_7",
+                                        "title": "知识点"
+                                    }
+                                ],
+                                "key": "Dimension_1",
+                                "title": "科目知识"
+                            },
+                            {
+                                "granularities": [
+                                    {
+                                        "key": "COL_0_0",
+                                        "title": "学年"
+                                    },
+                                    {
+                                        "key": "COL_0_1",
+                                        "title": "学期"
+                                    },
+                                    {
+                                        "drillTo": true,
+                                        "index": 2,
+                                        "key": "COL_0_2",
+                                        "title": "考试"
+                                    }
+                                ],
+                                "key": "Dimension_4",
+                                "title": "时间"
+                            }
+                        ],
+                        "measures": [
+                            {
+                                "aggregator": "sum",
+                                "key": "COL_0_8",
+                                "title": "考试得分"
+                            },
+                            {
+                                "key": "COL_0_12",
+                                "title": "班级最高得分"
+                            },
+                            {
+                                "key": "COL_0_13",
+                                "title": "班级最低得分"
+                            }
+                        ]
+                    },
+                    "style": {
+                        "annotation": {
+                            "isAlwaysVisible": true,
+                            "visible": true,
+                            "width": 120
+                        },
+                        "chart": {
+                            "chartConfig": {
+                                "axis": [
+                                    {
+                                        "axisType": "NXAxisTypeCategory",
+                                        "id": "bottom"
+                                    },
+                                    {
+                                        "axisType": "NXAxisTypeNumberic",
+                                        "coordinate": "NXCoordinateY",
+                                        "id": "left",
+                                        "majorPoint": {
+                                            "label": {
+                                                "labelFormatter": ",###",
+                                                "labelNumberUnit": false
+                                            }
+                                        },
+                                        "minValue": 0
+                                    }
+                                ],
+                                "series": [
+                                    {
+                                        "dataSource": {
+                                            "yValueSource": "COL_0_8"
+                                        },
+                                        "fill": {
+                                            "fillColor": "#955cbf"
+                                        },
+                                        "id": "barSeries",
+                                        "iteration": {
+                                            "isMultiLevel": true
+                                        },
+                                        "orientation": "vertical",
+                                        "type": "NXLineSeries",
+                                        "xAxis": "bottom",
+                                        "yAxis": "left"
+                                    }
+                                ],
+                                "touchTools": [
+                                    {
+                                        "crossAxis": "bottom",
+                                        "enableMultiTouch": true,
+                                        "removeOnRelease": false,
+                                        "showBelowSeries": false,
+                                        "targetSeries": [
+                                            "barSeries"
+                                        ],
+                                        "toolPlot": {
+                                            "innerSymbol": {
+                                                "anchorPoint": {
+                                                    "x": 0.5,
+                                                    "y": 0.5
+                                                },
+                                                "symbolSize": {
+                                                    "height": 10,
+                                                    "width": 10
+                                                },
+                                                "symbolType": "NXPlotSymbolTypeEllipse"
+                                            },
+                                            "multiTouchLineType": "NXLineToolTypeVertical",
+                                            "outerSymbol": {
+                                                "anchorPoint": {
+                                                    "x": 0.5,
+                                                    "y": 0.5
+                                                },
+                                                "symbolFill": {
+                                                    "fillColor": "#ffffff"
+                                                },
+                                                "symbolSize": {
+                                                    "height": 20,
+                                                    "width": 20
+                                                },
+                                                "symbolType": "NXPlotSymbolTypeEllipse"
+                                            },
+                                            "singleTouchLineType": "NXLineToolTypeVertical"
+                                        },
+                                        "toolType": "NXLineTool",
+                                        "visible": true
+                                    },
+                                    {
+                                        "active": true,
+                                        "crossAxis": "bottom",
+                                        "targetSeries": [
+                                            "barSeries"
+                                        ],
+                                        "toolType": "NXChangeActiveSeriesTool"
+                                    }
+                                ]
+                            }
+                        },
+                        "selection": {
+                            "selectionSource": "Y",
+                            "selectionType": "NXChartSelectionBiggestValue"
+                        }
+                    },
+                    "type": "NXCubeCard"
+                },
+                {
+                    "cardTitle": "题型得分累积",
+                    "dataSetId": "5d4290e1-7f04-41b6-828b-e1e4bbe7e960",
+                    "linkEvent": {
+                        "isEventSource": true
+                    },
+                    "size": "row-sm-xs-6 row-md-md-6 row-xs-sm-12 row-md-3 row-md-sm-3 row-lg-md-3 col-xs-sm-12 col-sm-xs-6  col-sm-md-12 col-sm-lg-12 col-md-12  col-md-lg-12 col-md-sm-6 col-lg-6 ",
+                    "structure": {
+                        "dimensions": [
+                            {
+                                "granularities": [
+                                    {
+                                        "key": "COL_0_4",
+                                        "title": "班级"
+                                    },
+                                    {
+                                        "drillTo": true,
+                                        "key": "COL_0_5",
+                                        "title": "学生"
+                                    }
+                                ],
+                                "key": "Dimension_2",
+                                "title": "班级学生"
+                            },
+                            {
+                                "granularities": [
+                                    {
+                                        "key": "COL_0_6",
+                                        "title": "科目"
+                                    },
+                                    {
+                                        "key": "COL_0_7",
+                                        "title": "知识点"
+                                    }
+                                ],
+                                "key": "Dimension_1",
+                                "title": "科目知识"
+                            },
+                            {
+                                "granularities": [
+                                    {
+                                        "key": "COL_0_0",
+                                        "title": "学年"
+                                    },
+                                    {
+                                        "key": "COL_0_1",
+                                        "title": "学期"
+                                    },
+                                    {
+                                        "drillTo": true,
+                                        "key": "COL_0_2",
+                                        "title": "考试"
+                                    }
+                                ],
+                                "key": "Dimension_4",
+                                "title": "时间"
+                            },
+                            {
+                                "granularities": [
+                                    {
+                                        "key": "COL_0_3",
+                                        "title": "题型"
+                                    }
+                                ],
+                                "key": "Dimension_3",
+                                "title": "题目类型"
+                            }
+                        ],
+                        "measures": [
+                            {
+                                "aggregator": "sum",
+                                "key": "COL_0_8",
+                                "title": "考试得分"
+                            }
+                        ]
+                    },
+                    "style": {
+                        "chart": {
+                            "chartConfig": {
+                                "axis": [
+                                    {
+                                        "axisType": "NXAxisTypeCategory",
+                                        "id": "bottom"
+                                    },
+                                    {
+                                        "axisType": "NXAxisTypeNumberic",
+                                        "coordinate": "NXCoordinateY",
+                                        "id": "left",
+                                        "majorPoint": {
+                                            "label": {
+                                                "labelFormatter": ",###",
+                                                "labelNumberUnit": false
+                                            }
+                                        }
+                                    }
+                                ],
+                                "series": [
+                                    {
+                                        "accumulation": false,
+                                        "barFill": {
+                                            "fillColor": "#955cbf"
+                                        },
+                                        "dataSource": {
+                                            "yValueSource": "COL_0_8"
+                                        },
+                                        "id": "seasonTotalForProvinceBar",
+                                        "orientation": "vertical",
+                                        "showOverlayAll": true,
+                                        "stackedType": "NXChartSeriesStackedTypeOverlap",
+                                        "standOnShoulder": true,
+                                        "type": "NXBarSeries",
+                                        "xAxis": "bottom",
+                                        "yAxis": "left"
+                                    }
+                                ],
+                                "touchTools": [
+                                    {
+                                        "crossAxis": "bottom",
+                                        "enableMultiTouch": true,
+                                        "removeOnRelease": false,
+                                        "showBelowSeries": false,
+                                        "targetSeries": [
+                                            "seasonTotalForProvinceBar"
+                                        ],
+                                        "toolType": "NXHighLightTool",
+                                        "visible": true
+                                    },
+                                    {
+                                        "active": true,
+                                        "crossAxis": "bottom",
+                                        "targetSeries": [
+                                            "seasonTotalForProvinceBar"
+                                        ],
+                                        "toolType": "NXChangeActiveSeriesTool"
+                                    }
+                                ]
+                            }
+                        }
+                    },
+                    "type": "NXCubeCard"
+                }
+            ],
+            "pageColor": "#718dbf",
+            "pageTitle": "教育测评-班主任视角"
+        }
+    ],
+    "status": "readyForView",
+    "title": "教育测评"
+}

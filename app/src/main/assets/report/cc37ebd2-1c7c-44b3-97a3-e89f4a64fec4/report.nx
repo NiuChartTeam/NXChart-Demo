@@ -1,0 +1,1505 @@
+{
+    "creator": "dongsaiyuan",
+    "defaultStyle": [
+        {
+            "chartOptions": {
+                "seriesOptions": {}
+            },
+            "defaultColor": [
+                "#e84d60",
+                "#e88f61",
+                "#fecd6c",
+                "#b3cf61",
+                "#77c298",
+                "#51a9d6",
+                "#718dbf",
+                "#955cbf",
+                "#a4547d",
+                "#c64373"
+            ],
+            "scopeId": [
+                "all"
+            ],
+            "scopeType": "report"
+        }
+    ],
+    "id": "eduEvaluating",
+    "metadataStructures": [
+        {
+            "dataSetId": "f1c8e652-65dc-43f8-8c41-8bd45748c52d",
+            "db": "xiaomifengOverView.sqlite",
+            "dimensions": [
+                {
+                    "granularities": [
+                        {
+                            "key": "COL_0_0",
+                            "title": "类型"
+                        }
+                    ],
+                    "key": "Dimension_1",
+                    "title": "类型"
+                },
+                {
+                    "granularities": [
+                        {
+                            "key": "COL_0_1",
+                            "title": "月份"
+                        },
+                        {
+                            "key": "COL_0_2",
+                            "title": "周"
+                        }
+                    ],
+                    "key": "Dimension_2",
+                    "title": "时间"
+                }
+            ],
+            "encrypt": "dbpass",
+            "measures": [
+                {
+                    "key": "COL_0_3",
+                    "title": "扣分情况"
+                }
+            ]
+        },
+        {
+            "dataSetId": "df0333eb-ebe0-48a4-8d07-fcfc4f9a021d",
+            "db": "xiaomifengWebAccess.sqlite",
+            "dimensions": [
+                {
+                    "granularities": [
+                        {
+                            "key": "COL_0_0",
+                            "title": "省份"
+                        }
+                    ],
+                    "key": "Dimension_1",
+                    "title": "地理"
+                },
+                {
+                    "granularities": [
+                        {
+                            "key": "COL_0_1",
+                            "title": "年"
+                        },
+                        {
+                            "key": "COL_0_2",
+                            "title": "月"
+                        },
+                        {
+                            "key": "COL_0_3",
+                            "title": "日"
+                        }
+                    ],
+                    "key": "Dimension_2",
+                    "title": "时间"
+                }
+            ],
+            "measures": [
+                {
+                    "key": "COL_0_4",
+                    "title": "大于15(s)的访问次数"
+                },
+                {
+                    "key": "COL_0_5",
+                    "title": "小于15(s)的访问次数"
+                },
+                {
+                    "formula": "COL_0_4/(COL_0_4+COL_0_5)",
+                    "isCreated": true,
+                    "key": "COL_0_6",
+                    "title": "大于15(s)的访问占比"
+                }
+            ]
+        }
+    ],
+    "pages": [
+        {
+            "cards": [
+                {
+                    "cardTitle": "湖南省人民政府",
+                    "dataSetId": "f1c8e652-65dc-43f8-8c41-8bd45748c52d",
+                    "linkEvent": {
+                        "isEventSource": true
+                    },
+                    "size": "row-sm-xs-6 row-xs-sm-12 row-md-3 row-md-sm-6 row-lg-md-3 col-xs-sm-12 col-sm-xs-6 col-sm-md-12 col-sm-lg-12 col-md-12  col-md-lg-12 col-md-sm-6 col-lg-6 ",
+                    "structure": {
+                        "dimensions": [
+                            {
+                                "granularities": [
+                                    {
+                                        "key": "COL_0_1",
+                                        "title": "月份"
+                                    },
+                                    {
+                                        "drillTo": true,
+                                        "key": "COL_0_2",
+                                        "title": "周"
+                                    }
+                                ],
+                                "key": "Dimension_2",
+                                "title": "时间"
+                            }
+                        ],
+                        "measures": [
+                            {
+                                "key": "COL_0_3",
+                                "title": "扣分情况"
+                            }
+                        ]
+                    },
+                    "style": {
+                        "chart": {
+                            "chartConfig": {
+                                "series": [
+                                    {
+                                        "dataSource": {
+                                            "colorRange": {
+                                                "dataRange": {
+                                                    "fromValue": 0,
+                                                    "toValue": 25
+                                                },
+                                                "sectionRange": [
+                                                    {
+                                                        "color": {
+                                                            "fillColor": "#e41c2b"
+                                                        },
+                                                        "fromValue": 0,
+                                                        "legend": "不合格",
+                                                        "toValue": 18
+                                                    },
+                                                    {
+                                                        "color": {
+                                                            "fillColor": "#0eb83b"
+                                                        },
+                                                        "fromValue": 18,
+                                                        "legend": "合格",
+                                                        "toValue": 25
+                                                    }
+                                                ],
+                                                "valueSource": "COL_0_3"
+                                            },
+                                            "yFormatString": "#.#",
+                                            "yValueSource": "COL_0_3"
+                                        },
+                                        "id": "brandPassRing",
+                                        "iteration": {
+                                            "isLeafLevel": true
+                                        },
+                                        "type": "NXRingSeries"
+                                    }
+                                ]
+                            },
+                            "selection": {
+                                "selectionSource": "Y",
+                                "selectionType": "NXChartSelectionBiggestValue"
+                            }
+                        },
+                        "detailTopPanel": {
+                            "visible": false
+                        }
+                    },
+                    "type": "NXCubeCard"
+                },
+                {
+                    "cardTitle": "各指标总览",
+                    "dataSetId": "f1c8e652-65dc-43f8-8c41-8bd45748c52d",
+                    "linkEvent": {
+                        "isEventSource": true
+                    },
+                    "size": "row-sm-xs-6 row-xs-sm-12 row-md-3 row-md-sm-6 row-lg-md-3 col-xs-sm-12 col-sm-xs-6 col-sm-md-12 col-sm-lg-12 col-md-12  col-md-lg-12 col-md-sm-6 col-lg-6 ",
+                    "structure": {
+                        "dimensions": [
+                            {
+                                "granularities": [
+                                    {
+                                        "key": "COL_0_1",
+                                        "title": "月份"
+                                    },
+                                    {
+                                        "drillTo": true,
+                                        "key": "COL_0_2",
+                                        "title": "周"
+                                    }
+                                ],
+                                "key": "Dimension_2",
+                                "title": "时间"
+                            },
+                            {
+                                "granularities": [
+                                    {
+                                        "key": "COL_0_0",
+                                        "title": "类型"
+                                    }
+                                ],
+                                "key": "Dimension_1",
+                                "title": "类型"
+                            }
+                        ],
+                        "measures": [
+                            {
+                                "key": "COL_0_3",
+                                "title": "扣分情况"
+                            }
+                        ]
+                    },
+                    "style": {
+                        "detailRightPanel": {
+                            "visible": true
+                        },
+                        "detailTopPanel": {
+                            "visible": false
+                        },
+                        "superList": {
+                            "autoPageScroll": true,
+                            "columns": [
+                                {
+                                    "expandGran": [
+                                        "COL_0_0"
+                                    ],
+                                    "isMajorColumn": true
+                                },
+                                {
+                                    "chart": {
+                                        "chartConfig": {
+                                            "canvas": {
+                                                "graphPadding": {
+                                                    "bottom": 5,
+                                                    "left": 0,
+                                                    "right": 0,
+                                                    "top": 5
+                                                }
+                                            },
+                                            "series": [
+                                                {
+                                                    "dataSource": {
+                                                        "colorRange": {
+                                                            "dataRange": {
+                                                                "fromValue": 0,
+                                                                "toValue": 5
+                                                            },
+                                                            "sectionRange": [
+                                                                {
+                                                                    "color": {
+                                                                        "fillColor": "#e41c2b"
+                                                                    },
+                                                                    "fromValue": 0,
+                                                                    "toValue": 3.5
+                                                                },
+                                                                {
+                                                                    "color": {
+                                                                        "fillColor": "#0eb83b"
+                                                                    },
+                                                                    "fromValue": 3.5,
+                                                                    "toValue": 5
+                                                                }
+                                                            ],
+                                                            "valueSource": "COL_0_3"
+                                                        },
+                                                        "yFormatString": ",###",
+                                                        "yValueSource": "COL_0_3"
+                                                    },
+                                                    "fill": {
+                                                        "fillColor": "#e41c2b"
+                                                    },
+                                                    "id": "brandPassRing",
+                                                    "iteration": {
+                                                        "isLeafLevel": true
+                                                    },
+                                                    "type": "NXSingleSeries"
+                                                }
+                                            ]
+                                        },
+                                        "detailTopPanel": {
+                                            "type": "NXDetailNormalTargetReal",
+                                            "visible": true
+                                        },
+                                        "selection": {
+                                            "selectionSource": "Y",
+                                            "selectionType": "NXChartSelectionBiggestValue"
+                                        }
+                                    },
+                                    "showChart": true
+                                },
+                                {
+                                    "name": "状态",
+                                    "range": {
+                                        "sectionRange": [
+                                            {
+                                                "color": {
+                                                    "fillColor": "#e41c2b"
+                                                },
+                                                "fromValue": 0,
+                                                "legend": "不合格",
+                                                "toValue": 3.5
+                                            },
+                                            {
+                                                "color": {
+                                                    "fillColor": "#0eb83b"
+                                                },
+                                                "fromValue": 3.5,
+                                                "legend": "合格",
+                                                "toValue": 5
+                                            }
+                                        ]
+                                    },
+                                    "valueSource": "COL_0_3"
+                                }
+                            ],
+                            "header": {
+                                "backgroundColor": "#D7DFE1",
+                                "headerHeight": 42,
+                                "textStyle": {
+                                    "textColor": "#8a919b",
+                                    "textSize": 12
+                                }
+                            },
+                            "rows": {
+                                "evenColor": "#FEFFFF",
+                                "oddColor": "#F9FAFB",
+                                "rowHeight": 32
+                            }
+                        },
+                        "type": "NXSuperList"
+                    },
+                    "type": "NXCubeCard"
+                },
+                {
+                    "cardTitle": "月份合格情况",
+                    "dataSetId": "f1c8e652-65dc-43f8-8c41-8bd45748c52d",
+                    "linkEvent": {
+                        "isEventSource": true
+                    },
+                    "size": "row-sm-xs-6 row-xs-sm-12 row-md-3 row-md-sm-6 row-lg-md-3 col-xs-sm-12 col-sm-xs-6  col-sm-md-12 col-sm-lg-12 col-md-12  col-md-lg-12 col-md-sm-6 col-lg-6 ",
+                    "structure": {
+                        "dimensions": [
+                            {
+                                "granularities": [
+                                    {
+                                        "key": "COL_0_1",
+                                        "title": "月份"
+                                    },
+                                    {
+                                        "key": "COL_0_2",
+                                        "title": "周"
+                                    }
+                                ],
+                                "key": "Dimension_2",
+                                "title": "时间"
+                            }
+                        ],
+                        "measures": [
+                            {
+                                "key": "COL_0_3",
+                                "title": "扣分情况"
+                            }
+                        ]
+                    },
+                    "style": {
+                        "chart": {
+                            "chartConfig": {
+                                "axis": [
+                                    {
+                                        "axisType": "NXAxisTypeDateTime",
+                                        "id": "bottom"
+                                    },
+                                    {
+                                        "axisType": "NXAxisTypeNumberic",
+                                        "coordinate": "NXCoordinateY",
+                                        "id": "left",
+                                        "majorPoint": {
+                                            "label": {
+                                                "labelFormatter": ",###",
+                                                "labelNumberUnit": false
+                                            }
+                                        },
+                                        "minValue": 0
+                                    }
+                                ],
+                                "series": [
+                                    {
+                                        "barFill": {
+                                            "fillColor": "#51a9d6"
+                                        },
+                                        "dataSource": {
+                                            "colorRange": {
+                                                "sectionRange": [
+                                                    {
+                                                        "color": {
+                                                            "fillColor": "#e41c2b"
+                                                        },
+                                                        "fromValue": 0,
+                                                        "toValue": 70
+                                                    },
+                                                    {
+                                                        "color": {
+                                                            "fillColor": "#0eb83b"
+                                                        },
+                                                        "fromValue": 70,
+                                                        "toValue": 80
+                                                    }
+                                                ],
+                                                "valueSource": "COL_0_3"
+                                            },
+                                            "xDataSourceDateFormatString": "MMM",
+                                            "xDataSourceDateLocale": "zh",
+                                            "xDisplayDateFormatString": "MMM",
+                                            "xDisplayDateLocale": "zh",
+                                            "yValueSource": "COL_0_3"
+                                        },
+                                        "id": "barSeries",
+                                        "interSeriesSetPadding": 0.2,
+                                        "orientation": "vertical",
+                                        "showOverlayAll": true,
+                                        "sort": {
+                                            "sortSource": "x",
+                                            "sortType": "NXSortOperationAsc"
+                                        },
+                                        "stackedType": "NXChartSeriesStackedTypeStack",
+                                        "type": "NXBarSeries",
+                                        "xAxis": "bottom",
+                                        "yAxis": "left"
+                                    }
+                                ],
+                                "touchTools": [
+                                    {
+                                        "crossAxis": "bottom",
+                                        "enableMultiTouch": true,
+                                        "removeOnRelease": false,
+                                        "showBelowSeries": false,
+                                        "targetSeries": [
+                                            "barSeries"
+                                        ],
+                                        "toolType": "NXHighLightTool",
+                                        "visible": true
+                                    }
+                                ]
+                            }
+                        },
+                        "selection": {
+                            "selectionSource": "Y",
+                            "selectionType": "NXChartSelectionLast"
+                        }
+                    },
+                    "type": "NXCubeCard"
+                },
+                {
+                    "cardTitle": "周合格情况",
+                    "dataSetId": "f1c8e652-65dc-43f8-8c41-8bd45748c52d",
+                    "linkEvent": {
+                        "isEventSource": true
+                    },
+                    "size": "row-sm-xs-6 row-xs-sm-12 row-md-3 row-md-sm-6 row-lg-md-3 col-xs-sm-12 col-sm-xs-6  col-sm-md-12 col-sm-lg-12 col-md-12  col-md-lg-12 col-md-sm-6 col-lg-6 ",
+                    "structure": {
+                        "dimensions": [
+                            {
+                                "granularities": [
+                                    {
+                                        "key": "COL_0_1",
+                                        "title": "月份"
+                                    },
+                                    {
+                                        "drillTo": true,
+                                        "key": "COL_0_2",
+                                        "title": "周"
+                                    }
+                                ],
+                                "key": "Dimension_2",
+                                "title": "时间"
+                            }
+                        ],
+                        "measures": [
+                            {
+                                "key": "COL_0_3",
+                                "title": "扣分情况"
+                            }
+                        ]
+                    },
+                    "style": {
+                        "chart": {
+                            "chartConfig": {
+                                "axis": [
+                                    {
+                                        "axisType": "NXAxisTypeCategory",
+                                        "id": "bottom"
+                                    },
+                                    {
+                                        "axisType": "NXAxisTypeNumberic",
+                                        "coordinate": "NXCoordinateY",
+                                        "id": "left",
+                                        "majorPoint": {
+                                            "label": {
+                                                "labelFormatter": ",###",
+                                                "labelNumberUnit": false
+                                            }
+                                        },
+                                        "minValue": 0
+                                    }
+                                ],
+                                "series": [
+                                    {
+                                        "barFill": {
+                                            "fillColor": "#51a9d6"
+                                        },
+                                        "dataSource": {
+                                            "colorRange": {
+                                                "sectionRange": [
+                                                    {
+                                                        "color": {
+                                                            "fillColor": "#e41c2b"
+                                                        },
+                                                        "fromValue": 0,
+                                                        "toValue": 18
+                                                    },
+                                                    {
+                                                        "color": {
+                                                            "fillColor": "#0eb83b"
+                                                        },
+                                                        "fromValue": 18,
+                                                        "toValue": 25
+                                                    }
+                                                ],
+                                                "valueSource": "COL_0_3"
+                                            },
+                                            "xDataSourceDateFormatString": "MMM",
+                                            "xDataSourceDateLocale": "zh",
+                                            "xDisplayDateFormatString": "MMM",
+                                            "xDisplayDateLocale": "zh",
+                                            "yValueSource": "COL_0_3"
+                                        },
+                                        "id": "barSeries",
+                                        "interSeriesSetPadding": 0.2,
+                                        "orientation": "vertical",
+                                        "showOverlayAll": true,
+                                        "sort": {
+                                            "sortSource": "x",
+                                            "sortType": "NXSortOperationAsc"
+                                        },
+                                        "stackedType": "NXChartSeriesStackedTypeStack",
+                                        "type": "NXBarSeries",
+                                        "xAxis": "bottom",
+                                        "yAxis": "left"
+                                    }
+                                ],
+                                "touchTools": [
+                                    {
+                                        "crossAxis": "bottom",
+                                        "enableMultiTouch": true,
+                                        "removeOnRelease": false,
+                                        "showBelowSeries": false,
+                                        "targetSeries": [
+                                            "barSeries"
+                                        ],
+                                        "toolType": "NXHighLightTool",
+                                        "visible": true
+                                    }
+                                ]
+                            }
+                        },
+                        "selection": {
+                            "selectionSource": "Y",
+                            "selectionType": "NXChartSelectionLast"
+                        }
+                    },
+                    "type": "NXCubeCard"
+                },
+                {
+                    "cardTitle": "站点访问-大于15(s)的访问占比",
+                    "dataSetId": "df0333eb-ebe0-48a4-8d07-fcfc4f9a021d",
+                    "linkEvent": {
+                        "isEventSource": true
+                    },
+                    "size": "row-sm-xs-6 row-xs-sm-12 row-md-3 row-md-sm-6 row-lg-md-3 col-xs-sm-12 col-sm-xs-6 col-sm-md-12 col-sm-lg-12 col-md-12  col-md-lg-12 col-md-sm-6 col-lg-6 ",
+                    "structure": {
+                        "dimensions": [
+                            {
+                                "granularities": [
+                                    {
+                                        "key": "COL_0_1",
+                                        "title": "年"
+                                    },
+                                    {
+                                        "drillTo": true,
+                                        "key": "COL_0_2",
+                                        "title": "月"
+                                    }
+                                ],
+                                "key": "Dimension_2",
+                                "title": "时间"
+                            }
+                        ],
+                        "measures": [
+                            {
+                                "key": "COL_0_4",
+                                "title": "大于15(s)的访问次数"
+                            },
+                            {
+                                "key": "COL_0_5",
+                                "title": "小于15(s)的访问次数"
+                            },
+                            {
+                                "key": "COL_0_6",
+                                "title": "大于15(s)的访问占比"
+                            }
+                        ]
+                    },
+                    "style": {
+                        "chart": {
+                            "chartConfig": {
+                                "series": [
+                                    {
+                                        "dataSource": {
+                                            "colorRange": {
+                                                "dataRange": {
+                                                    "fromValue": 0,
+                                                    "toValue": 1
+                                                },
+                                                "sectionRange": [
+                                                    {
+                                                        "color": {
+                                                            "fillColor": "#0eb83b"
+                                                        },
+                                                        "fromValue": 0,
+                                                        "legend": "合格",
+                                                        "toValue": 0.05
+                                                    },
+                                                    {
+                                                        "color": {
+                                                            "fillColor": "#e41c2b"
+                                                        },
+                                                        "fromValue": 0.05,
+                                                        "legend": "不合格",
+                                                        "toValue": 1
+                                                    }
+                                                ],
+                                                "valueSource": "COL_0_6"
+                                            },
+                                            "yFormatString": "#.#%",
+                                            "yValueSource": "COL_0_6"
+                                        },
+                                        "id": "brandPassRing",
+                                        "iteration": {
+                                            "isLeafLevel": true
+                                        },
+                                        "type": "NXRingSeries"
+                                    }
+                                ]
+                            },
+                            "selection": {
+                                "selectionSource": "Y",
+                                "selectionType": "NXChartSelectionBiggestValue"
+                            }
+                        },
+                        "detailTopPanel": {
+                            "visible": false
+                        }
+                    },
+                    "type": "NXCubeCard"
+                },
+                {
+                    "cardTitle": "监测访问次数分析",
+                    "dataSetId": "df0333eb-ebe0-48a4-8d07-fcfc4f9a021d",
+                    "linkEvent": {
+                        "isEventSource": true
+                    },
+                    "size": "row-sm-xs-6 row-xs-sm-12 row-md-3 row-md-sm-6 row-lg-md-3 col-xs-sm-12 col-sm-xs-12  col-sm-md-12 col-sm-lg-12 col-md-12  col-md-lg-12 col-md-sm-6 col-lg-6 ",
+                    "structure": {
+                        "dimensions": [
+                            {
+                                "granularities": [
+                                    {
+                                        "key": "COL_0_1",
+                                        "title": "年"
+                                    },
+                                    {
+                                        "drillTo": true,
+                                        "key": "COL_0_2",
+                                        "title": "月"
+                                    }
+                                ],
+                                "key": "Dimension_2",
+                                "title": "时间"
+                            }
+                        ],
+                        "measures": [
+                            {
+                                "key": "COL_0_4",
+                                "title": "大于15(s)的访问次数"
+                            },
+                            {
+                                "key": "COL_0_5",
+                                "title": "小于15(s)的访问次数"
+                            }
+                        ]
+                    },
+                    "style": {
+                        "chart": {
+                            "chartConfig": {
+                                "series": [
+                                    {
+                                        "dataSource": {
+                                            "yValueSource": "COL_0_4"
+                                        },
+                                        "id": "brandPercentPie",
+                                        "iteration": {
+                                            "isLeafLevel": true,
+                                            "measureToGraphicGran": [
+                                                "COL_0_4",
+                                                "COL_0_5"
+                                            ]
+                                        },
+                                        "type": "NXPieSeries"
+                                    }
+                                ],
+                                "touchTools": [
+                                    {
+                                        "targetSeries": [
+                                            "brandPercentPie"
+                                        ],
+                                        "toolType": "NXPieSpinTool"
+                                    }
+                                ]
+                            },
+                            "selection": {
+                                "selectionSource": "Y",
+                                "selectionType": "NXChartSelectionBiggestValue"
+                            }
+                        },
+                        "detailRightPanel": {
+                            "visible": false
+                        },
+                        "detailTopPanel": {
+                            "percentInTotalVisible": true,
+                            "visible": true
+                        },
+                        "detailTotalPanel": {
+                            "isAboveDetailTop": true
+                        }
+                    },
+                    "type": "NXCubeCard"
+                },
+                {
+                    "cardTitle": "当日与最近一周大于15(s)的访问次数趋势",
+                    "dataSetId": "df0333eb-ebe0-48a4-8d07-fcfc4f9a021d",
+                    "linkEvent": {
+                        "isEventSource": true
+                    },
+                    "size": "row-sm-xs-6 row-xs-sm-12 row-md-3 row-md-sm-6 row-lg-md-6  col-lg-12 ",
+                    "structure": {
+                        "dimensions": [
+                            {
+                                "granularities": [
+                                    {
+                                        "key": "COL_0_1",
+                                        "title": "年"
+                                    },
+                                    {
+                                        "key": "COL_0_2",
+                                        "title": "月"
+                                    },
+                                    {
+                                        "drillTo": true,
+                                        "key": "COL_0_3",
+                                        "title": "日"
+                                    }
+                                ],
+                                "key": "Dimension_2",
+                                "title": "时间"
+                            }
+                        ],
+                        "measures": [
+                            {
+                                "key": "COL_0_4",
+                                "title": "大于15(s)的访问次数"
+                            },
+                            {
+                                "key": "COL_0_5",
+                                "title": "小于15(s)的访问次数"
+                            },
+                            {
+                                "key": "COL_0_6",
+                                "title": "大于15(s)的访问占比"
+                            }
+                        ]
+                    },
+                    "style": {
+                        "chart": {
+                            "chartConfig": {
+                                "axis": [
+                                    {
+                                        "axisType": "NXAxisTypeDateTime",
+                                        "id": "bottom"
+                                    },
+                                    {
+                                        "axisTitle": {
+                                            "titleLocation": 0.5,
+                                            "titleVisible": true
+                                        },
+                                        "axisType": "NXAxisTypeNumberic",
+                                        "bands": [
+                                            {
+                                                "fill": {
+                                                    "fillAlpha": 0.05,
+                                                    "fillColor": "#e41c2b"
+                                                },
+                                                "range": {
+                                                    "length": 0.05,
+                                                    "location": 0
+                                                }
+                                            },
+                                            {
+                                                "fill": {
+                                                    "fillAlpha": 0.05,
+                                                    "fillColor": "#0eb83b"
+                                                },
+                                                "range": {
+                                                    "length": 0.1,
+                                                    "location": 0.05
+                                                }
+                                            }
+                                        ],
+                                        "coordinate": "NXCoordinateY",
+                                        "id": "left",
+                                        "majorPoint": {
+                                            "label": {
+                                                "labelFormatter": "#.#%",
+                                                "labelNumberUnit": false
+                                            }
+                                        },
+                                        "maxValue": 0.1,
+                                        "minValue": 0
+                                    }
+                                ],
+                                "series": [
+                                    {
+                                        "dataSource": {
+                                            "xDataSourceDateFormatString": "d日",
+                                            "xDataSourceDateLocale": "zh",
+                                            "xDisplayDateFormatString": "d日",
+                                            "xDisplayDateLocale": "zh",
+                                            "yFormatString": "#.#%",
+                                            "yValueSource": "COL_0_6"
+                                        },
+                                        "fill": {
+                                            "fillColor": "#955cbf"
+                                        },
+                                        "id": "barSeries",
+                                        "orientation": "vertical",
+                                        "sort": {
+                                            "sortSource": "x",
+                                            "sortType": "NXSortOperationAsc"
+                                        },
+                                        "type": "NXLineSeries",
+                                        "xAxis": "bottom",
+                                        "yAxis": "left"
+                                    }
+                                ],
+                                "touchTools": [
+                                    {
+                                        "crossAxis": "bottom",
+                                        "enableMultiTouch": true,
+                                        "removeOnRelease": false,
+                                        "showBelowSeries": false,
+                                        "targetSeries": [
+                                            "barSeries"
+                                        ],
+                                        "toolPlot": {
+                                            "innerSymbol": {
+                                                "anchorPoint": {
+                                                    "x": 0.5,
+                                                    "y": 0.5
+                                                },
+                                                "symbolSize": {
+                                                    "height": 10,
+                                                    "width": 10
+                                                },
+                                                "symbolType": "NXPlotSymbolTypeEllipse"
+                                            },
+                                            "multiTouchLineType": "NXLineToolTypeVertical",
+                                            "outerSymbol": {
+                                                "anchorPoint": {
+                                                    "x": 0.5,
+                                                    "y": 0.5
+                                                },
+                                                "symbolFill": {
+                                                    "fillColor": "#ffffff"
+                                                },
+                                                "symbolSize": {
+                                                    "height": 20,
+                                                    "width": 20
+                                                },
+                                                "symbolType": "NXPlotSymbolTypeEllipse"
+                                            },
+                                            "singleTouchLineType": "NXLineToolTypeVertical"
+                                        },
+                                        "toolType": "NXLineTool",
+                                        "visible": true
+                                    },
+                                    {
+                                        "active": true,
+                                        "crossAxis": "bottom",
+                                        "targetSeries": [
+                                            "barSeries"
+                                        ],
+                                        "toolType": "NXChangeActiveSeriesTool"
+                                    }
+                                ]
+                            }
+                        },
+                        "selection": {
+                            "selectionSource": "Y",
+                            "selectionType": "NXChartSelectionBiggestValue"
+                        }
+                    },
+                    "type": "NXCubeCard"
+                },
+                {
+                    "cardTitle": "省份大于15(s)的访问情况",
+                    "dataSetId": "df0333eb-ebe0-48a4-8d07-fcfc4f9a021d",
+                    "linkEvent": {
+                        "isEventSource": true
+                    },
+                    "size": "row-sm-xs-6 row-xs-sm-12 row-md-3 row-md-sm-6 row-lg-md-3 col-xs-sm-12 col-sm-xs-6 col-sm-md-12 col-sm-lg-12 col-md-12  col-md-lg-12 col-md-sm-6 col-lg-6 ",
+                    "structure": {
+                        "dimensions": [
+                            {
+                                "granularities": [
+                                    {
+                                        "key": "COL_0_1",
+                                        "title": "年"
+                                    },
+                                    {
+                                        "drillTo": true,
+                                        "key": "COL_0_2",
+                                        "title": "月"
+                                    }
+                                ],
+                                "key": "Dimension_2",
+                                "title": "时间"
+                            },
+                            {
+                                "granularities": [
+                                    {
+                                        "key": "COL_0_0",
+                                        "title": "省份"
+                                    }
+                                ],
+                                "key": "Dimension_1",
+                                "title": "地理"
+                            }
+                        ],
+                        "measures": [
+                            {
+                                "key": "COL_0_4",
+                                "sort": "NXSortOperationAsc",
+                                "title": "大于15(s)的访问次数"
+                            },
+                            {
+                                "key": "COL_0_5",
+                                "title": "小于15(s)的访问次数"
+                            },
+                            {
+                                "key": "COL_0_6",
+                                "title": "大于15(s)的访问占比"
+                            }
+                        ]
+                    },
+                    "style": {
+                        "chart": {
+                            "chartConfig": {
+                                "series": [
+                                    {
+                                        "dataSource": {
+                                            "colorRange": {
+                                                "sectionRange": [
+                                                    {
+                                                        "color": {
+                                                            "fillColor": "#0eb83b"
+                                                        },
+                                                        "fromValue": 0,
+                                                        "toValue": 0.05
+                                                    },
+                                                    {
+                                                        "color": {
+                                                            "fillColor": "#e41c2b"
+                                                        },
+                                                        "fromValue": 0.05
+                                                    }
+                                                ],
+                                                "valueSource": "COL_0_6"
+                                            },
+                                            "valueFormats": [
+                                                {
+                                                    "formatString": ",###",
+                                                    "valueSource": "COL_0_4"
+                                                }
+                                            ],
+                                            "yFormatString": "#.#%",
+                                            "yValueSource": "COL_0_6"
+                                        },
+                                        "focusZoomOnSelect": false,
+                                        "id": "brandRegionMap",
+                                        "mapType": "China",
+                                        "type": "NXMapSeries"
+                                    }
+                                ],
+                                "touchTools": [
+                                    {
+                                        "targetSeries": [
+                                            "brandRegionMap"
+                                        ],
+                                        "toolType": "NXZoomTool"
+                                    },
+                                    {
+                                        "crossAxis": "bottom",
+                                        "enableMultiTouch": false,
+                                        "removeOnRelease": false,
+                                        "showBelowSeries": false,
+                                        "targetSeries": [
+                                            "brandRegionMap"
+                                        ],
+                                        "toolType": "NXMapHighLightTool",
+                                        "visible": true
+                                    }
+                                ]
+                            },
+                            "selection": {
+                                "selectionSource": "Y",
+                                "selectionType": "NXChartSelectionBiggestValue"
+                            }
+                        },
+                        "detailRightPanel": {
+                            "bigTitleValueSource": "COL_0_6",
+                            "isSmallTitlePercent": false,
+                            "smallTitleValueSource": "COL_0_4",
+                            "visible": true
+                        },
+                        "detailTopPanel": {
+                            "percentInTotalVisible": true,
+                            "type": "NXDetailVertical",
+                            "visible": false
+                        }
+                    },
+                    "type": "NXCubeCard"
+                },
+                {
+                    "cardTitle": "省份大于15(s)的访问占比",
+                    "dataSetId": "df0333eb-ebe0-48a4-8d07-fcfc4f9a021d",
+                    "linkEvent": {
+                        "isEventSource": true
+                    },
+                    "size": "row-sm-xs-6 row-xs-sm-12 row-md-3 row-md-sm-6 row-lg-md-3 col-xs-sm-12 col-sm-xs-12  col-sm-md-12 col-sm-lg-12 col-md-12  col-md-lg-12 col-md-sm-6 col-lg-6 ",
+                    "structure": {
+                        "dimensions": [
+                            {
+                                "granularities": [
+                                    {
+                                        "key": "COL_0_1",
+                                        "title": "年"
+                                    },
+                                    {
+                                        "drillTo": true,
+                                        "key": "COL_0_2",
+                                        "title": "月"
+                                    }
+                                ],
+                                "key": "Dimension_2",
+                                "title": "时间"
+                            },
+                            {
+                                "granularities": [
+                                    {
+                                        "key": "COL_0_0",
+                                        "title": "省份"
+                                    }
+                                ],
+                                "key": "Dimension_1",
+                                "title": "地理"
+                            }
+                        ],
+                        "measures": [
+                            {
+                                "key": "COL_0_4",
+                                "title": "大于15(s)的访问次数"
+                            },
+                            {
+                                "key": "COL_0_5",
+                                "title": "小于15(s)的访问次数"
+                            },
+                            {
+                                "key": "COL_0_6",
+                                "title": "大于15(s)的访问占比"
+                            }
+                        ]
+                    },
+                    "style": {
+                        "chart": {
+                            "chartConfig": {
+                                "series": [
+                                    {
+                                        "dataSource": {
+                                            "yValueSource": "COL_0_4"
+                                        },
+                                        "id": "brandPercentPie",
+                                        "type": "NXPieSeries"
+                                    }
+                                ],
+                                "touchTools": [
+                                    {
+                                        "targetSeries": [
+                                            "brandPercentPie"
+                                        ],
+                                        "toolType": "NXPieSpinTool"
+                                    }
+                                ]
+                            },
+                            "selection": {
+                                "selectionSource": "Y",
+                                "selectionType": "NXChartSelectionBiggestValue"
+                            }
+                        },
+                        "detailRightPanel": {
+                            "visible": true
+                        },
+                        "detailTopPanel": {
+                            "percentInTotalVisible": true,
+                            "type": "NXDetailVertical",
+                            "visible": false
+                        },
+                        "detailTotalPanel": {
+                            "isAboveDetailTop": true
+                        }
+                    },
+                    "type": "NXCubeCard"
+                },
+                {
+                    "cardTitle": "省份大于15(s)的访问最多的前10名",
+                    "dataSetId": "df0333eb-ebe0-48a4-8d07-fcfc4f9a021d",
+                    "linkEvent": {
+                        "isEventSource": true
+                    },
+                    "size": "row-sm-xs-6 row-xs-sm-12 row-md-3 row-md-sm-6 row-lg-md-3 col-xs-sm-12 col-sm-xs-12 col-sm-lg-12 col-md-12  col-md-lg-12 col-md-sm-6 col-lg-6 ",
+                    "structure": {
+                        "dimensions": [
+                            {
+                                "granularities": [
+                                    {
+                                        "key": "COL_0_1",
+                                        "title": "年"
+                                    },
+                                    {
+                                        "drillTo": true,
+                                        "key": "COL_0_2",
+                                        "title": "月"
+                                    }
+                                ],
+                                "key": "Dimension_2",
+                                "title": "时间"
+                            },
+                            {
+                                "granularities": [
+                                    {
+                                        "key": "COL_0_0",
+                                        "title": "省份"
+                                    }
+                                ],
+                                "key": "Dimension_1",
+                                "title": "地理"
+                            }
+                        ],
+                        "measures": [
+                            {
+                                "key": "COL_0_4",
+                                "sort": "NXSortOperationDesc",
+                                "title": "大于15(s)的访问次数"
+                            },
+                            {
+                                "key": "COL_0_5",
+                                "title": "小于15(s)的访问次数"
+                            }
+                        ]
+                    },
+                    "style": {
+                        "chart": {
+                            "chartConfig": {
+                                "axis": [
+                                    {
+                                        "axisType": "NXAxisTypeNumberic",
+                                        "coordinate": "NXCoordinateY",
+                                        "id": "left",
+                                        "inverted": true,
+                                        "majorPoint": {
+                                            "gridLine": {
+                                                "gridLineVisible": true
+                                            },
+                                            "label": {
+                                                "labelFormatter": ",###",
+                                                "labelNumberUnit": false
+                                            }
+                                        }
+                                    },
+                                    {
+                                        "axisType": "NXAxisTypeCategory",
+                                        "id": "bottom"
+                                    }
+                                ],
+                                "series": [
+                                    {
+                                        "accumulation": false,
+                                        "barFill": {
+                                            "fillColor": "#e84d60"
+                                        },
+                                        "dataSource": {
+                                            "limitDataCount": 10,
+                                            "yValueSource": "COL_0_4"
+                                        },
+                                        "id": "bar1",
+                                        "orientation": "vertical",
+                                        "showOverlayAll": false,
+                                        "stackedType": "NXChartSeriesStackedTypeStack",
+                                        "type": "NXBarSeries",
+                                        "xAxis": "bottom",
+                                        "yAxis": "left"
+                                    },
+                                    {
+                                        "accumulation": false,
+                                        "barFill": {
+                                            "fillColor": "#51a9d6"
+                                        },
+                                        "dataSource": {
+                                            "limitDataCount": 10,
+                                            "yValueSource": "COL_0_5"
+                                        },
+                                        "id": "bar2",
+                                        "orientation": "vertical",
+                                        "showOverlayAll": false,
+                                        "stackedType": "NXChartSeriesStackedTypeStack",
+                                        "type": "NXBarSeries",
+                                        "xAxis": "bottom",
+                                        "yAxis": "left"
+                                    }
+                                ],
+                                "touchTools": [
+                                    {
+                                        "crossAxis": "bottom",
+                                        "enableMultiTouch": false,
+                                        "removeOnRelease": false,
+                                        "showBelowSeries": false,
+                                        "targetSeries": [
+                                            "bar1",
+                                            "bar2"
+                                        ],
+                                        "toolType": "NXHighLightTool",
+                                        "visible": true
+                                    },
+                                    {
+                                        "active": true,
+                                        "crossAxis": "bottom",
+                                        "targetSeries": [
+                                            "bar1",
+                                            "bar2"
+                                        ],
+                                        "toolType": "NXChangeActiveSeriesTool"
+                                    }
+                                ]
+                            }
+                        },
+                        "detailTopPanel": {
+                            "percentInTotalVisible": true
+                        },
+                        "selection": {
+                            "selectionSource": "Y",
+                            "selectionType": "NXChartSelectionBiggestValue"
+                        }
+                    },
+                    "type": "NXCubeCard"
+                },
+                {
+                    "cardTitle": "省份当日大于15(s)的访问次数趋势",
+                    "dataSetId": "df0333eb-ebe0-48a4-8d07-fcfc4f9a021d",
+                    "linkEvent": {
+                        "isEventSource": true
+                    },
+                    "size": "row-sm-xs-12  row-sm-lg-6 row-xs-sm-12 row-md-3 row-md-sm-6 row-lg-md-3 col-xs-sm-12 col-sm-xs-12 col-sm-lg-12 col-md-12  col-md-lg-12 col-md-sm-6 col-lg-6 ",
+                    "structure": {
+                        "dimensions": [
+                            {
+                                "granularities": [
+                                    {
+                                        "key": "COL_0_0",
+                                        "title": "省份"
+                                    }
+                                ],
+                                "key": "Dimension_1",
+                                "title": "地理"
+                            },
+                            {
+                                "granularities": [
+                                    {
+                                        "key": "COL_0_1",
+                                        "title": "年"
+                                    },
+                                    {
+                                        "key": "COL_0_2",
+                                        "title": "月"
+                                    },
+                                    {
+                                        "drillTo": true,
+                                        "key": "COL_0_3",
+                                        "title": "日"
+                                    }
+                                ],
+                                "key": "Dimension_2",
+                                "title": "时间"
+                            }
+                        ],
+                        "measures": [
+                            {
+                                "key": "COL_0_4",
+                                "title": "大于15(s)的访问次数"
+                            },
+                            {
+                                "key": "COL_0_5",
+                                "title": "小于15(s)的访问次数"
+                            },
+                            {
+                                "key": "COL_0_6",
+                                "title": "大于15(s)的访问占比"
+                            }
+                        ]
+                    },
+                    "style": {
+                        "chart": {
+                            "chartConfig": {
+                                "axis": [
+                                    {
+                                        "axisType": "NXAxisTypeDateTime",
+                                        "id": "bottom"
+                                    },
+                                    {
+                                        "axisType": "NXAxisTypeNumberic",
+                                        "bands": [
+                                            {
+                                                "fill": {
+                                                    "fillAlpha": 0.05,
+                                                    "fillColor": "#e41c2b"
+                                                },
+                                                "range": {
+                                                    "length": 0.05,
+                                                    "location": 0
+                                                }
+                                            },
+                                            {
+                                                "fill": {
+                                                    "fillAlpha": 0.05,
+                                                    "fillColor": "#0eb83b"
+                                                },
+                                                "range": {
+                                                    "length": 0.2,
+                                                    "location": 0.05
+                                                }
+                                            }
+                                        ],
+                                        "coordinate": "NXCoordinateY",
+                                        "id": "left",
+                                        "majorPoint": {
+                                            "label": {
+                                                "labelFormatter": "#.#%",
+                                                "labelNumberUnit": false
+                                            }
+                                        },
+                                        "maxValue": 0.2,
+                                        "minValue": 0
+                                    }
+                                ],
+                                "series": [
+                                    {
+                                        "dataSource": {
+                                            "xDataSourceDateFormatString": "d日",
+                                            "xDataSourceDateLocale": "zh",
+                                            "xDisplayDateFormatString": "d日",
+                                            "xDisplayDateLocale": "zh",
+                                            "yFormatString": "#.#%",
+                                            "yValueSource": "COL_0_6"
+                                        },
+                                        "fill": {
+                                            "fillColor": "#955cbf"
+                                        },
+                                        "id": "barSeries",
+                                        "orientation": "vertical",
+                                        "sort": {
+                                            "sortSource": "x",
+                                            "sortType": "NXSortOperationAsc"
+                                        },
+                                        "type": "NXLineSeries",
+                                        "xAxis": "bottom",
+                                        "yAxis": "left"
+                                    }
+                                ],
+                                "touchTools": [
+                                    {
+                                        "crossAxis": "bottom",
+                                        "enableMultiTouch": true,
+                                        "removeOnRelease": false,
+                                        "showBelowSeries": false,
+                                        "targetSeries": [
+                                            "barSeries"
+                                        ],
+                                        "toolPlot": {
+                                            "innerSymbol": {
+                                                "anchorPoint": {
+                                                    "x": 0.5,
+                                                    "y": 0.5
+                                                },
+                                                "symbolSize": {
+                                                    "height": 10,
+                                                    "width": 10
+                                                },
+                                                "symbolType": "NXPlotSymbolTypeEllipse"
+                                            },
+                                            "multiTouchLineType": "NXLineToolTypeVertical",
+                                            "outerSymbol": {
+                                                "anchorPoint": {
+                                                    "x": 0.5,
+                                                    "y": 0.5
+                                                },
+                                                "symbolFill": {
+                                                    "fillColor": "#ffffff"
+                                                },
+                                                "symbolSize": {
+                                                    "height": 20,
+                                                    "width": 20
+                                                },
+                                                "symbolType": "NXPlotSymbolTypeEllipse"
+                                            },
+                                            "singleTouchLineType": "NXLineToolTypeVertical"
+                                        },
+                                        "toolType": "NXLineTool",
+                                        "visible": true
+                                    },
+                                    {
+                                        "active": true,
+                                        "crossAxis": "bottom",
+                                        "targetSeries": [
+                                            "barSeries"
+                                        ],
+                                        "toolType": "NXChangeActiveSeriesTool"
+                                    }
+                                ]
+                            }
+                        },
+                        "selection": {
+                            "selectionSource": "Y",
+                            "selectionType": "NXChartSelectionBiggestValue"
+                        }
+                    },
+                    "type": "NXCubeCard"
+                }
+            ],
+            "pageColor": "#718dbf",
+            "pageTitle": "小蜜蜂政府监测"
+        }
+    ],
+    "status": "readyForView",
+    "title": "小蜜蜂政府监测"
+}

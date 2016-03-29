@@ -1,0 +1,1371 @@
+{
+    "creator": "dongsaiyuan",
+    "defaultStyle": [
+        {
+            "chartOptions": {
+                "seriesOptions": {}
+            },
+            "defaultColor": [
+                "#e84d60",
+                "#e88f61",
+                "#fecd6c",
+                "#b3cf61",
+                "#77c298",
+                "#51a9d6",
+                "#718dbf",
+                "#955cbf",
+                "#a4547d",
+                "#c64373"
+            ],
+            "scopeId": [
+                "all"
+            ],
+            "scopeType": "report"
+        }
+    ],
+    "id": "helpDesk",
+    "metadataStructures": [
+        {
+            "dataSetId": "6910c8ad-760d-44c3-be81-be19a49ca10d",
+            "db": "helpDesk.sqlite",
+            "dimensions": [
+                {
+                    "granularities": [
+                        {
+                            "key": "COL_0_0",
+                            "title": "月"
+                        },
+                        {
+                            "key": "COL_0_1",
+                            "title": "日"
+                        }
+                    ],
+                    "key": "Dimension_1",
+                    "title": "时间"
+                },
+                {
+                    "granularities": [
+                        {
+                            "key": "COL_0_2",
+                            "title": "技能组"
+                        },
+                        {
+                            "key": "COL_0_3",
+                            "title": "业务代表名称"
+                        }
+                    ],
+                    "key": "Dimension_2",
+                    "title": "业务代表名称"
+                }
+            ],
+            "measures": [
+                {
+                    "key": "COL_0_4",
+                    "title": "值班时间"
+                },
+                {
+                    "key": "COL_0_5",
+                    "title": "通话时间"
+                },
+                {
+                    "key": "COL_0_6",
+                    "title": "整理时间"
+                },
+                {
+                    "key": "COL_0_7",
+                    "title": "示闲时间"
+                },
+                {
+                    "key": "COL_0_8",
+                    "title": "示忙时间"
+                },
+                {
+                    "aggregator": "avg",
+                    "key": "COL_0_9",
+                    "title": "平均通话时间"
+                },
+                {
+                    "aggregator": "avg",
+                    "key": "COL_0_10",
+                    "title": "平均整理时间"
+                },
+                {
+                    "key": "COL_0_11",
+                    "title": "话务量"
+                },
+                {
+                    "aggregator": "avg",
+                    "key": "COL_0_12",
+                    "title": "工作效率"
+                },
+                {
+                    "aggregator": "avg",
+                    "key": "COL_0_13",
+                    "title": "示忙+整理占比"
+                },
+                {
+                    "aggregator": "avg",
+                    "key": "COL_0_14",
+                    "title": "示闲占比"
+                }
+            ]
+        }
+    ],
+    "pages": [
+        {
+            "cards": [
+                {
+                    "cardTitle": "各组对比",
+                    "dataSetId": "6910c8ad-760d-44c3-be81-be19a49ca10d",
+                    "size": "row-sm-xs-12  row-sm-xl-6 row-lg-md-4 row-sm-lg-6 row-xs-sm-12 row-md-3 row-md-sm-6 col-xs-sm-12 col-sm-xs-6  col-sm-md-12 col-sm-lg-12 col-md-12  col-md-lg-12 col-md-sm-6 col-lg-6 ",
+                    "structure": {
+                        "dimensions": [
+                            {
+                                "granularities": [
+                                    {
+                                        "key": "COL_0_0",
+                                        "title": "月"
+                                    },
+                                    {
+                                        "key": "COL_0_1",
+                                        "title": "日"
+                                    }
+                                ],
+                                "key": "Dimension_1",
+                                "title": "时间"
+                            },
+                            {
+                                "granularities": [
+                                    {
+                                        "key": "COL_0_2",
+                                        "title": "技能组"
+                                    },
+                                    {
+                                        "key": "COL_0_3",
+                                        "title": "业务代表名称"
+                                    }
+                                ],
+                                "key": "Dimension_2",
+                                "title": "业务代表名称"
+                            }
+                        ],
+                        "measures": [
+                            {
+                                "key": "COL_0_4",
+                                "title": "值班时间"
+                            },
+                            {
+                                "key": "COL_0_5",
+                                "title": "通话时间"
+                            },
+                            {
+                                "key": "COL_0_6",
+                                "title": "整理时间"
+                            },
+                            {
+                                "key": "COL_0_7",
+                                "title": "示闲时间"
+                            },
+                            {
+                                "key": "COL_0_8",
+                                "title": "示忙时间"
+                            },
+                            {
+                                "aggregator": "avg",
+                                "key": "COL_0_9",
+                                "title": "平均通话时间"
+                            },
+                            {
+                                "aggregator": "avg",
+                                "key": "COL_0_10",
+                                "title": "平均整理时间"
+                            },
+                            {
+                                "key": "COL_0_11",
+                                "title": "话务量"
+                            },
+                            {
+                                "aggregator": "avg",
+                                "key": "COL_0_12",
+                                "title": "工作效率"
+                            },
+                            {
+                                "aggregator": "avg",
+                                "key": "COL_0_13",
+                                "title": "示忙+整理占比"
+                            },
+                            {
+                                "aggregator": "avg",
+                                "key": "COL_0_14",
+                                "title": "示闲占比"
+                            }
+                        ]
+                    },
+                    "style": {
+                        "chart": {
+                            "chartConfig": {
+                                "axis": [
+                                    {
+                                        "axisType": "NXAxisTypeCategory",
+                                        "id": "bottom"
+                                    },
+                                    {
+                                        "axisType": "NXAxisTypeNumberic",
+                                        "coordinate": "NXCoordinateY",
+                                        "id": "left",
+                                        "majorPoint": {
+                                            "label": {
+                                                "labelFormatter": "##.#%",
+                                                "labelNumberUnit": false
+                                            }
+                                        },
+                                        "minValue": 0
+                                    }
+                                ],
+                                "series": [
+                                    {
+                                        "barFill": {
+                                            "fillColor": "#51a9d6"
+                                        },
+                                        "dataSource": {
+                                            "colorRange": {
+                                                "sectionRange": [
+                                                    {
+                                                        "color": {
+                                                            "fillColor": "#e41c2b"
+                                                        },
+                                                        "fromValue": 0,
+                                                        "toValue": 0.3
+                                                    },
+                                                    {
+                                                        "color": {
+                                                            "fillColor": "#0eb83b"
+                                                        },
+                                                        "fromValue": 0.3,
+                                                        "toValue": 1
+                                                    }
+                                                ],
+                                                "valueSource": "COL_0_12"
+                                            },
+                                            "yFormatString": "##.#%",
+                                            "yValueSource": "COL_0_12"
+                                        },
+                                        "id": "barSeries",
+                                        "interSeriesSetPadding": 0.2,
+                                        "orientation": "vertical",
+                                        "showOverlayAll": true,
+                                        "sort": {
+                                            "sortSource": "x",
+                                            "sortType": "NXSortOperationAsc"
+                                        },
+                                        "stackedType": "NXChartSeriesStackedTypeStack",
+                                        "type": "NXBarSeries",
+                                        "xAxis": "bottom",
+                                        "yAxis": "left"
+                                    }
+                                ],
+                                "touchTools": [
+                                    {
+                                        "crossAxis": "bottom",
+                                        "enableMultiTouch": true,
+                                        "removeOnRelease": false,
+                                        "showBelowSeries": false,
+                                        "targetSeries": [
+                                            "barSeries"
+                                        ],
+                                        "toolType": "NXHighLightTool",
+                                        "visible": true
+                                    }
+                                ]
+                            }
+                        }
+                    },
+                    "type": "NXCubeCard"
+                },
+                {
+                    "cardTitle": "某银行客服整体部月度示闲占比",
+                    "dataSetId": "6910c8ad-760d-44c3-be81-be19a49ca10d",
+                    "size": "row-6 row-lg-md-4 row-sm-xl-6 col-md-lg-6 col-xs-sm-12 col-sm-xs-3 col-sm-md-12 col-sm-lg-12 col-md-12  col-md-lg-12 col-md-sm-3 col-lg-3 ",
+                    "structure": {
+                        "dimensions": [
+                            {
+                                "granularities": [
+                                    {
+                                        "key": "COL_0_0",
+                                        "title": "月"
+                                    },
+                                    {
+                                        "key": "COL_0_1",
+                                        "title": "日"
+                                    }
+                                ],
+                                "key": "Dimension_1",
+                                "title": "时间"
+                            }
+                        ],
+                        "measures": [
+                            {
+                                "key": "COL_0_14",
+                                "title": "示闲占比"
+                            }
+                        ]
+                    },
+                    "style": {
+                        "chart": {
+                            "chartConfig": {
+                                "series": [
+                                    {
+                                        "dataSource": {
+                                            "colorRange": {
+                                                "dataRange": {
+                                                    "fromValue": 0,
+                                                    "toValue": 1
+                                                },
+                                                "sectionRange": [
+                                                    {
+                                                        "color": {
+                                                            "fillColor": "#e41c2b"
+                                                        },
+                                                        "fromValue": 0,
+                                                        "legend": "忙",
+                                                        "toValue": 0.4
+                                                    },
+                                                    {
+                                                        "color": {
+                                                            "fillColor": "#0eb83b"
+                                                        },
+                                                        "fromValue": 0.4,
+                                                        "legend": "闲",
+                                                        "toValue": 1
+                                                    }
+                                                ],
+                                                "valueSource": "COL_0_14"
+                                            },
+                                            "yFormatString": "##.#%",
+                                            "yValueSource": "COL_0_14"
+                                        },
+                                        "id": "brandPassRing",
+                                        "iteration": {
+                                            "isLeafLevel": true
+                                        },
+                                        "type": "NXRingSeries"
+                                    }
+                                ]
+                            }
+                        },
+                        "detailTopPanel": {
+                            "visible": false
+                        }
+                    },
+                    "type": "NXCubeCard"
+                },
+                {
+                    "cardTitle": "某银行客服整体部月度示忙+整理占比",
+                    "dataSetId": "6910c8ad-760d-44c3-be81-be19a49ca10d",
+                    "size": "row-6  row-lg-md-4  row-sm-xl-6 col-md-lg-6  col-xs-sm-12 col-sm-xs-3 col-sm-md-12 col-sm-lg-12 col-md-12  col-md-lg-12 col-md-sm-3 col-lg-3 ",
+                    "structure": {
+                        "dimensions": [
+                            {
+                                "granularities": [
+                                    {
+                                        "key": "COL_0_0",
+                                        "title": "月"
+                                    },
+                                    {
+                                        "key": "COL_0_1",
+                                        "title": "日"
+                                    }
+                                ],
+                                "key": "Dimension_1",
+                                "title": "时间"
+                            }
+                        ],
+                        "measures": [
+                            {
+                                "aggregator": "avg",
+                                "key": "COL_0_13",
+                                "title": "示忙+整理占比"
+                            }
+                        ]
+                    },
+                    "style": {
+                        "chart": {
+                            "chartConfig": {
+                                "series": [
+                                    {
+                                        "dataSource": {
+                                            "colorRange": {
+                                                "dataRange": {
+                                                    "fromValue": 0,
+                                                    "toValue": 1
+                                                },
+                                                "sectionRange": [
+                                                    {
+                                                        "color": {
+                                                            "fillColor": "#e41c2b"
+                                                        },
+                                                        "fromValue": 0,
+                                                        "legend": "闲",
+                                                        "toValue": 0.4
+                                                    },
+                                                    {
+                                                        "color": {
+                                                            "fillColor": "#0eb83b"
+                                                        },
+                                                        "fromValue": 0.4,
+                                                        "legend": "忙",
+                                                        "toValue": 1
+                                                    }
+                                                ],
+                                                "valueSource": "COL_0_13"
+                                            },
+                                            "yFormatString": "##.#%",
+                                            "yValueSource": "COL_0_13"
+                                        },
+                                        "id": "brandPassRing",
+                                        "iteration": {
+                                            "isLeafLevel": true
+                                        },
+                                        "type": "NXRingSeries"
+                                    }
+                                ]
+                            }
+                        },
+                        "detailTopPanel": {
+                            "visible": false
+                        }
+                    },
+                    "type": "NXCubeCard"
+                },
+                {
+                    "enableZoom": false,
+                    "size": "row-sm-lg-6 row-sm-xl-6 row-lg-md-4 row-md-md-6 row-sm-xs-12 col-12",
+                    "subCards": [
+                        {
+                            "cardTitle": "小组示闲占比",
+                            "dataSetId": "6910c8ad-760d-44c3-be81-be19a49ca10d",
+                            "size": "row-6  row-lg-md-4 row-sm-xl-6  col-xs-sm-12 col-sm-xs-3 col-sm-md-12 col-sm-lg-12 col-md-12  col-md-lg-12 col-md-sm-3 col-lg-3 ",
+                            "structure": {
+                                "dimensions": [
+                                    {
+                                        "granularities": [
+                                            {
+                                                "key": "COL_0_0",
+                                                "title": "月"
+                                            },
+                                            {
+                                                "key": "COL_0_1",
+                                                "title": "日"
+                                            }
+                                        ],
+                                        "key": "Dimension_1",
+                                        "title": "时间"
+                                    },
+                                    {
+                                        "granularities": [
+                                            {
+                                                "key": "COL_0_2",
+                                                "selectionValue": "传统技能组",
+                                                "static": true,
+                                                "title": "技能组"
+                                            }
+                                        ],
+                                        "key": "Dimension_2",
+                                        "title": "业务代表名称"
+                                    }
+                                ],
+                                "measures": [
+                                    {
+                                        "key": "COL_0_14",
+                                        "title": "示闲占比"
+                                    }
+                                ]
+                            },
+                            "style": {
+                                "chart": {
+                                    "chartConfig": {
+                                        "series": [
+                                            {
+                                                "dataSource": {
+                                                    "colorRange": {
+                                                        "dataRange": {
+                                                            "fromValue": 0,
+                                                            "toValue": 1
+                                                        },
+                                                        "sectionRange": [
+                                                            {
+                                                                "color": {
+                                                                    "fillColor": "#e41c2b"
+                                                                },
+                                                                "fromValue": 0,
+                                                                "legend": "忙",
+                                                                "toValue": 0.4
+                                                            },
+                                                            {
+                                                                "color": {
+                                                                    "fillColor": "#0eb83b"
+                                                                },
+                                                                "fromValue": 0.4,
+                                                                "legend": "闲",
+                                                                "toValue": 1
+                                                            }
+                                                        ],
+                                                        "valueSource": "COL_0_14"
+                                                    },
+                                                    "yFormatString": "##.#%",
+                                                    "yValueSource": "COL_0_14"
+                                                },
+                                                "id": "brandPassRing",
+                                                "iteration": {
+                                                    "isLeafLevel": true
+                                                },
+                                                "type": "NXRingSeries"
+                                            }
+                                        ]
+                                    }
+                                },
+                                "detailTopPanel": {
+                                    "visible": false
+                                }
+                            },
+                            "type": "NXCubeCard"
+                        },
+                        {
+                            "cardTitle": "小组示闲占比",
+                            "dataSetId": "6910c8ad-760d-44c3-be81-be19a49ca10d",
+                            "size": "row-6  row-lg-md-4  row-sm-xl-6   col-xs-sm-12 col-sm-xs-3 col-sm-md-12 col-sm-lg-12 col-md-12  col-md-lg-12 col-md-sm-3 col-lg-3 ",
+                            "structure": {
+                                "dimensions": [
+                                    {
+                                        "granularities": [
+                                            {
+                                                "key": "COL_0_0",
+                                                "title": "月"
+                                            },
+                                            {
+                                                "key": "COL_0_1",
+                                                "title": "日"
+                                            }
+                                        ],
+                                        "key": "Dimension_1",
+                                        "title": "时间"
+                                    },
+                                    {
+                                        "granularities": [
+                                            {
+                                                "key": "COL_0_2",
+                                                "selectionValue": "外呼组",
+                                                "static": true,
+                                                "title": "技能组"
+                                            }
+                                        ],
+                                        "key": "Dimension_2",
+                                        "title": "业务代表名称"
+                                    }
+                                ],
+                                "measures": [
+                                    {
+                                        "key": "COL_0_14",
+                                        "title": "示闲占比"
+                                    }
+                                ]
+                            },
+                            "style": {
+                                "chart": {
+                                    "chartConfig": {
+                                        "series": [
+                                            {
+                                                "dataSource": {
+                                                    "colorRange": {
+                                                        "dataRange": {
+                                                            "fromValue": 0,
+                                                            "toValue": 1
+                                                        },
+                                                        "sectionRange": [
+                                                            {
+                                                                "color": {
+                                                                    "fillColor": "#e41c2b"
+                                                                },
+                                                                "fromValue": 0,
+                                                                "legend": "忙",
+                                                                "toValue": 0.4
+                                                            },
+                                                            {
+                                                                "color": {
+                                                                    "fillColor": "#0eb83b"
+                                                                },
+                                                                "fromValue": 0.4,
+                                                                "legend": "闲",
+                                                                "toValue": 1
+                                                            }
+                                                        ],
+                                                        "valueSource": "COL_0_14"
+                                                    },
+                                                    "yFormatString": "##.#%",
+                                                    "yValueSource": "COL_0_14"
+                                                },
+                                                "id": "brandPassRing",
+                                                "iteration": {
+                                                    "isLeafLevel": true
+                                                },
+                                                "type": "NXRingSeries"
+                                            }
+                                        ]
+                                    }
+                                },
+                                "detailTopPanel": {
+                                    "visible": false
+                                }
+                            },
+                            "type": "NXCubeCard"
+                        },
+                        {
+                            "cardTitle": "小组示闲占比",
+                            "dataSetId": "6910c8ad-760d-44c3-be81-be19a49ca10d",
+                            "size": "row-6 row-lg-md-4  row-sm-xl-6    col-xs-sm-12 col-sm-xs-3 col-sm-md-12 col-sm-lg-12 col-md-12  col-md-lg-12 col-md-sm-3 col-lg-3 ",
+                            "structure": {
+                                "dimensions": [
+                                    {
+                                        "granularities": [
+                                            {
+                                                "key": "COL_0_0",
+                                                "title": "月"
+                                            },
+                                            {
+                                                "key": "COL_0_1",
+                                                "title": "日"
+                                            }
+                                        ],
+                                        "key": "Dimension_1",
+                                        "title": "时间"
+                                    },
+                                    {
+                                        "granularities": [
+                                            {
+                                                "key": "COL_0_2",
+                                                "selectionValue": "信用卡技能组",
+                                                "static": true,
+                                                "title": "技能组"
+                                            }
+                                        ],
+                                        "key": "Dimension_2",
+                                        "title": "业务代表名称"
+                                    }
+                                ],
+                                "measures": [
+                                    {
+                                        "key": "COL_0_14",
+                                        "title": "示闲占比"
+                                    }
+                                ]
+                            },
+                            "style": {
+                                "chart": {
+                                    "chartConfig": {
+                                        "series": [
+                                            {
+                                                "dataSource": {
+                                                    "colorRange": {
+                                                        "dataRange": {
+                                                            "fromValue": 0,
+                                                            "toValue": 1
+                                                        },
+                                                        "sectionRange": [
+                                                            {
+                                                                "color": {
+                                                                    "fillColor": "#e41c2b"
+                                                                },
+                                                                "fromValue": 0,
+                                                                "legend": "忙",
+                                                                "toValue": 0.4
+                                                            },
+                                                            {
+                                                                "color": {
+                                                                    "fillColor": "#0eb83b"
+                                                                },
+                                                                "fromValue": 0.4,
+                                                                "legend": "闲",
+                                                                "toValue": 1
+                                                            }
+                                                        ],
+                                                        "valueSource": "COL_0_14"
+                                                    },
+                                                    "yFormatString": "##.#%",
+                                                    "yValueSource": "COL_0_14"
+                                                },
+                                                "id": "brandPassRing",
+                                                "iteration": {
+                                                    "isLeafLevel": true
+                                                },
+                                                "type": "NXRingSeries"
+                                            }
+                                        ]
+                                    }
+                                },
+                                "detailTopPanel": {
+                                    "visible": false
+                                }
+                            },
+                            "type": "NXCubeCard"
+                        },
+                        {
+                            "cardTitle": "小组示闲占比",
+                            "dataSetId": "6910c8ad-760d-44c3-be81-be19a49ca10d",
+                            "size": "row-6  row-lg-md-4  row-sm-xl-6   col-xs-sm-12 col-sm-xs-3 col-sm-md-12 col-sm-lg-12 col-md-12  col-md-lg-12 col-md-sm-3 col-lg-3 ",
+                            "structure": {
+                                "dimensions": [
+                                    {
+                                        "granularities": [
+                                            {
+                                                "key": "COL_0_0",
+                                                "title": "月"
+                                            },
+                                            {
+                                                "key": "COL_0_1",
+                                                "title": "日"
+                                            }
+                                        ],
+                                        "key": "Dimension_1",
+                                        "title": "时间"
+                                    },
+                                    {
+                                        "granularities": [
+                                            {
+                                                "key": "COL_0_2",
+                                                "selectionValue": "网银技能组",
+                                                "static": true,
+                                                "title": "技能组"
+                                            }
+                                        ],
+                                        "key": "Dimension_2",
+                                        "title": "业务代表名称"
+                                    }
+                                ],
+                                "measures": [
+                                    {
+                                        "key": "COL_0_14",
+                                        "title": "示闲占比"
+                                    }
+                                ]
+                            },
+                            "style": {
+                                "chart": {
+                                    "chartConfig": {
+                                        "series": [
+                                            {
+                                                "dataSource": {
+                                                    "colorRange": {
+                                                        "dataRange": {
+                                                            "fromValue": 0,
+                                                            "toValue": 1
+                                                        },
+                                                        "sectionRange": [
+                                                            {
+                                                                "color": {
+                                                                    "fillColor": "#e41c2b"
+                                                                },
+                                                                "fromValue": 0,
+                                                                "legend": "忙",
+                                                                "toValue": 0.4
+                                                            },
+                                                            {
+                                                                "color": {
+                                                                    "fillColor": "#0eb83b"
+                                                                },
+                                                                "fromValue": 0.4,
+                                                                "legend": "闲",
+                                                                "toValue": 1
+                                                            }
+                                                        ],
+                                                        "valueSource": "COL_0_14"
+                                                    },
+                                                    "yFormatString": "##.#%",
+                                                    "yValueSource": "COL_0_14"
+                                                },
+                                                "id": "brandPassRing",
+                                                "iteration": {
+                                                    "isLeafLevel": true
+                                                },
+                                                "type": "NXRingSeries"
+                                            }
+                                        ]
+                                    }
+                                },
+                                "detailTopPanel": {
+                                    "visible": false
+                                }
+                            },
+                            "type": "NXCubeCard"
+                        },
+                        {
+                            "cardTitle": "小组示忙+整理占比",
+                            "dataSetId": "6910c8ad-760d-44c3-be81-be19a49ca10d",
+                            "size": "row-6  row-lg-md-4  row-sm-xl-6    col-xs-sm-12 col-sm-xs-3 col-sm-md-12 col-sm-lg-12 col-md-12  col-md-lg-12 col-md-sm-3 col-lg-3 ",
+                            "structure": {
+                                "dimensions": [
+                                    {
+                                        "granularities": [
+                                            {
+                                                "key": "COL_0_0",
+                                                "title": "月"
+                                            },
+                                            {
+                                                "key": "COL_0_1",
+                                                "title": "日"
+                                            }
+                                        ],
+                                        "key": "Dimension_1",
+                                        "title": "时间"
+                                    },
+                                    {
+                                        "granularities": [
+                                            {
+                                                "key": "COL_0_2",
+                                                "selectionValue": "传统技能组",
+                                                "static": true,
+                                                "title": "技能组"
+                                            }
+                                        ],
+                                        "key": "Dimension_2",
+                                        "title": "业务代表名称"
+                                    }
+                                ],
+                                "measures": [
+                                    {
+                                        "aggregator": "avg",
+                                        "key": "COL_0_13",
+                                        "title": "示忙+整理占比"
+                                    }
+                                ]
+                            },
+                            "style": {
+                                "chart": {
+                                    "chartConfig": {
+                                        "series": [
+                                            {
+                                                "dataSource": {
+                                                    "colorRange": {
+                                                        "dataRange": {
+                                                            "fromValue": 0,
+                                                            "toValue": 1
+                                                        },
+                                                        "sectionRange": [
+                                                            {
+                                                                "color": {
+                                                                    "fillColor": "#e41c2b"
+                                                                },
+                                                                "fromValue": 0,
+                                                                "legend": "忙",
+                                                                "toValue": 0.4
+                                                            },
+                                                            {
+                                                                "color": {
+                                                                    "fillColor": "#0eb83b"
+                                                                },
+                                                                "fromValue": 0.4,
+                                                                "legend": "闲",
+                                                                "toValue": 1
+                                                            }
+                                                        ],
+                                                        "valueSource": "COL_0_13"
+                                                    },
+                                                    "yFormatString": "##.#%",
+                                                    "yValueSource": "COL_0_13"
+                                                },
+                                                "id": "brandPassRing",
+                                                "iteration": {
+                                                    "isLeafLevel": true
+                                                },
+                                                "type": "NXRingSeries"
+                                            }
+                                        ]
+                                    }
+                                },
+                                "detailTopPanel": {
+                                    "visible": false
+                                }
+                            },
+                            "type": "NXCubeCard"
+                        },
+                        {
+                            "cardTitle": "小组示忙+整理占比",
+                            "dataSetId": "6910c8ad-760d-44c3-be81-be19a49ca10d",
+                            "size": "row-6  row-lg-md-4  row-sm-xl-6   col-xs-sm-12 col-sm-xs-3 col-sm-md-12 col-sm-lg-12 col-md-12  col-md-lg-12 col-md-sm-3 col-lg-3 ",
+                            "structure": {
+                                "dimensions": [
+                                    {
+                                        "granularities": [
+                                            {
+                                                "key": "COL_0_0",
+                                                "title": "月"
+                                            },
+                                            {
+                                                "key": "COL_0_1",
+                                                "title": "日"
+                                            }
+                                        ],
+                                        "key": "Dimension_1",
+                                        "title": "时间"
+                                    },
+                                    {
+                                        "granularities": [
+                                            {
+                                                "key": "COL_0_2",
+                                                "selectionValue": "外呼组",
+                                                "static": true,
+                                                "title": "技能组"
+                                            }
+                                        ],
+                                        "key": "Dimension_2",
+                                        "title": "业务代表名称"
+                                    }
+                                ],
+                                "measures": [
+                                    {
+                                        "aggregator": "avg",
+                                        "key": "COL_0_13",
+                                        "title": "示忙+整理占比"
+                                    }
+                                ]
+                            },
+                            "style": {
+                                "chart": {
+                                    "chartConfig": {
+                                        "series": [
+                                            {
+                                                "dataSource": {
+                                                    "colorRange": {
+                                                        "dataRange": {
+                                                            "fromValue": 0,
+                                                            "toValue": 1
+                                                        },
+                                                        "sectionRange": [
+                                                            {
+                                                                "color": {
+                                                                    "fillColor": "#e41c2b"
+                                                                },
+                                                                "fromValue": 0,
+                                                                "legend": "闲",
+                                                                "toValue": 0.4
+                                                            },
+                                                            {
+                                                                "color": {
+                                                                    "fillColor": "#0eb83b"
+                                                                },
+                                                                "fromValue": 0.4,
+                                                                "legend": "忙",
+                                                                "toValue": 1
+                                                            }
+                                                        ],
+                                                        "valueSource": "COL_0_13"
+                                                    },
+                                                    "yFormatString": "##.#%",
+                                                    "yValueSource": "COL_0_13"
+                                                },
+                                                "id": "brandPassRing",
+                                                "iteration": {
+                                                    "isLeafLevel": true
+                                                },
+                                                "type": "NXRingSeries"
+                                            }
+                                        ]
+                                    }
+                                },
+                                "detailTopPanel": {
+                                    "visible": false
+                                }
+                            },
+                            "type": "NXCubeCard"
+                        },
+                        {
+                            "cardTitle": "小组示忙+整理占比",
+                            "dataSetId": "6910c8ad-760d-44c3-be81-be19a49ca10d",
+                            "size": "row-6  row-lg-md-4  row-sm-xl-6   col-xs-sm-12 col-sm-xs-3 col-sm-md-12 col-sm-lg-12 col-md-12  col-md-lg-12 col-md-sm-3 col-lg-3 ",
+                            "structure": {
+                                "dimensions": [
+                                    {
+                                        "granularities": [
+                                            {
+                                                "key": "COL_0_0",
+                                                "title": "月"
+                                            },
+                                            {
+                                                "key": "COL_0_1",
+                                                "title": "日"
+                                            }
+                                        ],
+                                        "key": "Dimension_1",
+                                        "title": "时间"
+                                    },
+                                    {
+                                        "granularities": [
+                                            {
+                                                "key": "COL_0_2",
+                                                "selectionValue": "信用卡技能组",
+                                                "static": true,
+                                                "title": "技能组"
+                                            }
+                                        ],
+                                        "key": "Dimension_2",
+                                        "title": "业务代表名称"
+                                    }
+                                ],
+                                "measures": [
+                                    {
+                                        "aggregator": "avg",
+                                        "key": "COL_0_13",
+                                        "title": "示忙+整理占比"
+                                    }
+                                ]
+                            },
+                            "style": {
+                                "chart": {
+                                    "chartConfig": {
+                                        "series": [
+                                            {
+                                                "dataSource": {
+                                                    "colorRange": {
+                                                        "dataRange": {
+                                                            "fromValue": 0,
+                                                            "toValue": 1
+                                                        },
+                                                        "sectionRange": [
+                                                            {
+                                                                "color": {
+                                                                    "fillColor": "#e41c2b"
+                                                                },
+                                                                "fromValue": 0,
+                                                                "legend": "闲",
+                                                                "toValue": 0.4
+                                                            },
+                                                            {
+                                                                "color": {
+                                                                    "fillColor": "#0eb83b"
+                                                                },
+                                                                "fromValue": 0.4,
+                                                                "legend": "忙",
+                                                                "toValue": 1
+                                                            }
+                                                        ],
+                                                        "valueSource": "COL_0_13"
+                                                    },
+                                                    "yFormatString": "##.#%",
+                                                    "yValueSource": "COL_0_13"
+                                                },
+                                                "id": "brandPassRing",
+                                                "iteration": {
+                                                    "isLeafLevel": true
+                                                },
+                                                "type": "NXRingSeries"
+                                            }
+                                        ]
+                                    }
+                                },
+                                "detailTopPanel": {
+                                    "visible": false
+                                }
+                            },
+                            "type": "NXCubeCard"
+                        },
+                        {
+                            "cardTitle": "小组示忙+整理占比",
+                            "dataSetId": "6910c8ad-760d-44c3-be81-be19a49ca10d",
+                            "size": "row-6  row-lg-md-4  row-sm-xl-6   col-xs-sm-12 col-sm-xs-3 col-sm-md-12 col-sm-lg-12 col-md-12  col-md-lg-12 col-md-sm-3 col-lg-3 ",
+                            "structure": {
+                                "dimensions": [
+                                    {
+                                        "granularities": [
+                                            {
+                                                "key": "COL_0_0",
+                                                "title": "月"
+                                            },
+                                            {
+                                                "key": "COL_0_1",
+                                                "title": "日"
+                                            }
+                                        ],
+                                        "key": "Dimension_1",
+                                        "title": "时间"
+                                    },
+                                    {
+                                        "granularities": [
+                                            {
+                                                "key": "COL_0_2",
+                                                "selectionValue": "网银技能组",
+                                                "static": true,
+                                                "title": "技能组"
+                                            }
+                                        ],
+                                        "key": "Dimension_2",
+                                        "title": "业务代表名称"
+                                    }
+                                ],
+                                "measures": [
+                                    {
+                                        "aggregator": "avg",
+                                        "key": "COL_0_13",
+                                        "title": "示忙+整理占比"
+                                    }
+                                ]
+                            },
+                            "style": {
+                                "chart": {
+                                    "chartConfig": {
+                                        "series": [
+                                            {
+                                                "dataSource": {
+                                                    "colorRange": {
+                                                        "dataRange": {
+                                                            "fromValue": 0,
+                                                            "toValue": 1
+                                                        },
+                                                        "sectionRange": [
+                                                            {
+                                                                "color": {
+                                                                    "fillColor": "#e41c2b"
+                                                                },
+                                                                "fromValue": 0,
+                                                                "legend": "闲",
+                                                                "toValue": 0.4
+                                                            },
+                                                            {
+                                                                "color": {
+                                                                    "fillColor": "#0eb83b"
+                                                                },
+                                                                "fromValue": 0.4,
+                                                                "legend": "忙",
+                                                                "toValue": 1
+                                                            }
+                                                        ],
+                                                        "valueSource": "COL_0_13"
+                                                    },
+                                                    "yFormatString": "##.#%",
+                                                    "yValueSource": "COL_0_13"
+                                                },
+                                                "id": "brandPassRing",
+                                                "iteration": {
+                                                    "isLeafLevel": true
+                                                },
+                                                "type": "NXRingSeries"
+                                            }
+                                        ]
+                                    }
+                                },
+                                "detailTopPanel": {
+                                    "visible": false
+                                }
+                            },
+                            "type": "NXCubeCard"
+                        }
+                    ]
+                },
+                {
+                    "cardTitle": "各指标总览",
+                    "dataSetId": "6910c8ad-760d-44c3-be81-be19a49ca10d",
+                    "linkEvent": {
+                        "isEventSource": true
+                    },
+                    "size": "row-lg-12 col-lo-12",
+                    "structure": {
+                        "dimensions": [
+                            {
+                                "granularities": [
+                                    {
+                                        "key": "COL_0_0",
+                                        "title": "月"
+                                    },
+                                    {
+                                        "key": "COL_0_1"
+                                    }
+                                ],
+                                "key": "Dimension_1"
+                            },
+                            {
+                                "granularities": [
+                                    {
+                                        "key": "COL_0_2"
+                                    },
+                                    {
+                                        "key": "COL_0_3"
+                                    }
+                                ],
+                                "key": "Dimension_2"
+                            }
+                        ],
+                        "measures": [
+                            {
+                                "key": "COL_0_4",
+                                "title": "值班时间1"
+                            },
+                            {
+                                "key": "COL_0_5",
+                                "title": "通话时间"
+                            },
+                            {
+                                "key": "COL_0_6"
+                            },
+                            {
+                                "key": "COL_0_7"
+                            },
+                            {
+                                "key": "COL_0_8"
+                            },
+                            {
+                                "key": "COL_0_9"
+                            },
+                            {
+                                "key": "COL_0_10"
+                            },
+                            {
+                                "key": "COL_0_11"
+                            },
+                            {
+                                "key": "COL_0_12"
+                            },
+                            {
+                                "key": "COL_0_13"
+                            },
+                            {
+                                "key": "COL_0_14"
+                            }
+                        ]
+                    },
+                    "style": {
+                        "detailRightPanel": {
+                            "visible": true
+                        },
+                        "detailTopPanel": {
+                            "type": "NXDetailNormalTargetReal",
+                            "visible": true
+                        },
+                        "padding": {
+                            "bottom": 0,
+                            "left": 0,
+                            "right": 0,
+                            "top": 0
+                        },
+                        "superList": {
+                            "autoPageScroll": true,
+                            "columns": [
+                                {
+                                    "expandGran": [
+                                        "COL_0_2",
+                                        "COL_0_3"
+                                    ],
+                                    "isMajorColumn": true
+                                },
+                                {
+                                    "chart": {
+                                        "chartConfig": {
+                                            "canvas": {
+                                                "graphPadding": {
+                                                    "bottom": 5,
+                                                    "left": 0,
+                                                    "right": 0,
+                                                    "top": 5
+                                                }
+                                            },
+                                            "series": [
+                                                {
+                                                    "dataSource": {
+                                                        "yFormatString": ",###",
+                                                        "yValueSource": "COL_0_11"
+                                                    },
+                                                    "fill": {
+                                                        "fillColor": "#e41c2b"
+                                                    },
+                                                    "id": "brandPassRing",
+                                                    "iteration": {
+                                                        "isLeafLevel": true
+                                                    },
+                                                    "type": "NXSingleSeries"
+                                                }
+                                            ]
+                                        }
+                                    },
+                                    "name": "月度话务总量",
+                                    "showChart": true
+                                },
+                                {
+                                    "chart": {
+                                        "chartConfig": {
+                                            "axis": [
+                                                {
+                                                    "axisType": "NXAxisTypeCategory",
+                                                    "id": "bottom"
+                                                },
+                                                {
+                                                    "axisMaxPaddingForPlot": 0.05,
+                                                    "axisType": "NXAxisTypeNumberic",
+                                                    "coordinate": "NXCoordinateY",
+                                                    "id": "left"
+                                                }
+                                            ],
+                                            "canvas": {
+                                                "graphPadding": {
+                                                    "bottom": 0,
+                                                    "left": 0,
+                                                    "right": 0,
+                                                    "top": 0
+                                                }
+                                            },
+                                            "series": [
+                                                {
+                                                    "dataSource": {
+                                                        "yFormatString": ",###",
+                                                        "yValueSource": "COL_0_11"
+                                                    },
+                                                    "fill": {
+                                                        "fillColor": "#e41c2b"
+                                                    },
+                                                    "id": "brandPassRing",
+                                                    "iteration": {
+                                                        "isMultiLevel": false
+                                                    },
+                                                    "symbol": {
+                                                        "symbolSize": {
+                                                            "height": 5,
+                                                            "width": 5
+                                                        },
+                                                        "symbolType": "NXPlotSymbolTypeEllipse"
+                                                    },
+                                                    "type": "NXLineSeries"
+                                                }
+                                            ]
+                                        }
+                                    },
+                                    "chartWidth": 300,
+                                    "multiValueSource": [
+                                        "COL_0_1"
+                                    ],
+                                    "name": "月度话务量每日趋势",
+                                    "showChart": true,
+                                    "showText": false
+                                }
+                            ],
+                            "expandLevel": 1,
+                            "header": {
+                                "backgroundColor": "#EEEEEE",
+                                "headerHeight": 40,
+                                "textStyle": {
+                                    "textColor": "#8a919b",
+                                    "textSize": 14
+                                }
+                            },
+                            "rows": {
+                                "evenColor": "#FEFFFF",
+                                "oddColor": "#F9FAFB",
+                                "rowHeight": 40
+                            }
+                        },
+                        "type": "NXSuperList"
+                    },
+                    "type": "NXCubeCard"
+                }
+            ],
+            "pageColor": "#718dbf",
+            "pageTitle": "HelpDesk"
+        }
+    ],
+    "title": "helpDesk"
+}

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <style name="Theme.Styled" parent="@style/Theme.AppCompat.Light">
+        <!-- Setting values in the android namespace affects API levels 14+ -->
+        <item name="actionBarStyle">@style/Widget.Styled.ActionBar</item>
+    </style>
+
+    <style name="Widget.Styled.ActionBar" parent="@style/Widget.AppCompat.Light.ActionBar">
+        <!-- Setting values in the android namespace affects API levels 14+ -->
+        <item name="background">@color/actionBarColor</item>
+        <item name="height">60dp</item>
+        <item name="titleTextStyle">@style/Widget.Styled.ActionBar.Title</item>
+        <item name="elevation">2dp</item>
+    </style>
+
+    <style name="Widget.Styled.ActionBar.Title" parent="TextAppearance.AppCompat.Title">
+        <item name="android:textSize">20dp</item>
+        <item name="android:textColor">#ffffff</item>
+    </style>
+</resources>

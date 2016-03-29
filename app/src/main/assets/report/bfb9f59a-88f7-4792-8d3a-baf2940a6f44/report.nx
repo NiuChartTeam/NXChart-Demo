@@ -1,0 +1,1949 @@
+{
+    "creator": "dongsaiyuan",
+    "defaultStyle": [
+        {
+            "chartOptions": {
+                "seriesOptions": {
+                    "NXMapSeries": {
+                        "mapRegionGroups": [
+                            {
+                                "key": "Asia",
+                                "name": "Asia",
+                                "regionFill": {
+                                    "fillColor": "#51a9d6"
+                                },
+                                "regionLine": {
+                                    "lineColor": "#51a9d6"
+                                },
+                                "values": [
+                                    "China",
+                                    "Japan",
+                                    "Korea",
+                                    "TaiWan",
+                                    "India",
+                                    "Vietnam",
+                                    "Thailand"
+                                ]
+                            },
+                            {
+                                "key": "Americas",
+                                "name": "Americas",
+                                "regionFill": {
+                                    "fillColor": "#955cbf"
+                                },
+                                "regionLine": {
+                                    "lineColor": "#955cbf"
+                                },
+                                "values": [
+                                    "USA",
+                                    "Mexico",
+                                    "Brazil"
+                                ]
+                            },
+                            {
+                                "key": "Europe",
+                                "name": "Europe",
+                                "regionFill": {
+                                    "fillColor": "#e84d60"
+                                },
+                                "regionLine": {
+                                    "lineColor": "#e84d60"
+                                },
+                                "values": [
+                                    "Poland",
+                                    "Germany",
+                                    "UK",
+                                    "Italy",
+                                    "Russia"
+                                ]
+                            }
+                        ],
+                        "mapType": "World"
+                    }
+                }
+            },
+            "defaultColor": [
+                "#e84d60",
+                "#e88f61",
+                "#fecd6c",
+                "#b3cf61",
+                "#77c298",
+                "#51a9d6",
+                "#718dbf",
+                "#955cbf",
+                "#a4547d",
+                "#c64373"
+            ],
+            "scopeId": [
+                "all"
+            ],
+            "scopeType": "report"
+        }
+    ],
+    "id": "sales",
+    "metadataStructures": [
+        {
+            "dataSetId": "41c84747-4257-4f99-aa56-3d915ba2035c",
+            "dimensions": [
+                {
+                    "granularities": [
+                        {
+                            "key": "COL_0_0",
+                            "title": "Brand"
+                        }
+                    ],
+                    "key": "Dimension_2",
+                    "title": "Category"
+                },
+                {
+                    "granularities": [
+                        {
+                            "key": "COL_0_1",
+                            "title": "Distribution Channels"
+                        }
+                    ],
+                    "key": "Dimension_3",
+                    "title": "Sales Channels"
+                },
+                {
+                    "granularities": [
+                        {
+                            "key": "COL_0_2",
+                            "title": "Continent"
+                        },
+                        {
+                            "key": "COL_0_3",
+                            "title": "Country"
+                        }
+                    ],
+                    "key": "Dimension_4",
+                    "title": "Geography"
+                },
+                {
+                    "granularities": [
+                        {
+                            "key": "COL_0_4",
+                            "title": "Year"
+                        },
+                        {
+                            "key": "COL_0_5",
+                            "title": "Quarter"
+                        },
+                        {
+                            "key": "COL_0_6",
+                            "title": "Month"
+                        }
+                    ],
+                    "key": "Dimension_1",
+                    "title": "Date"
+                }
+            ],
+            "encrypt": "dongsaiyuan",
+            "measures": [
+                {
+                    "key": "COL_0_7",
+                    "title": "Planed Visit"
+                },
+                {
+                    "key": "COL_0_8",
+                    "title": "Real Visit"
+                },
+                {
+                    "key": "COL_0_9",
+                    "title": "Visit Rate of Achievement"
+                },
+                {
+                    "key": "COL_0_10",
+                    "title": "Target Sales Quantity"
+                },
+                {
+                    "key": "COL_0_11",
+                    "title": "Real sales Quantity"
+                },
+                {
+                    "key": "COL_0_12",
+                    "title": "Visit Total Hours"
+                },
+                {
+                    "key": "COL_0_13",
+                    "title": "Revenue"
+                },
+                {
+                    "key": "COL_0_14",
+                    "title": "Inventory Quantity On Hand"
+                },
+                {
+                    "key": "COL_0_15",
+                    "title": "Next Month Order Quantity"
+                },
+                {
+                    "key": "COL_0_16",
+                    "title": "Price per unit"
+                }
+            ]
+        }
+    ],
+    "pages": [
+        {
+            "cards": [
+                {
+                    "cardTitle": "Global Visit In Geography",
+                    "dataSetId": "41c84747-4257-4f99-aa56-3d915ba2035c",
+                    "linkEvent": {
+                        "isEventSource": true
+                    },
+                    "size": "row-sm-xs-6 row-xs-sm-12 row-md-3 row-md-sm-6 row-lg-md-3 col-xs-sm-12 col-sm-xs-12 col-sm-lg-12 col-md-12  col-md-lg-12 col-md-sm-6 col-lg-6 ",
+                    "structure": {
+                        "dimensions": [
+                            {
+                                "granularities": [
+                                    {
+                                        "key": "COL_0_0",
+                                        "title": "Brand"
+                                    }
+                                ],
+                                "key": "Dimension_2",
+                                "title": "Category"
+                            },
+                            {
+                                "granularities": [
+                                    {
+                                        "key": "COL_0_1",
+                                        "title": "Distribution Channels"
+                                    }
+                                ],
+                                "key": "Dimension_3",
+                                "title": "Sales Channels"
+                            },
+                            {
+                                "granularities": [
+                                    {
+                                        "key": "COL_0_4",
+                                        "title": "Year"
+                                    },
+                                    {
+                                        "key": "COL_0_5",
+                                        "title": "Quarter"
+                                    },
+                                    {
+                                        "key": "COL_0_6",
+                                        "title": "Month"
+                                    }
+                                ],
+                                "key": "Dimension_1",
+                                "title": "Date"
+                            },
+                            {
+                                "granularities": [
+                                    {
+                                        "key": "COL_0_2",
+                                        "title": "Continent"
+                                    },
+                                    {
+                                        "key": "COL_0_3",
+                                        "title": "Country"
+                                    }
+                                ],
+                                "key": "Dimension_4",
+                                "title": "Geography"
+                            }
+                        ],
+                        "measures": [
+                            {
+                                "key": "COL_0_8",
+                                "title": "Real Visit"
+                            }
+                        ]
+                    },
+                    "style": {
+                        "chart": {
+                            "chartConfig": {
+                                "series": [
+                                    {
+                                        "dataSource": {
+                                            "yValueSource": "COL_0_8"
+                                        },
+                                        "focusZoomOnSelect": true,
+                                        "id": "brandRegionMap",
+                                        "mapType": "World",
+                                        "plotSymbol": {
+                                            "anchorPoint": {
+                                                "x": 0.5,
+                                                "y": 0.5
+                                            },
+                                            "symbolFill": {
+                                                "fillAlpha": 0.6,
+                                                "fillColor": "#fecd6c"
+                                            }
+                                        },
+                                        "type": "NXMapSeries"
+                                    }
+                                ],
+                                "touchTools": [
+                                    {
+                                        "targetSeries": [
+                                            "brandRegionMap"
+                                        ],
+                                        "toolType": "NXZoomTool"
+                                    },
+                                    {
+                                        "crossAxis": "bottom",
+                                        "enableMultiTouch": false,
+                                        "removeOnRelease": false,
+                                        "showBelowSeries": false,
+                                        "targetSeries": [
+                                            "brandRegionMap"
+                                        ],
+                                        "toolType": "NXMapHighLightTool",
+                                        "visible": true
+                                    }
+                                ]
+                            },
+                            "selection": {
+                                "selectionSource": "Y",
+                                "selectionType": "NXChartSelectionBiggestValue"
+                            }
+                        },
+                        "detailRightPanel": {
+                            "visible": false
+                        },
+                        "detailTopPanel": {
+                            "percentInTotalVisible": true,
+                            "visible": true
+                        }
+                    },
+                    "type": "NXCubeCard"
+                },
+                {
+                    "cardTitle": "Real Visit vs Planed Visit",
+                    "dataSetId": "41c84747-4257-4f99-aa56-3d915ba2035c",
+                    "linkEvent": {
+                        "isEventSource": true
+                    },
+                    "size": "row-sm-xs-6 row-xs-sm-12 row-md-3 row-md-sm-6 row-lg-md-3 col-xs-sm-12 col-sm-xs-12 col-sm-lg-12 col-md-12  col-md-lg-12 col-md-sm-6 col-lg-6 ",
+                    "structure": {
+                        "dimensions": [
+                            {
+                                "granularities": [
+                                    {
+                                        "key": "COL_0_0",
+                                        "title": "Brand"
+                                    }
+                                ],
+                                "key": "Dimension_2",
+                                "title": "Category"
+                            },
+                            {
+                                "granularities": [
+                                    {
+                                        "key": "COL_0_1",
+                                        "title": "Distribution Channels"
+                                    }
+                                ],
+                                "key": "Dimension_3",
+                                "title": "Sales Channels"
+                            },
+                            {
+                                "granularities": [
+                                    {
+                                        "key": "COL_0_4",
+                                        "title": "Year"
+                                    },
+                                    {
+                                        "key": "COL_0_5",
+                                        "title": "Quarter"
+                                    },
+                                    {
+                                        "key": "COL_0_6",
+                                        "title": "Month"
+                                    }
+                                ],
+                                "key": "Dimension_1",
+                                "title": "Date"
+                            },
+                            {
+                                "granularities": [
+                                    {
+                                        "key": "COL_0_2",
+                                        "title": "Continent"
+                                    },
+                                    {
+                                        "drillTo": true,
+                                        "key": "COL_0_3",
+                                        "title": "Country"
+                                    }
+                                ],
+                                "key": "Dimension_4",
+                                "title": "Geography"
+                            }
+                        ],
+                        "measures": [
+                            {
+                                "key": "COL_0_7",
+                                "title": "Planed Visit"
+                            },
+                            {
+                                "key": "COL_0_8",
+                                "title": "Real Visit"
+                            }
+                        ]
+                    },
+                    "style": {
+                        "chart": {
+                            "chartConfig": {
+                                "axis": [
+                                    {
+                                        "axisType": "NXAxisTypeNumberic",
+                                        "id": "bottom",
+                                        "majorPoint": {
+                                            "gridLine": {
+                                                "gridLineVisible": true
+                                            },
+                                            "label": {
+                                                "labelFormatter": ",###",
+                                                "labelNumberUnit": true
+                                            }
+                                        }
+                                    },
+                                    {
+                                        "axisType": "NXAxisTypeCategory",
+                                        "coordinate": "NXCoordinateY",
+                                        "id": "left",
+                                        "majorPoint": {
+                                            "gridLine": null
+                                        }
+                                    }
+                                ],
+                                "canvas": {
+                                    "graphPadding": {
+                                        "bottom": 20,
+                                        "left": 50,
+                                        "right": 0,
+                                        "top": 0
+                                    }
+                                },
+                                "series": [
+                                    {
+                                        "accumulation": false,
+                                        "barFill": {
+                                            "fillColor": "#51a9d6"
+                                        },
+                                        "dataSource": {
+                                            "yValueSource": "COL_0_8"
+                                        },
+                                        "id": "salesCountAsProvinceBar",
+                                        "orientation": "horizontal",
+                                        "showOverlayAll": false,
+                                        "stackedType": "NXChartSeriesStackedTypeSide",
+                                        "type": "NXBarSeries",
+                                        "xAxis": "bottom",
+                                        "yAxis": "left"
+                                    },
+                                    {
+                                        "accumulation": false,
+                                        "dataSource": {
+                                            "yValueSource": "COL_0_7"
+                                        },
+                                        "id": "salesCountTargetAsProvinceLine",
+                                        "isTargetSeries": true,
+                                        "lineStyle": {
+                                            "lineColor": "#955cbf"
+                                        },
+                                        "orientation": "horizontal",
+                                        "type": "NXStepLineSeries",
+                                        "verticalJoinsVisible": false,
+                                        "xAxis": "bottom",
+                                        "yAxis": "left"
+                                    }
+                                ],
+                                "touchTools": [
+                                    {
+                                        "crossAxis": "bottom",
+                                        "enableMultiTouch": false,
+                                        "removeOnRelease": false,
+                                        "showBelowSeries": false,
+                                        "targetSeries": [
+                                            "salesCountAsProvinceBar",
+                                            "salesCountTargetAsProvinceLine"
+                                        ],
+                                        "toolType": "NXHighLightTool",
+                                        "visible": true
+                                    }
+                                ]
+                            }
+                        },
+                        "detailTopPanel": {
+                            "type": "NXDetailNormalTargetReal",
+                            "visible": true
+                        },
+                        "selection": {
+                            "selectionSource": "Y",
+                            "selectionType": "NXChartSelectionBiggestValue"
+                        }
+                    },
+                    "type": "NXCubeCard"
+                },
+                {
+                    "cardTitle": "Brand Visit Percent",
+                    "dataSetId": "41c84747-4257-4f99-aa56-3d915ba2035c",
+                    "linkEvent": {
+                        "isEventSource": true
+                    },
+                    "size": "row-sm-xs-6 row-xs-sm-12 row-md-3 row-md-sm-6 row-lg-md-3 col-xs-sm-12 col-sm-xs-12 col-sm-lg-12 col-md-12 col-md-lg-12 col-md-sm-6 col-lg-6 ",
+                    "structure": {
+                        "dimensions": [
+                            {
+                                "granularities": [
+                                    {
+                                        "key": "COL_0_4",
+                                        "title": "Year"
+                                    },
+                                    {
+                                        "key": "COL_0_5",
+                                        "title": "Quarter"
+                                    },
+                                    {
+                                        "key": "COL_0_6",
+                                        "title": "Month"
+                                    }
+                                ],
+                                "key": "Dimension_1",
+                                "title": "Date"
+                            },
+                            {
+                                "granularities": [
+                                    {
+                                        "key": "COL_0_2",
+                                        "title": "Continent"
+                                    },
+                                    {
+                                        "drillTo": true,
+                                        "key": "COL_0_3",
+                                        "title": "Country"
+                                    }
+                                ],
+                                "key": "Dimension_4",
+                                "title": "Geography"
+                            },
+                            {
+                                "granularities": [
+                                    {
+                                        "key": "COL_0_1",
+                                        "title": "Distribution Channels"
+                                    }
+                                ],
+                                "key": "Dimension_3",
+                                "title": "Sales Channels"
+                            },
+                            {
+                                "granularities": [
+                                    {
+                                        "key": "COL_0_0",
+                                        "title": "Brand"
+                                    }
+                                ],
+                                "key": "Dimension_2",
+                                "title": "Category"
+                            }
+                        ],
+                        "measures": [
+                            {
+                                "key": "COL_0_8",
+                                "title": "Real Visit"
+                            }
+                        ]
+                    },
+                    "style": {
+                        "chart": {
+                            "chartConfig": {
+                                "series": [
+                                    {
+                                        "dataSource": {
+                                            "yValueSource": "COL_0_8"
+                                        },
+                                        "id": "brandPercentPie",
+                                        "type": "NXPieSeries"
+                                    }
+                                ],
+                                "touchTools": [
+                                    {
+                                        "targetSeries": [
+                                            "brandPercentPie"
+                                        ],
+                                        "toolType": "NXPieSpinTool"
+                                    }
+                                ]
+                            },
+                            "selection": {
+                                "selectionSource": "Y",
+                                "selectionType": "NXChartSelectionBiggestValue"
+                            }
+                        },
+                        "detailRightPanel": {
+                            "visible": true
+                        },
+                        "detailTopPanel": {
+                            "percentInTotalVisible": true,
+                            "type": "NXDetailVertical",
+                            "visible": false
+                        },
+                        "detailTotalPanel": {
+                            "isAboveDetailTop": true
+                        }
+                    },
+                    "type": "NXCubeCard"
+                },
+                {
+                    "cardTitle": "Distribution Channels Visit Compare",
+                    "dataSetId": "41c84747-4257-4f99-aa56-3d915ba2035c",
+                    "size": "row-sm-xs-6 row-xs-sm-12 row-md-3 row-md-sm-6 row-lg-md-3 col-xs-sm-12 col-sm-xs-12 col-sm-lg-12 col-md-12  col-md-lg-12 col-md-sm-6 col-lg-6 ",
+                    "structure": {
+                        "dimensions": [
+                            {
+                                "granularities": [
+                                    {
+                                        "key": "COL_0_0",
+                                        "title": "Brand"
+                                    }
+                                ],
+                                "key": "Dimension_2",
+                                "title": "Category"
+                            },
+                            {
+                                "granularities": [
+                                    {
+                                        "key": "COL_0_2",
+                                        "title": "Continent"
+                                    },
+                                    {
+                                        "key": "COL_0_3",
+                                        "title": "Country"
+                                    }
+                                ],
+                                "key": "Dimension_4",
+                                "title": "Geography"
+                            },
+                            {
+                                "granularities": [
+                                    {
+                                        "key": "COL_0_4",
+                                        "title": "Year"
+                                    },
+                                    {
+                                        "key": "COL_0_5",
+                                        "title": "Quarter"
+                                    },
+                                    {
+                                        "key": "COL_0_6",
+                                        "title": "Month"
+                                    }
+                                ],
+                                "key": "Dimension_1",
+                                "title": "Date"
+                            },
+                            {
+                                "granularities": [
+                                    {
+                                        "key": "COL_0_1",
+                                        "title": "Distribution Channels"
+                                    }
+                                ],
+                                "key": "Dimension_3",
+                                "title": "Sales Channels"
+                            }
+                        ],
+                        "measures": [
+                            {
+                                "key": "COL_0_8",
+                                "title": "Real Visit"
+                            }
+                        ]
+                    },
+                    "style": {
+                        "chart": {
+                            "chartConfig": {
+                                "axis": [
+                                    {
+                                        "axisLineStyle": {
+                                            "lineAlpha": 1,
+                                            "lineColor": "#000000",
+                                            "lineWidth": 1
+                                        },
+                                        "axisType": "NXAxisTypeNumberic",
+                                        "coordinate": "NXCoordinateY",
+                                        "divisionPolicy": {
+                                            "equalDivision": {
+                                                "majorPointNumber": 4,
+                                                "minorPointNumber": 0
+                                            },
+                                            "strategy": "NXAxisLabelingPolicyEqualDivisions"
+                                        },
+                                        "id": "left",
+                                        "majorPoint": {
+                                            "gridLine": {
+                                                "gridLineVisible": true
+                                            },
+                                            "label": {
+                                                "labelFormatter": ",###",
+                                                "labelNumberUnit": false
+                                            }
+                                        },
+                                        "scaleType": "NXScaleTypePolar"
+                                    },
+                                    {
+                                        "axisType": "NXAxisTypeCategory",
+                                        "id": "bottom",
+                                        "majorPoint": {
+                                            "gridLine": {
+                                                "gridLineVisible": true
+                                            },
+                                            "label": {
+                                                "labelVisible": true
+                                            }
+                                        },
+                                        "scaleType": "NXScaleTypePolar"
+                                    }
+                                ],
+                                "series": [
+                                    {
+                                        "dataSource": {
+                                            "yValueSource": "COL_0_8"
+                                        },
+                                        "fill": {
+                                            "darkenFillAlpha": 0.1,
+                                            "darkenFillColor": "#e84d60",
+                                            "fillColor": "#e84d60",
+                                            "highLightFillAlpha": 0.3,
+                                            "highLightFillColor": "#e84d60"
+                                        },
+                                        "id": "radar",
+                                        "lineStyle": {
+                                            "lineColor": "#e84d60",
+                                            "lineWidth": 1
+                                        },
+                                        "orientation": "vertical",
+                                        "showOverlayAll": false,
+                                        "type": "NXRadarSeries",
+                                        "xAxis": "bottom",
+                                        "yAxis": "left"
+                                    }
+                                ],
+                                "touchTools": [
+                                    {
+                                        "crossAxis": "bottom",
+                                        "enableMultiTouch": false,
+                                        "removeOnRelease": false,
+                                        "showBelowSeries": false,
+                                        "targetSeries": [
+                                            "radar"
+                                        ],
+                                        "toolType": "NXHighLightTool",
+                                        "visible": true
+                                    }
+                                ]
+                            }
+                        },
+                        "detailTopPanel": {
+                            "percentInTotalVisible": true
+                        }
+                    },
+                    "type": "NXCubeCard"
+                },
+                {
+                    "cardTitle": "Brand Shipment Quantity",
+                    "dataSetId": "41c84747-4257-4f99-aa56-3d915ba2035c",
+                    "linkEvent": {
+                        "isEventSource": true
+                    },
+                    "size": "row-sm-xs-6 row-xs-sm-12 row-md-3 row-md-sm-6 row-lg-md-3 col-xs-sm-12 col-sm-xs-12 col-sm-lg-12 col-md-12 col-md-lg-12 col-md-sm-6 col-lg-6 ",
+                    "structure": {
+                        "dimensions": [
+                            {
+                                "granularities": [
+                                    {
+                                        "key": "COL_0_4",
+                                        "title": "Year"
+                                    },
+                                    {
+                                        "key": "COL_0_6",
+                                        "title": "Month"
+                                    }
+                                ],
+                                "key": "Dimension_1",
+                                "title": "Date"
+                            },
+                            {
+                                "granularities": [
+                                    {
+                                        "key": "COL_0_2",
+                                        "title": "Continent"
+                                    },
+                                    {
+                                        "key": "COL_0_3",
+                                        "title": "Country"
+                                    }
+                                ],
+                                "key": "Dimension_4",
+                                "title": "Geography"
+                            },
+                            {
+                                "granularities": [
+                                    {
+                                        "key": "COL_0_1",
+                                        "title": "Distribution Channels"
+                                    }
+                                ],
+                                "key": "Dimension_3",
+                                "title": "Sales Channels"
+                            },
+                            {
+                                "granularities": [
+                                    {
+                                        "key": "COL_0_0",
+                                        "title": "Brand"
+                                    }
+                                ],
+                                "key": "Dimension_2",
+                                "title": "Category"
+                            }
+                        ],
+                        "measures": [
+                            {
+                                "key": "COL_0_10",
+                                "title": "Sales Quantity"
+                            }
+                        ]
+                    },
+                    "style": {
+                        "chart": {
+                            "chartConfig": {
+                                "series": [
+                                    {
+                                        "dataSource": {
+                                            "yValueSource": "COL_0_10"
+                                        },
+                                        "id": "brandPercentPie",
+                                        "type": "NXPieSeries"
+                                    }
+                                ],
+                                "touchTools": [
+                                    {
+                                        "targetSeries": [
+                                            "brandPercentPie"
+                                        ],
+                                        "toolType": "NXPieSpinTool"
+                                    }
+                                ]
+                            },
+                            "selection": {
+                                "selectionSource": "Y",
+                                "selectionType": "NXChartSelectionBiggestValue"
+                            }
+                        },
+                        "detailRightPanel": {
+                            "visible": true
+                        },
+                        "detailTopPanel": {
+                            "percentInTotalVisible": true,
+                            "type": "NXDetailVertical",
+                            "visible": false
+                        },
+                        "detailTotalPanel": {
+                            "isAboveDetailTop": true
+                        }
+                    },
+                    "type": "NXCubeCard"
+                },
+                {
+                    "cardTitle": "Shipment Quantity Accumulation vs Target",
+                    "dataSetId": "41c84747-4257-4f99-aa56-3d915ba2035c",
+                    "linkEvent": {
+                        "isEventSource": true
+                    },
+                    "size": "row-sm-xs-6 row-xs-sm-12 row-md-3 row-md-sm-6 row-lg-md-3 col-xs-sm-12 col-sm-xs-12 col-sm-lg-12 col-md-12 col-md-lg-12 col-md-sm-6 col-lg-6 ",
+                    "structure": {
+                        "dimensions": [
+                            {
+                                "granularities": [
+                                    {
+                                        "key": "COL_0_2",
+                                        "title": "Continent"
+                                    },
+                                    {
+                                        "key": "COL_0_3",
+                                        "title": "Country"
+                                    }
+                                ],
+                                "key": "Dimension_4",
+                                "title": "Geography"
+                            },
+                            {
+                                "granularities": [
+                                    {
+                                        "key": "COL_0_1",
+                                        "title": "Distribution Channels"
+                                    }
+                                ],
+                                "key": "Dimension_3",
+                                "title": "Sales Channels"
+                            },
+                            {
+                                "granularities": [
+                                    {
+                                        "key": "COL_0_0",
+                                        "title": "Brand"
+                                    }
+                                ],
+                                "key": "Dimension_2",
+                                "title": "Category"
+                            },
+                            {
+                                "granularities": [
+                                    {
+                                        "key": "COL_0_4",
+                                        "title": "Year"
+                                    },
+                                    {
+                                        "drillTo": true,
+                                        "key": "COL_0_6",
+                                        "sort": "NXSortOperationAsc",
+                                        "title": "Month"
+                                    }
+                                ],
+                                "key": "Dimension_1",
+                                "title": "Date"
+                            }
+                        ],
+                        "measures": [
+                            {
+                                "key": "COL_0_10",
+                                "title": "Target Sales Quantity"
+                            },
+                            {
+                                "key": "COL_0_11",
+                                "title": "Real sales Quantity"
+                            }
+                        ]
+                    },
+                    "style": {
+                        "chart": {
+                            "chartConfig": {
+                                "axis": [
+                                    {
+                                        "axisType": "NXAxisTypeDateTime",
+                                        "id": "bottom"
+                                    },
+                                    {
+                                        "axisType": "NXAxisTypeNumberic",
+                                        "coordinate": "NXCoordinateY",
+                                        "id": "left",
+                                        "majorPoint": {
+                                            "label": {
+                                                "labelFormatter": ",###",
+                                                "labelNumberUnit": true
+                                            }
+                                        }
+                                    }
+                                ],
+                                "canvas": {
+                                    "graphPadding": {
+                                        "bottom": 20,
+                                        "left": 50,
+                                        "right": 0,
+                                        "top": 0
+                                    }
+                                },
+                                "series": [
+                                    {
+                                        "accumulation": true,
+                                        "barFill": {
+                                            "fillColor": "#51a9d6"
+                                        },
+                                        "dataSource": {
+                                            "xDataSourceDateFormatString": "MMM",
+                                            "xDataSourceDateLocale": "en",
+                                            "xDisplayDateFormatString": "MMM",
+                                            "xDisplayDateLocale": "en",
+                                            "yValueSource": "COL_0_11"
+                                        },
+                                        "id": "revenueAccumulateAsMonthBar",
+                                        "orientation": "vertical",
+                                        "stackedType": "NXChartSeriesStackedTypeSide",
+                                        "type": "NXBarSeries",
+                                        "xAxis": "bottom",
+                                        "yAxis": "left"
+                                    },
+                                    {
+                                        "accumulation": true,
+                                        "dataSource": {
+                                            "xDataSourceDateFormatString": "MMM",
+                                            "xDataSourceDateLocale": "en",
+                                            "xDisplayDateFormatString": "MMM",
+                                            "xDisplayDateLocale": "en",
+                                            "yValueSource": "COL_0_10"
+                                        },
+                                        "id": "targetRevenueAccumulateAsMonthLine",
+                                        "isTargetSeries": true,
+                                        "lineStyle": {
+                                            "lineColor": "#955cbf"
+                                        },
+                                        "orientation": "vertical",
+                                        "symbol": {
+                                            "symbolFill": {
+                                                "fillColor": "#955cbf"
+                                            }
+                                        },
+                                        "type": "NXLineSeries",
+                                        "xAxis": "bottom",
+                                        "yAxis": "left"
+                                    }
+                                ],
+                                "touchTools": [
+                                    {
+                                        "crossAxis": "bottom",
+                                        "enableMultiTouch": false,
+                                        "removeOnRelease": false,
+                                        "showBelowSeries": false,
+                                        "targetSeries": [
+                                            "revenueAccumulateAsMonthBar",
+                                            "targetRevenueAccumulateAsMonthLine"
+                                        ],
+                                        "toolType": "NXHighLightTool",
+                                        "visible": true
+                                    },
+                                    {
+                                        "targetSeries": [
+                                            "revenueAccumulateAsMonthBar",
+                                            "targetRevenueAccumulateAsMonthLine"
+                                        ],
+                                        "toolType": "NXNavigationTool",
+                                        "visible": true
+                                    }
+                                ]
+                            }
+                        },
+                        "detailTopPanel": {
+                            "type": "NXDetailNormalTargetReal",
+                            "visible": true
+                        },
+                        "selection": {
+                            "selectionSource": "Y",
+                            "selectionType": "NXChartSelectionBiggestValue"
+                        }
+                    },
+                    "type": "NXCubeCard"
+                },
+                {
+                    "cardTitle": "Shipment Quantity year-on-year Growth",
+                    "dataSetId": "41c84747-4257-4f99-aa56-3d915ba2035c",
+                    "linkEvent": {
+                        "isEventSource": true
+                    },
+                    "size": "row-sm-xs-6 row-xs-sm-12 row-md-3 row-md-sm-6 row-lg-md-3 col-xs-sm-12 col-sm-xs-12 col-sm-lg-12 col-md-12 col-md-lg-12 col-md-sm-6 col-lg-6 ",
+                    "structure": {
+                        "dimensions": [
+                            {
+                                "granularities": [
+                                    {
+                                        "key": "COL_0_2",
+                                        "title": "Continent"
+                                    },
+                                    {
+                                        "key": "COL_0_3",
+                                        "title": "Country"
+                                    }
+                                ],
+                                "key": "Dimension_4",
+                                "title": "Geography"
+                            },
+                            {
+                                "granularities": [
+                                    {
+                                        "key": "COL_0_1",
+                                        "title": "Distribution Channels"
+                                    }
+                                ],
+                                "key": "Dimension_3",
+                                "title": "Sales Channels"
+                            },
+                            {
+                                "granularities": [
+                                    {
+                                        "key": "COL_0_0",
+                                        "title": "Brand"
+                                    }
+                                ],
+                                "key": "Dimension_2",
+                                "title": "Category"
+                            },
+                            {
+                                "granularities": [
+                                    {
+                                        "key": "COL_0_4",
+                                        "title": "Year"
+                                    },
+                                    {
+                                        "drillTo": true,
+                                        "key": "COL_0_6",
+                                        "sort": "NXSortOperationAsc",
+                                        "title": "Month"
+                                    }
+                                ],
+                                "key": "Dimension_1",
+                                "title": "Date"
+                            }
+                        ],
+                        "measures": [
+                            {
+                                "key": "COL_0_10",
+                                "title": "year Sales Quantity"
+                            },
+                            {
+                                "key": "COL_0_12",
+                                "title": "Last year Sales Quantity"
+                            }
+                        ]
+                    },
+                    "style": {
+                        "chart": {
+                            "chartConfig": {
+                                "axis": [
+                                    {
+                                        "axisTitle": {
+                                            "titleLocation": 0.5,
+                                            "titleVisible": false
+                                        },
+                                        "axisType": "NXAxisTypeDateTime",
+                                        "id": "bottom"
+                                    },
+                                    {
+                                        "axisTitle": {
+                                            "titleLocation": 0.5,
+                                            "titleVisible": false
+                                        },
+                                        "axisType": "NXAxisTypeNumberic",
+                                        "coordinate": "NXCoordinateY",
+                                        "id": "left",
+                                        "majorPoint": {
+                                            "label": {
+                                                "labelFormatter": ",###",
+                                                "labelNumberUnit": true
+                                            }
+                                        }
+                                    }
+                                ],
+                                "canvas": {
+                                    "graphPadding": {
+                                        "bottom": 20,
+                                        "left": 50,
+                                        "right": 0,
+                                        "top": 0
+                                    }
+                                },
+                                "series": [
+                                    {
+                                        "accumulation": false,
+                                        "barFill": {
+                                            "fillColor": "#51a9d6"
+                                        },
+                                        "dataSource": {
+                                            "xDataSourceDateFormatString": "MMM",
+                                            "xDataSourceDateLocale": "en",
+                                            "xDisplayDateFormatString": "MMM",
+                                            "xDisplayDateLocale": "en",
+                                            "yValueSource": "COL_0_10"
+                                        },
+                                        "id": "revenueTongbiMonthBar",
+                                        "orientation": "vertical",
+                                        "showOverlayAll": false,
+                                        "stackedType": "NXChartSeriesStackedTypeSide",
+                                        "type": "NXBarSeries",
+                                        "xAxis": "bottom",
+                                        "yAxis": "left"
+                                    },
+                                    {
+                                        "accumulation": false,
+                                        "dataSource": {
+                                            "xDataSourceDateFormatString": "MMM",
+                                            "xDataSourceDateLocale": "en",
+                                            "xDisplayDateFormatString": "MMM",
+                                            "xDisplayDateLocale": "en",
+                                            "yValueSource": "COL_0_12"
+                                        },
+                                        "id": "targetRevenueTongbiAsMonthLine",
+                                        "isTargetSeries": true,
+                                        "lineStyle": {
+                                            "lineColor": "#955cbf"
+                                        },
+                                        "orientation": "vertical",
+                                        "symbol": {
+                                            "symbolFill": {
+                                                "fillColor": "#955cbf"
+                                            }
+                                        },
+                                        "type": "NXLineSeries",
+                                        "xAxis": "bottom",
+                                        "yAxis": "left"
+                                    }
+                                ],
+                                "touchTools": [
+                                    {
+                                        "crossAxis": "bottom",
+                                        "enableMultiTouch": false,
+                                        "removeOnRelease": false,
+                                        "showBelowSeries": false,
+                                        "targetSeries": [
+                                            "revenueTongbiMonthBar",
+                                            "targetRevenueTongbiAsMonthLine"
+                                        ],
+                                        "toolType": "NXHighLightTool",
+                                        "visible": true
+                                    }
+                                ]
+                            }
+                        },
+                        "detailTopPanel": {
+                            "type": "NXDetailNormalTargetReal",
+                            "visible": true
+                        },
+                        "selection": {
+                            "selectionSource": "Y",
+                            "selectionType": "NXChartSelectionBiggestValue"
+                        }
+                    },
+                    "type": "NXCubeCard"
+                },
+                {
+                    "cardTitle": "Sales Quantity Month target",
+                    "dataSetId": "41c84747-4257-4f99-aa56-3d915ba2035c",
+                    "linkEvent": {
+                        "isEventSource": true
+                    },
+                    "size": "row-sm-xs-6 row-xs-sm-12 row-md-3 row-md-sm-6 row-lg-md-3 col-xs-sm-12 col-sm-xs-12 col-sm-lg-12 col-md-12 col-md-lg-12 col-md-sm-6 col-lg-6 ",
+                    "structure": {
+                        "dimensions": [
+                            {
+                                "granularities": [
+                                    {
+                                        "key": "COL_0_2",
+                                        "title": "Continent"
+                                    },
+                                    {
+                                        "key": "COL_0_3",
+                                        "title": "Country"
+                                    }
+                                ],
+                                "key": "Dimension_4",
+                                "title": "Geography"
+                            },
+                            {
+                                "granularities": [
+                                    {
+                                        "key": "COL_0_1",
+                                        "title": "Distribution Channels"
+                                    }
+                                ],
+                                "key": "Dimension_3",
+                                "title": "Sales Channels"
+                            },
+                            {
+                                "granularities": [
+                                    {
+                                        "key": "COL_0_0",
+                                        "title": "Brand"
+                                    }
+                                ],
+                                "key": "Dimension_2",
+                                "title": "Category"
+                            },
+                            {
+                                "granularities": [
+                                    {
+                                        "key": "COL_0_4",
+                                        "title": "Year"
+                                    },
+                                    {
+                                        "drillTo": true,
+                                        "key": "COL_0_6",
+                                        "sort": "NXSortOperationAsc",
+                                        "title": "Month"
+                                    }
+                                ],
+                                "key": "Dimension_1",
+                                "title": "Date"
+                            }
+                        ],
+                        "measures": [
+                            {
+                                "key": "COL_0_10",
+                                "title": "Target Sales Quantity"
+                            },
+                            {
+                                "key": "COL_0_11",
+                                "title": "Real sales Quantity"
+                            }
+                        ]
+                    },
+                    "style": {
+                        "chart": {
+                            "chartConfig": {
+                                "axis": [
+                                    {
+                                        "axisType": "NXAxisTypeDateTime",
+                                        "id": "bottom"
+                                    },
+                                    {
+                                        "axisType": "NXAxisTypeNumberic",
+                                        "coordinate": "NXCoordinateY",
+                                        "id": "left",
+                                        "majorPoint": {
+                                            "label": {
+                                                "labelFormatter": ",###",
+                                                "labelNumberUnit": true
+                                            }
+                                        }
+                                    }
+                                ],
+                                "canvas": {
+                                    "graphPadding": {
+                                        "bottom": 20,
+                                        "left": 50,
+                                        "right": 0,
+                                        "top": 0
+                                    }
+                                },
+                                "series": [
+                                    {
+                                        "accumulation": false,
+                                        "barFill": {
+                                            "fillColor": "#51a9d6"
+                                        },
+                                        "dataSource": {
+                                            "xDataSourceDateFormatString": "MMM",
+                                            "xDataSourceDateLocale": "en",
+                                            "xDisplayDateFormatString": "MMM",
+                                            "xDisplayDateLocale": "en",
+                                            "yValueSource": "COL_0_10"
+                                        },
+                                        "id": "revenueDabiaoAsMonthBar",
+                                        "orientation": "vertical",
+                                        "showOverlayAll": false,
+                                        "stackedType": "NXChartSeriesStackedTypeSide",
+                                        "type": "NXBarSeries",
+                                        "xAxis": "bottom",
+                                        "yAxis": "left"
+                                    },
+                                    {
+                                        "accumulation": false,
+                                        "dataSource": {
+                                            "xDataSourceDateFormatString": "MMM",
+                                            "xDataSourceDateLocale": "en",
+                                            "xDisplayDateFormatString": "MMM",
+                                            "xDisplayDateLocale": "en",
+                                            "yValueSource": "COL_0_11"
+                                        },
+                                        "id": "targetRevenueDabiaoAsMonthLine",
+                                        "isTargetSeries": true,
+                                        "lineStyle": {
+                                            "lineColor": "#955cbf"
+                                        },
+                                        "orientation": "vertical",
+                                        "symbol": {
+                                            "symbolFill": {
+                                                "fillColor": "#955cbf"
+                                            }
+                                        },
+                                        "type": "NXStepLineSeries",
+                                        "verticalJoinsVisible": false,
+                                        "xAxis": "bottom",
+                                        "yAxis": "left"
+                                    }
+                                ],
+                                "touchTools": [
+                                    {
+                                        "crossAxis": "bottom",
+                                        "enableMultiTouch": false,
+                                        "removeOnRelease": false,
+                                        "showBelowSeries": false,
+                                        "targetSeries": [
+                                            "revenueDabiaoAsMonthBar",
+                                            "targetRevenueDabiaoAsMonthLine"
+                                        ],
+                                        "toolType": "NXHighLightTool",
+                                        "visible": true
+                                    }
+                                ]
+                            }
+                        },
+                        "detailTopPanel": {
+                            "type": "NXDetailNormalTargetReal",
+                            "visible": true
+                        },
+                        "selection": {
+                            "selectionSource": "Y",
+                            "selectionType": "NXChartSelectionBiggestValue"
+                        }
+                    },
+                    "type": "NXCubeCard"
+                },
+                {
+                    "cardTitle": "Relationship on Revenue,Visit Rate of Achievement,Visit Totol Hour",
+                    "dataSetId": "41c84747-4257-4f99-aa56-3d915ba2035c",
+                    "size": "row-lg-12 col-lg-12",
+                    "structure": {
+                        "dimensions": [
+                            {
+                                "granularities": [
+                                    {
+                                        "key": "COL_0_0",
+                                        "title": "Brand"
+                                    }
+                                ],
+                                "key": "Dimension_2",
+                                "title": "Category"
+                            },
+                            {
+                                "granularities": [
+                                    {
+                                        "key": "COL_0_1",
+                                        "title": "Distribution Channels"
+                                    }
+                                ],
+                                "key": "Dimension_3",
+                                "title": "Sales Channels"
+                            },
+                            {
+                                "granularities": [
+                                    {
+                                        "key": "COL_0_4",
+                                        "title": "Year"
+                                    },
+                                    {
+                                        "key": "COL_0_5",
+                                        "title": "Quarter"
+                                    },
+                                    {
+                                        "key": "COL_0_6",
+                                        "title": "Month"
+                                    }
+                                ],
+                                "key": "Dimension_1",
+                                "title": "Date"
+                            },
+                            {
+                                "granularities": [
+                                    {
+                                        "key": "COL_0_2",
+                                        "title": "Continent"
+                                    },
+                                    {
+                                        "drillTo": true,
+                                        "key": "COL_0_3",
+                                        "title": "Country"
+                                    }
+                                ],
+                                "key": "Dimension_4",
+                                "title": "Geography"
+                            }
+                        ],
+                        "measures": [
+                            {
+                                "key": "COL_0_9",
+                                "title": "Visit Rate of Achievement(%)"
+                            },
+                            {
+                                "key": "COL_0_12",
+                                "title": "Visit Total Hours(Hour)"
+                            },
+                            {
+                                "key": "COL_0_13",
+                                "title": "Revenue(￥)"
+                            }
+                        ]
+                    },
+                    "style": {
+                        "annotation": {
+                            "isAlwaysVisible": false,
+                            "visible": false
+                        },
+                        "chart": {
+                            "chartConfig": {
+                                "axis": [
+                                    {
+                                        "axisMaxPaddingForPlot": 0.1,
+                                        "axisMinPaddingForPlot": 0.1,
+                                        "axisTitle": {
+                                            "titleLocation": 0.5,
+                                            "titleVisible": true
+                                        },
+                                        "axisType": "NXAxisTypeNumberic",
+                                        "bands": [
+                                            {
+                                                "range": {
+                                                    "length": 50,
+                                                    "location": 1760
+                                                }
+                                            }
+                                        ],
+                                        "id": "bottom",
+                                        "majorPoint": {
+                                            "label": {
+                                                "labelFormatter": ",###",
+                                                "labelNumberUnit": false
+                                            }
+                                        }
+                                    },
+                                    {
+                                        "axisMaxPaddingForPlot": 0.1,
+                                        "axisMinPaddingForPlot": 0.1,
+                                        "axisTitle": {
+                                            "titleLocation": 0.5,
+                                            "titleVisible": true
+                                        },
+                                        "axisType": "NXAxisTypeNumberic",
+                                        "coordinate": "NXCoordinateY",
+                                        "id": "left",
+                                        "majorPoint": {
+                                            "label": {
+                                                "labelFormatter": "#%",
+                                                "labelNumberUnit": false
+                                            }
+                                        }
+                                    }
+                                ],
+                                "canvas": {},
+                                "series": [
+                                    {
+                                        "dataSource": {
+                                            "xValueSource": "COL_0_12",
+                                            "y2ValueSource": "COL_0_13",
+                                            "yFormatString": "#%",
+                                            "yValueSource": "COL_0_9"
+                                        },
+                                        "id": "seriesBubble",
+                                        "isSeriesPureColor": false,
+                                        "iteration": {
+                                            "isMultiLevel": false
+                                        },
+                                        "orientation": "vertical",
+                                        "symbol": {
+                                            "anchorPoint": {
+                                                "x": 0.5,
+                                                "y": 0.5
+                                            }
+                                        },
+                                        "type": "NXBubbleSeries",
+                                        "xAxis": "bottom",
+                                        "yAxis": "left"
+                                    }
+                                ],
+                                "touchTools": [
+                                    {
+                                        "crossAxis": "bottom",
+                                        "enableMultiTouch": true,
+                                        "removeOnRelease": false,
+                                        "showBelowSeries": true,
+                                        "targetSeries": [
+                                            "seriesBubble"
+                                        ],
+                                        "toolType": "NXCursorTool",
+                                        "visible": true
+                                    }
+                                ]
+                            }
+                        },
+                        "detailLeftPanel": {
+                            "visible": false,
+                            "width": 130
+                        }
+                    },
+                    "type": "NXCubeCard"
+                },
+                {
+                                    "cardTitle": "Revenue Percent of Brand",
+                                    "dataSetId": "41c84747-4257-4f99-aa56-3d915ba2035c",
+                                    "linkEvent": {
+                                        "isEventSource": true
+                                    },
+                                    "size": "row-sm-xs-12 row-xs-sm-12 row-md-3  row-md-sm-6 row-lg-md-6 col-xs-sm-12 col-sm-xs-12 col-sm-lg-12 col-md-12 col-md-sm-4 col-md-lg-6 col-lg-4 col-sm-md-6",
+                                    "structure": {
+                                        "dimensions": [
+                                            {
+                                                "granularities": [
+                                                    {
+                                                        "key": "COL_0_1",
+                                                        "title": "Distribution Channels"
+                                                    }
+                                                ],
+                                                "key": "Dimension_3",
+                                                "title": "Sales Channels"
+                                            },
+                                            {
+                                                "granularities": [
+                                                    {
+                                                        "key": "COL_0_2",
+                                                        "title": "Continent"
+                                                    },
+                                                    {
+                                                        "key": "COL_0_3",
+                                                        "title": "Country"
+                                                    }
+                                                ],
+                                                "key": "Dimension_4",
+                                                "title": "Geography"
+                                            },
+                                            {
+                                                "granularities": [
+                                                    {
+                                                        "key": "COL_0_4",
+                                                        "title": "Year"
+                                                    },
+                                                    {
+                                                        "drillTo": true,
+                                                        "key": "COL_0_5",
+                                                        "title": "Quarter"
+                                                    },
+                                                    {
+                                                        "key": "COL_0_6",
+                                                        "title": "Month"
+                                                    }
+                                                ],
+                                                "key": "Dimension_1",
+                                                "title": "Date"
+                                            },
+                                            {
+                                                "granularities": [
+                                                    {
+                                                        "key": "COL_0_0",
+                                                        "title": "Brand"
+                                                    }
+                                                ],
+                                                "key": "Dimension_2",
+                                                "title": "Category"
+                                            }
+                                        ],
+                                        "measures": [
+                                            {
+                                                "key": "COL_0_13",
+                                                "title": "Revenue"
+                                            }
+                                        ]
+                                    },
+                                    "style": {
+                                        "chart": {
+                                            "chartConfig": {
+                                                "series": [
+                                                    {
+                                                        "dataSource": {
+                                                            "yValueSource": "COL_0_13"
+                                                        },
+                                                        "id": "brandPercentPie",
+                                                        "type": "NXPieSeries"
+                                                    }
+                                                ],
+                                                "touchTools": [
+                                                    {
+                                                        "targetSeries": [
+                                                            "brandPercentPie"
+                                                        ],
+                                                        "toolType": "NXPieSpinTool"
+                                                    }
+                                                ]
+                                            },
+                                            "selection": {
+                                                "selectionSource": "Y",
+                                                "selectionType": "NXChartSelectionBiggestValue"
+                                            }
+                                        },
+                                        "detailTopPanel": {
+                                            "percentInTotalVisible": true,
+                                            "type": "NXDetailVertical",
+                                            "visible": true
+                                        },
+                                        "detailTotalPanel": {
+                                            "isAboveDetailTop": true
+                                        }
+                                    },
+                                    "type": "NXCubeCard"
+                                },
+                {
+                    "cardTitle": "Season Revenue Accumulation",
+                    "dataSetId": "41c84747-4257-4f99-aa56-3d915ba2035c",
+                    "linkEvent": {
+                        "isEventSource": true
+                    },
+                    "size": "row-sm-xs-6 row-xs-sm-12 row-md-3 row-md-sm-6 row-lg-md-6 col-xs-sm-12 col-sm-xs-12 col-sm-md-6 col-sm-lg-12 col-md-12 col-md-lg-6 col-md-sm-8 col-lg-8 ",
+                    "structure": {
+                        "dimensions": [
+                            {
+                                "granularities": [
+                                    {
+                                        "key": "COL_0_0",
+                                        "title": "Brand"
+                                    }
+                                ],
+                                "key": "Dimension_2",
+                                "title": "Category"
+                            },
+                            {
+                                "granularities": [
+                                    {
+                                        "key": "COL_0_1",
+                                        "title": "Distribution Channels"
+                                    }
+                                ],
+                                "key": "Dimension_3",
+                                "title": "Sales Channels"
+                            },
+                            {
+                                "granularities": [
+                                    {
+                                        "key": "COL_0_2",
+                                        "title": "Continent"
+                                    },
+                                    {
+                                        "key": "COL_0_3",
+                                        "title": "Country"
+                                    }
+                                ],
+                                "key": "Dimension_4",
+                                "title": "Geography"
+                            },
+                            {
+                                "granularities": [
+                                    {
+                                        "key": "COL_0_4",
+                                        "title": "Year"
+                                    },
+                                    {
+                                        "drillTo": true,
+                                        "key": "COL_0_5",
+                                        "title": "Quarter"
+                                    },
+                                    {
+                                        "key": "COL_0_6",
+                                        "title": "Month"
+                                    }
+                                ],
+                                "key": "Dimension_1",
+                                "title": "Date"
+                            }
+                        ],
+                        "measures": [
+                            {
+                                "key": "COL_0_13",
+                                "title": "Revenue"
+                            }
+                        ]
+                    },
+                    "style": {
+                        "chart": {
+                            "chartConfig": {
+                                "axis": [
+                                    {
+                                        "axisType": "NXAxisTypeCategory",
+                                        "id": "bottom"
+                                    },
+                                    {
+                                        "axisType": "NXAxisTypeNumberic",
+                                        "coordinate": "NXCoordinateY",
+                                        "id": "left",
+                                        "majorPoint": {
+                                            "label": {
+                                                "labelFormatter": ",###",
+                                                "labelNumberUnit": true
+                                            }
+                                        }
+                                    }
+                                ],
+                                "canvas": {
+                                    "graphPadding": {
+                                        "bottom": 20,
+                                        "left": 50,
+                                        "right": 0,
+                                        "top": 0
+                                    }
+                                },
+                                "series": [
+                                    {
+                                        "accumulation": false,
+                                        "barFill": {
+                                            "fillColor": "#955cbf"
+                                        },
+                                        "dataSource": {
+                                            "yValueSource": "COL_0_13"
+                                        },
+                                        "id": "seasonTotalForProvinceBar",
+                                        "orientation": "vertical",
+                                        "showOverlayAll": true,
+                                        "stackedType": "NXChartSeriesStackedTypeOverlap",
+                                        "standOnShoulder": true,
+                                        "type": "NXBarSeries",
+                                        "xAxis": "bottom",
+                                        "yAxis": "left"
+                                    }
+                                ],
+                                "touchTools": [
+                                    {
+                                        "crossAxis": "bottom",
+                                        "enableMultiTouch": true,
+                                        "removeOnRelease": false,
+                                        "showBelowSeries": false,
+                                        "targetSeries": [
+                                            "seasonTotalForProvinceBar"
+                                        ],
+                                        "toolType": "NXHighLightTool",
+                                        "visible": true
+                                    },
+                                    {
+                                        "active": true,
+                                        "crossAxis": "bottom",
+                                        "targetSeries": [
+                                            "seasonTotalForProvinceBar"
+                                        ],
+                                        "toolType": "NXChangeActiveSeriesTool"
+                                    }
+                                ]
+                            }
+                        }
+                    },
+                    "type": "NXCubeCard"
+                },
+                {
+                    "cardTitle": "Country Revenue In Geography",
+                    "dataSetId": "41c84747-4257-4f99-aa56-3d915ba2035c",
+                    "linkEvent": {
+                        "isEventSource": true
+                    },
+                    "size": "row-sm-xs-6 row-xs-sm-12 row-md-3 row-md-sm-6 row-lg-md-6 col-xs-sm-12 col-sm-xs-12 col-sm-lg-12 col-md-12  col-md-md-12  col-md-lg-12 col-md-sm-8 col-lg-8 ",
+                    "structure": {
+                        "dimensions": [
+                            {
+                                "granularities": [
+                                    {
+                                        "key": "COL_0_0",
+                                        "title": "Brand"
+                                    }
+                                ],
+                                "key": "Dimension_2",
+                                "title": "Category"
+                            },
+                            {
+                                "granularities": [
+                                    {
+                                        "key": "COL_0_1",
+                                        "title": "Distribution Channels"
+                                    }
+                                ],
+                                "key": "Dimension_3",
+                                "title": "Sales Channels"
+                            },
+                            {
+                                "granularities": [
+                                    {
+                                        "key": "COL_0_4",
+                                        "title": "Year"
+                                    },
+                                    {
+                                        "key": "COL_0_5",
+                                        "title": "Quarter"
+                                    },
+                                    {
+                                        "key": "COL_0_6",
+                                        "title": "Month"
+                                    }
+                                ],
+                                "key": "Dimension_1",
+                                "title": "Date"
+                            },
+                            {
+                                "granularities": [
+                                    {
+                                        "key": "COL_0_2",
+                                        "title": "Continent"
+                                    },
+                                    {
+                                        "drillTo": true,
+                                        "key": "COL_0_3",
+                                        "title": "Country"
+                                    }
+                                ],
+                                "key": "Dimension_4",
+                                "title": "Geography"
+                            }
+                        ],
+                        "measures": [
+                            {
+                                "key": "COL_0_13",
+                                "title": "Revenue"
+                            }
+                        ]
+                    },
+                    "style": {
+                        "chart": {
+                            "chartConfig": {
+                                "series": [
+                                    {
+                                        "dataSource": {
+                                            "yValueSource": "COL_0_13"
+                                        },
+                                        "focusZoomOnSelect": true,
+                                        "id": "brandRegionMap",
+                                        "mapType": "World",
+                                        "plotSymbol": {
+                                            "anchorPoint": {
+                                                "x": 0.5,
+                                                "y": 0.5
+                                            },
+                                            "symbolFill": {
+                                                "fillAlpha": 0.6,
+                                                "fillColor": "#fecd6c"
+                                            }
+                                        },
+                                        "type": "NXMapSeries"
+                                    }
+                                ],
+                                "touchTools": [
+                                    {
+                                        "targetSeries": [
+                                            "brandRegionMap"
+                                        ],
+                                        "toolType": "NXZoomTool"
+                                    },
+                                    {
+                                        "crossAxis": "bottom",
+                                        "enableMultiTouch": false,
+                                        "removeOnRelease": false,
+                                        "showBelowSeries": false,
+                                        "targetSeries": [
+                                            "brandRegionMap"
+                                        ],
+                                        "toolType": "NXMapHighLightTool",
+                                        "visible": true
+                                    }
+                                ]
+                            },
+                            "selection": {
+                                "selectionSource": "Y",
+                                "selectionType": "NXChartSelectionBiggestValue"
+                            }
+                        },
+                        "detailRightPanel": {
+                            "visible": true
+                        },
+                        "detailTopPanel": {
+                            "percentInTotalVisible": true,
+                            "type": "NXDetailVertical",
+                            "visible": false
+                        }
+                    },
+                    "type": "NXCubeCard"
+                }
+            ],
+            "pageColor": "#718dbf",
+            "pageTitle": "Global SFA Report For Drink"
+        }
+    ],
+    "status": "readyForView",
+    "title": "Global SFA Report For Drink"
+}

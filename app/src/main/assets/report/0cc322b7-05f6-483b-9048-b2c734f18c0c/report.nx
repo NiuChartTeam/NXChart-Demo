@@ -1,0 +1,433 @@
+{
+    "creator": "dongsaiyuan",
+    "defaultStyle": [
+        {
+            "chartOptions": {
+                "seriesOptions": {}
+            },
+            "defaultColor": [
+                "#e84d60",
+                "#e88f61",
+                "#fecd6c",
+                "#b3cf61",
+                "#77c298",
+                "#51a9d6",
+                "#718dbf",
+                "#955cbf",
+                "#a4547d",
+                "#c64373"
+            ],
+            "scopeId": [
+                "all"
+            ],
+            "scopeType": "report"
+        }
+    ],
+    "id": "gov2",
+    "metadataStructures": [
+        {
+            "dataSetId": "25479cda-76a6-4197-bdb4-a3ad78162e04",
+            "db": "db",
+            "dimensions": [
+                {
+                    "granularities": [
+                        {
+                            "key": "COL_0_0",
+                            "title": "市级行政"
+                        },
+                        {
+                            "key": "COL_0_1",
+                            "title": "区级行政"
+                        }
+                    ],
+                    "key": "Dimension_1",
+                    "title": "地区"
+                },
+                {
+                    "granularities": [
+                        {
+                            "key": "COL_0_2",
+                            "title": "年"
+                        },
+                        {
+                            "key": "COL_0_3",
+                            "title": "季"
+                        },
+                        {
+                            "key": "COL_0_4",
+                            "title": "月"
+                        },
+                        {
+                            "key": "COL_0_5",
+                            "title": "日"
+                        }
+                    ],
+                    "key": "Dimension_2",
+                    "title": "时间"
+                }
+            ],
+            "encrypt": "jiangbei",
+            "measures": [
+                {
+                    "key": "COL_0_6",
+                    "title": "一般公共预算支出"
+                },
+                {
+                    "aggregator": "avg",
+                    "key": "COL_0_7",
+                    "title": "一般公共预算支出同比"
+                },
+                {
+                    "key": "COL_0_8",
+                    "title": "一般公共服务支出"
+                },
+                {
+                    "aggregator": "avg",
+                    "key": "COL_0_9",
+                    "title": "一般公共服务支出同比"
+                },
+                {
+                    "key": "COL_0_10",
+                    "title": "农村居民人均可支配收入"
+                },
+                {
+                    "aggregator": "avg",
+                    "key": "COL_0_11",
+                    "title": "农村居民人均可支配收入同比"
+                },
+                {
+                    "key": "COL_0_12",
+                    "title": "城镇居民人均可支配收入"
+                },
+                {
+                    "aggregator": "avg",
+                    "key": "COL_0_13",
+                    "title": "城镇居民人均可支配收入同比"
+                },
+                {
+                    "key": "COL_0_14",
+                    "title": "财政总收入（单位：万元）"
+                },
+                {
+                    "aggregator": "avg",
+                    "key": "COL_0_15",
+                    "title": "财政总收入同比（%）"
+                },
+                {
+                    "key": "COL_0_16",
+                    "title": "一般公共预算收入（单位：万元）"
+                },
+                {
+                    "aggregator": "avg",
+                    "key": "COL_0_17",
+                    "title": "一般公共预算收入同比（%）"
+                },
+                {
+                    "key": "COL_0_18",
+                    "title": "合同利用外资（单位：万美元）"
+                },
+                {
+                    "aggregator": "avg",
+                    "key": "COL_0_19",
+                    "title": "合同利用外资同比（%）"
+                },
+                {
+                    "key": "COL_0_20",
+                    "title": "实际利用外资（单位：万美元）"
+                },
+                {
+                    "aggregator": "avg",
+                    "key": "COL_0_21",
+                    "title": "实际利用外资同比（%）"
+                },
+                {
+                    "key": "COL_0_22",
+                    "title": "进出口总额（单位：万美元）"
+                },
+                {
+                    "aggregator": "avg",
+                    "key": "COL_0_23",
+                    "title": "进出口总额同比（%）"
+                },
+                {
+                    "key": "COL_0_24",
+                    "title": "出口额（单位：万美元）"
+                },
+                {
+                    "aggregator": "avg",
+                    "key": "COL_0_25",
+                    "title": "出口额同比（%）"
+                },
+                {
+                    "key": "COL_0_26",
+                    "title": "商品销售总额（单位：万美元）"
+                },
+                {
+                    "aggregator": "avg",
+                    "key": "COL_0_27",
+                    "title": "商品销售总额同比（%）"
+                },
+                {
+                    "key": "COL_0_28",
+                    "title": "限额以上商品销售额（单位：万美元）"
+                },
+                {
+                    "aggregator": "avg",
+                    "key": "COL_0_29",
+                    "title": "限额以上商品销售额同比（%）"
+                }
+            ]
+        }
+    ],
+    "pages": [
+        {
+            "cards": [
+                {
+                    "cardTitle": "一般公共支出累计与同比趋势",
+                    "dataSetId": "25479cda-76a6-4197-bdb4-a3ad78162e04",
+                    "size": "row-lg-12 col-lg-12",
+                    "structure": {
+                        "dimensions": [
+                            {
+                                "granularities": [
+                                    {
+                                        "drillTo": true,
+                                        "index": 1,
+                                        "key": "COL_0_1",
+                                        "selectionValue": "江北区",
+                                        "title": "区级行政"
+                                    }
+                                ],
+                                "key": "Dimension_1",
+                                "title": "地区"
+                            },
+                            {
+                                "granularities": [
+                                    {
+                                        "key": "COL_0_2",
+                                        "title": "年"
+                                    },
+                                    {
+                                        "drillTo": true,
+                                        "index": 2,
+                                        "key": "COL_0_4",
+                                        "title": "月"
+                                    }
+                                ],
+                                "key": "Dimension_2",
+                                "title": "时间"
+                            }
+                        ],
+                        "measures": [
+                            {
+                                "key": "COL_0_8",
+                                "sort": "NXSortOperationAsc",
+                                "title": "实际支出(万元)"
+                            },
+                            {
+                                "aggregator": "avg",
+                                "key": "COL_0_9",
+                                "title": "实际支出同比"
+                            }
+                        ]
+                    },
+                    "style": {
+                        "annotation": {
+                            "horizontal": true,
+                            "includedValues": [
+                                "江北区",
+                                "海曙区"
+                            ],
+                            "visible": true
+                        },
+                        "chart": {
+                            "chartConfig": {
+                                "axis": [
+                                    {
+                                        "axisTitle": {
+                                            "titleLocation": 0.5,
+                                            "titleVisible": false
+                                        },
+                                        "axisType": "NXAxisTypeDateTime",
+                                        "id": "bottom"
+                                    },
+                                    {
+                                        "axisTitle": {
+                                            "titleLocation": 0.5,
+                                            "titleVisible": false
+                                        },
+                                        "axisType": "NXAxisTypeNumberic",
+                                        "coordinate": "NXCoordinateY",
+                                        "id": "right",
+                                        "majorPoint": {
+                                            "label": {
+                                                "labelDirection": "NXSignPositive",
+                                                "labelFormatter": "#%",
+                                                "labelNumberUnit": false
+                                            }
+                                        },
+                                        "maxValue": 1,
+                                        "minValue": 0,
+                                        "relativeOffset": 1
+                                    },
+                                    {
+                                        "axisTitle": {
+                                            "titleLocation": 0.5,
+                                            "titleVisible": false
+                                        },
+                                        "axisType": "NXAxisTypeNumberic",
+                                        "coordinate": "NXCoordinateY",
+                                        "id": "left",
+                                        "majorPoint": {
+                                            "label": {
+                                                "labelFormatter": ",###",
+                                                "labelNumberUnit": true
+                                            }
+                                        }
+                                    }
+                                ],
+                                "series": [
+                                    {
+                                        "accumulation": true,
+                                        "barFill": {
+                                            "fillColor": "#51a9d6"
+                                        },
+                                        "dataSource": {
+                                            "xDataSourceDateFormatString": "MMM",
+                                            "xDataSourceDateLocale": "zh",
+                                            "xDisplayDateFormatString": "MMM",
+                                            "xDisplayDateLocale": "zh",
+                                            "yValueSource": "COL_0_8"
+                                        },
+                                        "id": "revenueTongbiMonthBar",
+                                        "iteration": {
+                                            "isMultiLevel": true
+                                        },
+                                        "orientation": "vertical",
+                                        "showOverlayAll": false,
+                                        "sort": {
+                                            "sortSource": "x",
+                                            "sortType": "NXSortOperationAsc"
+                                        },
+                                        "stackedType": "NXChartSeriesStackedTypeSide",
+                                        "type": "NXBarSeries",
+                                        "xAxis": "bottom",
+                                        "yAxis": "left"
+                                    },
+                                    {
+                                        "accumulation": false,
+                                        "dataSource": {
+                                            "xDataSourceDateFormatString": "MMM",
+                                            "xDataSourceDateLocale": "zh",
+                                            "xDisplayDateFormatString": "MMM",
+                                            "xDisplayDateLocale": "zh",
+                                            "yFormatString": "#.#%",
+                                            "yValueSource": "COL_0_9"
+                                        },
+                                        "fill": {
+                                            "fillColor": "#51a9d6"
+                                        },
+                                        "id": "targetRevenueTongbiAsMonthLine",
+                                        "iteration": {
+                                            "isMultiLevel": true
+                                        },
+                                        "orientation": "vertical",
+                                        "sort": {
+                                            "sortSource": "x",
+                                            "sortType": "NXSortOperationAsc"
+                                        },
+                                        "type": "NXLineSeries",
+                                        "xAxis": "bottom",
+                                        "yAxis": "right"
+                                    }
+                                ],
+                                "touchTools": [
+                                    {
+                                        "crossAxis": "bottom",
+                                        "enableMultiTouch": false,
+                                        "removeOnRelease": false,
+                                        "showBelowSeries": false,
+                                        "targetSeries": [
+                                            "revenueTongbiMonthBar",
+                                            "targetRevenueTongbiAsMonthLine"
+                                        ],
+                                        "toolType": "NXHighLightTool",
+                                        "visible": true
+                                    },
+                                    {
+                                        "crossAxis": "bottom",
+                                        "enableMultiTouch": true,
+                                        "removeOnRelease": false,
+                                        "showBelowSeries": false,
+                                        "targetSeries": [
+                                            "targetRevenueTongbiAsMonthLine"
+                                        ],
+                                        "toolPlot": {
+                                            "innerSymbol": {
+                                                "anchorPoint": {
+                                                    "x": 0.5,
+                                                    "y": 0.5
+                                                },
+                                                "symbolSize": {
+                                                    "height": 4,
+                                                    "width": 4
+                                                },
+                                                "symbolType": "NXPlotSymbolTypeEllipse"
+                                            },
+                                            "lineStyle": null,
+                                            "multiTouchLineType": "NXLineToolTypeVertical",
+                                            "outerSymbol": {
+                                                "anchorPoint": {
+                                                    "x": 0.5,
+                                                    "y": 0.5
+                                                },
+                                                "symbolFill": {
+                                                    "fillColor": "#ffffff"
+                                                },
+                                                "symbolSize": {
+                                                    "height": 8,
+                                                    "width": 8
+                                                },
+                                                "symbolType": "NXPlotSymbolTypeEllipse"
+                                            },
+                                            "singleTouchLineType": "NXLineToolTypeVertical"
+                                        },
+                                        "toolType": "NXLineTool",
+                                        "visible": true
+                                    },
+                                    {
+                                        "targetSeries": [
+                                            "revenueTongbiMonthBar",
+                                            "targetRevenueTongbiAsMonthLine"
+                                        ],
+                                        "toolType": "NXNavigationTool",
+                                        "visible": true
+                                    }
+                                ]
+                            }
+                        },
+                        "detailTopPanel": {
+                            "visible": true
+                        },
+                        "footer": {
+                            "navigation": {
+                                "minGapDistance": 80,
+                                "navigationType": "NXSliderTypeLine",
+                                "orientation": "auto",
+                                "visible": true
+                            }
+                        },
+                        "selection": {
+                            "selectionSource": "Y",
+                            "selectionType": "NXChartSelectionBiggestValue"
+                        }
+                    },
+                    "type": "NXCubeCard"
+                }
+            ],
+            "pageColor": "#3BA0ED",
+            "pageTitle": "江北区统计局"
+        }
+    ],
+    "title": "gov"
+}
