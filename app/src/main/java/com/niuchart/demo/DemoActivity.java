@@ -20,6 +20,8 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.view.WindowManager;
 import android.widget.TextView;
+
+import com.niuchart.*;
 import com.niuchart.core.define.NXConstants;
 import com.niuchart.core.drawing.NXColor;
 import com.niuchart.core.drawing.NXLineStyle;
@@ -37,7 +39,7 @@ import java.util.List;
 
 public class DemoActivity extends ActionBarActivity {
     private static final String TAG = DemoActivity.class.getSimpleName();
-    private static final String FIRST_INSTALL = "is_first_install";
+    private static final String FIRST_INSTALL = "first_install";
     private static final String PREFERENCES_KEY = "preference_key";
     private static final String OPEN_INDEX = "open_index";
     private static final String REPORT_FOLDER_NAME_IN_ASSET = "report";
@@ -50,8 +52,8 @@ public class DemoActivity extends ActionBarActivity {
 
     private void initItems() {
         try {
-            final String baseExternalFileDir = getExternalFilesDir(null) + File.separator + REPORT_FOLDER_NAME_IN_ASSET;
-            File itemsFile = new File(baseExternalFileDir, "items.json");
+            final String baseDir = getFilesDir() + File.separator + REPORT_FOLDER_NAME_IN_ASSET;
+            File itemsFile = new File(baseDir, "items.json");
             if (!itemsFile.exists()) {
                 return;
             }
@@ -146,19 +148,20 @@ public class DemoActivity extends ActionBarActivity {
         mPaint.setAntiAlias(true);
 
         setContentView(R.layout.demo_activity);
-        initItems();
         initList();
-        //首次运行时copy asset下的report到外存
+        //首次运行时copy asset下的report到interal Storage
         if (isFirstInstall() || IS_DEBUG) {
             AsyncTask<String, Integer, Boolean> task = new ReportCopyTask();
             task.execute();
+        } else {
+            initItems();
         }
     }
 
     private void openByIdName(RowItem item) {
-        final String baseExternalFileDir = getExternalFilesDir(null) + File.separator + REPORT_FOLDER_NAME_IN_ASSET + File.separator + item.getId();
+        final String baseDir = getFilesDir() + File.separator + REPORT_FOLDER_NAME_IN_ASSET + File.separator + item.getId();
         Intent intent = new Intent(DemoActivity.this, NXReportActivity.class);
-        intent.putExtra(NXReportActivity.NX_BASE_URL, baseExternalFileDir);
+        intent.putExtra(NXReportActivity.NX_BASE_URL, baseDir);
         intent.putExtra(NXReportActivity.NX_JSON_CONFIG_FILE_NAME, item.getReportName());
         //"crmAESEncrypt.json是加密的
 
@@ -170,12 +173,12 @@ public class DemoActivity extends ActionBarActivity {
     }
 
     public boolean isFirstInstall() {
-        return getApplication().getSharedPreferences(PREFERENCES_KEY, Activity.MODE_PRIVATE).getBoolean(FIRST_INSTALL, true);
+        return getApplication().getSharedPreferences(PREFERENCES_KEY, Activity.MODE_PRIVATE).getInt(FIRST_INSTALL, -1) != BuildConfig.VERSION_CODE;
     }
 
-    public void setFirstInstall(boolean firstInstall) {
+    public void setFirstInstall(int firstInstall) {
         SharedPreferences.Editor editor = getApplication().getSharedPreferences(PREFERENCES_KEY, Activity.MODE_PRIVATE).edit();
-        editor.putBoolean(FIRST_INSTALL, firstInstall);
+        editor.putInt(FIRST_INSTALL, BuildConfig.VERSION_CODE);
         editor.commit();
     }
 
@@ -193,7 +196,7 @@ public class DemoActivity extends ActionBarActivity {
         @Override
         protected void onPreExecute() {
             TextView actionTitle = (TextView) getSupportActionBar().getCustomView().findViewById(R.id.action_bar_title);
-            actionTitle.setText("Copying Test Reports");
+            actionTitle.setText("Copying Test Reports..");
             for (int i = 0; i < mList.getChildCount(); i++) {
                 View button = mList.getChildAt(i);
                 button.setVisibility(View.GONE);
@@ -204,13 +207,13 @@ public class DemoActivity extends ActionBarActivity {
         protected Boolean doInBackground(String... input) {
             try {
                 String reportFolderName = REPORT_FOLDER_NAME_IN_ASSET;//与asset下的名字对应
-                String externalBaseDir = getExternalFilesDir(null).getAbsolutePath();
-                File rootFile = new File(externalBaseDir + File.separator + reportFolderName);
+                String baseDir = getFilesDir().getAbsolutePath();
+                File rootFile = new File(baseDir + File.separator + reportFolderName);
                 if (rootFile.exists()) {
                     IOUtility.deleteFolderOrFile(rootFile);
                 }
                 if (Environment.MEDIA_MOUNTED.equals(Environment.getExternalStorageState())) {
-                    IOUtility.copyFileOrDir(DemoActivity.this, reportFolderName, externalBaseDir);
+                    IOUtility.copyFileOrDir(DemoActivity.this, reportFolderName, baseDir);
                 }
                 return true;
             } catch (Exception e) {
@@ -222,7 +225,7 @@ public class DemoActivity extends ActionBarActivity {
         @Override
         protected void onPostExecute(Boolean result) {
             if (result) {
-                setFirstInstall(false);
+                setFirstInstall(BuildConfig.VERSION_CODE);
                 initItems();
                 for (int i = 0; i < mList.getChildCount(); i++) {
                     View row = mList.getChildAt(i);

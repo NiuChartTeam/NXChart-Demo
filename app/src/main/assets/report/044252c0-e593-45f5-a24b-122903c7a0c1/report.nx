@@ -1,574 +1,572 @@
 {
-    "defaultStyle": [
-        {
-            "chartOptions": {},
-            "defaultColor": [
-                "#e84d60",
-                "#e88f61",
-                "#fecd6c",
-                "#b3cf61",
-                "#77c298",
-                "#51a9d6",
-                "#718dbf",
-                "#955cbf",
-                "#a4547d",
-                "#c64373"
-            ],
-            "scopeId": [
-                "all"
-            ],
-            "scopeType": "report"
-        }
-    ],
-    "metadataStructures": [
-        {
-            "dataSetId": "c8ab6752-4ec9-47bf-8dc2-f5d843e596d3",
-            "dimensions": [
-                {
-                    "granularities": [
-                        {
-                            "key": "COL_0_3",
-                            "title": "性别"
-                        }
-                    ],
-                    "key": "Dimension_1",
-                    "title": "性别"
-                },
-                {
-                    "granularities": [
-                        {
-                            "key": "COL_0_0",
-                            "title": "购买分类"
-                        }
-                    ],
-                    "key": "Dimension_2",
-                    "title": "消费类型"
-                },
-                {
-                    "granularities": [
-                        {
-                            "key": "COL_0_1",
-                            "title": "省份"
-                        }
-                    ],
-                    "key": "Dimension_3",
-                    "title": "区域"
-                },
-                {
-                    "granularities": [
-                        {
-                            "key": "COL_0_2",
-                            "title": "用户价值组"
-                        }
-                    ],
-                    "key": "Dimension_4",
-                    "title": "用户价值分类"
-                },
-                {
-                    "granularities": [
-                        {
-                            "key": "COL_0_4",
-                            "title": "时刻段"
-                        }
-                    ],
-                    "key": "Dimension_5",
-                    "title": "时间"
-                }
-            ],
-            "encrypt": "123456",
-            "measures": [
-                {
-                    "key": "COL_0_5",
-                    "title": "用户数"
-                },
-                {
-                    "key": "COL_0_6",
-                    "title": "消费总额"
-                },
-                {
-                    "key": "COL_0_7",
-                    "title": "年龄累计"
-                },
-                {
-                    "formula": "COL_0_7/COL_0_5",
-                    "isCreated": true,
-                    "key": "COL_0_8",
-                    "title": "平均年龄"
-                },
-                {
-                    "formula": "COL_0_6/COL_0_5",
-                    "isCreated": true,
-                    "key": "COL_0_9",
-                    "title": "人均消费值"
-                }
-            ]
-        },
-        {
-            "dataSetId": "7064bc90-5d89-48cc-8b8c-9d5aeac08e48",
-            "dimensions": [
-                {
-                    "granularities": [
-                        {
-                            "key": "COL_0_0",
-                            "title": "周访问时间"
-                        }
-                    ],
-                    "key": "Dimension_1",
-                    "title": "访问时间"
-                },
-                {
-                    "granularities": [
-                        {
-                            "key": "COL_0_1",
-                            "title": "周访问频率"
-                        }
-                    ],
-                    "key": "Dimension_2",
-                    "title": "频率"
-                },
-                {
-                    "granularities": [
-                        {
-                            "key": "COL_0_2",
-                            "title": "用户价值组"
-                        }
-                    ],
-                    "key": "Dimension_3",
-                    "title": "用户价值分类"
-                },
-                {
-                    "granularities": [
-                        {
-                            "key": "COL_0_3",
-                            "title": "购买分类"
-                        }
-                    ],
-                    "key": "Dimension_4",
-                    "title": "消费类型"
-                }
-            ],
-            "encrypt": "123456",
-            "measures": [
-                {
-                    "key": "COL_0_4",
-                    "title": "用户数"
-                },
-                {
-                    "key": "COL_0_5",
-                    "title": "消费总额"
-                }
-            ]
-        }
-    ],
+    "title": "电商", 
     "pages": [
         {
             "cards": [
                 {
-                    "cardTitle": "用户消费均值",
-                    "dataSetId": "c8ab6752-4ec9-47bf-8dc2-f5d843e596d3",
-                    "size": "row-sm-xs-6 row-xs-sm-12 row-md-3 row-md-sm-6 row-lg-md-3 col-xs-sm-12 col-sm-xs-12 col-sm-lg-12 col-md-12 col-md-lg-12 col-md-sm-6 col-lg-6 ",
-                    "structure": {
-                        "dimensions": [
-                            {
-                                "granularities": [
-                                    {
-                                        "key": "COL_0_2",
-                                        "regularExpression": "(.*)级$",
-                                        "sort": "NXSortOperationAsc",
-                                        "sortLanguage": "NXSortRegularExpressNum",
-                                        "title": "用户价值组"
-                                    }
-                                ],
-                                "key": "Dimension_4",
-                                "title": "用户价值分类"
-                            }
-                        ],
-                        "measures": [
-                            {
-                                "key": "COL_0_5",
-                                "title": "用户数"
-                            },
-                            {
-                                "key": "COL_0_6",
-                                "title": "消费总额"
-                            },
-                            {
-                                "key": "COL_0_9",
-                                "title": "人均消费值"
-                            }
-                        ]
-                    },
+                    "cardTitle": "用户消费均值", 
                     "style": {
+                        "selection": {
+                            "selectionSource": "Y", 
+                            "selectionType": "NXChartSelectionBiggestValue"
+                        }, 
                         "chart": {
                             "chartConfig": {
-                                "axis": [
-                                    {
-                                        "axisType": "NXAxisTypeCategory",
-                                        "id": "bottom"
-                                    },
-                                    {
-                                        "axisType": "NXAxisTypeNumberic",
-                                        "coordinate": "NXCoordinateY",
-                                        "id": "left",
-                                        "majorPoint": {
-                                            "label": {
-                                                "labelFormatter": ",###",
-                                                "labelNumberUnit": true
-                                            }
-                                        }
-                                    }
-                                ],
-                                "series": [
-                                    {
-                                        "barFill": {
-                                            "fillColor": "#51a9d6"
-                                        },
-                                        "dataSource": {
-                                            "yValueSource": "COL_0_9"
-                                        },
-                                        "id": "bar",
-                                        "orientation": "vertical",
-                                        "stackedType": "NXChartSeriesStackedTypeSide",
-                                        "type": "NXBarSeries",
-                                        "xAxis": "bottom",
-                                        "yAxis": "left"
-                                    }
-                                ],
                                 "touchTools": [
                                     {
-                                        "crossAxis": "bottom",
-                                        "enableMultiTouch": false,
-                                        "removeOnRelease": false,
-                                        "showBelowSeries": false,
                                         "targetSeries": [
                                             "bar"
-                                        ],
-                                        "toolType": "NXHighLightTool",
+                                        ], 
+                                        "showBelowSeries": false, 
+                                        "enableMultiTouch": false, 
+                                        "toolType": "NXHighLightTool", 
+                                        "removeOnRelease": false, 
+                                        "crossAxis": "bottom", 
                                         "visible": true
+                                    }
+                                ], 
+                                "series": [
+                                    {
+                                        "stackedType": "NXChartSeriesStackedTypeSide", 
+                                        "orientation": "vertical", 
+                                        "yAxis": "left", 
+                                        "dataSource": {
+                                            "yValueSource": "COL_0_9"
+                                        }, 
+                                        "xAxis": "bottom", 
+                                        "type": "NXBarSeries", 
+                                        "id": "bar", 
+                                        "barFill": {
+                                            "fillColor": "#51a9d6"
+                                        }
+                                    }
+                                ], 
+                                "axis": [
+                                    {
+                                        "axisType": "NXAxisTypeCategory", 
+                                        "id": "bottom"
+                                    }, 
+                                    {
+                                        "coordinate": "NXCoordinateY", 
+                                        "majorPoint": {
+                                            "label": {
+                                                "labelNumberUnit": true, 
+                                                "labelFormatter": ",###"
+                                            }
+                                        }, 
+                                        "axisType": "NXAxisTypeNumberic", 
+                                        "id": "left"
                                     }
                                 ]
                             }
-                        },
-                        "selection": {
-                            "selectionSource": "Y",
-                            "selectionType": "NXChartSelectionBiggestValue"
                         }
-                    },
-                    "type": "NXCubeCard"
-                },
-                {
-                    "cardTitle": "用户价值等级分布",
-                    "dataSetId": "c8ab6752-4ec9-47bf-8dc2-f5d843e596d3",
-                    "size": "row-sm-xs-6 row-xs-sm-12 row-md-3 row-md-sm-6 row-lg-md-3 col-xs-sm-12 col-sm-xs-12 col-sm-lg-12 col-md-12 col-md-lg-12 col-md-sm-6 col-lg-6 ",
+                    }, 
+                    "dataSetId": "c8ab6752-4ec9-47bf-8dc2-f5d843e596d3", 
+                    "type": "NXCubeCard", 
                     "structure": {
+                        "measures": [
+                            {
+                                "key": "COL_0_5", 
+                                "title": "用户数"
+                            }, 
+                            {
+                                "key": "COL_0_6", 
+                                "title": "消费总额"
+                            }, 
+                            {
+                                "key": "COL_0_9", 
+                                "title": "人均消费值"
+                            }
+                        ], 
                         "dimensions": [
                             {
                                 "granularities": [
                                     {
-                                        "key": "COL_0_2",
-                                        "regularExpression": "(.*)级$",
-                                        "sortLanguage": "NXSortRegularExpressNum",
+                                        "sort": "NXSortOperationAsc", 
+                                        "regularExpression": "(.*)级$", 
+                                        "sortLanguage": "NXSortRegularExpressNum", 
+                                        "key": "COL_0_2", 
                                         "title": "用户价值组"
                                     }
-                                ],
-                                "key": "Dimension_4",
+                                ], 
+                                "key": "Dimension_4", 
                                 "title": "用户价值分类"
-                            },
-                            {
-                                "granularities": [
-                                    {
-                                        "key": "COL_0_1",
-                                        "title": "省份"
-                                    }
-                                ],
-                                "key": "Dimension_3",
-                                "title": "区域"
-                            }
-                        ],
-                        "measures": [
-                            {
-                                "key": "COL_0_5",
-                                "title": "用户数"
                             }
                         ]
-                    },
+                    }, 
+                    "size": "row-sm-xs-6 row-xs-sm-12 row-md-3 row-md-sm-6 row-lg-md-3 col-xs-sm-12 col-sm-xs-12 col-sm-lg-12 col-md-12 col-md-lg-12 col-md-sm-6 col-lg-6 "
+                }, 
+                {
+                    "cardTitle": "用户价值等级分布", 
                     "style": {
+                        "detailRightPanel": {
+                            "visible": true
+                        }, 
+                        "detailTopPanel": {
+                            "visible": false
+                        }, 
                         "chart": {
                             "chartConfig": {
+                                "touchTools": [
+                                    {
+                                        "targetSeries": [
+                                            "brandRegionMap"
+                                        ], 
+                                        "toolType": "NXZoomTool"
+                                    }, 
+                                    {
+                                        "targetSeries": [
+                                            "brandRegionMap"
+                                        ], 
+                                        "showBelowSeries": false, 
+                                        "enableMultiTouch": false, 
+                                        "toolType": "NXMapHighLightTool", 
+                                        "removeOnRelease": false, 
+                                        "crossAxis": "bottom", 
+                                        "visible": true
+                                    }
+                                ], 
                                 "series": [
                                     {
+                                        "mapType": "China", 
+                                        "type": "NXMapSeries", 
                                         "dataSource": {
+                                            "yValueSource": "COL_0_5", 
                                             "colorRange": {
                                                 "sectionRange": [
                                                     {
                                                         "color": {
                                                             "fillColor": "#0eb83b"
-                                                        },
-                                                        "fromValue": 0,
+                                                        }, 
+                                                        "fromValue": 0, 
                                                         "toValue": 50000
-                                                    },
+                                                    }, 
                                                     {
                                                         "color": {
                                                             "fillColor": "#fecd6c"
-                                                        },
-                                                        "fromValue": 50000,
+                                                        }, 
+                                                        "fromValue": 50000, 
                                                         "toValue": 100000
-                                                    },
+                                                    }, 
                                                     {
                                                         "color": {
                                                             "fillColor": "#e41c2b"
-                                                        },
+                                                        }, 
                                                         "fromValue": 100000
                                                     }
-                                                ],
+                                                ], 
                                                 "valueSource": "COL_0_5"
-                                            },
-                                            "yValueSource": "COL_0_5"
-                                        },
-                                        "id": "brandRegionMap",
-                                        "mapType": "China",
-                                        "type": "NXMapSeries"
-                                    }
-                                ],
-                                "touchTools": [
-                                    {
-                                        "targetSeries": [
-                                            "brandRegionMap"
-                                        ],
-                                        "toolType": "NXZoomTool"
-                                    },
-                                    {
-                                        "crossAxis": "bottom",
-                                        "enableMultiTouch": false,
-                                        "removeOnRelease": false,
-                                        "showBelowSeries": false,
-                                        "targetSeries": [
-                                            "brandRegionMap"
-                                        ],
-                                        "toolType": "NXMapHighLightTool",
-                                        "visible": true
+                                            }
+                                        }, 
+                                        "id": "brandRegionMap"
                                     }
                                 ]
-                            },
+                            }, 
                             "selection": {
-                                "selectionSource": "Y",
+                                "selectionSource": "Y", 
                                 "selectionType": "NXChartSelectionBiggestValue"
                             }
-                        },
-                        "detailRightPanel": {
-                            "visible": true
-                        },
-                        "detailTopPanel": {
-                            "visible": false
                         }
-                    },
-                    "type": "NXCubeCard"
-                },
-                {
-                    "cardTitle": "用户价值等级年龄分布",
-                    "dataSetId": "c8ab6752-4ec9-47bf-8dc2-f5d843e596d3",
-                    "size": "row-sm-xs-6 row-xs-sm-12 row-md-3 row-md-sm-6 row-lg-md-3 col-xs-sm-12 col-sm-xs-12 col-sm-lg-12 col-md-12 col-md-lg-12 col-md-sm-6 col-lg-6 ",
+                    }, 
+                    "dataSetId": "c8ab6752-4ec9-47bf-8dc2-f5d843e596d3", 
+                    "type": "NXCubeCard", 
                     "structure": {
+                        "measures": [
+                            {
+                                "key": "COL_0_5", 
+                                "title": "用户数"
+                            }
+                        ], 
                         "dimensions": [
                             {
                                 "granularities": [
                                     {
-                                        "key": "COL_0_3",
-                                        "title": "性别"
+                                        "regularExpression": "(.*)级$", 
+                                        "sortLanguage": "NXSortRegularExpressNum", 
+                                        "key": "COL_0_2", 
+                                        "title": "用户价值组"
                                     }
-                                ],
-                                "key": "Dimension_1",
-                                "title": "性别"
-                            },
+                                ], 
+                                "key": "Dimension_4", 
+                                "title": "用户价值分类"
+                            }, 
                             {
                                 "granularities": [
                                     {
-                                        "key": "COL_0_2",
-                                        "regularExpression": "(.*)级$",
-                                        "sort": "NXSortOperationAsc",
-                                        "sortLanguage": "NXSortRegularExpressNum",
-                                        "title": "用户价值组"
+                                        "key": "COL_0_1", 
+                                        "title": "省份"
                                     }
-                                ],
-                                "key": "Dimension_4",
-                                "title": "用户价值分类"
-                            }
-                        ],
-                        "measures": [
-                            {
-                                "key": "COL_0_5",
-                                "title": "用户数"
-                            },
-                            {
-                                "key": "COL_0_7",
-                                "title": "年龄累计"
-                            },
-                            {
-                                "key": "COL_0_8",
-                                "title": "平均年龄"
+                                ], 
+                                "key": "Dimension_3", 
+                                "title": "区域"
                             }
                         ]
-                    },
+                    }, 
+                    "size": "row-sm-xs-6 row-xs-sm-12 row-md-3 row-md-sm-6 row-lg-md-3 col-xs-sm-12 col-sm-xs-12 col-sm-lg-12 col-md-12 col-md-lg-12 col-md-sm-6 col-lg-6 "
+                }, 
+                {
+                    "cardTitle": "用户价值等级年龄分布", 
                     "style": {
+                        "selection": {
+                            "selectionSource": "Y", 
+                            "selectionType": "NXChartSelectionBiggestValue"
+                        }, 
                         "chart": {
                             "chartConfig": {
-                                "axis": [
+                                "touchTools": [
                                     {
-                                        "axisType": "NXAxisTypeCategory",
-                                        "id": "bottom"
-                                    },
-                                    {
-                                        "axisType": "NXAxisTypeNumberic",
-                                        "coordinate": "NXCoordinateY",
-                                        "id": "left",
-                                        "majorPoint": {
-                                            "label": {
-                                                "labelFormatter": ",###",
-                                                "labelNumberUnit": true
-                                            }
-                                        }
+                                        "targetSeries": [
+                                            "bar"
+                                        ], 
+                                        "showBelowSeries": false, 
+                                        "enableMultiTouch": false, 
+                                        "toolType": "NXHighLightTool", 
+                                        "removeOnRelease": false, 
+                                        "crossAxis": "bottom", 
+                                        "visible": true
                                     }
-                                ],
+                                ], 
                                 "series": [
                                     {
-                                        "barFill": {
-                                            "fillColor": "#51a9d6"
-                                        },
+                                        "stackedType": "NXChartSeriesStackedTypeSide", 
+                                        "orientation": "vertical", 
+                                        "yAxis": "left", 
                                         "dataSource": {
                                             "yValueSource": "COL_0_8"
-                                        },
-                                        "id": "bar",
-                                        "orientation": "vertical",
-                                        "stackedType": "NXChartSeriesStackedTypeSide",
-                                        "type": "NXBarSeries",
-                                        "xAxis": "bottom",
-                                        "yAxis": "left"
+                                        }, 
+                                        "xAxis": "bottom", 
+                                        "type": "NXBarSeries", 
+                                        "id": "bar", 
+                                        "barFill": {
+                                            "fillColor": "#51a9d6"
+                                        }
                                     }
-                                ],
-                                "touchTools": [
+                                ], 
+                                "axis": [
                                     {
-                                        "crossAxis": "bottom",
-                                        "enableMultiTouch": false,
-                                        "removeOnRelease": false,
-                                        "showBelowSeries": false,
-                                        "targetSeries": [
-                                            "bar"
-                                        ],
-                                        "toolType": "NXHighLightTool",
-                                        "visible": true
+                                        "axisType": "NXAxisTypeCategory", 
+                                        "id": "bottom"
+                                    }, 
+                                    {
+                                        "coordinate": "NXCoordinateY", 
+                                        "majorPoint": {
+                                            "label": {
+                                                "labelNumberUnit": true, 
+                                                "labelFormatter": ",###"
+                                            }
+                                        }, 
+                                        "axisType": "NXAxisTypeNumberic", 
+                                        "id": "left"
                                     }
                                 ]
                             }
-                        },
-                        "selection": {
-                            "selectionSource": "Y",
-                            "selectionType": "NXChartSelectionBiggestValue"
                         }
-                    },
-                    "type": "NXCubeCard"
-                },
-                {
-                    "cardTitle": "用户访问分布",
-                    "dataSetId": "c8ab6752-4ec9-47bf-8dc2-f5d843e596d3",
-                    "size": "row-sm-xs-6 row-xs-sm-12 row-md-3 row-md-sm-6 row-lg-md-3 col-xs-sm-12 col-sm-xs-12 col-sm-lg-12 col-md-12 col-md-lg-12 col-md-sm-6 col-lg-6 ",
+                    }, 
+                    "dataSetId": "c8ab6752-4ec9-47bf-8dc2-f5d843e596d3", 
+                    "type": "NXCubeCard", 
                     "structure": {
+                        "measures": [
+                            {
+                                "key": "COL_0_5", 
+                                "title": "用户数"
+                            }, 
+                            {
+                                "key": "COL_0_7", 
+                                "title": "年龄累计"
+                            }, 
+                            {
+                                "key": "COL_0_8", 
+                                "title": "平均年龄"
+                            }
+                        ], 
                         "dimensions": [
                             {
                                 "granularities": [
                                     {
-                                        "key": "COL_0_2",
-                                        "regularExpression": "(.*)级$",
-                                        "sort": "NXSortOperationAsc",
-                                        "sortLanguage": "NXSortRegularExpressNum",
-                                        "title": "用户价值组"
+                                        "key": "COL_0_3", 
+                                        "title": "性别"
                                     }
-                                ],
-                                "key": "Dimension_4",
-                                "title": "用户价值分类"
-                            },
+                                ], 
+                                "key": "Dimension_1", 
+                                "title": "性别"
+                            }, 
                             {
                                 "granularities": [
                                     {
-                                        "key": "COL_0_4",
-                                        "regularExpression": "(.*)点$",
-                                        "sort": "NXSortOperationAsc",
-                                        "sortLanguage": "NXSortRegularExpressNum",
-                                        "title": "时刻段"
+                                        "sort": "NXSortOperationAsc", 
+                                        "regularExpression": "(.*)级$", 
+                                        "sortLanguage": "NXSortRegularExpressNum", 
+                                        "key": "COL_0_2", 
+                                        "title": "用户价值组"
                                     }
-                                ],
-                                "key": "Dimension_5",
-                                "title": "时间"
-                            }
-                        ],
-                        "measures": [
-                            {
-                                "key": "COL_0_5",
-                                "title": "用户数"
+                                ], 
+                                "key": "Dimension_4", 
+                                "title": "用户价值分类"
                             }
                         ]
-                    },
+                    }, 
+                    "size": "row-sm-xs-6 row-xs-sm-12 row-md-3 row-md-sm-6 row-lg-md-3 col-xs-sm-12 col-sm-xs-12 col-sm-lg-12 col-md-12 col-md-lg-12 col-md-sm-6 col-lg-6 "
+                }, 
+                {
+                    "cardTitle": "用户访问分布", 
                     "style": {
+                        "selection": {
+                            "selectionSource": "Y", 
+                            "selectionType": "NXChartSelectionBiggestValue"
+                        }, 
                         "chart": {
                             "chartConfig": {
-                                "axis": [
-                                    {
-                                        "axisType": "NXAxisTypeCategory",
-                                        "id": "bottom"
-                                    },
-                                    {
-                                        "axisType": "NXAxisTypeNumberic",
-                                        "coordinate": "NXCoordinateY",
-                                        "id": "left",
-                                        "majorPoint": {
-                                            "label": {
-                                                "labelFormatter": ",###",
-                                                "labelNumberUnit": true
-                                            }
-                                        }
-                                    }
-                                ],
-                                "series": [
-                                    {
-                                        "barFill": {
-                                            "fillColor": "#51a9d6"
-                                        },
-                                        "dataSource": {
-                                            "yValueSource": "COL_0_5"
-                                        },
-                                        "id": "bar",
-                                        "orientation": "vertical",
-                                        "stackedType": "NXChartSeriesStackedTypeSide",
-                                        "type": "NXBarSeries",
-                                        "xAxis": "bottom",
-                                        "yAxis": "left"
-                                    }
-                                ],
                                 "touchTools": [
                                     {
-                                        "crossAxis": "bottom",
-                                        "enableMultiTouch": false,
-                                        "removeOnRelease": false,
-                                        "showBelowSeries": false,
                                         "targetSeries": [
                                             "bar"
-                                        ],
-                                        "toolType": "NXHighLightTool",
+                                        ], 
+                                        "showBelowSeries": false, 
+                                        "enableMultiTouch": false, 
+                                        "toolType": "NXHighLightTool", 
+                                        "removeOnRelease": false, 
+                                        "crossAxis": "bottom", 
                                         "visible": true
+                                    }
+                                ], 
+                                "series": [
+                                    {
+                                        "stackedType": "NXChartSeriesStackedTypeSide", 
+                                        "orientation": "vertical", 
+                                        "yAxis": "left", 
+                                        "dataSource": {
+                                            "yValueSource": "COL_0_5"
+                                        }, 
+                                        "xAxis": "bottom", 
+                                        "type": "NXBarSeries", 
+                                        "id": "bar", 
+                                        "barFill": {
+                                            "fillColor": "#51a9d6"
+                                        }
+                                    }
+                                ], 
+                                "axis": [
+                                    {
+                                        "axisType": "NXAxisTypeCategory", 
+                                        "id": "bottom"
+                                    }, 
+                                    {
+                                        "coordinate": "NXCoordinateY", 
+                                        "majorPoint": {
+                                            "label": {
+                                                "labelNumberUnit": true, 
+                                                "labelFormatter": ",###"
+                                            }
+                                        }, 
+                                        "axisType": "NXAxisTypeNumberic", 
+                                        "id": "left"
                                     }
                                 ]
                             }
-                        },
-                        "selection": {
-                            "selectionSource": "Y",
-                            "selectionType": "NXChartSelectionBiggestValue"
                         }
-                    },
-                    "type": "NXCubeCard"
+                    }, 
+                    "dataSetId": "c8ab6752-4ec9-47bf-8dc2-f5d843e596d3", 
+                    "type": "NXCubeCard", 
+                    "structure": {
+                        "measures": [
+                            {
+                                "key": "COL_0_5", 
+                                "title": "用户数"
+                            }
+                        ], 
+                        "dimensions": [
+                            {
+                                "granularities": [
+                                    {
+                                        "sort": "NXSortOperationAsc", 
+                                        "regularExpression": "(.*)级$", 
+                                        "sortLanguage": "NXSortRegularExpressNum", 
+                                        "key": "COL_0_2", 
+                                        "title": "用户价值组"
+                                    }
+                                ], 
+                                "key": "Dimension_4", 
+                                "title": "用户价值分类"
+                            }, 
+                            {
+                                "granularities": [
+                                    {
+                                        "sort": "NXSortOperationAsc", 
+                                        "regularExpression": "(.*)点$", 
+                                        "sortLanguage": "NXSortRegularExpressNum", 
+                                        "key": "COL_0_4", 
+                                        "title": "时刻段"
+                                    }
+                                ], 
+                                "key": "Dimension_5", 
+                                "title": "时间"
+                            }
+                        ]
+                    }, 
+                    "size": "row-sm-xs-6 row-xs-sm-12 row-md-3 row-md-sm-6 row-lg-md-3 col-xs-sm-12 col-sm-xs-12 col-sm-lg-12 col-md-12 col-md-lg-12 col-md-sm-6 col-lg-6 "
                 }
-            ],
-            "pageColor": "#718dbf",
-            "pageTitle": "电商客户价值分类"
+            ], 
+            "pageTitle": "电商客户价值分类", 
+            "pageColor": "#718dbf"
         }
-    ],
-    "title": "电商"
+    ], 
+    "defaultStyle": [
+        {
+            "scopeId": [
+                "all"
+            ], 
+            "defaultColor": [
+                "#e84d60", 
+                "#e88f61", 
+                "#fecd6c", 
+                "#b3cf61", 
+                "#77c298", 
+                "#51a9d6", 
+                "#718dbf", 
+                "#955cbf", 
+                "#a4547d", 
+                "#c64373"
+            ], 
+            "scopeType": "report", 
+            "chartOptions": {}
+        }
+    ], 
+    "metadataStructures": [
+        {
+            "measures": [
+                {
+                    "key": "COL_0_5", 
+                    "title": "用户数"
+                }, 
+                {
+                    "key": "COL_0_6", 
+                    "title": "消费总额"
+                }, 
+                {
+                    "key": "COL_0_7", 
+                    "title": "年龄累计"
+                }, 
+                {
+                    "formula": "COL_0_7/COL_0_5", 
+                    "title": "平均年龄", 
+                    "key": "COL_0_8", 
+                    "isCreated": true
+                }, 
+                {
+                    "formula": "COL_0_6/COL_0_5", 
+                    "title": "人均消费值", 
+                    "key": "COL_0_9", 
+                    "isCreated": true
+                }
+            ], 
+            "dimensions": [
+                {
+                    "granularities": [
+                        {
+                            "key": "COL_0_3", 
+                            "title": "性别"
+                        }
+                    ], 
+                    "key": "Dimension_1", 
+                    "title": "性别"
+                }, 
+                {
+                    "granularities": [
+                        {
+                            "key": "COL_0_0", 
+                            "title": "购买分类"
+                        }
+                    ], 
+                    "key": "Dimension_2", 
+                    "title": "消费类型"
+                }, 
+                {
+                    "granularities": [
+                        {
+                            "key": "COL_0_1", 
+                            "title": "省份"
+                        }
+                    ], 
+                    "key": "Dimension_3", 
+                    "title": "区域"
+                }, 
+                {
+                    "granularities": [
+                        {
+                            "key": "COL_0_2", 
+                            "title": "用户价值组"
+                        }
+                    ], 
+                    "key": "Dimension_4", 
+                    "title": "用户价值分类"
+                }, 
+                {
+                    "granularities": [
+                        {
+                            "key": "COL_0_4", 
+                            "title": "时刻段"
+                        }
+                    ], 
+                    "key": "Dimension_5", 
+                    "title": "时间"
+                }
+            ], 
+            "dataSetId": "c8ab6752-4ec9-47bf-8dc2-f5d843e596d3"
+        }, 
+        {
+            "measures": [
+                {
+                    "key": "COL_0_4", 
+                    "title": "用户数"
+                }, 
+                {
+                    "key": "COL_0_5", 
+                    "title": "消费总额"
+                }
+            ], 
+            "dimensions": [
+                {
+                    "granularities": [
+                        {
+                            "key": "COL_0_0", 
+                            "title": "周访问时间"
+                        }
+                    ], 
+                    "key": "Dimension_1", 
+                    "title": "访问时间"
+                }, 
+                {
+                    "granularities": [
+                        {
+                            "key": "COL_0_1", 
+                            "title": "周访问频率"
+                        }
+                    ], 
+                    "key": "Dimension_2", 
+                    "title": "频率"
+                }, 
+                {
+                    "granularities": [
+                        {
+                            "key": "COL_0_2", 
+                            "title": "用户价值组"
+                        }
+                    ], 
+                    "key": "Dimension_3", 
+                    "title": "用户价值分类"
+                }, 
+                {
+                    "granularities": [
+                        {
+                            "key": "COL_0_3", 
+                            "title": "购买分类"
+                        }
+                    ], 
+                    "key": "Dimension_4", 
+                    "title": "消费类型"
+                }
+            ], 
+            "dataSetId": "7064bc90-5d89-48cc-8b8c-9d5aeac08e48"
+        }
+    ]
 }

@@ -1,1542 +1,1541 @@
 {
-    "creator": "dongsaiyuan",
+    "description": "女装一线销售demo", 
+    "creator": "dongsaiyuan", 
+    "title": "女装一线销售", 
+    "pages": [
+        {
+            "cards": [
+                {
+                    "cardTitle": "国内出货量地区分布", 
+                    "style": {
+                        "detailRightPanel": {
+                            "visible": true
+                        }, 
+                        "detailTopPanel": {
+                            "visible": false, 
+                            "type": "NXDetailVertical", 
+                            "percentInTotalVisible": true
+                        }, 
+                        "chart": {
+                            "chartConfig": {
+                                "touchTools": [
+                                    {
+                                        "targetSeries": [
+                                            "brandRegionMap"
+                                        ], 
+                                        "toolType": "NXZoomTool"
+                                    }, 
+                                    {
+                                        "targetSeries": [
+                                            "brandRegionMap"
+                                        ], 
+                                        "showBelowSeries": false, 
+                                        "enableMultiTouch": false, 
+                                        "toolType": "NXMapHighLightTool", 
+                                        "removeOnRelease": false, 
+                                        "crossAxis": "bottom", 
+                                        "visible": true
+                                    }
+                                ], 
+                                "series": [
+                                    {
+                                        "mapType": "China", 
+                                        "type": "NXMapSeries", 
+                                        "dataSource": {
+                                            "yValueSource": "COL_0_9"
+                                        }, 
+                                        "id": "brandRegionMap"
+                                    }
+                                ]
+                            }, 
+                            "selection": {
+                                "selectionSource": "Y", 
+                                "selectionType": "NXChartSelectionBiggestValue"
+                            }
+                        }
+                    }, 
+                    "linkEvent": {
+                        "isEventSource": true
+                    }, 
+                    "dataSetId": "2d900c3b-64ea-4471-b076-c5b2e941b17d", 
+                    "type": "NXCubeCard", 
+                    "structure": {
+                        "measures": [
+                            {
+                                "key": "COL_0_9", 
+                                "title": "实际销售量"
+                            }
+                        ], 
+                        "dimensions": [
+                            {
+                                "granularities": [
+                                    {
+                                        "key": "COL_0_0", 
+                                        "title": "年"
+                                    }
+                                ], 
+                                "key": "Dimension_1", 
+                                "title": "时间"
+                            }, 
+                            {
+                                "granularities": [
+                                    {
+                                        "key": "COL_0_3", 
+                                        "title": "品牌"
+                                    }
+                                ], 
+                                "key": "Dimension_2", 
+                                "title": "分类"
+                            }, 
+                            {
+                                "granularities": [
+                                    {
+                                        "key": "COL_0_4", 
+                                        "title": "大区域"
+                                    }, 
+                                    {
+                                        "key": "COL_0_5", 
+                                        "title": "省份"
+                                    }
+                                ], 
+                                "key": "Dimension_3", 
+                                "title": "地理"
+                            }
+                        ]
+                    }, 
+                    "size": "row-sm-xs-6 row-xs-sm-12 row-md-3 row-md-sm-6 row-lg-md-3 col-xs-sm-12 col-sm-xs-12 col-sm-lg-12 col-md-12 col-md-lg-12 col-md-sm-6 col-lg-6 "
+                }, 
+                {
+                    "cardTitle": "省级女装销量达标对比", 
+                    "style": {
+                        "selection": {
+                            "selectionSource": "Y", 
+                            "selectionType": "NXChartSelectionBiggestValue"
+                        }, 
+                        "detailTopPanel": {
+                            "visible": true, 
+                            "type": "NXDetailNormalTargetReal"
+                        }, 
+                        "chart": {
+                            "chartConfig": {
+                                "touchTools": [
+                                    {
+                                        "targetSeries": [
+                                            "salesCountAsProvinceBar", 
+                                            "salesCountTargetAsProvinceLine"
+                                        ], 
+                                        "showBelowSeries": false, 
+                                        "enableMultiTouch": false, 
+                                        "toolType": "NXHighLightTool", 
+                                        "removeOnRelease": false, 
+                                        "crossAxis": "bottom", 
+                                        "visible": true
+                                    }
+                                ], 
+                                "series": [
+                                    {
+                                        "showOverlayAll": false, 
+                                        "stackedType": "NXChartSeriesStackedTypeSide", 
+                                        "orientation": "horizontal", 
+                                        "yAxis": "left", 
+                                        "accumulation": false, 
+                                        "dataSource": {
+                                            "yValueSource": "COL_0_9"
+                                        }, 
+                                        "xAxis": "bottom", 
+                                        "type": "NXBarSeries", 
+                                        "id": "salesCountAsProvinceBar", 
+                                        "barFill": {
+                                            "fillColor": "#51a9d6"
+                                        }
+                                    }, 
+                                    {
+                                        "orientation": "horizontal", 
+                                        "yAxis": "left", 
+                                        "type": "NXStepLineSeries", 
+                                        "isTargetSeries": true, 
+                                        "accumulation": false, 
+                                        "dataSource": {
+                                            "yValueSource": "COL_0_7"
+                                        }, 
+                                        "xAxis": "bottom", 
+                                        "lineStyle": {
+                                            "lineColor": "#955cbf"
+                                        }, 
+                                        "id": "salesCountTargetAsProvinceLine", 
+                                        "verticalJoinsVisible": false
+                                    }
+                                ], 
+                                "canvas": {}, 
+                                "axis": [
+                                    {
+                                        "majorPoint": {
+                                            "gridLine": {
+                                                "gridLineVisible": true
+                                            }, 
+                                            "label": {
+                                                "labelNumberUnit": true, 
+                                                "labelFormatter": ",###"
+                                            }
+                                        }, 
+                                        "axisType": "NXAxisTypeNumberic", 
+                                        "id": "bottom"
+                                    }, 
+                                    {
+                                        "coordinate": "NXCoordinateY", 
+                                        "majorPoint": {
+                                            "gridLine": null
+                                        }, 
+                                        "axisType": "NXAxisTypeCategory", 
+                                        "id": "left"
+                                    }
+                                ]
+                            }
+                        }
+                    }, 
+                    "linkEvent": {
+                        "isEventSource": true
+                    }, 
+                    "dataSetId": "2d900c3b-64ea-4471-b076-c5b2e941b17d", 
+                    "type": "NXCubeCard", 
+                    "structure": {
+                        "measures": [
+                            {
+                                "sort": "NXSortOperationAsc", 
+                                "key": "COL_0_9", 
+                                "title": "实际销售量"
+                            }, 
+                            {
+                                "key": "COL_0_7", 
+                                "title": "目标销售量"
+                            }
+                        ], 
+                        "dimensions": [
+                            {
+                                "granularities": [
+                                    {
+                                        "key": "COL_0_3", 
+                                        "title": "品牌"
+                                    }
+                                ], 
+                                "key": "Dimension_2", 
+                                "title": "分类"
+                            }, 
+                            {
+                                "granularities": [
+                                    {
+                                        "key": "COL_0_0", 
+                                        "title": "年"
+                                    }
+                                ], 
+                                "key": "Dimension_1", 
+                                "title": "时间"
+                            }, 
+                            {
+                                "granularities": [
+                                    {
+                                        "sort": "NXSortOperationDesc", 
+                                        "key": "COL_0_4", 
+                                        "title": "大区域"
+                                    }, 
+                                    {
+                                        "title": "省份", 
+                                        "key": "COL_0_5", 
+                                        "drillTo": true
+                                    }
+                                ], 
+                                "key": "Dimension_3", 
+                                "title": "地理"
+                            }
+                        ]
+                    }, 
+                    "size": "row-sm-xs-6 row-xs-sm-12 row-md-3 row-md-sm-6 row-lg-md-3 col-xs-sm-12 col-sm-xs-12 col-sm-lg-12 col-md-12  col-md-lg-12 col-md-sm-6 col-lg-6 "
+                }, 
+                {
+                    "cardTitle": "季度累计", 
+                    "style": {
+                        "chart": {
+                            "chartConfig": {
+                                "touchTools": [
+                                    {
+                                        "targetSeries": [
+                                            "seasonTotalForProvinceBar"
+                                        ], 
+                                        "showBelowSeries": false, 
+                                        "enableMultiTouch": true, 
+                                        "toolType": "NXHighLightTool", 
+                                        "removeOnRelease": false, 
+                                        "crossAxis": "bottom", 
+                                        "visible": true
+                                    }, 
+                                    {
+                                        "active": true, 
+                                        "targetSeries": [
+                                            "seasonTotalForProvinceBar"
+                                        ], 
+                                        "crossAxis": "bottom", 
+                                        "toolType": "NXChangeActiveSeriesTool"
+                                    }
+                                ], 
+                                "series": [
+                                    {
+                                        "showOverlayAll": true, 
+                                        "stackedType": "NXChartSeriesStackedTypeOverlap", 
+                                        "orientation": "vertical", 
+                                        "yAxis": "left", 
+                                        "standOnShoulder": true, 
+                                        "accumulation": false, 
+                                        "dataSource": {
+                                            "yValueSource": "COL_0_8"
+                                        }, 
+                                        "xAxis": "bottom", 
+                                        "type": "NXBarSeries", 
+                                        "id": "seasonTotalForProvinceBar", 
+                                        "barFill": {
+                                            "fillColor": "#955cbf"
+                                        }
+                                    }
+                                ], 
+                                "canvas": {}, 
+                                "axis": [
+                                    {
+                                        "axisType": "NXAxisTypeCategory", 
+                                        "id": "bottom"
+                                    }, 
+                                    {
+                                        "coordinate": "NXCoordinateY", 
+                                        "majorPoint": {
+                                            "label": {
+                                                "labelNumberUnit": true, 
+                                                "labelFormatter": ",###"
+                                            }
+                                        }, 
+                                        "axisType": "NXAxisTypeNumberic", 
+                                        "id": "left"
+                                    }
+                                ]
+                            }
+                        }
+                    }, 
+                    "linkEvent": {
+                        "isEventSource": true
+                    }, 
+                    "dataSetId": "2d900c3b-64ea-4471-b076-c5b2e941b17d", 
+                    "type": "NXCubeCard", 
+                    "structure": {
+                        "measures": [
+                            {
+                                "key": "COL_0_8", 
+                                "title": "实际销售额"
+                            }, 
+                            {
+                                "key": "COL_0_9", 
+                                "title": "实际销售量"
+                            }
+                        ], 
+                        "dimensions": [
+                            {
+                                "granularities": [
+                                    {
+                                        "key": "COL_0_3", 
+                                        "title": "品牌"
+                                    }
+                                ], 
+                                "key": "Dimension_2", 
+                                "title": "分类"
+                            }, 
+                            {
+                                "granularities": [
+                                    {
+                                        "key": "COL_0_4", 
+                                        "title": "大区域"
+                                    }, 
+                                    {
+                                        "title": "省份", 
+                                        "key": "COL_0_5", 
+                                        "drillTo": true
+                                    }
+                                ], 
+                                "key": "Dimension_3", 
+                                "title": "地理"
+                            }, 
+                            {
+                                "granularities": [
+                                    {
+                                        "key": "COL_0_0", 
+                                        "title": "年"
+                                    }, 
+                                    {
+                                        "title": "季", 
+                                        "key": "COL_0_1", 
+                                        "drillTo": true
+                                    }
+                                ], 
+                                "key": "Dimension_1", 
+                                "title": "时间"
+                            }
+                        ]
+                    }, 
+                    "size": "row-sm-xs-6 row-xs-sm-12 row-md-3 row-md-sm-6 row-lg-md-3 col-xs-sm-12 col-sm-xs-12 col-sm-lg-12 col-md-12  col-md-lg-12 col-md-sm-6 col-lg-6 "
+                }, 
+                {
+                    "cardTitle": "各省每季销量情况", 
+                    "style": {
+                        "detailTopPanel": {
+                            "visible": true, 
+                            "percentInTotalVisible": true
+                        }, 
+                        "chart": {
+                            "chartConfig": {
+                                "touchTools": [
+                                    {
+                                        "targetSeries": [
+                                            "seasonForProvinceBar"
+                                        ], 
+                                        "showBelowSeries": false, 
+                                        "enableMultiTouch": true, 
+                                        "toolType": "NXHighLightTool", 
+                                        "removeOnRelease": false, 
+                                        "crossAxis": "bottom", 
+                                        "visible": true
+                                    }, 
+                                    {
+                                        "active": true, 
+                                        "targetSeries": [
+                                            "seasonForProvinceBar"
+                                        ], 
+                                        "crossAxis": "bottom", 
+                                        "toolType": "NXChangeActiveSeriesTool"
+                                    }
+                                ], 
+                                "series": [
+                                    {
+                                        "stackedType": "NXChartSeriesStackedTypeStack100", 
+                                        "orientation": "horizontal", 
+                                        "yAxis": "left", 
+                                        "iteration": {
+                                            "isMultiLevel": true
+                                        }, 
+                                        "dataSource": {
+                                            "yValueSource": "COL_0_8"
+                                        }, 
+                                        "xAxis": "bottom", 
+                                        "type": "NXBarSeries", 
+                                        "id": "seasonForProvinceBar", 
+                                        "barFill": {
+                                            "fillColor": "#2AB7D0"
+                                        }
+                                    }
+                                ], 
+                                "axis": [
+                                    {
+                                        "coordinate": "NXCoordinateX", 
+                                        "majorPoint": {
+                                            "gridLine": {
+                                                "gridLineVisible": true
+                                            }, 
+                                            "label": {
+                                                "labelNumberUnit": false, 
+                                                "labelFormatter": "#%"
+                                            }
+                                        }, 
+                                        "axisType": "NXAxisTypeNumberic", 
+                                        "id": "bottom"
+                                    }, 
+                                    {
+                                        "coordinate": "NXCoordinateY", 
+                                        "majorPoint": {}, 
+                                        "axisType": "NXAxisTypeCategory", 
+                                        "id": "left"
+                                    }
+                                ]
+                            }
+                        }
+                    }, 
+                    "dataSetId": "2d900c3b-64ea-4471-b076-c5b2e941b17d", 
+                    "type": "NXCubeCard", 
+                    "structure": {
+                        "measures": [
+                            {
+                                "key": "COL_0_8", 
+                                "title": "实际销售额"
+                            }
+                        ], 
+                        "dimensions": [
+                            {
+                                "granularities": [
+                                    {
+                                        "index": 4, 
+                                        "key": "COL_0_3", 
+                                        "title": "品牌"
+                                    }
+                                ], 
+                                "key": "Dimension_2", 
+                                "title": "分类"
+                            }, 
+                            {
+                                "granularities": [
+                                    {
+                                        "index": 1, 
+                                        "key": "COL_0_4", 
+                                        "title": "大区域"
+                                    }, 
+                                    {
+                                        "index": 2, 
+                                        "title": "省份", 
+                                        "key": "COL_0_5", 
+                                        "drillTo": true
+                                    }
+                                ], 
+                                "key": "Dimension_3", 
+                                "title": "地理"
+                            }, 
+                            {
+                                "granularities": [
+                                    {
+                                        "index": 0, 
+                                        "key": "COL_0_0", 
+                                        "title": "年"
+                                    }, 
+                                    {
+                                        "sort": "NXSortOperationAsc", 
+                                        "index": 3, 
+                                        "title": "季", 
+                                        "key": "COL_0_1", 
+                                        "drillTo": true
+                                    }
+                                ], 
+                                "key": "Dimension_1", 
+                                "title": "时间"
+                            }
+                        ]
+                    }, 
+                    "size": "row-sm-xs-6 row-xs-sm-12 row-md-3 row-md-sm-6 row-lg-md-3 col-xs-sm-12 col-sm-xs-12 col-sm-lg-12 col-md-12 col-md-lg-12 col-md-sm-6 col-lg-6 "
+                }, 
+                {
+                    "cardTitle": "折扣率-客单价-销量关系", 
+                    "style": {
+                        "annotation": {
+                            "visible": false, 
+                            "isAlwaysVisible": false
+                        }, 
+                        "chart": {
+                            "chartConfig": {
+                                "touchTools": [
+                                    {
+                                        "targetSeries": [
+                                            "seriesBubble"
+                                        ], 
+                                        "showBelowSeries": true, 
+                                        "enableMultiTouch": true, 
+                                        "toolType": "NXCursorTool", 
+                                        "removeOnRelease": false, 
+                                        "crossAxis": "bottom", 
+                                        "visible": true
+                                    }
+                                ], 
+                                "series": [
+                                    {
+                                        "orientation": "vertical", 
+                                        "yAxis": "left", 
+                                        "symbol": {
+                                            "anchorPoint": {
+                                                "y": 0.5, 
+                                                "x": 0.5
+                                            }
+                                        }, 
+                                        "iteration": {
+                                            "isMultiLevel": false
+                                        }, 
+                                        "dataSource": {
+                                            "xValueSource": "COL_0_12", 
+                                            "y2ValueSource": "COL_0_9", 
+                                            "yValueSource": "COL_0_11", 
+                                            "yFormatString": "#%"
+                                        }, 
+                                        "xAxis": "bottom", 
+                                        "isSeriesPureColor": false, 
+                                        "type": "NXBubbleSeries", 
+                                        "id": "seriesBubble"
+                                    }
+                                ], 
+                                "canvas": {}, 
+                                "axis": [
+                                    {
+                                        "majorPoint": {
+                                            "label": {
+                                                "labelNumberUnit": false, 
+                                                "labelFormatter": ",###"
+                                            }
+                                        }, 
+                                        "axisMaxPaddingForPlot": 0.1, 
+                                        "bands": [
+                                            {
+                                                "range": {
+                                                    "length": 50, 
+                                                    "location": 1760
+                                                }
+                                            }
+                                        ], 
+                                        "axisMinPaddingForPlot": 0.1, 
+                                        "axisTitle": {
+                                            "titleLocation": 0.5, 
+                                            "titleVisible": true
+                                        }, 
+                                        "axisType": "NXAxisTypeNumberic", 
+                                        "id": "bottom"
+                                    }, 
+                                    {
+                                        "majorPoint": {
+                                            "label": {
+                                                "labelNumberUnit": false, 
+                                                "labelFormatter": "#%"
+                                            }
+                                        }, 
+                                        "axisMaxPaddingForPlot": 0.1, 
+                                        "axisMinPaddingForPlot": 0.1, 
+                                        "axisTitle": {
+                                            "titleLocation": 0.5, 
+                                            "titleVisible": true
+                                        }, 
+                                        "coordinate": "NXCoordinateY", 
+                                        "axisType": "NXAxisTypeNumberic", 
+                                        "id": "left"
+                                    }
+                                ]
+                            }
+                        }
+                    }, 
+                    "dataSetId": "2d900c3b-64ea-4471-b076-c5b2e941b17d", 
+                    "type": "NXCubeCard", 
+                    "structure": {
+                        "measures": [
+                            {
+                                "key": "COL_0_9", 
+                                "title": "实际销售量(件)「气泡大小」"
+                            }, 
+                            {
+                                "key": "COL_0_11", 
+                                "title": "折扣率(%)"
+                            }, 
+                            {
+                                "key": "COL_0_12", 
+                                "title": "客单价(￥)"
+                            }
+                        ], 
+                        "dimensions": [
+                            {
+                                "granularities": [
+                                    {
+                                        "key": "COL_0_4", 
+                                        "title": "大区域"
+                                    }, 
+                                    {
+                                        "key": "COL_0_5", 
+                                        "title": "省份"
+                                    }
+                                ], 
+                                "key": "Dimension_3", 
+                                "title": "地理"
+                            }, 
+                            {
+                                "granularities": [
+                                    {
+                                        "key": "COL_0_0", 
+                                        "title": "年"
+                                    }, 
+                                    {
+                                        "key": "COL_0_1", 
+                                        "title": "季"
+                                    }, 
+                                    {
+                                        "key": "COL_0_2", 
+                                        "title": "月"
+                                    }
+                                ], 
+                                "key": "Dimension_1", 
+                                "title": "时间"
+                            }, 
+                            {
+                                "granularities": [
+                                    {
+                                        "key": "COL_0_3", 
+                                        "title": "品牌"
+                                    }
+                                ], 
+                                "key": "Dimension_2", 
+                                "title": "分类"
+                            }
+                        ]
+                    }, 
+                    "size": "row-lg-12 col-lg-12"
+                }, 
+                {
+                    "cardTitle": "女装品牌出货销额占比", 
+                    "style": {
+                        "detailRightPanel": {
+                            "visible": true
+                        }, 
+                        "detailTopPanel": {
+                            "visible": false, 
+                            "type": "NXDetailVertical", 
+                            "percentInTotalVisible": true
+                        }, 
+                        "chart": {
+                            "chartConfig": {
+                                "touchTools": [
+                                    {
+                                        "targetSeries": [
+                                            "brandPercentPie"
+                                        ], 
+                                        "toolType": "NXPieSpinTool"
+                                    }
+                                ], 
+                                "series": [
+                                    {
+                                        "type": "NXPieSeries", 
+                                        "dataSource": {
+                                            "yValueSource": "COL_0_8"
+                                        }, 
+                                        "id": "brandPercentPie"
+                                    }
+                                ]
+                            }, 
+                            "selection": {
+                                "selectionSource": "Y", 
+                                "selectionType": "NXChartSelectionBiggestValue"
+                            }
+                        }, 
+                        "detailTotalPanel": {
+                            "isAboveDetailTop": true
+                        }
+                    }, 
+                    "linkEvent": {
+                        "isEventSource": true
+                    }, 
+                    "dataSetId": "2d900c3b-64ea-4471-b076-c5b2e941b17d", 
+                    "type": "NXCubeCard", 
+                    "structure": {
+                        "measures": [
+                            {
+                                "key": "COL_0_8", 
+                                "title": "实际销售额"
+                            }
+                        ], 
+                        "dimensions": [
+                            {
+                                "granularities": [
+                                    {
+                                        "key": "COL_0_4", 
+                                        "title": "大区域"
+                                    }, 
+                                    {
+                                        "key": "COL_0_5", 
+                                        "title": "省份"
+                                    }
+                                ], 
+                                "key": "Dimension_3", 
+                                "title": "地理"
+                            }, 
+                            {
+                                "granularities": [
+                                    {
+                                        "key": "COL_0_0", 
+                                        "title": "年"
+                                    }
+                                ], 
+                                "key": "Dimension_1", 
+                                "title": "时间"
+                            }, 
+                            {
+                                "granularities": [
+                                    {
+                                        "key": "COL_0_3", 
+                                        "title": "品牌"
+                                    }
+                                ], 
+                                "key": "Dimension_2", 
+                                "title": "分类"
+                            }
+                        ]
+                    }, 
+                    "size": "row-sm-xs-6 row-xs-sm-12 row-md-3 row-md-sm-6 row-lg-md-3 col-xs-sm-12 col-sm-xs-12 col-sm-lg-12 col-md-12 col-md-lg-12 col-md-sm-6 col-lg-6 "
+                }, 
+                {
+                    "cardTitle": "品牌年销额累计实际vs目标", 
+                    "style": {
+                        "selection": {
+                            "selectionSource": "Y", 
+                            "selectionType": "NXChartSelectionBiggestValue"
+                        }, 
+                        "detailTopPanel": {
+                            "visible": true, 
+                            "type": "NXDetailNormalTargetReal"
+                        }, 
+                        "chart": {
+                            "chartConfig": {
+                                "touchTools": [
+                                    {
+                                        "targetSeries": [
+                                            "revenueAccumulateAsMonthBar", 
+                                            "targetRevenueAccumulateAsMonthLine"
+                                        ], 
+                                        "showBelowSeries": false, 
+                                        "enableMultiTouch": false, 
+                                        "toolType": "NXHighLightTool", 
+                                        "removeOnRelease": false, 
+                                        "crossAxis": "bottom", 
+                                        "visible": true
+                                    }, 
+                                    {
+                                        "targetSeries": [
+                                            "revenueAccumulateAsMonthBar", 
+                                            "targetRevenueAccumulateAsMonthLine"
+                                        ], 
+                                        "visible": true, 
+                                        "toolType": "NXNavigationTool"
+                                    }
+                                ], 
+                                "series": [
+                                    {
+                                        "sort": {
+                                            "sortSource": "x", 
+                                            "sortType": "NXSortOperationAsc"
+                                        }, 
+                                        "stackedType": "NXChartSeriesStackedTypeSide", 
+                                        "orientation": "vertical", 
+                                        "yAxis": "left", 
+                                        "accumulation": true, 
+                                        "dataSource": {
+                                            "xDisplayDateFormatString": "MMM", 
+                                            "yValueSource": "COL_0_8", 
+                                            "xDataSourceDateLocale": "zh", 
+                                            "xDisplayDateLocale": "zh", 
+                                            "xDataSourceDateFormatString": "MMM"
+                                        }, 
+                                        "xAxis": "bottom", 
+                                        "type": "NXBarSeries", 
+                                        "id": "revenueAccumulateAsMonthBar", 
+                                        "barFill": {
+                                            "fillColor": "#51a9d6"
+                                        }
+                                    }, 
+                                    {
+                                        "sort": {
+                                            "sortSource": "x", 
+                                            "sortType": "NXSortOperationAsc"
+                                        }, 
+                                        "orientation": "vertical", 
+                                        "yAxis": "left", 
+                                        "type": "NXLineSeries", 
+                                        "isTargetSeries": true, 
+                                        "accumulation": true, 
+                                        "symbol": {
+                                            "symbolFill": {
+                                                "fillColor": "#955cbf"
+                                            }
+                                        }, 
+                                        "dataSource": {
+                                            "xDisplayDateFormatString": "MMM", 
+                                            "yValueSource": "COL_0_6", 
+                                            "xDataSourceDateLocale": "zh", 
+                                            "xDisplayDateLocale": "zh", 
+                                            "xDataSourceDateFormatString": "MMM"
+                                        }, 
+                                        "xAxis": "bottom", 
+                                        "lineStyle": {
+                                            "lineColor": "#955cbf"
+                                        }, 
+                                        "id": "targetRevenueAccumulateAsMonthLine"
+                                    }
+                                ], 
+                                "canvas": {}, 
+                                "axis": [
+                                    {
+                                        "axisType": "NXAxisTypeDateTime", 
+                                        "id": "bottom"
+                                    }, 
+                                    {
+                                        "coordinate": "NXCoordinateY", 
+                                        "majorPoint": {
+                                            "label": {
+                                                "labelNumberUnit": true, 
+                                                "labelFormatter": ",###"
+                                            }
+                                        }, 
+                                        "axisType": "NXAxisTypeNumberic", 
+                                        "id": "left"
+                                    }
+                                ]
+                            }
+                        }, 
+                        "footer": {
+                            "navigation": {
+                                "navigationType": "NXSliderTypeLine", 
+                                "visible": true, 
+                                "orientation": "auto", 
+                                "minGapDistance": 80
+                            }
+                        }
+                    }, 
+                    "linkEvent": {
+                        "isEventSource": true
+                    }, 
+                    "dataSetId": "2d900c3b-64ea-4471-b076-c5b2e941b17d", 
+                    "type": "NXCubeCard", 
+                    "structure": {
+                        "measures": [
+                            {
+                                "key": "COL_0_8", 
+                                "title": "累计实际销售额"
+                            }, 
+                            {
+                                "key": "COL_0_6", 
+                                "title": "累计目标销售额"
+                            }
+                        ], 
+                        "dimensions": [
+                            {
+                                "granularities": [
+                                    {
+                                        "key": "COL_0_4", 
+                                        "title": "大区域"
+                                    }, 
+                                    {
+                                        "key": "COL_0_5", 
+                                        "title": "省份"
+                                    }
+                                ], 
+                                "key": "Dimension_3", 
+                                "title": "地理"
+                            }, 
+                            {
+                                "granularities": [
+                                    {
+                                        "key": "COL_0_3", 
+                                        "title": "品牌"
+                                    }
+                                ], 
+                                "key": "Dimension_2", 
+                                "title": "分类"
+                            }, 
+                            {
+                                "granularities": [
+                                    {
+                                        "key": "COL_0_0", 
+                                        "title": "年"
+                                    }, 
+                                    {
+                                        "title": "月", 
+                                        "key": "COL_0_2", 
+                                        "drillTo": true
+                                    }
+                                ], 
+                                "key": "Dimension_1", 
+                                "title": "时间"
+                            }
+                        ]
+                    }, 
+                    "size": "row-sm-xs-6 row-xs-sm-12 row-md-3 row-md-sm-6 row-lg-md-3 col-xs-sm-12 col-sm-xs-12 col-sm-lg-12 col-md-12 col-md-lg-12 col-md-sm-6 col-lg-6 "
+                }, 
+                {
+                    "cardTitle": "销额按月同比", 
+                    "style": {
+                        "selection": {
+                            "selectionSource": "Y", 
+                            "selectionType": "NXChartSelectionBiggestValue"
+                        }, 
+                        "detailTopPanel": {
+                            "visible": true, 
+                            "type": "NXDetailNormalTargetReal"
+                        }, 
+                        "chart": {
+                            "chartConfig": {
+                                "touchTools": [
+                                    {
+                                        "targetSeries": [
+                                            "revenueTongbiMonthBar", 
+                                            "targetRevenueTongbiAsMonthLine"
+                                        ], 
+                                        "showBelowSeries": false, 
+                                        "enableMultiTouch": false, 
+                                        "toolType": "NXHighLightTool", 
+                                        "removeOnRelease": false, 
+                                        "crossAxis": "bottom", 
+                                        "visible": true
+                                    }
+                                ], 
+                                "series": [
+                                    {
+                                        "showOverlayAll": false, 
+                                        "sort": {
+                                            "sortSource": "x", 
+                                            "sortType": "NXSortOperationAsc"
+                                        }, 
+                                        "orientation": "vertical", 
+                                        "yAxis": "left", 
+                                        "accumulation": false, 
+                                        "stackedType": "NXChartSeriesStackedTypeSide", 
+                                        "dataSource": {
+                                            "xDisplayDateFormatString": "MMM", 
+                                            "yValueSource": "COL_0_8", 
+                                            "xDataSourceDateLocale": "zh", 
+                                            "xDisplayDateLocale": "zh", 
+                                            "xDataSourceDateFormatString": "MMM"
+                                        }, 
+                                        "xAxis": "bottom", 
+                                        "type": "NXBarSeries", 
+                                        "id": "revenueTongbiMonthBar", 
+                                        "barFill": {
+                                            "fillColor": "#51a9d6"
+                                        }
+                                    }, 
+                                    {
+                                        "sort": {
+                                            "sortSource": "x", 
+                                            "sortType": "NXSortOperationAsc"
+                                        }, 
+                                        "orientation": "vertical", 
+                                        "yAxis": "left", 
+                                        "type": "NXLineSeries", 
+                                        "isTargetSeries": true, 
+                                        "accumulation": false, 
+                                        "symbol": {
+                                            "symbolFill": {
+                                                "fillColor": "#955cbf"
+                                            }
+                                        }, 
+                                        "dataSource": {
+                                            "xDisplayDateFormatString": "MMM", 
+                                            "yValueSource": "COL_0_10", 
+                                            "xDataSourceDateLocale": "zh", 
+                                            "xDisplayDateLocale": "zh", 
+                                            "xDataSourceDateFormatString": "MMM"
+                                        }, 
+                                        "xAxis": "bottom", 
+                                        "lineStyle": {
+                                            "lineColor": "#955cbf"
+                                        }, 
+                                        "id": "targetRevenueTongbiAsMonthLine"
+                                    }
+                                ], 
+                                "canvas": {}, 
+                                "axis": [
+                                    {
+                                        "axisType": "NXAxisTypeDateTime", 
+                                        "id": "bottom", 
+                                        "axisTitle": {
+                                            "titleLocation": 0.5, 
+                                            "titleVisible": false
+                                        }
+                                    }, 
+                                    {
+                                        "coordinate": "NXCoordinateY", 
+                                        "majorPoint": {
+                                            "label": {
+                                                "labelNumberUnit": true, 
+                                                "labelFormatter": ",###"
+                                            }
+                                        }, 
+                                        "axisType": "NXAxisTypeNumberic", 
+                                        "id": "left", 
+                                        "axisTitle": {
+                                            "titleLocation": 0.5, 
+                                            "titleVisible": false
+                                        }
+                                    }
+                                ]
+                            }
+                        }, 
+                        "footer": {
+                            "navigation": {
+                                "navigationType": "NXSliderTypeLine", 
+                                "visible": true, 
+                                "orientation": "horizontal", 
+                                "minGapDistance": 80
+                            }
+                        }
+                    }, 
+                    "linkEvent": {
+                        "isEventSource": true
+                    }, 
+                    "dataSetId": "2d900c3b-64ea-4471-b076-c5b2e941b17d", 
+                    "type": "NXCubeCard", 
+                    "structure": {
+                        "measures": [
+                            {
+                                "key": "COL_0_8", 
+                                "title": "实际销售额"
+                            }, 
+                            {
+                                "key": "COL_0_10", 
+                                "title": "销售额同比"
+                            }
+                        ], 
+                        "dimensions": [
+                            {
+                                "granularities": [
+                                    {
+                                        "key": "COL_0_4", 
+                                        "title": "大区域"
+                                    }, 
+                                    {
+                                        "key": "COL_0_5", 
+                                        "title": "省份"
+                                    }
+                                ], 
+                                "key": "Dimension_3", 
+                                "title": "地理"
+                            }, 
+                            {
+                                "granularities": [
+                                    {
+                                        "key": "COL_0_3", 
+                                        "title": "品牌"
+                                    }
+                                ], 
+                                "key": "Dimension_2", 
+                                "title": "分类"
+                            }, 
+                            {
+                                "granularities": [
+                                    {
+                                        "key": "COL_0_0", 
+                                        "title": "年"
+                                    }, 
+                                    {
+                                        "title": "月", 
+                                        "key": "COL_0_2", 
+                                        "drillTo": true
+                                    }
+                                ], 
+                                "key": "Dimension_1", 
+                                "title": "时间"
+                            }
+                        ]
+                    }, 
+                    "size": "row-sm-xs-6 row-xs-sm-12 row-md-3 row-md-sm-6 row-lg-md-3 col-xs-sm-12 col-sm-xs-12 col-sm-lg-12 col-md-12 col-md-lg-12 col-md-sm-6 col-lg-6 "
+                }, 
+                {
+                    "cardTitle": "销额达标情况", 
+                    "style": {
+                        "selection": {
+                            "selectionSource": "Y", 
+                            "selectionType": "NXChartSelectionBiggestValue"
+                        }, 
+                        "detailTopPanel": {
+                            "visible": true, 
+                            "type": "NXDetailNormalTargetReal"
+                        }, 
+                        "chart": {
+                            "chartConfig": {
+                                "touchTools": [
+                                    {
+                                        "targetSeries": [
+                                            "revenueDabiaoAsMonthBar", 
+                                            "targetRevenueDabiaoAsMonthLine"
+                                        ], 
+                                        "showBelowSeries": false, 
+                                        "enableMultiTouch": false, 
+                                        "toolType": "NXHighLightTool", 
+                                        "removeOnRelease": false, 
+                                        "crossAxis": "bottom", 
+                                        "visible": true
+                                    }
+                                ], 
+                                "series": [
+                                    {
+                                        "showOverlayAll": false, 
+                                        "sort": {
+                                            "sortSource": "x", 
+                                            "sortType": "NXSortOperationAsc"
+                                        }, 
+                                        "orientation": "vertical", 
+                                        "yAxis": "left", 
+                                        "accumulation": false, 
+                                        "stackedType": "NXChartSeriesStackedTypeSide", 
+                                        "dataSource": {
+                                            "xDisplayDateFormatString": "MMM", 
+                                            "yValueSource": "COL_0_8", 
+                                            "xDataSourceDateLocale": "zh", 
+                                            "xDisplayDateLocale": "zh", 
+                                            "xDataSourceDateFormatString": "MMM"
+                                        }, 
+                                        "xAxis": "bottom", 
+                                        "type": "NXBarSeries", 
+                                        "id": "revenueDabiaoAsMonthBar", 
+                                        "barFill": {
+                                            "fillColor": "#51a9d6"
+                                        }
+                                    }, 
+                                    {
+                                        "sort": {
+                                            "sortSource": "x", 
+                                            "sortType": "NXSortOperationAsc"
+                                        }, 
+                                        "orientation": "vertical", 
+                                        "yAxis": "left", 
+                                        "type": "NXStepLineSeries", 
+                                        "isTargetSeries": true, 
+                                        "accumulation": false, 
+                                        "symbol": {
+                                            "symbolFill": {
+                                                "fillColor": "#955cbf"
+                                            }
+                                        }, 
+                                        "dataSource": {
+                                            "xDisplayDateFormatString": "MMM", 
+                                            "yValueSource": "COL_0_6", 
+                                            "xDataSourceDateLocale": "zh", 
+                                            "xDisplayDateLocale": "zh", 
+                                            "xDataSourceDateFormatString": "MMM"
+                                        }, 
+                                        "xAxis": "bottom", 
+                                        "lineStyle": {
+                                            "lineColor": "#955cbf"
+                                        }, 
+                                        "id": "targetRevenueDabiaoAsMonthLine", 
+                                        "verticalJoinsVisible": false
+                                    }
+                                ], 
+                                "canvas": {}, 
+                                "axis": [
+                                    {
+                                        "axisType": "NXAxisTypeDateTime", 
+                                        "id": "bottom"
+                                    }, 
+                                    {
+                                        "coordinate": "NXCoordinateY", 
+                                        "majorPoint": {
+                                            "label": {
+                                                "labelNumberUnit": true, 
+                                                "labelFormatter": ",###"
+                                            }
+                                        }, 
+                                        "axisType": "NXAxisTypeNumberic", 
+                                        "id": "left"
+                                    }
+                                ]
+                            }
+                        }, 
+                        "footer": {
+                            "navigation": {
+                                "outRangeFill": {
+                                    "visible": "false", 
+                                    "fillAlpha": 0.3, 
+                                    "cornerRadius": 0, 
+                                    "fillColor": "#ffffff"
+                                }, 
+                                "orientation": "auto", 
+                                "navigationType": "NXSliderTypeLine", 
+                                "backgroundTrackFill": {
+                                    "fillAlpha": 1, 
+                                    "fillColor": "#ebecf0"
+                                }, 
+                                "visible": true, 
+                                "maxGapDistance": 500, 
+                                "minGapDistance": 80, 
+                                "inRangeRectFill": {
+                                    "visible": "true", 
+                                    "fillAlpha": 0.3, 
+                                    "cornerRadius": 0, 
+                                    "fillColor": "auto"
+                                }, 
+                                "handleBarFill": {
+                                    "fillAlpha": 1, 
+                                    "fillColor": "#ff0000"
+                                }
+                            }
+                        }
+                    }, 
+                    "linkEvent": {
+                        "isEventSource": true
+                    }, 
+                    "dataSetId": "2d900c3b-64ea-4471-b076-c5b2e941b17d", 
+                    "type": "NXCubeCard", 
+                    "structure": {
+                        "measures": [
+                            {
+                                "key": "COL_0_8", 
+                                "title": "实际销售额"
+                            }, 
+                            {
+                                "key": "COL_0_6", 
+                                "title": "目标销售额"
+                            }
+                        ], 
+                        "dimensions": [
+                            {
+                                "granularities": [
+                                    {
+                                        "key": "COL_0_4", 
+                                        "title": "大区域"
+                                    }, 
+                                    {
+                                        "key": "COL_0_5", 
+                                        "title": "省份"
+                                    }
+                                ], 
+                                "key": "Dimension_3", 
+                                "title": "地理"
+                            }, 
+                            {
+                                "granularities": [
+                                    {
+                                        "key": "COL_0_3", 
+                                        "title": "品牌"
+                                    }
+                                ], 
+                                "key": "Dimension_2", 
+                                "title": "分类"
+                            }, 
+                            {
+                                "granularities": [
+                                    {
+                                        "key": "COL_0_0", 
+                                        "title": "年"
+                                    }, 
+                                    {
+                                        "title": "月", 
+                                        "key": "COL_0_2", 
+                                        "drillTo": true
+                                    }
+                                ], 
+                                "key": "Dimension_1", 
+                                "title": "时间"
+                            }
+                        ]
+                    }, 
+                    "size": "row-sm-xs-6 row-xs-sm-12 row-md-3 row-md-sm-6 row-lg-md-3 col-xs-sm-12 col-sm-xs-12 col-sm-lg-12 col-md-12 col-md-lg-12 col-md-sm-6 col-lg-6 "
+                }
+            ], 
+            "pageTitle": "女装销售额与销售量统计", 
+            "pageColor": "#718dbf"
+        }
+    ], 
     "defaultStyle": [
         {
+            "scopeId": [
+                "all"
+            ], 
+            "defaultColor": [
+                "#e84d60", 
+                "#e88f61", 
+                "#fecd6c", 
+                "#b3cf61", 
+                "#77c298", 
+                "#51a9d6", 
+                "#718dbf", 
+                "#955cbf", 
+                "#a4547d", 
+                "#c64373"
+            ], 
+            "scopeType": "report", 
             "chartOptions": {
                 "seriesOptions": {
                     "NXMapSeries": {
                         "mapRegionGroups": [
                             {
-                                "key": "东北",
-                                "name": "东北",
-                                "regionFill": {
-                                    "fillColor": "#e84d60"
-                                },
                                 "regionLine": {
                                     "lineColor": "#e84d60"
-                                },
+                                }, 
                                 "values": [
-                                    "辽宁",
-                                    "吉林",
+                                    "辽宁", 
+                                    "吉林", 
                                     "黑龙江"
-                                ]
-                            },
-                            {
-                                "key": "华东",
-                                "name": "华东",
+                                ], 
+                                "name": "东北", 
+                                "key": "东北", 
                                 "regionFill": {
-                                    "fillColor": "#e88f61"
-                                },
+                                    "fillColor": "#e84d60"
+                                }
+                            }, 
+                            {
                                 "regionLine": {
                                     "lineColor": "#e88f61"
-                                },
+                                }, 
                                 "values": [
-                                    "上海",
-                                    "江苏",
-                                    "浙江",
-                                    "安徽",
+                                    "上海", 
+                                    "江苏", 
+                                    "浙江", 
+                                    "安徽", 
                                     "江西"
-                                ]
-                            },
-                            {
-                                "key": "华南",
-                                "name": "华南",
+                                ], 
+                                "name": "华东", 
+                                "key": "华东", 
                                 "regionFill": {
-                                    "fillColor": "#fecd6c"
-                                },
+                                    "fillColor": "#e88f61"
+                                }
+                            }, 
+                            {
                                 "regionLine": {
                                     "lineColor": "#fecd6c"
-                                },
+                                }, 
                                 "values": [
-                                    "广东",
-                                    "福建",
-                                    "广西",
+                                    "广东", 
+                                    "福建", 
+                                    "广西", 
                                     "海南"
-                                ]
-                            },
-                            {
-                                "key": "华北",
-                                "name": "华北",
+                                ], 
+                                "name": "华南", 
+                                "key": "华南", 
                                 "regionFill": {
-                                    "fillColor": "#b3cf61"
-                                },
+                                    "fillColor": "#fecd6c"
+                                }
+                            }, 
+                            {
                                 "regionLine": {
                                     "lineColor": "#b3cf61"
-                                },
+                                }, 
                                 "values": [
-                                    "北京",
-                                    "天津",
-                                    "河北",
-                                    "山东",
-                                    "河南",
-                                    "山西",
+                                    "北京", 
+                                    "天津", 
+                                    "河北", 
+                                    "山东", 
+                                    "河南", 
+                                    "山西", 
                                     "内蒙古"
-                                ]
-                            },
-                            {
-                                "key": "华中",
-                                "name": "华中",
+                                ], 
+                                "name": "华北", 
+                                "key": "华北", 
                                 "regionFill": {
-                                    "fillColor": "#77c298"
-                                },
+                                    "fillColor": "#b3cf61"
+                                }
+                            }, 
+                            {
                                 "regionLine": {
                                     "lineColor": "#77c298"
-                                },
+                                }, 
                                 "values": [
-                                    "湖北",
+                                    "湖北", 
                                     "湖南"
-                                ]
-                            },
-                            {
-                                "key": "西南",
-                                "name": "西南",
+                                ], 
+                                "name": "华中", 
+                                "key": "华中", 
                                 "regionFill": {
-                                    "fillColor": "#51a9d6"
-                                },
+                                    "fillColor": "#77c298"
+                                }
+                            }, 
+                            {
                                 "regionLine": {
                                     "lineColor": "#51a9d6"
-                                },
+                                }, 
                                 "values": [
-                                    "四川",
-                                    "重庆",
-                                    "贵州",
-                                    "云南",
+                                    "四川", 
+                                    "重庆", 
+                                    "贵州", 
+                                    "云南", 
                                     "西藏"
-                                ]
-                            },
-                            {
-                                "key": "西北",
-                                "name": "西北",
+                                ], 
+                                "name": "西南", 
+                                "key": "西南", 
                                 "regionFill": {
-                                    "fillColor": "#718dbf"
-                                },
+                                    "fillColor": "#51a9d6"
+                                }
+                            }, 
+                            {
                                 "regionLine": {
                                     "lineColor": "#718dbf"
-                                },
+                                }, 
                                 "values": [
-                                    "陕西",
-                                    "甘肃",
-                                    "宁夏",
-                                    "青海",
+                                    "陕西", 
+                                    "甘肃", 
+                                    "宁夏", 
+                                    "青海", 
                                     "新疆"
-                                ]
+                                ], 
+                                "name": "西北", 
+                                "key": "西北", 
+                                "regionFill": {
+                                    "fillColor": "#718dbf"
+                                }
                             }
-                        ],
+                        ], 
                         "mapType": "China"
                     }
                 }
-            },
-            "defaultColor": [
-                "#e84d60",
-                "#e88f61",
-                "#fecd6c",
-                "#b3cf61",
-                "#77c298",
-                "#51a9d6",
-                "#718dbf",
-                "#955cbf",
-                "#a4547d",
-                "#c64373"
-            ],
-            "scopeId": [
-                "all"
-            ],
-            "scopeType": "report"
+            }
         }
-    ],
-    "description": "女装一线销售demo",
-    "id": "sales",
+    ], 
     "metadataStructures": [
         {
-            "dataSetId": "2d900c3b-64ea-4471-b076-c5b2e941b17d",
-            "db": "salesMan",
+            "measures": [
+                {
+                    "key": "COL_0_6", 
+                    "title": "目标销售额"
+                }, 
+                {
+                    "key": "COL_0_7", 
+                    "title": "目标销售量"
+                }, 
+                {
+                    "key": "COL_0_8", 
+                    "title": "实际销售额"
+                }, 
+                {
+                    "key": "COL_0_9", 
+                    "title": "实际销售量"
+                }, 
+                {
+                    "key": "COL_0_10", 
+                    "title": "同比实际销售量"
+                }, 
+                {
+                    "key": "COL_0_11", 
+                    "title": "折扣率"
+                }, 
+                {
+                    "key": "COL_0_12", 
+                    "title": "客单价"
+                }
+            ], 
+            "db": "salesMan", 
             "dimensions": [
                 {
                     "granularities": [
                         {
-                            "key": "COL_0_3",
+                            "key": "COL_0_3", 
                             "title": "品牌"
                         }
-                    ],
-                    "key": "Dimension_2",
+                    ], 
+                    "key": "Dimension_2", 
                     "title": "分类"
-                },
+                }, 
                 {
                     "granularities": [
                         {
-                            "key": "COL_0_4",
+                            "key": "COL_0_4", 
                             "title": "大区域"
-                        },
+                        }, 
                         {
-                            "key": "COL_0_5",
+                            "key": "COL_0_5", 
                             "title": "省份"
                         }
-                    ],
-                    "key": "Dimension_3",
+                    ], 
+                    "key": "Dimension_3", 
                     "title": "地理"
-                },
+                }, 
                 {
                     "granularities": [
                         {
-                            "key": "COL_0_0",
+                            "key": "COL_0_0", 
                             "title": "年"
-                        },
+                        }, 
                         {
-                            "key": "COL_0_1",
+                            "key": "COL_0_1", 
                             "title": "季"
-                        },
+                        }, 
                         {
-                            "key": "COL_0_2",
+                            "key": "COL_0_2", 
                             "title": "月"
                         }
-                    ],
-                    "key": "Dimension_1",
+                    ], 
+                    "key": "Dimension_1", 
                     "title": "时间"
                 }
-            ],
-            "encrypt": "dbpass3242342",
-            "measures": [
-                {
-                    "key": "COL_0_6",
-                    "title": "目标销售额"
-                },
-                {
-                    "key": "COL_0_7",
-                    "title": "目标销售量"
-                },
-                {
-                    "key": "COL_0_8",
-                    "title": "实际销售额"
-                },
-                {
-                    "key": "COL_0_9",
-                    "title": "实际销售量"
-                },
-                {
-                    "key": "COL_0_10",
-                    "title": "同比实际销售量"
-                },
-                {
-                    "key": "COL_0_11",
-                    "title": "折扣率"
-                },
-                {
-                    "key": "COL_0_12",
-                    "title": "客单价"
-                }
-            ]
+            ], 
+            "dataSetId": "2d900c3b-64ea-4471-b076-c5b2e941b17d"
         }
-    ],
-    "pages": [
-        {
-            "cards": [
-                {
-                    "cardTitle": "国内出货量地区分布",
-                    "dataSetId": "2d900c3b-64ea-4471-b076-c5b2e941b17d",
-                    "linkEvent": {
-                        "isEventSource": true
-                    },
-                    "size": "row-sm-xs-6 row-xs-sm-12 row-md-3 row-md-sm-6 row-lg-md-3 col-xs-sm-12 col-sm-xs-12 col-sm-lg-12 col-md-12 col-md-lg-12 col-md-sm-6 col-lg-6 ",
-                    "structure": {
-                        "dimensions": [
-                            {
-                                "granularities": [
-                                    {
-                                        "key": "COL_0_0",
-                                        "title": "年"
-                                    }
-                                ],
-                                "key": "Dimension_1",
-                                "title": "时间"
-                            },
-                            {
-                                "granularities": [
-                                    {
-                                        "key": "COL_0_3",
-                                        "title": "品牌"
-                                    }
-                                ],
-                                "key": "Dimension_2",
-                                "title": "分类"
-                            },
-                            {
-                                "granularities": [
-                                    {
-                                        "key": "COL_0_4",
-                                        "title": "大区域"
-                                    },
-                                    {
-                                        "key": "COL_0_5",
-                                        "title": "省份"
-                                    }
-                                ],
-                                "key": "Dimension_3",
-                                "title": "地理"
-                            }
-                        ],
-                        "measures": [
-                            {
-                                "key": "COL_0_9",
-                                "title": "实际销售量"
-                            }
-                        ]
-                    },
-                    "style": {
-                        "chart": {
-                            "chartConfig": {
-                                "series": [
-                                    {
-                                        "dataSource": {
-                                            "yValueSource": "COL_0_9"
-                                        },
-                                        "id": "brandRegionMap",
-                                        "mapType": "China",
-                                        "type": "NXMapSeries"
-                                    }
-                                ],
-                                "touchTools": [
-                                    {
-                                        "targetSeries": [
-                                            "brandRegionMap"
-                                        ],
-                                        "toolType": "NXZoomTool"
-                                    },
-                                    {
-                                        "crossAxis": "bottom",
-                                        "enableMultiTouch": false,
-                                        "removeOnRelease": false,
-                                        "showBelowSeries": false,
-                                        "targetSeries": [
-                                            "brandRegionMap"
-                                        ],
-                                        "toolType": "NXMapHighLightTool",
-                                        "visible": true
-                                    }
-                                ]
-                            },
-                            "selection": {
-                                "selectionSource": "Y",
-                                "selectionType": "NXChartSelectionBiggestValue"
-                            }
-                        },
-                        "detailRightPanel": {
-                            "visible": true
-                        },
-                        "detailTopPanel": {
-                            "percentInTotalVisible": true,
-                            "type": "NXDetailVertical",
-                            "visible": false
-                        }
-                    },
-                    "type": "NXCubeCard"
-                },
-                {
-                    "cardTitle": "省级女装销量达标对比",
-                    "dataSetId": "2d900c3b-64ea-4471-b076-c5b2e941b17d",
-                    "linkEvent": {
-                        "isEventSource": true
-                    },
-                    "size": "row-sm-xs-6 row-xs-sm-12 row-md-3 row-md-sm-6 row-lg-md-3 col-xs-sm-12 col-sm-xs-12 col-sm-lg-12 col-md-12  col-md-lg-12 col-md-sm-6 col-lg-6 ",
-                    "structure": {
-                        "dimensions": [
-                            {
-                                "granularities": [
-                                    {
-                                        "key": "COL_0_3",
-                                        "title": "品牌"
-                                    }
-                                ],
-                                "key": "Dimension_2",
-                                "title": "分类"
-                            },
-                            {
-                                "granularities": [
-                                    {
-                                        "key": "COL_0_0",
-                                        "title": "年"
-                                    }
-                                ],
-                                "key": "Dimension_1",
-                                "title": "时间"
-                            },
-                            {
-                                "granularities": [
-                                    {
-                                        "key": "COL_0_4",
-                                        "sort": "NXSortOperationDesc",
-                                        "title": "大区域"
-                                    },
-                                    {
-                                        "drillTo": true,
-                                        "key": "COL_0_5",
-                                        "title": "省份"
-                                    }
-                                ],
-                                "key": "Dimension_3",
-                                "title": "地理"
-                            }
-                        ],
-                        "measures": [
-                            {
-                                "key": "COL_0_9",
-                                "sort": "NXSortOperationAsc",
-                                "title": "实际销售量"
-                            },
-                            {
-                                "key": "COL_0_7",
-                                "title": "目标销售量"
-                            }
-                        ]
-                    },
-                    "style": {
-                        "chart": {
-                            "chartConfig": {
-                                "axis": [
-                                    {
-                                        "axisType": "NXAxisTypeNumberic",
-                                        "id": "bottom",
-                                        "majorPoint": {
-                                            "gridLine": {
-                                                "gridLineVisible": true
-                                            },
-                                            "label": {
-                                                "labelFormatter": ",###",
-                                                "labelNumberUnit": true
-                                            }
-                                        }
-                                    },
-                                    {
-                                        "axisType": "NXAxisTypeCategory",
-                                        "coordinate": "NXCoordinateY",
-                                        "id": "left",
-                                        "majorPoint": {
-                                            "gridLine": null
-                                        }
-                                    }
-                                ],
-                                "canvas": {},
-                                "series": [
-                                    {
-                                        "accumulation": false,
-                                        "barFill": {
-                                            "fillColor": "#51a9d6"
-                                        },
-                                        "dataSource": {
-                                            "yValueSource": "COL_0_9"
-                                        },
-                                        "id": "salesCountAsProvinceBar",
-                                        "orientation": "horizontal",
-                                        "showOverlayAll": false,
-                                        "stackedType": "NXChartSeriesStackedTypeSide",
-                                        "type": "NXBarSeries",
-                                        "xAxis": "bottom",
-                                        "yAxis": "left"
-                                    },
-                                    {
-                                        "accumulation": false,
-                                        "dataSource": {
-                                            "yValueSource": "COL_0_7"
-                                        },
-                                        "id": "salesCountTargetAsProvinceLine",
-                                        "isTargetSeries": true,
-                                        "lineStyle": {
-                                            "lineColor": "#955cbf"
-                                        },
-                                        "orientation": "horizontal",
-                                        "type": "NXStepLineSeries",
-                                        "verticalJoinsVisible": false,
-                                        "xAxis": "bottom",
-                                        "yAxis": "left"
-                                    }
-                                ],
-                                "touchTools": [
-                                    {
-                                        "crossAxis": "bottom",
-                                        "enableMultiTouch": false,
-                                        "removeOnRelease": false,
-                                        "showBelowSeries": false,
-                                        "targetSeries": [
-                                            "salesCountAsProvinceBar",
-                                            "salesCountTargetAsProvinceLine"
-                                        ],
-                                        "toolType": "NXHighLightTool",
-                                        "visible": true
-                                    }
-                                ]
-                            }
-                        },
-                        "detailTopPanel": {
-                            "type": "NXDetailNormalTargetReal",
-                            "visible": true
-                        },
-                        "selection": {
-                            "selectionSource": "Y",
-                            "selectionType": "NXChartSelectionBiggestValue"
-                        }
-                    },
-                    "type": "NXCubeCard"
-                },
-                {
-                    "cardTitle": "季度累计",
-                    "dataSetId": "2d900c3b-64ea-4471-b076-c5b2e941b17d",
-                    "linkEvent": {
-                        "isEventSource": true
-                    },
-                    "size": "row-sm-xs-6 row-xs-sm-12 row-md-3 row-md-sm-6 row-lg-md-3 col-xs-sm-12 col-sm-xs-12 col-sm-lg-12 col-md-12  col-md-lg-12 col-md-sm-6 col-lg-6 ",
-                    "structure": {
-                        "dimensions": [
-                            {
-                                "granularities": [
-                                    {
-                                        "key": "COL_0_3",
-                                        "title": "品牌"
-                                    }
-                                ],
-                                "key": "Dimension_2",
-                                "title": "分类"
-                            },
-                            {
-                                "granularities": [
-                                    {
-                                        "key": "COL_0_4",
-                                        "title": "大区域"
-                                    },
-                                    {
-                                        "drillTo": true,
-                                        "key": "COL_0_5",
-                                        "title": "省份"
-                                    }
-                                ],
-                                "key": "Dimension_3",
-                                "title": "地理"
-                            },
-                            {
-                                "granularities": [
-                                    {
-                                        "key": "COL_0_0",
-                                        "title": "年"
-                                    },
-                                    {
-                                        "drillTo": true,
-                                        "key": "COL_0_1",
-                                        "title": "季"
-                                    }
-                                ],
-                                "key": "Dimension_1",
-                                "title": "时间"
-                            }
-                        ],
-                        "measures": [
-                            {
-                                "key": "COL_0_8",
-                                "title": "实际销售额"
-                            },
-                            {
-                                "key": "COL_0_9",
-                                "title": "实际销售量"
-                            }
-                        ]
-                    },
-                    "style": {
-                        "chart": {
-                            "chartConfig": {
-                                "axis": [
-                                    {
-                                        "axisType": "NXAxisTypeCategory",
-                                        "id": "bottom"
-                                    },
-                                    {
-                                        "axisType": "NXAxisTypeNumberic",
-                                        "coordinate": "NXCoordinateY",
-                                        "id": "left",
-                                        "majorPoint": {
-                                            "label": {
-                                                "labelFormatter": ",###",
-                                                "labelNumberUnit": true
-                                            }
-                                        }
-                                    }
-                                ],
-                                "canvas": {},
-                                "series": [
-                                    {
-                                        "accumulation": false,
-                                        "barFill": {
-                                            "fillColor": "#955cbf"
-                                        },
-                                        "dataSource": {
-                                            "yValueSource": "COL_0_8"
-                                        },
-                                        "id": "seasonTotalForProvinceBar",
-                                        "orientation": "vertical",
-                                        "showOverlayAll": true,
-                                        "stackedType": "NXChartSeriesStackedTypeOverlap",
-                                        "standOnShoulder": true,
-                                        "type": "NXBarSeries",
-                                        "xAxis": "bottom",
-                                        "yAxis": "left"
-                                    }
-                                ],
-                                "touchTools": [
-                                    {
-                                        "crossAxis": "bottom",
-                                        "enableMultiTouch": true,
-                                        "removeOnRelease": false,
-                                        "showBelowSeries": false,
-                                        "targetSeries": [
-                                            "seasonTotalForProvinceBar"
-                                        ],
-                                        "toolType": "NXHighLightTool",
-                                        "visible": true
-                                    },
-                                    {
-                                        "active": true,
-                                        "crossAxis": "bottom",
-                                        "targetSeries": [
-                                            "seasonTotalForProvinceBar"
-                                        ],
-                                        "toolType": "NXChangeActiveSeriesTool"
-                                    }
-                                ]
-                            }
-                        }
-                    },
-                    "type": "NXCubeCard"
-                },
-                {
-                    "cardTitle": "各省每季销量情况",
-                    "dataSetId": "2d900c3b-64ea-4471-b076-c5b2e941b17d",
-                    "size": "row-sm-xs-6 row-xs-sm-12 row-md-3 row-md-sm-6 row-lg-md-3 col-xs-sm-12 col-sm-xs-12 col-sm-lg-12 col-md-12 col-md-lg-12 col-md-sm-6 col-lg-6 ",
-                    "structure": {
-                        "dimensions": [
-                            {
-                                "granularities": [
-                                    {
-                                        "index": 4,
-                                        "key": "COL_0_3",
-                                        "title": "品牌"
-                                    }
-                                ],
-                                "key": "Dimension_2",
-                                "title": "分类"
-                            },
-                            {
-                                "granularities": [
-                                    {
-                                        "index": 1,
-                                        "key": "COL_0_4",
-                                        "title": "大区域"
-                                    },
-                                    {
-                                        "drillTo": true,
-                                        "index": 2,
-                                        "key": "COL_0_5",
-                                        "title": "省份"
-                                    }
-                                ],
-                                "key": "Dimension_3",
-                                "title": "地理"
-                            },
-                            {
-                                "granularities": [
-                                    {
-                                        "index": 0,
-                                        "key": "COL_0_0",
-                                        "title": "年"
-                                    },
-                                    {
-                                        "drillTo": true,
-                                        "index": 3,
-                                        "key": "COL_0_1",
-                                        "sort": "NXSortOperationAsc",
-                                        "title": "季"
-                                    }
-                                ],
-                                "key": "Dimension_1",
-                                "title": "时间"
-                            }
-                        ],
-                        "measures": [
-                            {
-                                "key": "COL_0_8",
-                                "title": "实际销售额"
-                            }
-                        ]
-                    },
-                    "style": {
-                        "chart": {
-                            "chartConfig": {
-                                "axis": [
-                                    {
-                                        "axisType": "NXAxisTypeNumberic",
-                                        "coordinate": "NXCoordinateX",
-                                        "id": "bottom",
-                                        "majorPoint": {
-                                            "gridLine": {
-                                                "gridLineVisible": true
-                                            },
-                                            "label": {
-                                                "labelFormatter": "#%",
-                                                "labelNumberUnit": false
-                                            }
-                                        }
-                                    },
-                                    {
-                                        "axisType": "NXAxisTypeCategory",
-                                        "coordinate": "NXCoordinateY",
-                                        "id": "left",
-                                        "majorPoint": {}
-                                    }
-                                ],
-                                "series": [
-                                    {
-                                        "barFill": {
-                                            "fillColor": "#2AB7D0"
-                                        },
-                                        "dataSource": {
-                                            "yValueSource": "COL_0_8"
-                                        },
-                                        "id": "seasonForProvinceBar",
-                                        "iteration": {
-                                            "isMultiLevel": true
-                                        },
-                                        "orientation": "horizontal",
-                                        "stackedType": "NXChartSeriesStackedTypeStack100",
-                                        "type": "NXBarSeries",
-                                        "xAxis": "bottom",
-                                        "yAxis": "left"
-                                    }
-                                ],
-                                "touchTools": [
-                                    {
-                                        "crossAxis": "bottom",
-                                        "enableMultiTouch": true,
-                                        "removeOnRelease": false,
-                                        "showBelowSeries": false,
-                                        "targetSeries": [
-                                            "seasonForProvinceBar"
-                                        ],
-                                        "toolType": "NXHighLightTool",
-                                        "visible": true
-                                    },
-                                    {
-                                        "active": true,
-                                        "crossAxis": "bottom",
-                                        "targetSeries": [
-                                            "seasonForProvinceBar"
-                                        ],
-                                        "toolType": "NXChangeActiveSeriesTool"
-                                    }
-                                ]
-                            }
-                        },
-                        "detailTopPanel": {
-                            "percentInTotalVisible": true,
-                            "visible": true
-                        }
-                    },
-                    "type": "NXCubeCard"
-                },
-                {
-                    "cardTitle": "折扣率-客单价-销量关系",
-                    "dataSetId": "2d900c3b-64ea-4471-b076-c5b2e941b17d",
-                    "size": "row-lg-12 col-lg-12",
-                    "structure": {
-                        "dimensions": [
-                            {
-                                "granularities": [
-                                    {
-                                        "key": "COL_0_4",
-                                        "title": "大区域"
-                                    },
-                                    {
-                                        "key": "COL_0_5",
-                                        "title": "省份"
-                                    }
-                                ],
-                                "key": "Dimension_3",
-                                "title": "地理"
-                            },
-                            {
-                                "granularities": [
-                                    {
-                                        "key": "COL_0_0",
-                                        "title": "年"
-                                    },
-                                    {
-                                        "key": "COL_0_1",
-                                        "title": "季"
-                                    },
-                                    {
-                                        "key": "COL_0_2",
-                                        "title": "月"
-                                    }
-                                ],
-                                "key": "Dimension_1",
-                                "title": "时间"
-                            },
-                            {
-                                "granularities": [
-                                    {
-                                        "key": "COL_0_3",
-                                        "title": "品牌"
-                                    }
-                                ],
-                                "key": "Dimension_2",
-                                "title": "分类"
-                            }
-                        ],
-                        "measures": [
-                            {
-                                "key": "COL_0_9",
-                                "title": "实际销售量(件)「气泡大小」"
-                            },
-                            {
-                                "key": "COL_0_11",
-                                "title": "折扣率(%)"
-                            },
-                            {
-                                "key": "COL_0_12",
-                                "title": "客单价(￥)"
-                            }
-                        ]
-                    },
-                    "style": {
-                        "annotation": {
-                            "isAlwaysVisible": false,
-                            "visible": false
-                        },
-                        "chart": {
-                            "chartConfig": {
-                                "axis": [
-                                    {
-                                        "axisMaxPaddingForPlot": 0.1,
-                                        "axisMinPaddingForPlot": 0.1,
-                                        "axisTitle": {
-                                            "titleLocation": 0.5,
-                                            "titleVisible": true
-                                        },
-                                        "axisType": "NXAxisTypeNumberic",
-                                        "bands": [
-                                            {
-                                                "range": {
-                                                    "length": 50,
-                                                    "location": 1760
-                                                }
-                                            }
-                                        ],
-                                        "id": "bottom",
-                                        "majorPoint": {
-                                            "label": {
-                                                "labelFormatter": ",###",
-                                                "labelNumberUnit": false
-                                            }
-                                        }
-                                    },
-                                    {
-                                        "axisMaxPaddingForPlot": 0.1,
-                                        "axisMinPaddingForPlot": 0.1,
-                                        "axisTitle": {
-                                            "titleLocation": 0.5,
-                                            "titleVisible": true
-                                        },
-                                        "axisType": "NXAxisTypeNumberic",
-                                        "coordinate": "NXCoordinateY",
-                                        "id": "left",
-                                        "majorPoint": {
-                                            "label": {
-                                                "labelFormatter": "#%",
-                                                "labelNumberUnit": false
-                                            }
-                                        }
-                                    }
-                                ],
-                                "canvas": {},
-                                "series": [
-                                    {
-                                        "dataSource": {
-                                            "xValueSource": "COL_0_12",
-                                            "y2ValueSource": "COL_0_9",
-                                            "yFormatString": "#%",
-                                            "yValueSource": "COL_0_11"
-                                        },
-                                        "id": "seriesBubble",
-                                        "isSeriesPureColor": false,
-                                        "iteration": {
-                                            "isMultiLevel": false
-                                        },
-                                        "orientation": "vertical",
-                                        "symbol": {
-                                            "anchorPoint": {
-                                                "x": 0.5,
-                                                "y": 0.5
-                                            }
-                                        },
-                                        "type": "NXBubbleSeries",
-                                        "xAxis": "bottom",
-                                        "yAxis": "left"
-                                    }
-                                ],
-                                "touchTools": [
-                                    {
-                                        "crossAxis": "bottom",
-                                        "enableMultiTouch": true,
-                                        "removeOnRelease": false,
-                                        "showBelowSeries": true,
-                                        "targetSeries": [
-                                            "seriesBubble"
-                                        ],
-                                        "toolType": "NXCursorTool",
-                                        "visible": true
-                                    }
-                                ]
-                            }
-                        }
-                    },
-                    "type": "NXCubeCard"
-                },
-                {
-                    "cardTitle": "女装品牌出货销额占比",
-                    "dataSetId": "2d900c3b-64ea-4471-b076-c5b2e941b17d",
-                    "linkEvent": {
-                        "isEventSource": true
-                    },
-                    "size": "row-sm-xs-6 row-xs-sm-12 row-md-3 row-md-sm-6 row-lg-md-3 col-xs-sm-12 col-sm-xs-12 col-sm-lg-12 col-md-12 col-md-lg-12 col-md-sm-6 col-lg-6 ",
-                    "structure": {
-                        "dimensions": [
-                            {
-                                "granularities": [
-                                    {
-                                        "key": "COL_0_4",
-                                        "title": "大区域"
-                                    },
-                                    {
-                                        "key": "COL_0_5",
-                                        "title": "省份"
-                                    }
-                                ],
-                                "key": "Dimension_3",
-                                "title": "地理"
-                            },
-                            {
-                                "granularities": [
-                                    {
-                                        "key": "COL_0_0",
-                                        "title": "年"
-                                    }
-                                ],
-                                "key": "Dimension_1",
-                                "title": "时间"
-                            },
-                            {
-                                "granularities": [
-                                    {
-                                        "key": "COL_0_3",
-                                        "title": "品牌"
-                                    }
-                                ],
-                                "key": "Dimension_2",
-                                "title": "分类"
-                            }
-                        ],
-                        "measures": [
-                            {
-                                "key": "COL_0_8",
-                                "title": "实际销售额"
-                            }
-                        ]
-                    },
-                    "style": {
-                        "chart": {
-                            "chartConfig": {
-                                "series": [
-                                    {
-                                        "dataSource": {
-                                            "yValueSource": "COL_0_8"
-                                        },
-                                        "id": "brandPercentPie",
-                                        "type": "NXPieSeries"
-                                    }
-                                ],
-                                "touchTools": [
-                                    {
-                                        "targetSeries": [
-                                            "brandPercentPie"
-                                        ],
-                                        "toolType": "NXPieSpinTool"
-                                    }
-                                ]
-                            },
-                            "selection": {
-                                "selectionSource": "Y",
-                                "selectionType": "NXChartSelectionBiggestValue"
-                            }
-                        },
-                        "detailRightPanel": {
-                            "visible": true
-                        },
-                        "detailTopPanel": {
-                            "percentInTotalVisible": true,
-                            "type": "NXDetailVertical",
-                            "visible": false
-                        },
-                        "detailTotalPanel": {
-                            "isAboveDetailTop": true
-                        }
-                    },
-                    "type": "NXCubeCard"
-                },
-                {
-                    "cardTitle": "品牌年销额累计实际vs目标",
-                    "dataSetId": "2d900c3b-64ea-4471-b076-c5b2e941b17d",
-                    "linkEvent": {
-                        "isEventSource": true
-                    },
-                    "size": "row-sm-xs-6 row-xs-sm-12 row-md-3 row-md-sm-6 row-lg-md-3 col-xs-sm-12 col-sm-xs-12 col-sm-lg-12 col-md-12 col-md-lg-12 col-md-sm-6 col-lg-6 ",
-                    "structure": {
-                        "dimensions": [
-                            {
-                                "granularities": [
-                                    {
-                                        "key": "COL_0_4",
-                                        "title": "大区域"
-                                    },
-                                    {
-                                        "key": "COL_0_5",
-                                        "title": "省份"
-                                    }
-                                ],
-                                "key": "Dimension_3",
-                                "title": "地理"
-                            },
-                            {
-                                "granularities": [
-                                    {
-                                        "key": "COL_0_3",
-                                        "title": "品牌"
-                                    }
-                                ],
-                                "key": "Dimension_2",
-                                "title": "分类"
-                            },
-                            {
-                                "granularities": [
-                                    {
-                                        "key": "COL_0_0",
-                                        "title": "年"
-                                    },
-                                    {
-                                        "drillTo": true,
-                                        "key": "COL_0_2",
-                                        "title": "月"
-                                    }
-                                ],
-                                "key": "Dimension_1",
-                                "title": "时间"
-                            }
-                        ],
-                        "measures": [
-                            {
-                                "key": "COL_0_8",
-                                "title": "累计实际销售额"
-                            },
-                            {
-                                "key": "COL_0_6",
-                                "title": "累计目标销售额"
-                            }
-                        ]
-                    },
-                    "style": {
-                        "chart": {
-                            "chartConfig": {
-                                "axis": [
-                                    {
-                                        "axisType": "NXAxisTypeDateTime",
-                                        "id": "bottom"
-                                    },
-                                    {
-                                        "axisType": "NXAxisTypeNumberic",
-                                        "coordinate": "NXCoordinateY",
-                                        "id": "left",
-                                        "majorPoint": {
-                                            "label": {
-                                                "labelFormatter": ",###",
-                                                "labelNumberUnit": true
-                                            }
-                                        }
-                                    }
-                                ],
-                                "canvas": {},
-                                "series": [
-                                    {
-                                        "accumulation": true,
-                                        "barFill": {
-                                            "fillColor": "#51a9d6"
-                                        },
-                                        "dataSource": {
-                                            "xDataSourceDateFormatString": "MMM",
-                                            "xDataSourceDateLocale": "zh",
-                                            "xDisplayDateFormatString": "MMM",
-                                            "xDisplayDateLocale": "zh",
-                                            "yValueSource": "COL_0_8"
-                                        },
-                                        "id": "revenueAccumulateAsMonthBar",
-                                        "orientation": "vertical",
-                                        "sort": {
-                                            "sortSource": "x",
-                                            "sortType": "NXSortOperationAsc"
-                                        },
-                                        "stackedType": "NXChartSeriesStackedTypeSide",
-                                        "type": "NXBarSeries",
-                                        "xAxis": "bottom",
-                                        "yAxis": "left"
-                                    },
-                                    {
-                                        "accumulation": true,
-                                        "dataSource": {
-                                            "xDataSourceDateFormatString": "MMM",
-                                            "xDataSourceDateLocale": "zh",
-                                            "xDisplayDateFormatString": "MMM",
-                                            "xDisplayDateLocale": "zh",
-                                            "yValueSource": "COL_0_6"
-                                        },
-                                        "id": "targetRevenueAccumulateAsMonthLine",
-                                        "isTargetSeries": true,
-                                        "lineStyle": {
-                                            "lineColor": "#955cbf"
-                                        },
-                                        "orientation": "vertical",
-                                        "sort": {
-                                            "sortSource": "x",
-                                            "sortType": "NXSortOperationAsc"
-                                        },
-                                        "symbol": {
-                                            "symbolFill": {
-                                                "fillColor": "#955cbf"
-                                            }
-                                        },
-                                        "type": "NXLineSeries",
-                                        "xAxis": "bottom",
-                                        "yAxis": "left"
-                                    }
-                                ],
-                                "touchTools": [
-                                    {
-                                        "crossAxis": "bottom",
-                                        "enableMultiTouch": false,
-                                        "removeOnRelease": false,
-                                        "showBelowSeries": false,
-                                        "targetSeries": [
-                                            "revenueAccumulateAsMonthBar",
-                                            "targetRevenueAccumulateAsMonthLine"
-                                        ],
-                                        "toolType": "NXHighLightTool",
-                                        "visible": true
-                                    },
-                                    {
-                                        "targetSeries": [
-                                            "revenueAccumulateAsMonthBar",
-                                            "targetRevenueAccumulateAsMonthLine"
-                                        ],
-                                        "toolType": "NXNavigationTool",
-                                        "visible": true
-                                    }
-                                ]
-                            }
-                        },
-                        "detailTopPanel": {
-                            "type": "NXDetailNormalTargetReal",
-                            "visible": true
-                        },
-                        "footer": {
-                            "navigation": {
-                                "minGapDistance": 80,
-                                "navigationType": "NXSliderTypeLine",
-                                "orientation": "auto",
-                                "visible": true
-                            }
-                        },
-                        "selection": {
-                            "selectionSource": "Y",
-                            "selectionType": "NXChartSelectionBiggestValue"
-                        }
-                    },
-                    "type": "NXCubeCard"
-                },
-                {
-                    "cardTitle": "销额按月同比",
-                    "dataSetId": "2d900c3b-64ea-4471-b076-c5b2e941b17d",
-                    "linkEvent": {
-                        "isEventSource": true
-                    },
-                    "size": "row-sm-xs-6 row-xs-sm-12 row-md-3 row-md-sm-6 row-lg-md-3 col-xs-sm-12 col-sm-xs-12 col-sm-lg-12 col-md-12 col-md-lg-12 col-md-sm-6 col-lg-6 ",
-                    "structure": {
-                        "dimensions": [
-                            {
-                                "granularities": [
-                                    {
-                                        "key": "COL_0_4",
-                                        "title": "大区域"
-                                    },
-                                    {
-                                        "key": "COL_0_5",
-                                        "title": "省份"
-                                    }
-                                ],
-                                "key": "Dimension_3",
-                                "title": "地理"
-                            },
-                            {
-                                "granularities": [
-                                    {
-                                        "key": "COL_0_3",
-                                        "title": "品牌"
-                                    }
-                                ],
-                                "key": "Dimension_2",
-                                "title": "分类"
-                            },
-                            {
-                                "granularities": [
-                                    {
-                                        "key": "COL_0_0",
-                                        "title": "年"
-                                    },
-                                    {
-                                        "drillTo": true,
-                                        "key": "COL_0_2",
-                                        "title": "月"
-                                    }
-                                ],
-                                "key": "Dimension_1",
-                                "title": "时间"
-                            }
-                        ],
-                        "measures": [
-                            {
-                                "key": "COL_0_8",
-                                "title": "实际销售额"
-                            },
-                            {
-                                "key": "COL_0_10",
-                                "title": "销售额同比"
-                            }
-                        ]
-                    },
-                    "style": {
-                        "chart": {
-                            "chartConfig": {
-                                "axis": [
-                                    {
-                                        "axisTitle": {
-                                            "titleLocation": 0.5,
-                                            "titleVisible": false
-                                        },
-                                        "axisType": "NXAxisTypeDateTime",
-                                        "id": "bottom"
-                                    },
-                                    {
-                                        "axisTitle": {
-                                            "titleLocation": 0.5,
-                                            "titleVisible": false
-                                        },
-                                        "axisType": "NXAxisTypeNumberic",
-                                        "coordinate": "NXCoordinateY",
-                                        "id": "left",
-                                        "majorPoint": {
-                                            "label": {
-                                                "labelFormatter": ",###",
-                                                "labelNumberUnit": true
-                                            }
-                                        }
-                                    }
-                                ],
-                                "canvas": {},
-                                "series": [
-                                    {
-                                        "accumulation": false,
-                                        "barFill": {
-                                            "fillColor": "#51a9d6"
-                                        },
-                                        "dataSource": {
-                                            "xDataSourceDateFormatString": "MMM",
-                                            "xDataSourceDateLocale": "zh",
-                                            "xDisplayDateFormatString": "MMM",
-                                            "xDisplayDateLocale": "zh",
-                                            "yValueSource": "COL_0_8"
-                                        },
-                                        "id": "revenueTongbiMonthBar",
-                                        "orientation": "vertical",
-                                        "showOverlayAll": false,
-                                        "sort": {
-                                            "sortSource": "x",
-                                            "sortType": "NXSortOperationAsc"
-                                        },
-                                        "stackedType": "NXChartSeriesStackedTypeSide",
-                                        "type": "NXBarSeries",
-                                        "xAxis": "bottom",
-                                        "yAxis": "left"
-                                    },
-                                    {
-                                        "accumulation": false,
-                                        "dataSource": {
-                                            "xDataSourceDateFormatString": "MMM",
-                                            "xDataSourceDateLocale": "zh",
-                                            "xDisplayDateFormatString": "MMM",
-                                            "xDisplayDateLocale": "zh",
-                                            "yValueSource": "COL_0_10"
-                                        },
-                                        "id": "targetRevenueTongbiAsMonthLine",
-                                        "isTargetSeries": true,
-                                        "lineStyle": {
-                                            "lineColor": "#955cbf"
-                                        },
-                                        "orientation": "vertical",
-                                        "sort": {
-                                            "sortSource": "x",
-                                            "sortType": "NXSortOperationAsc"
-                                        },
-                                        "symbol": {
-                                            "symbolFill": {
-                                                "fillColor": "#955cbf"
-                                            }
-                                        },
-                                        "type": "NXLineSeries",
-                                        "xAxis": "bottom",
-                                        "yAxis": "left"
-                                    }
-                                ],
-                                "touchTools": [
-                                    {
-                                        "crossAxis": "bottom",
-                                        "enableMultiTouch": false,
-                                        "removeOnRelease": false,
-                                        "showBelowSeries": false,
-                                        "targetSeries": [
-                                            "revenueTongbiMonthBar",
-                                            "targetRevenueTongbiAsMonthLine"
-                                        ],
-                                        "toolType": "NXHighLightTool",
-                                        "visible": true
-                                    }
-                                ]
-                            }
-                        },
-                        "detailTopPanel": {
-                            "type": "NXDetailNormalTargetReal",
-                            "visible": true
-                        },
-                        "footer": {
-                            "navigation": {
-                                "minGapDistance": 80,
-                                "navigationType": "NXSliderTypeLine",
-                                "orientation": "horizontal",
-                                "visible": true
-                            }
-                        },
-                        "selection": {
-                            "selectionSource": "Y",
-                            "selectionType": "NXChartSelectionBiggestValue"
-                        }
-                    },
-                    "type": "NXCubeCard"
-                },
-                {
-                    "cardTitle": "销额达标情况",
-                    "dataSetId": "2d900c3b-64ea-4471-b076-c5b2e941b17d",
-                    "linkEvent": {
-                        "isEventSource": true
-                    },
-                    "size": "row-sm-xs-6 row-xs-sm-12 row-md-3 row-md-sm-6 row-lg-md-3 col-xs-sm-12 col-sm-xs-12 col-sm-lg-12 col-md-12 col-md-lg-12 col-md-sm-6 col-lg-6 ",
-                    "structure": {
-                        "dimensions": [
-                            {
-                                "granularities": [
-                                    {
-                                        "key": "COL_0_4",
-                                        "title": "大区域"
-                                    },
-                                    {
-                                        "key": "COL_0_5",
-                                        "title": "省份"
-                                    }
-                                ],
-                                "key": "Dimension_3",
-                                "title": "地理"
-                            },
-                            {
-                                "granularities": [
-                                    {
-                                        "key": "COL_0_3",
-                                        "title": "品牌"
-                                    }
-                                ],
-                                "key": "Dimension_2",
-                                "title": "分类"
-                            },
-                            {
-                                "granularities": [
-                                    {
-                                        "key": "COL_0_0",
-                                        "title": "年"
-                                    },
-                                    {
-                                        "drillTo": true,
-                                        "key": "COL_0_2",
-                                        "title": "月"
-                                    }
-                                ],
-                                "key": "Dimension_1",
-                                "title": "时间"
-                            }
-                        ],
-                        "measures": [
-                            {
-                                "key": "COL_0_8",
-                                "title": "实际销售额"
-                            },
-                            {
-                                "key": "COL_0_6",
-                                "title": "目标销售额"
-                            }
-                        ]
-                    },
-                    "style": {
-                        "chart": {
-                            "chartConfig": {
-                                "axis": [
-                                    {
-                                        "axisType": "NXAxisTypeDateTime",
-                                        "id": "bottom"
-                                    },
-                                    {
-                                        "axisType": "NXAxisTypeNumberic",
-                                        "coordinate": "NXCoordinateY",
-                                        "id": "left",
-                                        "majorPoint": {
-                                            "label": {
-                                                "labelFormatter": ",###",
-                                                "labelNumberUnit": true
-                                            }
-                                        }
-                                    }
-                                ],
-                                "canvas": {},
-                                "series": [
-                                    {
-                                        "accumulation": false,
-                                        "barFill": {
-                                            "fillColor": "#51a9d6"
-                                        },
-                                        "dataSource": {
-                                            "xDataSourceDateFormatString": "MMM",
-                                            "xDataSourceDateLocale": "zh",
-                                            "xDisplayDateFormatString": "MMM",
-                                            "xDisplayDateLocale": "zh",
-                                            "yValueSource": "COL_0_8"
-                                        },
-                                        "id": "revenueDabiaoAsMonthBar",
-                                        "orientation": "vertical",
-                                        "showOverlayAll": false,
-                                        "sort": {
-                                            "sortSource": "x",
-                                            "sortType": "NXSortOperationAsc"
-                                        },
-                                        "stackedType": "NXChartSeriesStackedTypeSide",
-                                        "type": "NXBarSeries",
-                                        "xAxis": "bottom",
-                                        "yAxis": "left"
-                                    },
-                                    {
-                                        "accumulation": false,
-                                        "dataSource": {
-                                            "xDataSourceDateFormatString": "MMM",
-                                            "xDataSourceDateLocale": "zh",
-                                            "xDisplayDateFormatString": "MMM",
-                                            "xDisplayDateLocale": "zh",
-                                            "yValueSource": "COL_0_6"
-                                        },
-                                        "id": "targetRevenueDabiaoAsMonthLine",
-                                        "isTargetSeries": true,
-                                        "lineStyle": {
-                                            "lineColor": "#955cbf"
-                                        },
-                                        "orientation": "vertical",
-                                        "sort": {
-                                            "sortSource": "x",
-                                            "sortType": "NXSortOperationAsc"
-                                        },
-                                        "symbol": {
-                                            "symbolFill": {
-                                                "fillColor": "#955cbf"
-                                            }
-                                        },
-                                        "type": "NXStepLineSeries",
-                                        "verticalJoinsVisible": false,
-                                        "xAxis": "bottom",
-                                        "yAxis": "left"
-                                    }
-                                ],
-                                "touchTools": [
-                                    {
-                                        "crossAxis": "bottom",
-                                        "enableMultiTouch": false,
-                                        "removeOnRelease": false,
-                                        "showBelowSeries": false,
-                                        "targetSeries": [
-                                            "revenueDabiaoAsMonthBar",
-                                            "targetRevenueDabiaoAsMonthLine"
-                                        ],
-                                        "toolType": "NXHighLightTool",
-                                        "visible": true
-                                    }
-                                ]
-                            }
-                        },
-                        "detailTopPanel": {
-                            "type": "NXDetailNormalTargetReal",
-                            "visible": true
-                        },
-                        "footer": {
-                            "navigation": {
-                                "backgroundTrackFill": {
-                                    "fillAlpha": 1,
-                                    "fillColor": "#ebecf0"
-                                },
-                                "handleBarFill": {
-                                    "fillAlpha": 1,
-                                    "fillColor": "#ff0000"
-                                },
-                                "inRangeRectFill": {
-                                    "cornerRadius": 0,
-                                    "fillAlpha": 0.3,
-                                    "fillColor": "auto",
-                                    "visible": "true"
-                                },
-                                "maxGapDistance": 500,
-                                "minGapDistance": 80,
-                                "navigationType": "NXSliderTypeLine",
-                                "orientation": "auto",
-                                "outRangeFill": {
-                                    "cornerRadius": 0,
-                                    "fillAlpha": 0.3,
-                                    "fillColor": "#ffffff",
-                                    "visible": "false"
-                                },
-                                "visible": true
-                            }
-                        },
-                        "selection": {
-                            "selectionSource": "Y",
-                            "selectionType": "NXChartSelectionBiggestValue"
-                        }
-                    },
-                    "type": "NXCubeCard"
-                }
-            ],
-            "pageColor": "#718dbf",
-            "pageTitle": "女装销售额与销售量统计"
-        }
-    ],
-    "title": "女装一线销售"
+    ], 
+    "id": "sales"
 }

@@ -1,805 +1,805 @@
 {
-    "defaultStyle": [
-        {
-            "chartOptions": {},
-            "defaultColor": [
-                "#e84d60",
-                "#e88f61",
-                "#fecd6c",
-                "#b3cf61",
-                "#77c298",
-                "#51a9d6",
-                "#718dbf",
-                "#955cbf",
-                "#a4547d",
-                "#c64373"
-            ],
-            "scopeId": [
-                "all"
-            ],
-            "scopeType": "report"
-        }
-    ],
-    "metadataStructures": [
-        {
-            "dataSetId": "707ff652-263f-4977-8f19-6a329f94ab25",
-            "dimensions": [
-                {
-                    "granularities": [
-                        {
-                            "key": "COL_0",
-                            "title": "城市"
-                        }
-                    ],
-                    "key": "Dimension_1",
-                    "title": "区域"
-                },
-                {
-                    "granularities": [
-                        {
-                            "key": "COL_3",
-                            "linkMatchKey": "yearOfKey",
-                            "selectionValue": "2015",
-                            "title": "年"
-                        },
-                        {
-                            "dateFormat": {
-                                "xDataSourceDateFormatString": "MM",
-                                "xDataSourceDateLocale": "zh",
-                                "xDisplayDateFormatString": "MMM",
-                                "xDisplayDateLocale": "zh"
-                            },
-                            "drillTo": true,
-                            "key": "COL_4",
-                            "linkMatchKey": "monthKey",
-                            "title": "月"
-                        },
-                        {
-                            "key": "COL_5",
-                            "linkMatchKey": "dayOfKey",
-                            "title": "日"
-                        }
-                    ],
-                    "key": "Dimension_3",
-                    "title": "时间"
-                },
-                {
-                    "granularities": [
-                        {
-                            "key": "COL_2",
-                            "title": "污染情况"
-                        }
-                    ],
-                    "key": "Dimension_2",
-                    "title": "空气质量情况"
-                }
-            ],
-            "measures": [
-                {
-                    "aggregator": "count",
-                    "aggregatorGroupByLastGran": true,
-                    "aggregatorSubGranKey": "COL_5",
-                    "key": "COL_1",
-                    "title": "次数"
-                }
-            ]
-        },
-        {
-            "dataSetId": "3946ed0d-a3b5-43c6-9b56-97b5966879de",
-            "dimensions": [
-                {
-                    "granularities": [
-                        {
-                            "key": "COL_0_0",
-                            "linkMatchKey": "yearOfKey",
-                            "selectionValue": "2015",
-                            "title": "年"
-                        },
-                        {
-                            "drillTo": true,
-                            "key": "COL_0_1",
-                            "linkMatchKey": "monthKey",
-                            "regularExpression": "(.*)月$",
-                            "sort": "NXSortOperationAsc",
-                            "sortLanguage": "NXSortRegularExpressNum",
-                            "title": "月"
-                        },
-                        {
-                            "key": "COL_0_2",
-                            "linkMatchKey": "dayOfKey",
-                            "title": "日"
-                        },
-                        {
-                            "key": "COL_0_3",
-                            "title": "时刻"
-                        }
-                    ],
-                    "key": "Dimension_1",
-                    "title": "时间"
-                },
-                {
-                    "granularities": [
-                        {
-                            "key": "COL_0_4",
-                            "title": "交通类型"
-                        },
-                        {
-                            "key": "COL_0_5",
-                            "title": "站点"
-                        }
-                    ],
-                    "key": "Dimension_2",
-                    "title": "交通方式"
-                }
-            ],
-            "measures": [
-                {
-                    "key": "COL_0_6",
-                    "title": "交易量"
-                }
-            ]
-        },
-        {
-            "dataSetId": "ee58500e-3468-42a6-84cc-037c75d6c27c",
-            "dimensions": [
-                {
-                    "granularities": [
-                        {
-                            "key": "COL_6",
-                            "title": "城市"
-                        }
-                    ],
-                    "key": "Dimension_3",
-                    "title": "区域"
-                },
-                {
-                    "granularities": [
-                        {
-                            "key": "COL_1",
-                            "linkMatchKey": "yearOfKey",
-                            "selectionValue": "2015",
-                            "title": "年"
-                        },
-                        {
-                            "dateFormat": {
-                                "xDataSourceDateFormatString": "MM",
-                                "xDataSourceDateLocale": "zh",
-                                "xDisplayDateFormatString": "MMM",
-                                "xDisplayDateLocale": "zh"
-                            },
-                            "drillTo": true,
-                            "key": "COL_2",
-                            "linkMatchKey": "monthKey",
-                            "title": "月"
-                        },
-                        {
-                            "key": "COL_3",
-                            "linkMatchKey": "dayOfKey",
-                            "title": "日"
-                        }
-                    ],
-                    "key": "Dimension_1",
-                    "title": "时间"
-                },
-                {
-                    "granularities": [
-                        {
-                            "key": "COL_5",
-                            "title": "污染情况"
-                        }
-                    ],
-                    "key": "Dimension_2",
-                    "title": "空气质量情况"
-                }
-            ],
-            "measures": [
-                {
-                    "aggregator": "count",
-                    "aggregatorGroupByLastGran": true,
-                    "aggregatorSubGranKey": "COL_3",
-                    "key": "COL_4",
-                    "title": "次数"
-                }
-            ]
-        }
-    ],
+    "status": "readyForView", 
+    "title": "空气质量AQI", 
     "pages": [
         {
             "cards": [
                 {
-                    "size": "row-sm-xs-6 row-xs-sm-12 row-md-3 row-md-sm-6 row-lg-md-3 col-xs-sm-12 col-sm-xs-6 col-sm-md-12 col-sm-lg-12 col-md-12  col-md-lg-12 col-md-sm-6 col-lg-6 ",
                     "subCards": [
                         {
-                            "cardTitle": "空气质量AQI",
-                            "dataSetId": "707ff652-263f-4977-8f19-6a329f94ab25",
-                            "size": "row-sm-xs-6 row-xs-sm-12 row-md-3 row-md-sm-6 row-lg-md-3 col-xs-sm-12 col-sm-xs-12 col-sm-lg-12 col-md-12 col-md-lg-12 col-md-sm-6 col-lg-6 ",
-                            "structure": {
-                                "dimensions": [
-                                    {
-                                        "granularities": [
-                                            {
-                                                "key": "COL_0",
-                                                "title": "城市"
-                                            }
-                                        ],
-                                        "key": "Dimension_1",
-                                        "title": "区域"
-                                    },
-                                    {
-                                        "granularities": [
-                                            {
-                                                "key": "COL_3",
-                                                "title": "年"
-                                            },
-                                            {
-                                                "key": "COL_4",
-                                                "title": "月"
-                                            },
-                                            {
-                                                "key": "COL_5",
-                                                "title": "日"
-                                            }
-                                        ],
-                                        "key": "Dimension_3",
-                                        "title": "时间"
-                                    },
-                                    {
-                                        "granularities": [
-                                            {
-                                                "key": "COL_2",
-                                                "title": "污染情况"
-                                            }
-                                        ],
-                                        "key": "Dimension_2",
-                                        "title": "空气质量情况"
-                                    }
-                                ],
-                                "measures": [
-                                    {
-                                        "key": "COL_1",
-                                        "title": "AQI"
-                                    }
-                                ]
-                            },
+                            "cardTitle": "空气质量AQI", 
                             "style": {
+                                "detailRightPanel": {
+                                    "visible": true
+                                }, 
+                                "detailTopPanel": {
+                                    "visible": false, 
+                                    "type": "NXDetailVertical", 
+                                    "percentInTotalVisible": true
+                                }, 
                                 "chart": {
                                     "chartConfig": {
-                                        "series": [
-                                            {
-                                                "dataSource": {
-                                                    "yValueSource": "COL_1"
-                                                },
-                                                "id": "pie",
-                                                "type": "NXPieSeries"
-                                            }
-                                        ],
                                         "touchTools": [
                                             {
                                                 "targetSeries": [
                                                     "pie"
-                                                ],
+                                                ], 
                                                 "toolType": "NXPieSpinTool"
                                             }
+                                        ], 
+                                        "series": [
+                                            {
+                                                "type": "NXPieSeries", 
+                                                "dataSource": {
+                                                    "yValueSource": "COL_1"
+                                                }, 
+                                                "id": "pie"
+                                            }
                                         ]
-                                    },
+                                    }, 
                                     "selection": {
-                                        "selectionSource": "Y",
+                                        "selectionSource": "Y", 
                                         "selectionType": "NXChartSelectionBiggestValue"
                                     }
-                                },
-                                "detailRightPanel": {
-                                    "visible": true
-                                },
-                                "detailTopPanel": {
-                                    "percentInTotalVisible": true,
-                                    "type": "NXDetailVertical",
-                                    "visible": false
-                                },
+                                }, 
                                 "detailTotalPanel": {
                                     "isAboveDetailTop": true
                                 }
-                            },
-                            "type": "NXCubeCard"
-                        },
-                        {
-                            "cardTitle": "空气PM2.5浓度",
-                            "dataSetId": "ee58500e-3468-42a6-84cc-037c75d6c27c",
-                            "size": "row-sm-xs-6 row-xs-sm-12 row-md-3 row-md-sm-6 row-lg-md-3 col-xs-sm-12 col-sm-xs-12 col-sm-lg-12 col-md-12 col-md-lg-12 col-md-sm-6 col-lg-6 ",
+                            }, 
+                            "dataSetId": "707ff652-263f-4977-8f19-6a329f94ab25", 
+                            "type": "NXCubeCard", 
                             "structure": {
+                                "measures": [
+                                    {
+                                        "key": "COL_1", 
+                                        "title": "AQI"
+                                    }
+                                ], 
                                 "dimensions": [
                                     {
                                         "granularities": [
                                             {
-                                                "key": "COL_6",
+                                                "key": "COL_0", 
                                                 "title": "城市"
                                             }
-                                        ],
-                                        "key": "Dimension_3",
+                                        ], 
+                                        "key": "Dimension_1", 
                                         "title": "区域"
-                                    },
+                                    }, 
                                     {
                                         "granularities": [
                                             {
-                                                "key": "COL_1",
-                                                "linkMatchKey": "yearOfKey",
-                                                "selectionValue": "2015",
+                                                "key": "COL_3", 
                                                 "title": "年"
-                                            },
+                                            }, 
                                             {
-                                                "dateFormat": {
-                                                    "xDataSourceDateFormatString": "MM",
-                                                    "xDataSourceDateLocale": "zh",
-                                                    "xDisplayDateFormatString": "MMM",
-                                                    "xDisplayDateLocale": "zh"
-                                                },
-                                                "drillTo": true,
-                                                "key": "COL_2",
-                                                "linkMatchKey": "monthKey",
+                                                "key": "COL_4", 
                                                 "title": "月"
-                                            },
+                                            }, 
                                             {
-                                                "key": "COL_3",
-                                                "linkMatchKey": "dayOfKey",
+                                                "key": "COL_5", 
                                                 "title": "日"
                                             }
-                                        ],
-                                        "key": "Dimension_1",
+                                        ], 
+                                        "key": "Dimension_3", 
                                         "title": "时间"
-                                    },
+                                    }, 
                                     {
                                         "granularities": [
                                             {
-                                                "key": "COL_5",
+                                                "key": "COL_2", 
                                                 "title": "污染情况"
                                             }
-                                        ],
-                                        "key": "Dimension_2",
+                                        ], 
+                                        "key": "Dimension_2", 
                                         "title": "空气质量情况"
                                     }
-                                ],
+                                ]
+                            }, 
+                            "size": "row-sm-xs-6 row-xs-sm-12 row-md-3 row-md-sm-6 row-lg-md-3 col-xs-sm-12 col-sm-xs-12 col-sm-lg-12 col-md-12 col-md-lg-12 col-md-sm-6 col-lg-6 "
+                        }, 
+                        {
+                            "cardTitle": "空气PM2.5浓度", 
+                            "style": {
+                                "detailRightPanel": {
+                                    "visible": true
+                                }, 
+                                "detailTopPanel": {
+                                    "visible": false, 
+                                    "type": "NXDetailVertical", 
+                                    "percentInTotalVisible": true
+                                }, 
+                                "chart": {
+                                    "chartConfig": {
+                                        "touchTools": [
+                                            {
+                                                "targetSeries": [
+                                                    "pie"
+                                                ], 
+                                                "toolType": "NXPieSpinTool"
+                                            }
+                                        ], 
+                                        "series": [
+                                            {
+                                                "type": "NXPieSeries", 
+                                                "dataSource": {
+                                                    "yValueSource": "COL_4"
+                                                }, 
+                                                "id": "pie"
+                                            }
+                                        ]
+                                    }, 
+                                    "selection": {
+                                        "selectionSource": "Y", 
+                                        "selectionType": "NXChartSelectionBiggestValue"
+                                    }
+                                }, 
+                                "detailTotalPanel": {
+                                    "isAboveDetailTop": true
+                                }
+                            }, 
+                            "dataSetId": "ee58500e-3468-42a6-84cc-037c75d6c27c", 
+                            "type": "NXCubeCard", 
+                            "structure": {
                                 "measures": [
                                     {
                                         "key": "COL_4"
                                     }
+                                ], 
+                                "dimensions": [
+                                    {
+                                        "granularities": [
+                                            {
+                                                "key": "COL_6", 
+                                                "title": "城市"
+                                            }
+                                        ], 
+                                        "key": "Dimension_3", 
+                                        "title": "区域"
+                                    }, 
+                                    {
+                                        "granularities": [
+                                            {
+                                                "selectionValue": "2015", 
+                                                "linkMatchKey": "yearOfKey", 
+                                                "key": "COL_1", 
+                                                "title": "年"
+                                            }, 
+                                            {
+                                                "title": "月", 
+                                                "drillTo": true, 
+                                                "linkMatchKey": "monthKey", 
+                                                "key": "COL_2", 
+                                                "dateFormat": {
+                                                    "xDisplayDateFormatString": "MMM", 
+                                                    "xDataSourceDateLocale": "zh", 
+                                                    "xDisplayDateLocale": "zh", 
+                                                    "xDataSourceDateFormatString": "MM"
+                                                }
+                                            }, 
+                                            {
+                                                "linkMatchKey": "dayOfKey", 
+                                                "key": "COL_3", 
+                                                "title": "日"
+                                            }
+                                        ], 
+                                        "key": "Dimension_1", 
+                                        "title": "时间"
+                                    }, 
+                                    {
+                                        "granularities": [
+                                            {
+                                                "key": "COL_5", 
+                                                "title": "污染情况"
+                                            }
+                                        ], 
+                                        "key": "Dimension_2", 
+                                        "title": "空气质量情况"
+                                    }
                                 ]
-                            },
-                            "style": {
-                                "chart": {
-                                    "chartConfig": {
-                                        "series": [
-                                            {
-                                                "dataSource": {
-                                                    "yValueSource": "COL_4"
-                                                },
-                                                "id": "pie",
-                                                "type": "NXPieSeries"
-                                            }
-                                        ],
-                                        "touchTools": [
-                                            {
-                                                "targetSeries": [
-                                                    "pie"
-                                                ],
-                                                "toolType": "NXPieSpinTool"
-                                            }
-                                        ]
-                                    },
-                                    "selection": {
-                                        "selectionSource": "Y",
-                                        "selectionType": "NXChartSelectionBiggestValue"
-                                    }
-                                },
-                                "detailRightPanel": {
-                                    "visible": true
-                                },
-                                "detailTopPanel": {
-                                    "percentInTotalVisible": true,
-                                    "type": "NXDetailVertical",
-                                    "visible": false
-                                },
-                                "detailTotalPanel": {
-                                    "isAboveDetailTop": true
-                                }
-                            },
-                            "type": "NXCubeCard"
+                            }, 
+                            "size": "row-sm-xs-6 row-xs-sm-12 row-md-3 row-md-sm-6 row-lg-md-3 col-xs-sm-12 col-sm-xs-12 col-sm-lg-12 col-md-12 col-md-lg-12 col-md-sm-6 col-lg-6 "
                         }
-                    ]
-                },
+                    ], 
+                    "size": "row-sm-xs-6 row-xs-sm-12 row-md-3 row-md-sm-6 row-lg-md-3 col-xs-sm-12 col-sm-xs-6 col-sm-md-12 col-sm-lg-12 col-md-12  col-md-lg-12 col-md-sm-6 col-lg-6 "
+                }, 
                 {
-                    "cardTitle": "长住居民交通交易量",
-                    "dataSetId": "3946ed0d-a3b5-43c6-9b56-97b5966879de",
-                    "size": "row-sm-xs-6 row-xs-sm-12 row-md-3 row-md-md-6 row-md-sm-3 row-lg-md-3 col-xs-sm-12 col-sm-xs-6  col-sm-md-12 col-sm-lg-12 col-md-12  col-md-lg-12 col-md-sm-6 col-lg-6 ",
-                    "structure": {
-                        "dimensions": [
-                            {
-                                "granularities": [
-                                    {
-                                        "index": 1,
-                                        "key": "COL_0_4",
-                                        "title": "交通类型"
-                                    },
-                                    {
-                                        "key": "COL_0_5",
-                                        "title": "站点"
-                                    }
-                                ],
-                                "key": "Dimension_2",
-                                "title": "交通方式"
-                            },
-                            {
-                                "granularities": [
-                                    {
-                                        "key": "COL_0_0",
-                                        "title": "年"
-                                    },
-                                    {
-                                        "drillTo": true,
-                                        "index": 2,
-                                        "key": "COL_0_1",
-                                        "title": "月"
-                                    },
-                                    {
-                                        "index": 3,
-                                        "key": "COL_0_2",
-                                        "title": "日"
-                                    },
-                                    {
-                                        "index": 4,
-                                        "key": "COL_0_3",
-                                        "title": "时刻"
-                                    }
-                                ],
-                                "key": "Dimension_1",
-                                "title": "时间"
-                            }
-                        ],
-                        "measures": [
-                            {
-                                "key": "COL_0_6",
-                                "title": "交易量"
-                            }
-                        ]
-                    },
+                    "cardTitle": "长住居民交通交易量", 
                     "style": {
+                        "selection": {
+                            "selectionSource": "Y", 
+                            "selectionType": "NXChartSelectionBiggestValue"
+                        }, 
                         "annotation": {
-                            "isAlwaysVisible": true,
-                            "visible": true,
+                            "visible": true, 
+                            "isAlwaysVisible": true, 
                             "width": 120
-                        },
+                        }, 
                         "chart": {
                             "chartConfig": {
-                                "axis": [
-                                    {
-                                        "axisType": "NXAxisTypeCategory",
-                                        "id": "bottom"
-                                    },
-                                    {
-                                        "axisType": "NXAxisTypeNumberic",
-                                        "coordinate": "NXCoordinateY",
-                                        "id": "left",
-                                        "majorPoint": {
-                                            "label": {
-                                                "labelFormatter": ",###",
-                                                "labelNumberUnit": false
-                                            }
-                                        },
-                                        "minValue": 0
-                                    }
-                                ],
-                                "series": [
-                                    {
-                                        "dataSource": {
-                                            "yValueSource": "COL_0_6"
-                                        },
-                                        "fill": {
-                                            "fillColor": "#955cbf"
-                                        },
-                                        "id": "barSeries",
-                                        "iteration": {
-                                            "isMultiLevel": true
-                                        },
-                                        "orientation": "vertical",
-                                        "type": "NXLineSeries",
-                                        "xAxis": "bottom",
-                                        "yAxis": "left"
-                                    }
-                                ],
                                 "touchTools": [
                                     {
-                                        "crossAxis": "bottom",
-                                        "enableMultiTouch": true,
-                                        "removeOnRelease": false,
-                                        "showBelowSeries": false,
                                         "targetSeries": [
                                             "barSeries"
-                                        ],
+                                        ], 
+                                        "showBelowSeries": false, 
+                                        "enableMultiTouch": true, 
+                                        "toolType": "NXLineTool", 
                                         "toolPlot": {
-                                            "innerSymbol": {
-                                                "anchorPoint": {
-                                                    "x": 0.5,
-                                                    "y": 0.5
-                                                },
-                                                "symbolSize": {
-                                                    "height": 10,
-                                                    "width": 10
-                                                },
-                                                "symbolType": "NXPlotSymbolTypeEllipse"
-                                            },
-                                            "multiTouchLineType": "NXLineToolTypeVertical",
+                                            "singleTouchLineType": "NXLineToolTypeVertical", 
                                             "outerSymbol": {
                                                 "anchorPoint": {
-                                                    "x": 0.5,
-                                                    "y": 0.5
-                                                },
+                                                    "y": 0.5, 
+                                                    "x": 0.5
+                                                }, 
                                                 "symbolFill": {
                                                     "fillColor": "#ffffff"
-                                                },
+                                                }, 
+                                                "symbolType": "NXPlotSymbolTypeEllipse", 
                                                 "symbolSize": {
-                                                    "height": 20,
-                                                    "width": 20
-                                                },
+                                                    "width": 20, 
+                                                    "height": 20
+                                                }
+                                            }, 
+                                            "multiTouchLineType": "NXLineToolTypeVertical", 
+                                            "innerSymbol": {
+                                                "anchorPoint": {
+                                                    "y": 0.5, 
+                                                    "x": 0.5
+                                                }, 
+                                                "symbolSize": {
+                                                    "width": 10, 
+                                                    "height": 10
+                                                }, 
                                                 "symbolType": "NXPlotSymbolTypeEllipse"
-                                            },
-                                            "singleTouchLineType": "NXLineToolTypeVertical"
-                                        },
-                                        "toolType": "NXLineTool",
+                                            }
+                                        }, 
+                                        "removeOnRelease": false, 
+                                        "crossAxis": "bottom", 
                                         "visible": true
-                                    },
+                                    }, 
                                     {
-                                        "active": true,
-                                        "crossAxis": "bottom",
+                                        "active": true, 
                                         "targetSeries": [
                                             "barSeries"
-                                        ],
+                                        ], 
+                                        "crossAxis": "bottom", 
                                         "toolType": "NXChangeActiveSeriesTool"
+                                    }
+                                ], 
+                                "series": [
+                                    {
+                                        "orientation": "vertical", 
+                                        "yAxis": "left", 
+                                        "iteration": {
+                                            "isMultiLevel": true
+                                        }, 
+                                        "dataSource": {
+                                            "yValueSource": "COL_0_6"
+                                        }, 
+                                        "xAxis": "bottom", 
+                                        "type": "NXLineSeries", 
+                                        "id": "barSeries", 
+                                        "fill": {
+                                            "fillColor": "#955cbf"
+                                        }
+                                    }
+                                ], 
+                                "axis": [
+                                    {
+                                        "axisType": "NXAxisTypeCategory", 
+                                        "id": "bottom"
+                                    }, 
+                                    {
+                                        "coordinate": "NXCoordinateY", 
+                                        "majorPoint": {
+                                            "label": {
+                                                "labelNumberUnit": false, 
+                                                "labelFormatter": ",###"
+                                            }
+                                        }, 
+                                        "axisType": "NXAxisTypeNumberic", 
+                                        "id": "left", 
+                                        "minValue": 0
                                     }
                                 ]
                             }
-                        },
-                        "selection": {
-                            "selectionSource": "Y",
-                            "selectionType": "NXChartSelectionBiggestValue"
                         }
-                    },
-                    "type": "NXCubeCard"
-                },
-                {
-                    "cardTitle": "交通交易量(地点)排名前10",
-                    "dataSetId": "3946ed0d-a3b5-43c6-9b56-97b5966879de",
-                    "size": "row-sm-xs-6 row-xs-sm-12 row-md-3 row-md-sm-6 row-lg-md-3 col-xs-sm-12 col-sm-xs-12 col-sm-lg-12 col-md-12  col-md-lg-12 col-md-sm-6 col-lg-6 ",
+                    }, 
+                    "dataSetId": "3946ed0d-a3b5-43c6-9b56-97b5966879de", 
+                    "type": "NXCubeCard", 
                     "structure": {
+                        "measures": [
+                            {
+                                "key": "COL_0_6", 
+                                "title": "交易量"
+                            }
+                        ], 
                         "dimensions": [
                             {
                                 "granularities": [
                                     {
-                                        "key": "COL_0_0",
-                                        "title": "年"
-                                    },
+                                        "index": 1, 
+                                        "key": "COL_0_4", 
+                                        "title": "交通类型"
+                                    }, 
                                     {
-                                        "key": "COL_0_1",
-                                        "title": "月"
-                                    },
-                                    {
-                                        "drillTo": true,
-                                        "key": "COL_0_2",
-                                        "title": "日"
-                                    },
-                                    {
-                                        "key": "COL_0_3",
-                                        "title": "时刻"
+                                        "key": "COL_0_5", 
+                                        "title": "站点"
                                     }
-                                ],
-                                "key": "Dimension_1",
-                                "title": "时间"
-                            },
+                                ], 
+                                "key": "Dimension_2", 
+                                "title": "交通方式"
+                            }, 
                             {
                                 "granularities": [
                                     {
-                                        "key": "COL_0_4",
-                                        "title": "交通类型"
-                                    },
+                                        "key": "COL_0_0", 
+                                        "title": "年"
+                                    }, 
                                     {
-                                        "drillTo": true,
-                                        "key": "COL_0_5",
-                                        "title": "站点"
+                                        "index": 2, 
+                                        "title": "月", 
+                                        "key": "COL_0_1", 
+                                        "drillTo": true
+                                    }, 
+                                    {
+                                        "index": 3, 
+                                        "key": "COL_0_2", 
+                                        "title": "日"
+                                    }, 
+                                    {
+                                        "index": 4, 
+                                        "key": "COL_0_3", 
+                                        "title": "时刻"
                                     }
-                                ],
-                                "key": "Dimension_2",
-                                "title": "交通方式"
-                            }
-                        ],
-                        "measures": [
-                            {
-                                "key": "COL_0_6",
-                                "title": "交易量"
+                                ], 
+                                "key": "Dimension_1", 
+                                "title": "时间"
                             }
                         ]
-                    },
+                    }, 
+                    "size": "row-sm-xs-6 row-xs-sm-12 row-md-3 row-md-md-6 row-md-sm-3 row-lg-md-3 col-xs-sm-12 col-sm-xs-6  col-sm-md-12 col-sm-lg-12 col-md-12  col-md-lg-12 col-md-sm-6 col-lg-6 "
+                }, 
+                {
+                    "cardTitle": "交通交易量(地点)排名前10", 
                     "style": {
+                        "selection": {
+                            "selectionSource": "Y", 
+                            "selectionType": "NXChartSelectionBiggestValue"
+                        }, 
                         "chart": {
                             "chartConfig": {
+                                "touchTools": [
+                                    {
+                                        "targetSeries": [
+                                            "bar"
+                                        ], 
+                                        "showBelowSeries": false, 
+                                        "enableMultiTouch": false, 
+                                        "toolType": "NXHighLightTool", 
+                                        "removeOnRelease": false, 
+                                        "crossAxis": "bottom", 
+                                        "visible": true
+                                    }
+                                ], 
+                                "series": [
+                                    {
+                                        "showOverlayAll": false, 
+                                        "stackedType": "NXChartSeriesStackedTypeSide", 
+                                        "orientation": "horizontal", 
+                                        "yAxis": "left", 
+                                        "accumulation": false, 
+                                        "dataSource": {
+                                            "limitDataCount": 10, 
+                                            "yValueSource": "COL_0_6"
+                                        }, 
+                                        "xAxis": "bottom", 
+                                        "type": "NXBarSeries", 
+                                        "id": "bar", 
+                                        "barFill": {
+                                            "fillColor": "#51a9d6"
+                                        }
+                                    }
+                                ], 
                                 "axis": [
                                     {
-                                        "axisType": "NXAxisTypeNumberic",
-                                        "id": "bottom",
                                         "majorPoint": {
                                             "gridLine": {
                                                 "gridLineVisible": true
-                                            },
+                                            }, 
                                             "label": {
-                                                "labelFormatter": ",###",
-                                                "labelNumberUnit": true
+                                                "labelNumberUnit": true, 
+                                                "labelFormatter": ",###"
                                             }
-                                        }
-                                    },
+                                        }, 
+                                        "axisType": "NXAxisTypeNumberic", 
+                                        "id": "bottom"
+                                    }, 
                                     {
-                                        "axisType": "NXAxisTypeCategory",
-                                        "coordinate": "NXCoordinateY",
-                                        "id": "left",
+                                        "coordinate": "NXCoordinateY", 
                                         "majorPoint": {
                                             "gridLine": null
-                                        }
-                                    }
-                                ],
-                                "series": [
-                                    {
-                                        "accumulation": false,
-                                        "barFill": {
-                                            "fillColor": "#51a9d6"
-                                        },
-                                        "dataSource": {
-                                            "limitDataCount": 10,
-                                            "yValueSource": "COL_0_6"
-                                        },
-                                        "id": "bar",
-                                        "orientation": "horizontal",
-                                        "showOverlayAll": false,
-                                        "stackedType": "NXChartSeriesStackedTypeSide",
-                                        "type": "NXBarSeries",
-                                        "xAxis": "bottom",
-                                        "yAxis": "left"
-                                    }
-                                ],
-                                "touchTools": [
-                                    {
-                                        "crossAxis": "bottom",
-                                        "enableMultiTouch": false,
-                                        "removeOnRelease": false,
-                                        "showBelowSeries": false,
-                                        "targetSeries": [
-                                            "bar"
-                                        ],
-                                        "toolType": "NXHighLightTool",
-                                        "visible": true
+                                        }, 
+                                        "axisType": "NXAxisTypeCategory", 
+                                        "id": "left"
                                     }
                                 ]
                             }
-                        },
-                        "selection": {
-                            "selectionSource": "Y",
-                            "selectionType": "NXChartSelectionBiggestValue"
                         }
-                    },
-                    "type": "NXCubeCard"
-                },
-                {
-                    "cardTitle": "高峰使用时段",
-                    "dataSetId": "3946ed0d-a3b5-43c6-9b56-97b5966879de",
-                    "size": "row-sm-xs-6 row-xs-sm-12 row-md-3 row-md-sm-6 row-lg-md-3 col-xs-sm-12 col-sm-xs-12 col-sm-lg-12 col-md-12  col-md-lg-12 col-md-sm-6 col-lg-6 ",
+                    }, 
+                    "dataSetId": "3946ed0d-a3b5-43c6-9b56-97b5966879de", 
+                    "type": "NXCubeCard", 
                     "structure": {
+                        "measures": [
+                            {
+                                "key": "COL_0_6", 
+                                "title": "交易量"
+                            }
+                        ], 
                         "dimensions": [
                             {
                                 "granularities": [
                                     {
-                                        "key": "COL_0_4",
-                                        "title": "交通类型"
-                                    },
+                                        "key": "COL_0_0", 
+                                        "title": "年"
+                                    }, 
                                     {
-                                        "drillTo": true,
-                                        "key": "COL_0_5",
-                                        "title": "站点"
+                                        "key": "COL_0_1", 
+                                        "title": "月"
+                                    }, 
+                                    {
+                                        "title": "日", 
+                                        "key": "COL_0_2", 
+                                        "drillTo": true
+                                    }, 
+                                    {
+                                        "key": "COL_0_3", 
+                                        "title": "时刻"
                                     }
-                                ],
-                                "key": "Dimension_2",
-                                "title": "交通方式"
-                            },
+                                ], 
+                                "key": "Dimension_1", 
+                                "title": "时间"
+                            }, 
                             {
                                 "granularities": [
                                     {
-                                        "key": "COL_0_0",
-                                        "title": "年"
-                                    },
+                                        "key": "COL_0_4", 
+                                        "title": "交通类型"
+                                    }, 
                                     {
-                                        "key": "COL_0_1",
-                                        "title": "月"
-                                    },
-                                    {
-                                        "drillTo": true,
-                                        "key": "COL_0_3",
-                                        "title": "时刻"
+                                        "title": "站点", 
+                                        "key": "COL_0_5", 
+                                        "drillTo": true
                                     }
-                                ],
-                                "key": "Dimension_1",
-                                "title": "时间"
-                            }
-                        ],
-                        "measures": [
-                            {
-                                "key": "COL_0_6",
-                                "title": "交易量"
+                                ], 
+                                "key": "Dimension_2", 
+                                "title": "交通方式"
                             }
                         ]
-                    },
+                    }, 
+                    "size": "row-sm-xs-6 row-xs-sm-12 row-md-3 row-md-sm-6 row-lg-md-3 col-xs-sm-12 col-sm-xs-12 col-sm-lg-12 col-md-12  col-md-lg-12 col-md-sm-6 col-lg-6 "
+                }, 
+                {
+                    "cardTitle": "高峰使用时段", 
                     "style": {
+                        "selection": {
+                            "selectionSource": "Y", 
+                            "selectionType": "NXChartSelectionBiggestValue"
+                        }, 
                         "chart": {
                             "chartConfig": {
-                                "axis": [
-                                    {
-                                        "axisType": "NXAxisTypeCategory",
-                                        "id": "bottom"
-                                    },
-                                    {
-                                        "axisType": "NXAxisTypeNumberic",
-                                        "coordinate": "NXCoordinateY",
-                                        "id": "left",
-                                        "majorPoint": {
-                                            "label": {
-                                                "labelFormatter": ",###",
-                                                "labelNumberUnit": true
-                                            }
-                                        }
-                                    }
-                                ],
-                                "series": [
-                                    {
-                                        "barFill": {
-                                            "fillColor": "#51a9d6"
-                                        },
-                                        "dataSource": {
-                                            "yValueSource": "COL_0_6"
-                                        },
-                                        "id": "bar",
-                                        "orientation": "vertical",
-                                        "stackedType": "NXChartSeriesStackedTypeSide",
-                                        "type": "NXBarSeries",
-                                        "xAxis": "bottom",
-                                        "yAxis": "left"
-                                    }
-                                ],
                                 "touchTools": [
                                     {
-                                        "crossAxis": "bottom",
-                                        "enableMultiTouch": false,
-                                        "removeOnRelease": false,
-                                        "showBelowSeries": false,
                                         "targetSeries": [
                                             "bar"
-                                        ],
-                                        "toolType": "NXHighLightTool",
+                                        ], 
+                                        "showBelowSeries": false, 
+                                        "enableMultiTouch": false, 
+                                        "toolType": "NXHighLightTool", 
+                                        "removeOnRelease": false, 
+                                        "crossAxis": "bottom", 
                                         "visible": true
-                                    },
+                                    }, 
                                     {
                                         "targetSeries": [
                                             "bar"
-                                        ],
-                                        "toolType": "NXNavigationTool",
-                                        "visible": true
+                                        ], 
+                                        "visible": true, 
+                                        "toolType": "NXNavigationTool"
+                                    }
+                                ], 
+                                "series": [
+                                    {
+                                        "stackedType": "NXChartSeriesStackedTypeSide", 
+                                        "orientation": "vertical", 
+                                        "yAxis": "left", 
+                                        "dataSource": {
+                                            "yValueSource": "COL_0_6"
+                                        }, 
+                                        "xAxis": "bottom", 
+                                        "type": "NXBarSeries", 
+                                        "id": "bar", 
+                                        "barFill": {
+                                            "fillColor": "#51a9d6"
+                                        }
+                                    }
+                                ], 
+                                "axis": [
+                                    {
+                                        "axisType": "NXAxisTypeCategory", 
+                                        "id": "bottom"
+                                    }, 
+                                    {
+                                        "coordinate": "NXCoordinateY", 
+                                        "majorPoint": {
+                                            "label": {
+                                                "labelNumberUnit": true, 
+                                                "labelFormatter": ",###"
+                                            }
+                                        }, 
+                                        "axisType": "NXAxisTypeNumberic", 
+                                        "id": "left"
                                     }
                                 ]
                             }
-                        },
-                        "selection": {
-                            "selectionSource": "Y",
-                            "selectionType": "NXChartSelectionBiggestValue"
                         }
-                    },
-                    "type": "NXCubeCard"
+                    }, 
+                    "dataSetId": "3946ed0d-a3b5-43c6-9b56-97b5966879de", 
+                    "type": "NXCubeCard", 
+                    "structure": {
+                        "measures": [
+                            {
+                                "key": "COL_0_6", 
+                                "title": "交易量"
+                            }
+                        ], 
+                        "dimensions": [
+                            {
+                                "granularities": [
+                                    {
+                                        "key": "COL_0_4", 
+                                        "title": "交通类型"
+                                    }, 
+                                    {
+                                        "title": "站点", 
+                                        "key": "COL_0_5", 
+                                        "drillTo": true
+                                    }
+                                ], 
+                                "key": "Dimension_2", 
+                                "title": "交通方式"
+                            }, 
+                            {
+                                "granularities": [
+                                    {
+                                        "key": "COL_0_0", 
+                                        "title": "年"
+                                    }, 
+                                    {
+                                        "key": "COL_0_1", 
+                                        "title": "月"
+                                    }, 
+                                    {
+                                        "title": "时刻", 
+                                        "key": "COL_0_3", 
+                                        "drillTo": true
+                                    }
+                                ], 
+                                "key": "Dimension_1", 
+                                "title": "时间"
+                            }
+                        ]
+                    }, 
+                    "size": "row-sm-xs-6 row-xs-sm-12 row-md-3 row-md-sm-6 row-lg-md-3 col-xs-sm-12 col-sm-xs-12 col-sm-lg-12 col-md-12  col-md-lg-12 col-md-sm-6 col-lg-6 "
                 }
-            ],
-            "pageColor": "#718dbf",
-            "pageTitle": "空气质量AQI"
+            ], 
+            "pageTitle": "空气质量AQI", 
+            "pageColor": "#718dbf"
         }
-    ],
-    "status": "readyForView",
-    "title": "空气质量AQI"
+    ], 
+    "defaultStyle": [
+        {
+            "scopeId": [
+                "all"
+            ], 
+            "defaultColor": [
+                "#e84d60", 
+                "#e88f61", 
+                "#fecd6c", 
+                "#b3cf61", 
+                "#77c298", 
+                "#51a9d6", 
+                "#718dbf", 
+                "#955cbf", 
+                "#a4547d", 
+                "#c64373"
+            ], 
+            "scopeType": "report", 
+            "chartOptions": {}
+        }
+    ], 
+    "metadataStructures": [
+        {
+            "measures": [
+                {
+                    "aggregator": "count", 
+                    "aggregatorGroupByLastGran": true, 
+                    "key": "COL_1", 
+                    "aggregatorSubGranKey": "COL_5", 
+                    "title": "次数"
+                }
+            ], 
+            "dimensions": [
+                {
+                    "granularities": [
+                        {
+                            "key": "COL_0", 
+                            "title": "城市"
+                        }
+                    ], 
+                    "key": "Dimension_1", 
+                    "title": "区域"
+                }, 
+                {
+                    "granularities": [
+                        {
+                            "selectionValue": "2015", 
+                            "linkMatchKey": "yearOfKey", 
+                            "key": "COL_3", 
+                            "title": "年"
+                        }, 
+                        {
+                            "title": "月", 
+                            "drillTo": true, 
+                            "linkMatchKey": "monthKey", 
+                            "key": "COL_4", 
+                            "dateFormat": {
+                                "xDisplayDateFormatString": "MMM", 
+                                "xDataSourceDateLocale": "zh", 
+                                "xDisplayDateLocale": "zh", 
+                                "xDataSourceDateFormatString": "MM"
+                            }
+                        }, 
+                        {
+                            "linkMatchKey": "dayOfKey", 
+                            "key": "COL_5", 
+                            "title": "日"
+                        }
+                    ], 
+                    "key": "Dimension_3", 
+                    "title": "时间"
+                }, 
+                {
+                    "granularities": [
+                        {
+                            "key": "COL_2", 
+                            "title": "污染情况"
+                        }
+                    ], 
+                    "key": "Dimension_2", 
+                    "title": "空气质量情况"
+                }
+            ], 
+            "dataSetId": "707ff652-263f-4977-8f19-6a329f94ab25"
+        }, 
+        {
+            "measures": [
+                {
+                    "key": "COL_0_6", 
+                    "title": "交易量"
+                }
+            ], 
+            "dimensions": [
+                {
+                    "granularities": [
+                        {
+                            "selectionValue": "2015", 
+                            "linkMatchKey": "yearOfKey", 
+                            "key": "COL_0_0", 
+                            "title": "年"
+                        }, 
+                        {
+                            "sort": "NXSortOperationAsc", 
+                            "linkMatchKey": "monthKey", 
+                            "title": "月", 
+                            "regularExpression": "(.*)月$", 
+                            "drillTo": true, 
+                            "key": "COL_0_1", 
+                            "sortLanguage": "NXSortRegularExpressNum"
+                        }, 
+                        {
+                            "linkMatchKey": "dayOfKey", 
+                            "key": "COL_0_2", 
+                            "title": "日"
+                        }, 
+                        {
+                            "key": "COL_0_3", 
+                            "title": "时刻"
+                        }
+                    ], 
+                    "key": "Dimension_1", 
+                    "title": "时间"
+                }, 
+                {
+                    "granularities": [
+                        {
+                            "key": "COL_0_4", 
+                            "title": "交通类型"
+                        }, 
+                        {
+                            "key": "COL_0_5", 
+                            "title": "站点"
+                        }
+                    ], 
+                    "key": "Dimension_2", 
+                    "title": "交通方式"
+                }
+            ], 
+            "dataSetId": "3946ed0d-a3b5-43c6-9b56-97b5966879de"
+        }, 
+        {
+            "measures": [
+                {
+                    "aggregator": "count", 
+                    "aggregatorGroupByLastGran": true, 
+                    "key": "COL_4", 
+                    "aggregatorSubGranKey": "COL_3", 
+                    "title": "次数"
+                }
+            ], 
+            "dimensions": [
+                {
+                    "granularities": [
+                        {
+                            "key": "COL_6", 
+                            "title": "城市"
+                        }
+                    ], 
+                    "key": "Dimension_3", 
+                    "title": "区域"
+                }, 
+                {
+                    "granularities": [
+                        {
+                            "selectionValue": "2015", 
+                            "linkMatchKey": "yearOfKey", 
+                            "key": "COL_1", 
+                            "title": "年"
+                        }, 
+                        {
+                            "title": "月", 
+                            "drillTo": true, 
+                            "linkMatchKey": "monthKey", 
+                            "key": "COL_2", 
+                            "dateFormat": {
+                                "xDisplayDateFormatString": "MMM", 
+                                "xDataSourceDateLocale": "zh", 
+                                "xDisplayDateLocale": "zh", 
+                                "xDataSourceDateFormatString": "MM"
+                            }
+                        }, 
+                        {
+                            "linkMatchKey": "dayOfKey", 
+                            "key": "COL_3", 
+                            "title": "日"
+                        }
+                    ], 
+                    "key": "Dimension_1", 
+                    "title": "时间"
+                }, 
+                {
+                    "granularities": [
+                        {
+                            "key": "COL_5", 
+                            "title": "污染情况"
+                        }
+                    ], 
+                    "key": "Dimension_2", 
+                    "title": "空气质量情况"
+                }
+            ], 
+            "dataSetId": "ee58500e-3468-42a6-84cc-037c75d6c27c"
+        }
+    ]
 }

@@ -1,1260 +1,1259 @@
 {
-    "creator": "dongsaiyuan",
+    "title": "CRM", 
+    "creator": "dongsaiyuan", 
+    "id": "crm", 
     "defaultStyle": [
         {
-            "chartOptions": {
-                "seriesOptions": {}
-            },
-            "defaultColor": [
-                "#e84d60",
-                "#e88f61",
-                "#fecd6c",
-                "#b3cf61",
-                "#77c298",
-                "#51a9d6",
-                "#718dbf",
-                "#955cbf",
-                "#a4547d",
-                "#c64373"
-            ],
             "scopeId": [
                 "all"
-            ],
-            "scopeType": "report"
+            ], 
+            "defaultColor": [
+                "#e84d60", 
+                "#e88f61", 
+                "#fecd6c", 
+                "#b3cf61", 
+                "#77c298", 
+                "#51a9d6", 
+                "#718dbf", 
+                "#955cbf", 
+                "#a4547d", 
+                "#c64373"
+            ], 
+            "scopeType": "report", 
+            "chartOptions": {
+                "seriesOptions": {}
+            }
         }
-    ],
-    "id": "crm",
+    ], 
     "metadataStructures": [
         {
-            "dataSetId": "11f5b520-9a49-48c4-b450-d4d7ce69963a",
-            "db": "crm",
+            "measures": [
+                {
+                    "key": "COL_0_6", 
+                    "title": "销售额"
+                }, 
+                {
+                    "key": "COL_0_7", 
+                    "title": "目标销售额"
+                }, 
+                {
+                    "key": "COL_0_8", 
+                    "title": "库存量"
+                }, 
+                {
+                    "key": "COL_0_9", 
+                    "title": "投诉次数"
+                }, 
+                {
+                    "key": "COL_0_10", 
+                    "title": "温度"
+                }, 
+                {
+                    "key": "COL_0_11", 
+                    "title": "回款额"
+                }, 
+                {
+                    "key": "COL_0_12", 
+                    "title": "新增联系人"
+                }
+            ], 
+            "db": "crm", 
             "dimensions": [
                 {
                     "granularities": [
                         {
-                            "key": "COL_0_0",
+                            "key": "COL_0_0", 
                             "title": "饮品名称"
                         }
-                    ],
-                    "key": "Dimension_1",
+                    ], 
+                    "key": "Dimension_1", 
                     "title": "饮料分类"
-                },
+                }, 
                 {
                     "granularities": [
                         {
-                            "key": "COL_0_1",
+                            "key": "COL_0_1", 
                             "title": "销售人员"
                         }
-                    ],
-                    "key": "Dimension_2",
+                    ], 
+                    "key": "Dimension_2", 
                     "title": "销售单元"
-                },
+                }, 
                 {
                     "granularities": [
                         {
-                            "key": "COL_0_2",
+                            "key": "COL_0_2", 
                             "title": "年"
-                        },
+                        }, 
                         {
-                            "key": "COL_0_3",
+                            "key": "COL_0_3", 
                             "title": "季"
-                        },
+                        }, 
                         {
-                            "key": "COL_0_4",
-                            "regularExpression": "(.*)月$",
-                            "sort": "NXSortOperationAsc",
-                            "sortLanguage": "NXSortRegularExpressNum",
+                            "sort": "NXSortOperationAsc", 
+                            "regularExpression": "(.*)月$", 
+                            "sortLanguage": "NXSortRegularExpressNum", 
+                            "key": "COL_0_4", 
                             "title": "月"
-                        },
+                        }, 
                         {
-                            "key": "COL_0_5",
+                            "key": "COL_0_5", 
                             "title": "日"
                         }
-                    ],
-                    "key": "Dimension_3",
+                    ], 
+                    "key": "Dimension_3", 
                     "title": "时间"
                 }
-            ],
-            "encrypt": "dbpass",
-            "measures": [
-                {
-                    "key": "COL_0_6",
-                    "title": "销售额"
-                },
-                {
-                    "key": "COL_0_7",
-                    "title": "目标销售额"
-                },
-                {
-                    "key": "COL_0_8",
-                    "title": "库存量"
-                },
-                {
-                    "key": "COL_0_9",
-                    "title": "投诉次数"
-                },
-                {
-                    "key": "COL_0_10",
-                    "title": "温度"
-                },
-                {
-                    "key": "COL_0_11",
-                    "title": "回款额"
-                },
-                {
-                    "key": "COL_0_12",
-                    "title": "新增联系人"
-                }
-            ]
+            ], 
+            "dataSetId": "11f5b520-9a49-48c4-b450-d4d7ce69963a"
         }
-    ],
+    ], 
     "pages": [
         {
             "cards": [
                 {
-                    "cardTitle": "季度达标情况",
-                    "dataSetId": "11f5b520-9a49-48c4-b450-d4d7ce69963a",
-                    "linkEvent": {
-                        "isEventSource": true
-                    },
-                    "size": "row-sm-xs-6 row-xs-sm-12 row-md-3 row-md-sm-6 row-lg-md-3 col-xs-sm-12 col-sm-xs-12 col-sm-lg-12 col-md-12  col-md-lg-12 col-md-sm-6 col-lg-6 ",
-                    "structure": {
-                        "dimensions": [
-                            {
-                                "granularities": [
-                                    {
-                                        "key": "COL_0_0",
-                                        "title": "饮品名称"
-                                    }
-                                ],
-                                "key": "Dimension_1",
-                                "title": "饮料分类"
-                            },
-                            {
-                                "granularities": [
-                                    {
-                                        "key": "COL_0_1",
-                                        "title": "销售人员"
-                                    }
-                                ],
-                                "key": "Dimension_2",
-                                "title": "销售单元"
-                            },
-                            {
-                                "granularities": [
-                                    {
-                                        "key": "COL_0_2",
-                                        "title": "年"
-                                    },
-                                    {
-                                        "key": "COL_0_3",
-                                        "title": "季"
-                                    },
-                                    {
-                                        "drillTo": true,
-                                        "key": "COL_0_4",
-                                        "title": "月"
-                                    },
-                                    {
-                                        "key": "COL_0_5",
-                                        "title": "日"
-                                    }
-                                ],
-                                "key": "Dimension_3",
-                                "title": "时间"
-                            }
-                        ],
-                        "measures": [
-                            {
-                                "key": "COL_0_6",
-                                "title": "销售额"
-                            },
-                            {
-                                "key": "COL_0_7",
-                                "title": "目标销售额"
-                            }
-                        ]
-                    },
+                    "cardTitle": "季度达标情况", 
                     "style": {
+                        "selection": {
+                            "selectionSource": "Y", 
+                            "selectionType": "NXChartSelectionBiggestValue"
+                        }, 
+                        "detailTotalPanel": {
+                            "isAboveDetailTop": true, 
+                            "visible": true
+                        }, 
+                        "detailTopPanel": {
+                            "visible": true, 
+                            "type": "NXDetailNormalTargetReal"
+                        }, 
                         "chart": {
                             "chartConfig": {
-                                "axis": [
-                                    {
-                                        "axisType": "NXAxisTypeNumberic",
-                                        "id": "bottom",
-                                        "majorPoint": {
-                                            "label": {
-                                                "labelFormatter": ",###",
-                                                "labelNumberUnit": true
-                                            }
-                                        }
-                                    },
-                                    {
-                                        "axisType": "NXAxisTypeCategory",
-                                        "coordinate": "NXCoordinateY",
-                                        "id": "left",
-                                        "majorPoint": {}
-                                    }
-                                ],
-                                "canvas": {
-                                    "graphPadding": {
-                                        "bottom": 20,
-                                        "left": 50,
-                                        "right": 0,
-                                        "top": 0
-                                    }
-                                },
-                                "series": [
-                                    {
-                                        "accumulation": false,
-                                        "barFill": {
-                                            "fillColor": "#51a9d6"
-                                        },
-                                        "dataSource": {
-                                            "yValueSource": "COL_0_6"
-                                        },
-                                        "id": "salesCountAsProvinceBar",
-                                        "orientation": "horizontal",
-                                        "showOverlayAll": false,
-                                        "stackedType": "NXChartSeriesStackedTypeSide",
-                                        "type": "NXBarSeries",
-                                        "xAxis": "bottom",
-                                        "yAxis": "left"
-                                    },
-                                    {
-                                        "accumulation": false,
-                                        "dataSource": {
-                                            "yValueSource": "COL_0_7"
-                                        },
-                                        "id": "salesCountTargetAsProvinceLine",
-                                        "isTargetSeries": true,
-                                        "lineStyle": {
-                                            "lineColor": "#955cbf"
-                                        },
-                                        "orientation": "horizontal",
-                                        "type": "NXStepLineSeries",
-                                        "verticalJoinsVisible": false,
-                                        "xAxis": "bottom",
-                                        "yAxis": "left"
-                                    }
-                                ],
                                 "touchTools": [
                                     {
-                                        "crossAxis": "bottom",
-                                        "enableMultiTouch": false,
-                                        "removeOnRelease": false,
-                                        "showBelowSeries": false,
                                         "targetSeries": [
-                                            "salesCountAsProvinceBar",
+                                            "salesCountAsProvinceBar", 
                                             "salesCountTargetAsProvinceLine"
-                                        ],
-                                        "toolType": "NXHighLightTool",
+                                        ], 
+                                        "showBelowSeries": false, 
+                                        "enableMultiTouch": false, 
+                                        "toolType": "NXHighLightTool", 
+                                        "removeOnRelease": false, 
+                                        "crossAxis": "bottom", 
                                         "visible": true
+                                    }
+                                ], 
+                                "series": [
+                                    {
+                                        "showOverlayAll": false, 
+                                        "stackedType": "NXChartSeriesStackedTypeSide", 
+                                        "orientation": "horizontal", 
+                                        "yAxis": "left", 
+                                        "accumulation": false, 
+                                        "dataSource": {
+                                            "yValueSource": "COL_0_6"
+                                        }, 
+                                        "xAxis": "bottom", 
+                                        "type": "NXBarSeries", 
+                                        "id": "salesCountAsProvinceBar", 
+                                        "barFill": {
+                                            "fillColor": "#51a9d6"
+                                        }
+                                    }, 
+                                    {
+                                        "orientation": "horizontal", 
+                                        "yAxis": "left", 
+                                        "type": "NXStepLineSeries", 
+                                        "isTargetSeries": true, 
+                                        "accumulation": false, 
+                                        "dataSource": {
+                                            "yValueSource": "COL_0_7"
+                                        }, 
+                                        "xAxis": "bottom", 
+                                        "lineStyle": {
+                                            "lineColor": "#955cbf"
+                                        }, 
+                                        "id": "salesCountTargetAsProvinceLine", 
+                                        "verticalJoinsVisible": false
+                                    }
+                                ], 
+                                "canvas": {
+                                    "graphPadding": {
+                                        "top": 0, 
+                                        "left": 50, 
+                                        "right": 0, 
+                                        "bottom": 20
+                                    }
+                                }, 
+                                "axis": [
+                                    {
+                                        "majorPoint": {
+                                            "label": {
+                                                "labelNumberUnit": true, 
+                                                "labelFormatter": ",###"
+                                            }
+                                        }, 
+                                        "axisType": "NXAxisTypeNumberic", 
+                                        "id": "bottom"
+                                    }, 
+                                    {
+                                        "coordinate": "NXCoordinateY", 
+                                        "majorPoint": {}, 
+                                        "axisType": "NXAxisTypeCategory", 
+                                        "id": "left"
                                     }
                                 ]
                             }
-                        },
-                        "detailTopPanel": {
-                            "type": "NXDetailNormalTargetReal",
-                            "visible": true
-                        },
-                        "detailTotalPanel": {
-                            "isAboveDetailTop": true,
-                            "visible": true
-                        },
-                        "selection": {
-                            "selectionSource": "Y",
-                            "selectionType": "NXChartSelectionBiggestValue"
                         }
-                    },
-                    "type": "NXCubeCard"
-                },
-                {
-                    "cardTitle": "饮品销额实际与目标对比",
-                    "dataSetId": "11f5b520-9a49-48c4-b450-d4d7ce69963a",
+                    }, 
                     "linkEvent": {
                         "isEventSource": true
-                    },
-                    "size": "row-sm-xs-6 row-xs-sm-12 row-md-3 row-md-sm-6 row-lg-md-3 col-xs-sm-12 col-sm-xs-12 col-sm-lg-12 col-md-12 col-md-lg-12 col-md-sm-6 col-lg-6 ",
+                    }, 
+                    "dataSetId": "11f5b520-9a49-48c4-b450-d4d7ce69963a", 
+                    "type": "NXCubeCard", 
                     "structure": {
+                        "measures": [
+                            {
+                                "key": "COL_0_6", 
+                                "title": "销售额"
+                            }, 
+                            {
+                                "key": "COL_0_7", 
+                                "title": "目标销售额"
+                            }
+                        ], 
                         "dimensions": [
                             {
                                 "granularities": [
                                     {
-                                        "key": "COL_0_0",
+                                        "key": "COL_0_0", 
                                         "title": "饮品名称"
                                     }
-                                ],
-                                "key": "Dimension_1",
+                                ], 
+                                "key": "Dimension_1", 
                                 "title": "饮料分类"
-                            },
+                            }, 
                             {
                                 "granularities": [
                                     {
-                                        "key": "COL_0_1",
+                                        "key": "COL_0_1", 
                                         "title": "销售人员"
                                     }
-                                ],
-                                "key": "Dimension_2",
+                                ], 
+                                "key": "Dimension_2", 
                                 "title": "销售单元"
-                            },
+                            }, 
                             {
                                 "granularities": [
                                     {
-                                        "key": "COL_0_2",
+                                        "key": "COL_0_2", 
                                         "title": "年"
-                                    },
+                                    }, 
                                     {
-                                        "key": "COL_0_3",
+                                        "key": "COL_0_3", 
                                         "title": "季"
-                                    },
+                                    }, 
                                     {
-                                        "key": "COL_0_4",
-                                        "title": "月"
-                                    },
+                                        "title": "月", 
+                                        "key": "COL_0_4", 
+                                        "drillTo": true
+                                    }, 
                                     {
-                                        "drillTo": true,
-                                        "key": "COL_0_5",
+                                        "key": "COL_0_5", 
                                         "title": "日"
                                     }
-                                ],
-                                "key": "Dimension_3",
+                                ], 
+                                "key": "Dimension_3", 
                                 "title": "时间"
                             }
-                        ],
-                        "measures": [
-                            {
-                                "key": "COL_0_6",
-                                "title": "销售额"
-                            },
-                            {
-                                "key": "COL_0_7",
-                                "title": "目标销售额"
-                            },
-                            {
-                                "key": "COL_0_8",
-                                "title": "库存量"
-                            },
-                            {
-                                "key": "COL_0_9",
-                                "title": "投诉次数"
-                            },
-                            {
-                                "key": "COL_0_10",
-                                "title": "温度"
-                            }
                         ]
-                    },
+                    }, 
+                    "size": "row-sm-xs-6 row-xs-sm-12 row-md-3 row-md-sm-6 row-lg-md-3 col-xs-sm-12 col-sm-xs-12 col-sm-lg-12 col-md-12  col-md-lg-12 col-md-sm-6 col-lg-6 "
+                }, 
+                {
+                    "cardTitle": "饮品销额实际与目标对比", 
                     "style": {
+                        "selection": {
+                            "selectionSource": "Y", 
+                            "selectionType": "NXChartSelectionBiggestValue"
+                        }, 
+                        "detailTopPanel": {
+                            "visible": true, 
+                            "type": "NXDetailNormalTargetReal"
+                        }, 
                         "chart": {
                             "chartConfig": {
-                                "axis": [
+                                "touchTools": [
                                     {
-                                        "axisTitle": {
-                                            "titleLocation": 0.5,
-                                            "titleVisible": false
-                                        },
-                                        "axisType": "NXAxisTypeDateTime",
-                                        "id": "bottom"
-                                    },
-                                    {
-                                        "axisTitle": {
-                                            "titleLocation": 0.5,
-                                            "titleVisible": false
-                                        },
-                                        "axisType": "NXAxisTypeNumberic",
-                                        "coordinate": "NXCoordinateY",
-                                        "id": "left",
-                                        "majorPoint": {
-                                            "label": {
-                                                "labelFormatter": ",###",
-                                                "labelNumberUnit": true
-                                            }
-                                        }
+                                        "targetSeries": [
+                                            "revenueTongbiMonthBar", 
+                                            "targetRevenueTongbiAsMonthLine"
+                                        ], 
+                                        "showBelowSeries": false, 
+                                        "enableMultiTouch": false, 
+                                        "toolType": "NXHighLightTool", 
+                                        "removeOnRelease": false, 
+                                        "crossAxis": "bottom", 
+                                        "visible": true
                                     }
-                                ],
-                                "canvas": {},
+                                ], 
                                 "series": [
                                     {
-                                        "accumulation": false,
+                                        "showOverlayAll": false, 
+                                        "sort": {
+                                            "sortSource": "x", 
+                                            "sortType": "NXSortOperationAsc"
+                                        }, 
+                                        "orientation": "vertical", 
+                                        "yAxis": "left", 
+                                        "accumulation": false, 
+                                        "stackedType": "NXChartSeriesStackedTypeSide", 
+                                        "dataSource": {
+                                            "xDisplayDateFormatString": "d日", 
+                                            "yValueSource": "COL_0_6", 
+                                            "xDataSourceDateLocale": "zh", 
+                                            "xDisplayDateLocale": "zh", 
+                                            "xDataSourceDateFormatString": "dd"
+                                        }, 
+                                        "xAxis": "bottom", 
+                                        "type": "NXBarSeries", 
+                                        "id": "revenueTongbiMonthBar", 
                                         "barFill": {
                                             "fillColor": "#51a9d6"
-                                        },
-                                        "dataSource": {
-                                            "xDataSourceDateFormatString": "dd",
-                                            "xDataSourceDateLocale": "zh",
-                                            "xDisplayDateFormatString": "d日",
-                                            "xDisplayDateLocale": "zh",
-                                            "yValueSource": "COL_0_6"
-                                        },
-                                        "id": "revenueTongbiMonthBar",
-                                        "orientation": "vertical",
-                                        "showOverlayAll": false,
-                                        "sort": {
-                                            "sortSource": "x",
-                                            "sortType": "NXSortOperationAsc"
-                                        },
-                                        "stackedType": "NXChartSeriesStackedTypeSide",
-                                        "type": "NXBarSeries",
-                                        "xAxis": "bottom",
-                                        "yAxis": "left"
-                                    },
+                                        }
+                                    }, 
                                     {
-                                        "accumulation": false,
-                                        "dataSource": {
-                                            "xDataSourceDateFormatString": "dd",
-                                            "xDataSourceDateLocale": "zh",
-                                            "xDisplayDateFormatString": "d日",
-                                            "xDisplayDateLocale": "zh",
-                                            "yValueSource": "COL_0_7"
-                                        },
-                                        "id": "targetRevenueTongbiAsMonthLine",
-                                        "isTargetSeries": true,
-                                        "lineStyle": {
-                                            "lineColor": "#955cbf"
-                                        },
-                                        "orientation": "vertical",
                                         "sort": {
-                                            "sortSource": "x",
+                                            "sortSource": "x", 
                                             "sortType": "NXSortOperationAsc"
-                                        },
+                                        }, 
+                                        "orientation": "vertical", 
+                                        "yAxis": "left", 
+                                        "type": "NXLineSeries", 
+                                        "isTargetSeries": true, 
+                                        "accumulation": false, 
                                         "symbol": {
                                             "symbolFill": {
                                                 "fillColor": "#955cbf"
                                             }
-                                        },
-                                        "type": "NXLineSeries",
-                                        "xAxis": "bottom",
-                                        "yAxis": "left"
+                                        }, 
+                                        "dataSource": {
+                                            "xDisplayDateFormatString": "d日", 
+                                            "yValueSource": "COL_0_7", 
+                                            "xDataSourceDateLocale": "zh", 
+                                            "xDisplayDateLocale": "zh", 
+                                            "xDataSourceDateFormatString": "dd"
+                                        }, 
+                                        "xAxis": "bottom", 
+                                        "lineStyle": {
+                                            "lineColor": "#955cbf"
+                                        }, 
+                                        "id": "targetRevenueTongbiAsMonthLine"
                                     }
-                                ],
-                                "touchTools": [
+                                ], 
+                                "canvas": {}, 
+                                "axis": [
                                     {
-                                        "crossAxis": "bottom",
-                                        "enableMultiTouch": false,
-                                        "removeOnRelease": false,
-                                        "showBelowSeries": false,
-                                        "targetSeries": [
-                                            "revenueTongbiMonthBar",
-                                            "targetRevenueTongbiAsMonthLine"
-                                        ],
-                                        "toolType": "NXHighLightTool",
-                                        "visible": true
+                                        "axisType": "NXAxisTypeDateTime", 
+                                        "id": "bottom", 
+                                        "axisTitle": {
+                                            "titleLocation": 0.5, 
+                                            "titleVisible": false
+                                        }
+                                    }, 
+                                    {
+                                        "coordinate": "NXCoordinateY", 
+                                        "majorPoint": {
+                                            "label": {
+                                                "labelNumberUnit": true, 
+                                                "labelFormatter": ",###"
+                                            }
+                                        }, 
+                                        "axisType": "NXAxisTypeNumberic", 
+                                        "id": "left", 
+                                        "axisTitle": {
+                                            "titleLocation": 0.5, 
+                                            "titleVisible": false
+                                        }
                                     }
                                 ]
                             }
-                        },
-                        "detailTopPanel": {
-                            "type": "NXDetailNormalTargetReal",
-                            "visible": true
-                        },
+                        }, 
                         "footer": {
                             "navigation": {
-                                "minGapDistance": 80,
-                                "navigationType": "NXSliderTypeLine",
-                                "orientation": "horizontal",
-                                "visible": true
+                                "navigationType": "NXSliderTypeLine", 
+                                "visible": true, 
+                                "orientation": "horizontal", 
+                                "minGapDistance": 80
                             }
-                        },
-                        "selection": {
-                            "selectionSource": "Y",
-                            "selectionType": "NXChartSelectionBiggestValue"
                         }
-                    },
-                    "type": "NXCubeCard"
-                },
-                {
-                    "cardTitle": "饮品销售额按人员占比",
-                    "dataSetId": "11f5b520-9a49-48c4-b450-d4d7ce69963a",
+                    }, 
                     "linkEvent": {
                         "isEventSource": true
-                    },
-                    "size": "row-sm-xs-6 row-xs-sm-12 row-md-3 row-md-sm-6 row-lg-md-3 col-xs-sm-12 col-sm-xs-12 col-sm-lg-12 col-md-12 col-md-lg-12 col-md-sm-6 col-lg-6 ",
+                    }, 
+                    "dataSetId": "11f5b520-9a49-48c4-b450-d4d7ce69963a", 
+                    "type": "NXCubeCard", 
                     "structure": {
+                        "measures": [
+                            {
+                                "key": "COL_0_6", 
+                                "title": "销售额"
+                            }, 
+                            {
+                                "key": "COL_0_7", 
+                                "title": "目标销售额"
+                            }, 
+                            {
+                                "key": "COL_0_8", 
+                                "title": "库存量"
+                            }, 
+                            {
+                                "key": "COL_0_9", 
+                                "title": "投诉次数"
+                            }, 
+                            {
+                                "key": "COL_0_10", 
+                                "title": "温度"
+                            }
+                        ], 
                         "dimensions": [
                             {
                                 "granularities": [
                                     {
-                                        "key": "COL_0_0",
+                                        "key": "COL_0_0", 
                                         "title": "饮品名称"
                                     }
-                                ],
-                                "key": "Dimension_1",
+                                ], 
+                                "key": "Dimension_1", 
                                 "title": "饮料分类"
-                            },
+                            }, 
                             {
                                 "granularities": [
                                     {
-                                        "key": "COL_0_2",
-                                        "title": "年"
-                                    },
-                                    {
-                                        "key": "COL_0_3",
-                                        "title": "季"
-                                    },
-                                    {
-                                        "key": "COL_0_4",
-                                        "title": "月"
-                                    },
-                                    {
-                                        "drillTo": true,
-                                        "key": "COL_0_5",
-                                        "title": "日"
-                                    }
-                                ],
-                                "key": "Dimension_3",
-                                "title": "时间"
-                            },
-                            {
-                                "granularities": [
-                                    {
-                                        "key": "COL_0_1",
+                                        "key": "COL_0_1", 
                                         "title": "销售人员"
                                     }
-                                ],
-                                "key": "Dimension_2",
+                                ], 
+                                "key": "Dimension_2", 
                                 "title": "销售单元"
-                            }
-                        ],
-                        "measures": [
+                            }, 
                             {
-                                "key": "COL_0_6",
-                                "title": "销售额"
+                                "granularities": [
+                                    {
+                                        "key": "COL_0_2", 
+                                        "title": "年"
+                                    }, 
+                                    {
+                                        "key": "COL_0_3", 
+                                        "title": "季"
+                                    }, 
+                                    {
+                                        "key": "COL_0_4", 
+                                        "title": "月"
+                                    }, 
+                                    {
+                                        "title": "日", 
+                                        "key": "COL_0_5", 
+                                        "drillTo": true
+                                    }
+                                ], 
+                                "key": "Dimension_3", 
+                                "title": "时间"
                             }
                         ]
-                    },
+                    }, 
+                    "size": "row-sm-xs-6 row-xs-sm-12 row-md-3 row-md-sm-6 row-lg-md-3 col-xs-sm-12 col-sm-xs-12 col-sm-lg-12 col-md-12 col-md-lg-12 col-md-sm-6 col-lg-6 "
+                }, 
+                {
+                    "cardTitle": "饮品销售额按人员占比", 
                     "style": {
+                        "detailRightPanel": {
+                            "visible": true
+                        }, 
+                        "detailTopPanel": {
+                            "visible": false, 
+                            "type": "NXDetailVertical", 
+                            "percentInTotalVisible": true
+                        }, 
                         "chart": {
                             "chartConfig": {
-                                "series": [
-                                    {
-                                        "dataSource": {
-                                            "yValueSource": "COL_0_6"
-                                        },
-                                        "id": "brandPercentPie",
-                                        "type": "NXPieSeries"
-                                    }
-                                ],
                                 "touchTools": [
                                     {
                                         "targetSeries": [
                                             "brandPercentPie"
-                                        ],
+                                        ], 
                                         "toolType": "NXPieSpinTool"
                                     }
+                                ], 
+                                "series": [
+                                    {
+                                        "type": "NXPieSeries", 
+                                        "dataSource": {
+                                            "yValueSource": "COL_0_6"
+                                        }, 
+                                        "id": "brandPercentPie"
+                                    }
                                 ]
-                            },
+                            }, 
                             "selection": {
-                                "selectionSource": "Y",
+                                "selectionSource": "Y", 
                                 "selectionType": "NXChartSelectionBiggestValue"
                             }
-                        },
-                        "detailRightPanel": {
-                            "visible": true
-                        },
-                        "detailTopPanel": {
-                            "percentInTotalVisible": true,
-                            "type": "NXDetailVertical",
-                            "visible": false
-                        },
+                        }, 
                         "detailTotalPanel": {
                             "isAboveDetailTop": true
                         }
-                    },
-                    "type": "NXCubeCard"
-                },
-                {
-                    "cardTitle": "天气温度变化与被投诉量趋势",
-                    "dataSetId": "11f5b520-9a49-48c4-b450-d4d7ce69963a",
+                    }, 
                     "linkEvent": {
                         "isEventSource": true
-                    },
-                    "size": "row-sm-xs-6 row-xs-sm-12 row-md-3 row-md-sm-6 row-lg-md-3 col-xs-sm-12 col-sm-xs-12 col-sm-lg-12 col-md-12 col-md-lg-12 col-md-sm-6 col-lg-6 ",
+                    }, 
+                    "dataSetId": "11f5b520-9a49-48c4-b450-d4d7ce69963a", 
+                    "type": "NXCubeCard", 
                     "structure": {
+                        "measures": [
+                            {
+                                "key": "COL_0_6", 
+                                "title": "销售额"
+                            }
+                        ], 
                         "dimensions": [
                             {
                                 "granularities": [
                                     {
-                                        "key": "COL_0_0",
+                                        "key": "COL_0_0", 
                                         "title": "饮品名称"
                                     }
-                                ],
-                                "key": "Dimension_1",
+                                ], 
+                                "key": "Dimension_1", 
                                 "title": "饮料分类"
-                            },
+                            }, 
                             {
                                 "granularities": [
                                     {
-                                        "key": "COL_0_1",
+                                        "key": "COL_0_2", 
+                                        "title": "年"
+                                    }, 
+                                    {
+                                        "key": "COL_0_3", 
+                                        "title": "季"
+                                    }, 
+                                    {
+                                        "key": "COL_0_4", 
+                                        "title": "月"
+                                    }, 
+                                    {
+                                        "title": "日", 
+                                        "key": "COL_0_5", 
+                                        "drillTo": true
+                                    }
+                                ], 
+                                "key": "Dimension_3", 
+                                "title": "时间"
+                            }, 
+                            {
+                                "granularities": [
+                                    {
+                                        "key": "COL_0_1", 
                                         "title": "销售人员"
                                     }
-                                ],
-                                "key": "Dimension_2",
+                                ], 
+                                "key": "Dimension_2", 
                                 "title": "销售单元"
-                            },
-                            {
-                                "granularities": [
-                                    {
-                                        "key": "COL_0_2",
-                                        "title": "年"
-                                    },
-                                    {
-                                        "key": "COL_0_3",
-                                        "title": "季"
-                                    },
-                                    {
-                                        "key": "COL_0_4",
-                                        "title": "月"
-                                    },
-                                    {
-                                        "drillTo": true,
-                                        "key": "COL_0_5",
-                                        "title": "日"
-                                    }
-                                ],
-                                "key": "Dimension_3",
-                                "title": "时间"
-                            }
-                        ],
-                        "measures": [
-                            {
-                                "key": "COL_0_9",
-                                "title": "投诉次数"
-                            },
-                            {
-                                "key": "COL_0_10",
-                                "title": "温度"
                             }
                         ]
-                    },
+                    }, 
+                    "size": "row-sm-xs-6 row-xs-sm-12 row-md-3 row-md-sm-6 row-lg-md-3 col-xs-sm-12 col-sm-xs-12 col-sm-lg-12 col-md-12 col-md-lg-12 col-md-sm-6 col-lg-6 "
+                }, 
+                {
+                    "cardTitle": "天气温度变化与被投诉量趋势", 
                     "style": {
+                        "selection": {
+                            "selectionSource": "Y", 
+                            "selectionType": "NXChartSelectionBiggestValue"
+                        }, 
                         "chart": {
                             "chartConfig": {
-                                "axis": [
-                                    {
-                                        "axisType": "NXAxisTypeDateTime",
-                                        "id": "bottom"
-                                    },
-                                    {
-                                        "axisTitle": {
-                                            "titleLocation": 0.5,
-                                            "titleVisible": true
-                                        },
-                                        "axisType": "NXAxisTypeNumberic",
-                                        "coordinate": "NXCoordinateY",
-                                        "id": "right",
-                                        "majorPoint": {
-                                            "label": {
-                                                "labelDirection": "NXSignPositive",
-                                                "labelFormatter": "#次",
-                                                "labelNumberUnit": false
-                                            }
-                                        },
-                                        "maxValue": 60,
-                                        "minValue": 0,
-                                        "relativeOffset": 1
-                                    },
-                                    {
-                                        "axisTitle": {
-                                            "titleLocation": 0.5,
-                                            "titleVisible": true
-                                        },
-                                        "axisType": "NXAxisTypeNumberic",
-                                        "bands": [
-                                            {
-                                                "fill": {
-                                                    "fillAlpha": 0.05,
-                                                    "fillColor": "#0eb83b"
-                                                },
-                                                "range": {
-                                                    "length": 30,
-                                                    "location": 0
-                                                }
-                                            },
-                                            {
-                                                "fill": {
-                                                    "fillAlpha": 0.05,
-                                                    "fillColor": "#e41c2b"
-                                                },
-                                                "range": {
-                                                    "length": 40,
-                                                    "location": 30
-                                                }
-                                            }
-                                        ],
-                                        "coordinate": "NXCoordinateY",
-                                        "id": "left",
-                                        "majorPoint": {
-                                            "label": {
-                                                "labelFormatter": "#.#℃",
-                                                "labelNumberUnit": false
-                                            }
-                                        },
-                                        "maxValue": 45,
-                                        "minValue": 0
-                                    }
-                                ],
-                                "series": [
-                                    {
-                                        "dataSource": {
-                                            "xDataSourceDateFormatString": "d日",
-                                            "xDataSourceDateLocale": "zh",
-                                            "xDisplayDateFormatString": "d日",
-                                            "xDisplayDateLocale": "zh",
-                                            "yFormatString": "#.#℃",
-                                            "yValueSource": "COL_0_10"
-                                        },
-                                        "fill": {
-                                            "fillColor": "#955cbf"
-                                        },
-                                        "id": "barSeries",
-                                        "orientation": "vertical",
-                                        "sort": {
-                                            "sortSource": "x",
-                                            "sortType": "NXSortOperationAsc"
-                                        },
-                                        "type": "NXLineSeries",
-                                        "xAxis": "bottom",
-                                        "yAxis": "left"
-                                    },
-                                    {
-                                        "dataSource": {
-                                            "xDataSourceDateFormatString": "d日",
-                                            "xDataSourceDateLocale": "zh",
-                                            "xDisplayDateFormatString": "d日",
-                                            "xDisplayDateLocale": "zh",
-                                            "yFormatString": "#次",
-                                            "yValueSource": "COL_0_9"
-                                        },
-                                        "fill": {
-                                            "fillColor": "#ff0000"
-                                        },
-                                        "id": "lineSeries2",
-                                        "orientation": "vertical",
-                                        "sort": {
-                                            "sortSource": "x",
-                                            "sortType": "NXSortOperationAsc"
-                                        },
-                                        "type": "NXLineSeries",
-                                        "xAxis": "bottom",
-                                        "yAxis": "right"
-                                    }
-                                ],
                                 "touchTools": [
                                     {
-                                        "crossAxis": "bottom",
-                                        "enableMultiTouch": true,
-                                        "removeOnRelease": false,
-                                        "showBelowSeries": false,
                                         "targetSeries": [
-                                            "barSeries",
+                                            "barSeries", 
                                             "lineSeries2"
-                                        ],
+                                        ], 
+                                        "showBelowSeries": false, 
+                                        "enableMultiTouch": true, 
+                                        "toolType": "NXLineTool", 
                                         "toolPlot": {
-                                            "innerSymbol": {
-                                                "anchorPoint": {
-                                                    "x": 0.5,
-                                                    "y": 0.5
-                                                },
-                                                "symbolSize": {
-                                                    "height": 10,
-                                                    "width": 10
-                                                },
-                                                "symbolType": "NXPlotSymbolTypeEllipse"
-                                            },
-                                            "multiTouchLineType": "NXLineToolTypeVertical",
+                                            "singleTouchLineType": "NXLineToolTypeVertical", 
                                             "outerSymbol": {
                                                 "anchorPoint": {
-                                                    "x": 0.5,
-                                                    "y": 0.5
-                                                },
+                                                    "y": 0.5, 
+                                                    "x": 0.5
+                                                }, 
                                                 "symbolFill": {
                                                     "fillColor": "#ffffff"
-                                                },
+                                                }, 
+                                                "symbolType": "NXPlotSymbolTypeEllipse", 
                                                 "symbolSize": {
-                                                    "height": 20,
-                                                    "width": 20
-                                                },
+                                                    "width": 20, 
+                                                    "height": 20
+                                                }
+                                            }, 
+                                            "multiTouchLineType": "NXLineToolTypeVertical", 
+                                            "innerSymbol": {
+                                                "anchorPoint": {
+                                                    "y": 0.5, 
+                                                    "x": 0.5
+                                                }, 
+                                                "symbolSize": {
+                                                    "width": 10, 
+                                                    "height": 10
+                                                }, 
                                                 "symbolType": "NXPlotSymbolTypeEllipse"
-                                            },
-                                            "singleTouchLineType": "NXLineToolTypeVertical"
-                                        },
-                                        "toolType": "NXLineTool",
+                                            }
+                                        }, 
+                                        "removeOnRelease": false, 
+                                        "crossAxis": "bottom", 
                                         "visible": true
-                                    },
+                                    }, 
                                     {
-                                        "active": true,
-                                        "crossAxis": "bottom",
+                                        "active": true, 
                                         "targetSeries": [
-                                            "barSeries",
+                                            "barSeries", 
                                             "lineSeries2"
-                                        ],
+                                        ], 
+                                        "crossAxis": "bottom", 
                                         "toolType": "NXChangeActiveSeriesTool"
+                                    }
+                                ], 
+                                "series": [
+                                    {
+                                        "sort": {
+                                            "sortSource": "x", 
+                                            "sortType": "NXSortOperationAsc"
+                                        }, 
+                                        "orientation": "vertical", 
+                                        "yAxis": "left", 
+                                        "dataSource": {
+                                            "xDataSourceDateFormatString": "d日", 
+                                            "xDataSourceDateLocale": "zh", 
+                                            "yFormatString": "#.#℃", 
+                                            "xDisplayDateFormatString": "d日", 
+                                            "yValueSource": "COL_0_10", 
+                                            "xDisplayDateLocale": "zh"
+                                        }, 
+                                        "xAxis": "bottom", 
+                                        "type": "NXLineSeries", 
+                                        "id": "barSeries", 
+                                        "fill": {
+                                            "fillColor": "#955cbf"
+                                        }
+                                    }, 
+                                    {
+                                        "sort": {
+                                            "sortSource": "x", 
+                                            "sortType": "NXSortOperationAsc"
+                                        }, 
+                                        "orientation": "vertical", 
+                                        "yAxis": "right", 
+                                        "dataSource": {
+                                            "xDataSourceDateFormatString": "d日", 
+                                            "xDataSourceDateLocale": "zh", 
+                                            "yFormatString": "#次", 
+                                            "xDisplayDateFormatString": "d日", 
+                                            "yValueSource": "COL_0_9", 
+                                            "xDisplayDateLocale": "zh"
+                                        }, 
+                                        "xAxis": "bottom", 
+                                        "type": "NXLineSeries", 
+                                        "id": "lineSeries2", 
+                                        "fill": {
+                                            "fillColor": "#ff0000"
+                                        }
+                                    }
+                                ], 
+                                "axis": [
+                                    {
+                                        "axisType": "NXAxisTypeDateTime", 
+                                        "id": "bottom"
+                                    }, 
+                                    {
+                                        "majorPoint": {
+                                            "label": {
+                                                "labelNumberUnit": false, 
+                                                "labelFormatter": "#次", 
+                                                "labelDirection": "NXSignPositive"
+                                            }
+                                        }, 
+                                        "maxValue": 60, 
+                                        "minValue": 0, 
+                                        "axisTitle": {
+                                            "titleLocation": 0.5, 
+                                            "titleVisible": true
+                                        }, 
+                                        "relativeOffset": 1, 
+                                        "coordinate": "NXCoordinateY", 
+                                        "axisType": "NXAxisTypeNumberic", 
+                                        "id": "right"
+                                    }, 
+                                    {
+                                        "majorPoint": {
+                                            "label": {
+                                                "labelNumberUnit": false, 
+                                                "labelFormatter": "#.#℃"
+                                            }
+                                        }, 
+                                        "bands": [
+                                            {
+                                                "range": {
+                                                    "length": 30, 
+                                                    "location": 0
+                                                }, 
+                                                "fill": {
+                                                    "fillAlpha": 0.05, 
+                                                    "fillColor": "#0eb83b"
+                                                }
+                                            }, 
+                                            {
+                                                "range": {
+                                                    "length": 40, 
+                                                    "location": 30
+                                                }, 
+                                                "fill": {
+                                                    "fillAlpha": 0.05, 
+                                                    "fillColor": "#e41c2b"
+                                                }
+                                            }
+                                        ], 
+                                        "maxValue": 45, 
+                                        "minValue": 0, 
+                                        "axisTitle": {
+                                            "titleLocation": 0.5, 
+                                            "titleVisible": true
+                                        }, 
+                                        "coordinate": "NXCoordinateY", 
+                                        "axisType": "NXAxisTypeNumberic", 
+                                        "id": "left"
                                     }
                                 ]
                             }
-                        },
-                        "selection": {
-                            "selectionSource": "Y",
-                            "selectionType": "NXChartSelectionBiggestValue"
                         }
-                    },
-                    "type": "NXCubeCard"
-                },
-                {
-                    "cardTitle": "年度回款额",
-                    "dataSetId": "11f5b520-9a49-48c4-b450-d4d7ce69963a",
+                    }, 
                     "linkEvent": {
                         "isEventSource": true
-                    },
-                    "size": "row-sm-xs-6 row-xs-sm-12 row-md-3 row-md-sm-6 row-lg-md-3 col-xs-sm-12 col-sm-xs-6 col-sm-md-12 col-sm-lg-12 col-md-12  col-md-lg-12 col-md-sm-6 col-lg-6 ",
+                    }, 
+                    "dataSetId": "11f5b520-9a49-48c4-b450-d4d7ce69963a", 
+                    "type": "NXCubeCard", 
                     "structure": {
+                        "measures": [
+                            {
+                                "key": "COL_0_9", 
+                                "title": "投诉次数"
+                            }, 
+                            {
+                                "key": "COL_0_10", 
+                                "title": "温度"
+                            }
+                        ], 
                         "dimensions": [
                             {
                                 "granularities": [
                                     {
-                                        "key": "COL_0_0",
+                                        "key": "COL_0_0", 
                                         "title": "饮品名称"
                                     }
-                                ],
-                                "key": "Dimension_1",
+                                ], 
+                                "key": "Dimension_1", 
                                 "title": "饮料分类"
-                            },
+                            }, 
                             {
                                 "granularities": [
                                     {
-                                        "key": "COL_0_1",
+                                        "key": "COL_0_1", 
                                         "title": "销售人员"
                                     }
-                                ],
-                                "key": "Dimension_2",
+                                ], 
+                                "key": "Dimension_2", 
                                 "title": "销售单元"
-                            },
+                            }, 
                             {
                                 "granularities": [
                                     {
-                                        "key": "COL_0_2",
+                                        "key": "COL_0_2", 
                                         "title": "年"
+                                    }, 
+                                    {
+                                        "key": "COL_0_3", 
+                                        "title": "季"
+                                    }, 
+                                    {
+                                        "key": "COL_0_4", 
+                                        "title": "月"
+                                    }, 
+                                    {
+                                        "title": "日", 
+                                        "key": "COL_0_5", 
+                                        "drillTo": true
                                     }
-                                ],
-                                "key": "Dimension_3",
+                                ], 
+                                "key": "Dimension_3", 
                                 "title": "时间"
                             }
-                        ],
-                        "measures": [
-                            {
-                                "key": "COL_0_6",
-                                "title": "签约金额"
-                            },
-                            {
-                                "key": "COL_0_11",
-                                "title": "回款额"
-                            }
                         ]
-                    },
+                    }, 
+                    "size": "row-sm-xs-6 row-xs-sm-12 row-md-3 row-md-sm-6 row-lg-md-3 col-xs-sm-12 col-sm-xs-12 col-sm-lg-12 col-md-12 col-md-lg-12 col-md-sm-6 col-lg-6 "
+                }, 
+                {
+                    "cardTitle": "年度回款额", 
                     "style": {
+                        "detailTopPanel": {
+                            "visible": true, 
+                            "type": "NXDetailNormalTargetReal"
+                        }, 
                         "chart": {
                             "chartConfig": {
                                 "series": [
                                     {
-                                        "dataSource": {
-                                            "y2ValueSource": "COL_0_6",
-                                            "yFormatString": ",###",
-                                            "yValueSource": "COL_0_11"
-                                        },
-                                        "fill": {
-                                            "fillColor": "#e41c2b"
-                                        },
-                                        "id": "brandPassRing",
+                                        "id": "brandPassRing", 
+                                        "type": "NXSingleSeries", 
                                         "iteration": {
                                             "isLeafLevel": true
-                                        },
-                                        "type": "NXSingleSeries"
+                                        }, 
+                                        "dataSource": {
+                                            "y2ValueSource": "COL_0_6", 
+                                            "yValueSource": "COL_0_11", 
+                                            "yFormatString": ",###"
+                                        }, 
+                                        "fill": {
+                                            "fillColor": "#e41c2b"
+                                        }
                                     }
                                 ]
-                            },
+                            }, 
                             "selection": {
-                                "selectionSource": "Y",
+                                "selectionSource": "Y", 
                                 "selectionType": "NXChartSelectionBiggestValue"
                             }
-                        },
-                        "detailTopPanel": {
-                            "type": "NXDetailNormalTargetReal",
-                            "visible": true
                         }
-                    },
-                    "type": "NXCubeCard"
-                },
-                {
-                    "cardTitle": "每月回款情况汇总",
-                    "dataSetId": "11f5b520-9a49-48c4-b450-d4d7ce69963a",
+                    }, 
                     "linkEvent": {
                         "isEventSource": true
-                    },
-                    "size": "row-sm-xs-6 row-xs-sm-12 row-md-3 row-md-sm-6 row-lg-md-3 col-xs-sm-12 col-sm-xs-12 col-sm-lg-12 col-md-12  col-md-lg-12 col-md-sm-6 col-lg-6 ",
+                    }, 
+                    "dataSetId": "11f5b520-9a49-48c4-b450-d4d7ce69963a", 
+                    "type": "NXCubeCard", 
                     "structure": {
+                        "measures": [
+                            {
+                                "key": "COL_0_6", 
+                                "title": "签约金额"
+                            }, 
+                            {
+                                "key": "COL_0_11", 
+                                "title": "回款额"
+                            }
+                        ], 
                         "dimensions": [
                             {
                                 "granularities": [
                                     {
-                                        "key": "COL_0_0",
+                                        "key": "COL_0_0", 
                                         "title": "饮品名称"
                                     }
-                                ],
-                                "key": "Dimension_1",
+                                ], 
+                                "key": "Dimension_1", 
                                 "title": "饮料分类"
-                            },
+                            }, 
                             {
                                 "granularities": [
                                     {
-                                        "key": "COL_0_1",
+                                        "key": "COL_0_1", 
                                         "title": "销售人员"
                                     }
-                                ],
-                                "key": "Dimension_2",
+                                ], 
+                                "key": "Dimension_2", 
                                 "title": "销售单元"
-                            },
+                            }, 
                             {
                                 "granularities": [
                                     {
-                                        "key": "COL_0_2",
+                                        "key": "COL_0_2", 
                                         "title": "年"
-                                    },
-                                    {
-                                        "drillTo": true,
-                                        "key": "COL_0_4",
-                                        "title": "月"
-                                    },
-                                    {
-                                        "key": "COL_0_5",
-                                        "title": "日"
                                     }
-                                ],
-                                "key": "Dimension_3",
+                                ], 
+                                "key": "Dimension_3", 
                                 "title": "时间"
                             }
-                        ],
-                        "measures": [
-                            {
-                                "key": "COL_0_6",
-                                "title": "签约金额"
-                            },
-                            {
-                                "key": "COL_0_11",
-                                "title": "回款额"
-                            }
                         ]
-                    },
+                    }, 
+                    "size": "row-sm-xs-6 row-xs-sm-12 row-md-3 row-md-sm-6 row-lg-md-3 col-xs-sm-12 col-sm-xs-6 col-sm-md-12 col-sm-lg-12 col-md-12  col-md-lg-12 col-md-sm-6 col-lg-6 "
+                }, 
+                {
+                    "cardTitle": "每月回款情况汇总", 
                     "style": {
+                        "selection": {
+                            "selectionSource": "Y", 
+                            "selectionType": "NXChartSelectionBiggestValue"
+                        }, 
+                        "detailTopPanel": {
+                            "percentInTotalVisible": true
+                        }, 
                         "chart": {
                             "chartConfig": {
+                                "touchTools": [
+                                    {
+                                        "targetSeries": [
+                                            "bar1", 
+                                            "bar2"
+                                        ], 
+                                        "showBelowSeries": false, 
+                                        "enableMultiTouch": true, 
+                                        "toolType": "NXHighLightTool", 
+                                        "removeOnRelease": false, 
+                                        "crossAxis": "bottom", 
+                                        "visible": true
+                                    }, 
+                                    {
+                                        "active": true, 
+                                        "targetSeries": [
+                                            "bar1", 
+                                            "bar2"
+                                        ], 
+                                        "crossAxis": "bottom", 
+                                        "toolType": "NXChangeActiveSeriesTool"
+                                    }
+                                ], 
+                                "series": [
+                                    {
+                                        "showOverlayAll": false, 
+                                        "stackedType": "NXChartSeriesStackedTypeStack", 
+                                        "orientation": "vertical", 
+                                        "yAxis": "left", 
+                                        "accumulation": false, 
+                                        "dataSource": {
+                                            "yValueSource": "COL_0_11"
+                                        }, 
+                                        "xAxis": "bottom", 
+                                        "type": "NXBarSeries", 
+                                        "id": "bar1", 
+                                        "barFill": {
+                                            "fillColor": "#e84d60"
+                                        }
+                                    }, 
+                                    {
+                                        "showOverlayAll": false, 
+                                        "stackedType": "NXChartSeriesStackedTypeStack", 
+                                        "orientation": "vertical", 
+                                        "yAxis": "left", 
+                                        "accumulation": false, 
+                                        "dataSource": {
+                                            "yValueSource": "COL_0_6"
+                                        }, 
+                                        "xAxis": "bottom", 
+                                        "type": "NXBarSeries", 
+                                        "id": "bar2", 
+                                        "barFill": {
+                                            "fillColor": "#51a9d6"
+                                        }
+                                    }
+                                ], 
                                 "axis": [
                                     {
-                                        "axisType": "NXAxisTypeNumberic",
-                                        "coordinate": "NXCoordinateY",
-                                        "id": "left",
-                                        "inverted": true,
+                                        "coordinate": "NXCoordinateY", 
                                         "majorPoint": {
                                             "gridLine": {
                                                 "gridLineVisible": true
-                                            },
+                                            }, 
                                             "label": {
-                                                "labelFormatter": ",###",
-                                                "labelNumberUnit": false
+                                                "labelNumberUnit": false, 
+                                                "labelFormatter": ",###"
                                             }
-                                        }
-                                    },
+                                        }, 
+                                        "axisType": "NXAxisTypeNumberic", 
+                                        "id": "left", 
+                                        "inverted": true
+                                    }, 
                                     {
-                                        "axisType": "NXAxisTypeCategory",
+                                        "axisType": "NXAxisTypeCategory", 
                                         "id": "bottom"
-                                    }
-                                ],
-                                "series": [
-                                    {
-                                        "accumulation": false,
-                                        "barFill": {
-                                            "fillColor": "#e84d60"
-                                        },
-                                        "dataSource": {
-                                            "yValueSource": "COL_0_11"
-                                        },
-                                        "id": "bar1",
-                                        "orientation": "vertical",
-                                        "showOverlayAll": false,
-                                        "stackedType": "NXChartSeriesStackedTypeStack",
-                                        "type": "NXBarSeries",
-                                        "xAxis": "bottom",
-                                        "yAxis": "left"
-                                    },
-                                    {
-                                        "accumulation": false,
-                                        "barFill": {
-                                            "fillColor": "#51a9d6"
-                                        },
-                                        "dataSource": {
-                                            "yValueSource": "COL_0_6"
-                                        },
-                                        "id": "bar2",
-                                        "orientation": "vertical",
-                                        "showOverlayAll": false,
-                                        "stackedType": "NXChartSeriesStackedTypeStack",
-                                        "type": "NXBarSeries",
-                                        "xAxis": "bottom",
-                                        "yAxis": "left"
-                                    }
-                                ],
-                                "touchTools": [
-                                    {
-                                        "crossAxis": "bottom",
-                                        "enableMultiTouch": true,
-                                        "removeOnRelease": false,
-                                        "showBelowSeries": false,
-                                        "targetSeries": [
-                                            "bar1",
-                                            "bar2"
-                                        ],
-                                        "toolType": "NXHighLightTool",
-                                        "visible": true
-                                    },
-                                    {
-                                        "active": true,
-                                        "crossAxis": "bottom",
-                                        "targetSeries": [
-                                            "bar1",
-                                            "bar2"
-                                        ],
-                                        "toolType": "NXChangeActiveSeriesTool"
                                     }
                                 ]
                             }
-                        },
-                        "detailTopPanel": {
-                            "percentInTotalVisible": true
-                        },
-                        "selection": {
-                            "selectionSource": "Y",
-                            "selectionType": "NXChartSelectionBiggestValue"
                         }
-                    },
-                    "type": "NXCubeCard"
-                },
-                {
-                    "cardTitle": "每月新增客户联系人累计",
-                    "dataSetId": "11f5b520-9a49-48c4-b450-d4d7ce69963a",
+                    }, 
                     "linkEvent": {
                         "isEventSource": true
-                    },
-                    "size": "row-sm-xs-6 row-xs-sm-12 row-md-3 row-md-sm-6 row-lg-md-3 col-xs-sm-12 col-sm-xs-12 col-sm-lg-12 col-md-12  col-md-lg-12 col-md-sm-6 col-lg-6 ",
+                    }, 
+                    "dataSetId": "11f5b520-9a49-48c4-b450-d4d7ce69963a", 
+                    "type": "NXCubeCard", 
                     "structure": {
+                        "measures": [
+                            {
+                                "key": "COL_0_6", 
+                                "title": "签约金额"
+                            }, 
+                            {
+                                "key": "COL_0_11", 
+                                "title": "回款额"
+                            }
+                        ], 
                         "dimensions": [
                             {
                                 "granularities": [
                                     {
-                                        "key": "COL_0_0",
+                                        "key": "COL_0_0", 
                                         "title": "饮品名称"
                                     }
-                                ],
-                                "key": "Dimension_1",
+                                ], 
+                                "key": "Dimension_1", 
                                 "title": "饮料分类"
-                            },
+                            }, 
                             {
                                 "granularities": [
                                     {
-                                        "key": "COL_0_1",
+                                        "key": "COL_0_1", 
                                         "title": "销售人员"
                                     }
-                                ],
-                                "key": "Dimension_2",
+                                ], 
+                                "key": "Dimension_2", 
                                 "title": "销售单元"
-                            },
+                            }, 
                             {
                                 "granularities": [
                                     {
-                                        "key": "COL_0_2",
+                                        "key": "COL_0_2", 
                                         "title": "年"
-                                    },
+                                    }, 
                                     {
-                                        "drillTo": true,
-                                        "key": "COL_0_4",
-                                        "title": "月"
-                                    },
+                                        "title": "月", 
+                                        "key": "COL_0_4", 
+                                        "drillTo": true
+                                    }, 
                                     {
-                                        "key": "COL_0_5",
+                                        "key": "COL_0_5", 
                                         "title": "日"
                                     }
-                                ],
-                                "key": "Dimension_3",
+                                ], 
+                                "key": "Dimension_3", 
                                 "title": "时间"
                             }
-                        ],
-                        "measures": [
-                            {
-                                "key": "COL_0_12",
-                                "title": "新增联系人"
-                            }
                         ]
-                    },
+                    }, 
+                    "size": "row-sm-xs-6 row-xs-sm-12 row-md-3 row-md-sm-6 row-lg-md-3 col-xs-sm-12 col-sm-xs-12 col-sm-lg-12 col-md-12  col-md-lg-12 col-md-sm-6 col-lg-6 "
+                }, 
+                {
+                    "cardTitle": "每月新增客户联系人累计", 
                     "style": {
                         "chart": {
                             "chartConfig": {
-                                "axis": [
-                                    {
-                                        "axisType": "NXAxisTypeCategory",
-                                        "id": "bottom"
-                                    },
-                                    {
-                                        "axisType": "NXAxisTypeNumberic",
-                                        "coordinate": "NXCoordinateY",
-                                        "id": "left",
-                                        "majorPoint": {
-                                            "label": {
-                                                "labelFormatter": ",###",
-                                                "labelNumberUnit": true
-                                            }
-                                        }
-                                    }
-                                ],
-                                "series": [
-                                    {
-                                        "accumulation": false,
-                                        "barFill": {
-                                            "fillColor": "#955cbf"
-                                        },
-                                        "dataSource": {
-                                            "yValueSource": "COL_0_12"
-                                        },
-                                        "id": "seasonTotalForProvinceBar",
-                                        "orientation": "vertical",
-                                        "showOverlayAll": true,
-                                        "stackedType": "NXChartSeriesStackedTypeOverlap",
-                                        "standOnShoulder": true,
-                                        "type": "NXBarSeries",
-                                        "xAxis": "bottom",
-                                        "yAxis": "left"
-                                    }
-                                ],
                                 "touchTools": [
                                     {
-                                        "crossAxis": "bottom",
-                                        "enableMultiTouch": true,
-                                        "removeOnRelease": false,
-                                        "showBelowSeries": false,
                                         "targetSeries": [
                                             "seasonTotalForProvinceBar"
-                                        ],
-                                        "toolType": "NXHighLightTool",
+                                        ], 
+                                        "showBelowSeries": false, 
+                                        "enableMultiTouch": true, 
+                                        "toolType": "NXHighLightTool", 
+                                        "removeOnRelease": false, 
+                                        "crossAxis": "bottom", 
                                         "visible": true
+                                    }
+                                ], 
+                                "series": [
+                                    {
+                                        "showOverlayAll": true, 
+                                        "stackedType": "NXChartSeriesStackedTypeOverlap", 
+                                        "orientation": "vertical", 
+                                        "yAxis": "left", 
+                                        "standOnShoulder": true, 
+                                        "accumulation": false, 
+                                        "dataSource": {
+                                            "yValueSource": "COL_0_12"
+                                        }, 
+                                        "xAxis": "bottom", 
+                                        "type": "NXBarSeries", 
+                                        "id": "seasonTotalForProvinceBar", 
+                                        "barFill": {
+                                            "fillColor": "#955cbf"
+                                        }
+                                    }
+                                ], 
+                                "axis": [
+                                    {
+                                        "axisType": "NXAxisTypeCategory", 
+                                        "id": "bottom"
+                                    }, 
+                                    {
+                                        "coordinate": "NXCoordinateY", 
+                                        "majorPoint": {
+                                            "label": {
+                                                "labelNumberUnit": true, 
+                                                "labelFormatter": ",###"
+                                            }
+                                        }, 
+                                        "axisType": "NXAxisTypeNumberic", 
+                                        "id": "left"
                                     }
                                 ]
                             }
                         }
-                    },
-                    "type": "NXCubeCard"
-                },
-                {
-                    "cardTitle": "饮品回款占比",
-                    "dataSetId": "11f5b520-9a49-48c4-b450-d4d7ce69963a",
+                    }, 
                     "linkEvent": {
                         "isEventSource": true
-                    },
-                    "size": "row-sm-xs-6 row-xs-sm-12 row-md-3 row-md-sm-6 row-lg-md-3 col-xs-sm-12 col-sm-xs-12 col-sm-lg-12 col-md-12 col-md-lg-12 col-md-sm-6 col-lg-6 ",
+                    }, 
+                    "dataSetId": "11f5b520-9a49-48c4-b450-d4d7ce69963a", 
+                    "type": "NXCubeCard", 
                     "structure": {
+                        "measures": [
+                            {
+                                "key": "COL_0_12", 
+                                "title": "新增联系人"
+                            }
+                        ], 
                         "dimensions": [
                             {
                                 "granularities": [
                                     {
-                                        "key": "COL_0_1",
-                                        "title": "销售人员"
-                                    }
-                                ],
-                                "key": "Dimension_2",
-                                "title": "销售单元"
-                            },
-                            {
-                                "granularities": [
-                                    {
-                                        "key": "COL_0_2",
-                                        "title": "年"
-                                    },
-                                    {
-                                        "key": "COL_0_3",
-                                        "title": "季"
-                                    },
-                                    {
-                                        "key": "COL_0_4",
-                                        "title": "月"
-                                    },
-                                    {
-                                        "drillTo": true,
-                                        "key": "COL_0_5",
-                                        "title": "日"
-                                    }
-                                ],
-                                "key": "Dimension_3",
-                                "title": "时间"
-                            },
-                            {
-                                "granularities": [
-                                    {
-                                        "key": "COL_0_0",
+                                        "key": "COL_0_0", 
                                         "title": "饮品名称"
                                     }
-                                ],
-                                "key": "Dimension_1",
+                                ], 
+                                "key": "Dimension_1", 
                                 "title": "饮料分类"
-                            }
-                        ],
-                        "measures": [
+                            }, 
                             {
-                                "key": "COL_0_11",
-                                "title": "销售回款"
+                                "granularities": [
+                                    {
+                                        "key": "COL_0_1", 
+                                        "title": "销售人员"
+                                    }
+                                ], 
+                                "key": "Dimension_2", 
+                                "title": "销售单元"
+                            }, 
+                            {
+                                "granularities": [
+                                    {
+                                        "key": "COL_0_2", 
+                                        "title": "年"
+                                    }, 
+                                    {
+                                        "title": "月", 
+                                        "key": "COL_0_4", 
+                                        "drillTo": true
+                                    }, 
+                                    {
+                                        "key": "COL_0_5", 
+                                        "title": "日"
+                                    }
+                                ], 
+                                "key": "Dimension_3", 
+                                "title": "时间"
                             }
                         ]
-                    },
+                    }, 
+                    "size": "row-sm-xs-6 row-xs-sm-12 row-md-3 row-md-sm-6 row-lg-md-3 col-xs-sm-12 col-sm-xs-12 col-sm-lg-12 col-md-12  col-md-lg-12 col-md-sm-6 col-lg-6 "
+                }, 
+                {
+                    "cardTitle": "饮品回款占比", 
                     "style": {
+                        "detailRightPanel": {
+                            "visible": true
+                        }, 
+                        "detailTopPanel": {
+                            "visible": false, 
+                            "type": "NXDetailVertical", 
+                            "percentInTotalVisible": true
+                        }, 
                         "chart": {
                             "chartConfig": {
-                                "series": [
-                                    {
-                                        "dataSource": {
-                                            "yValueSource": "COL_0_11"
-                                        },
-                                        "id": "brandPercentPie",
-                                        "type": "NXPieSeries"
-                                    }
-                                ],
                                 "touchTools": [
                                     {
                                         "targetSeries": [
                                             "brandPercentPie"
-                                        ],
+                                        ], 
                                         "toolType": "NXPieSpinTool"
                                     }
+                                ], 
+                                "series": [
+                                    {
+                                        "type": "NXPieSeries", 
+                                        "dataSource": {
+                                            "yValueSource": "COL_0_11"
+                                        }, 
+                                        "id": "brandPercentPie"
+                                    }
                                 ]
-                            },
+                            }, 
                             "selection": {
-                                "selectionSource": "Y",
+                                "selectionSource": "Y", 
                                 "selectionType": "NXChartSelectionBiggestValue"
                             }
-                        },
-                        "detailRightPanel": {
-                            "visible": true
-                        },
-                        "detailTopPanel": {
-                            "percentInTotalVisible": true,
-                            "type": "NXDetailVertical",
-                            "visible": false
-                        },
+                        }, 
                         "detailTotalPanel": {
                             "isAboveDetailTop": true
                         }
-                    },
-                    "type": "NXCubeCard"
+                    }, 
+                    "linkEvent": {
+                        "isEventSource": true
+                    }, 
+                    "dataSetId": "11f5b520-9a49-48c4-b450-d4d7ce69963a", 
+                    "type": "NXCubeCard", 
+                    "structure": {
+                        "measures": [
+                            {
+                                "key": "COL_0_11", 
+                                "title": "销售回款"
+                            }
+                        ], 
+                        "dimensions": [
+                            {
+                                "granularities": [
+                                    {
+                                        "key": "COL_0_1", 
+                                        "title": "销售人员"
+                                    }
+                                ], 
+                                "key": "Dimension_2", 
+                                "title": "销售单元"
+                            }, 
+                            {
+                                "granularities": [
+                                    {
+                                        "key": "COL_0_2", 
+                                        "title": "年"
+                                    }, 
+                                    {
+                                        "key": "COL_0_3", 
+                                        "title": "季"
+                                    }, 
+                                    {
+                                        "key": "COL_0_4", 
+                                        "title": "月"
+                                    }, 
+                                    {
+                                        "title": "日", 
+                                        "key": "COL_0_5", 
+                                        "drillTo": true
+                                    }
+                                ], 
+                                "key": "Dimension_3", 
+                                "title": "时间"
+                            }, 
+                            {
+                                "granularities": [
+                                    {
+                                        "key": "COL_0_0", 
+                                        "title": "饮品名称"
+                                    }
+                                ], 
+                                "key": "Dimension_1", 
+                                "title": "饮料分类"
+                            }
+                        ]
+                    }, 
+                    "size": "row-sm-xs-6 row-xs-sm-12 row-md-3 row-md-sm-6 row-lg-md-3 col-xs-sm-12 col-sm-xs-12 col-sm-lg-12 col-md-12 col-md-lg-12 col-md-sm-6 col-lg-6 "
                 }
-            ],
-            "pageColor": "#718dbf",
-            "pageTitle": "CRM"
+            ], 
+            "pageTitle": "CRM", 
+            "pageColor": "#718dbf"
         }
-    ],
-    "title": "CRM"
+    ]
 }
